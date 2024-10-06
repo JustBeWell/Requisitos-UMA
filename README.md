@@ -1,5 +1,5 @@
 # Requisitos-UMA
-Trabajo realizado por
+Trabajo realizado por:
 
    // Angel Escaño //
     Diego Sicre //
