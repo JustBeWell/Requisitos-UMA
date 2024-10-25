@@ -1,0 +1,569 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{tabularx}
+\geometry{a4paper, margin=1in}
+\usepackage{titlesec}
+\usepackage{lipsum}
+
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+
+
+\title{Documento General de Requisitos Mini PIM}
+
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+
+\subsection{Objetivos}
+
+El sistema Mini PIM (Product Information Management) está diseñado para proporcionar a las pequeñas y medianas empresas (PyMEs) una plataforma accesible y eficiente para la gestión integral de información de productos. El objetivo principal es permitir que estas empresas administren sus productos, assets digitales, usuarios y relaciones de manera centralizada. Además, el sistema facilita la integración con múltiples canales de venta externos para exportar y sincronizar datos de manera automática, optimizando así la presencia digital de los productos y la eficiencia operativa de las PyMEs.
+
+\subsection{Alcance}
+
+El sistema Mini PIM cubre una amplia gama de funcionalidades esenciales para la gestión de productos en PyMEs, incluyendo la gestión de cuentas de usuario (owner, agente, y usuario), assets (recursos digitales), categorías y relaciones entre productos. También permite la creación y exportación de informes en formato JSON, la integración con plataformas externas como Amazon, y la configuración de planes de suscripción y pagos mediante servicios como Stripe y Paypal. El alcance del sistema se centra en ofrecer una solución escalable, con diferentes planes de suscripción que se ajustan a las necesidades específicas y al crecimiento de las PyMEs.
+
+\subsection{Definiciones, acrónimos y abreviaturas}
+
+\begin{itemize}
+    \item \textbf{PIM}: Product Information Management (Gestión de Información de Producto)
+    \item \textbf{SKU}: Stock Keeping Unit - Identificador único de producto
+    \item \textbf{GTIN}: Global Trade Item Number - Identificador global para productos en comercio electrónico
+    \item \textbf{Assets}: Recursos digitales asociados a productos, como imágenes, videos, y PDFs
+    \item \textbf{API}: Application Programming Interface - Interfaz para la integración con sistemas externos
+\end{itemize}
+
+\subsection{Referencias}
+
+\begin{itemize}
+    \item Estándar de accesibilidad WCAG 2.2 (nivel AA) para asegurar la accesibilidad del sistema.
+    \item Especificaciones técnicas para la integración con Amazon Prime y otros canales de venta: Buy with Prime.
+    \item Documentación interna de Plytix sobre la estructura y requisitos del sistema.
+\end{itemize}
+
+\subsection{Resumen}
+
+El sistema Mini PIM proporciona una plataforma centralizada para que las PyMEs gestionen la información de sus productos y sus recursos digitales, establezcan relaciones entre productos, y exporten datos de manera eficiente a través de canales de venta externos. Además, el sistema está diseñado para ser escalable, ofreciendo distintos planes de suscripción que se ajustan al tamaño y las necesidades de cada empresa, garantizando flexibilidad y crecimiento.
+
+\section{Directivas del proyecto}
+
+\subsection{Oportunidad de negocio}
+
+En el mercado actual, las pequeñas y medianas empresas (PyMEs) enfrentan una desventaja competitiva frente a las grandes empresas en cuanto a la gestión y exposición de sus productos en plataformas de comercio electrónico. Las soluciones profesionales de gestión de información de productos (PIM) existentes en el mercado son, en su mayoría, costosas y complejas, lo que las hace inaccesibles para muchas PyMEs. La oportunidad de negocio radica en desarrollar un sistema PIM asequible, eficiente y fácil de usar que permita a estas empresas gestionar de manera centralizada la información de sus productos, assets y relaciones, y exportar datos a distintos canales de venta, aumentando así su competitividad en el mercado digital.
+
+\subsection{Descripción del problema}
+
+La falta de herramientas accesibles para gestionar información de productos impide que las PyMEs compitan en igualdad de condiciones contra las grandes corporaciones, reduciendo su visibilidad y eficiencia, lo que podría resolverse con una plataforma que centralice y optimice estas gestiones e integraciones con canales de venta externos.
+
+\subsection{Descripción del producto}
+
+Mini PIM es un sistema de gestión de información de productos diseñado específicamente para pequeñas y medianas empresas (PyMEs) que buscan una solución accesible y asequible para centralizar la administración de sus productos y assets digitales. El producto permite a las PyMEs gestionar eficientemente sus catálogos de productos, relaciones y recursos digitales, además de integrarse automáticamente con plataformas de venta externas como Amazon para aumentar la visibilidad y el alcance en el mercado digital.
+
+El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción flexibles y escalables, adaptados a las necesidades y capacidades de las PyMEs, garantizando una gestión eficiente y optimizada sin los altos costos ni la complejidad técnica que suelen tener las soluciones PIM dirigidas a grandes corporaciones.
+
+
+\section{Descripción de Participantes y Usuarios}
+
+\subsection{Resumen de los Participantes}
+
+\begin{itemize}
+
+    \item \textbf{Canales de venta (Amazon, AliExpress, ...)} \\
+        Encargados de realizar la venta de los objetos que, mediante el uso del sistema, serán publicados y puestos a la venta.
+    \item \textbf{Canales de pago (PayPal)} \\
+        Asegurarán que las suscripciones de pago de los usuarios sean cobradas correctamente y que se puedan modificar las suscripciones abiertamente.
+    \item \textbf{Jefe o gerente de la empresa} \\
+        Es el jefe de la tienda, quien será el encargado de proveer una cuenta a cada uno de los trabajadores de la tienda.
+    \item \textbf{Soporte Técnico} \\
+        Es capaz tanto de simular una cuenta de \textit{Owner} como de un usuario normal con fines de soporte técnico.
+    \item \textbf{Empleado} \\
+        Es la cuenta que utilizará un trabajador normal, con la capacidad de gestionar los productos de una tienda.
+    \item \textbf{Plytix Admin} \\
+        Es el encargado de crear las cuentas \textit{Owner} para una empresa y las cuentas \textit{Agente} para soporte técnico.
+\end{itemize}
+
+\subsection{Resumen y Entorno de los Usuarios}
+
+\begin{tabularx}{\textwidth}{|l|X|l|}
+    \hline
+    \textbf{Nombre} & \textbf{Descripción} & \textbf{Participante} \\
+    \hline
+    Owner & Es el jefe de la tienda, encargado de proveer una cuenta a cada trabajador & Se asocia al participante Jefe o Gerente \\
+    \hline
+    Agente & Puede simular tanto una cuenta de \textit{Owner} como de usuario & Se asocia al participante Soporte Técnico \\
+    \hline
+    Usuario & Representa a un trabajador que gestiona productos de la tienda & Se asocia al participante Empleado \\
+    \hline
+\end{tabularx}
+
+\subsection{Perfiles de los Participantes}
+
+\subsubsection{Jefe / Gerente}
+
+\begin{itemize}
+    \item \textbf{Representante:} Jefe o gerente de la empresa
+    \item \textbf{Descripción:} Es el jefe o gerente de una empresa
+    \item \textbf{Tipo:} Alto cargo ejecutivo
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Gestionar el funcionamiento de la empresa
+        \item Encargado de crear las cuentas \textit{User} para los trabajadores
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Crear y gestionar correctamente las cuentas \textit{User} creadas y mantener buena comunicación con soporte técnico
+    \item \textbf{Comentarios:} Encargados de crear las cuentas tipo \textit{Usuario} y realizar las gestiones de pago.
+\end{itemize}
+
+\subsubsection{Trabajador}
+
+\begin{itemize}
+    \item \textbf{Representante:} Trabajador
+    \item \textbf{Descripción:} Es un trabajador de una empresa
+    \item \textbf{Tipo:} Equipo laboral de una empresa
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Utilizar y gestionar sus cuentas \textit{Usuario}
+        \item Gestionar los productos de la tienda
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Gestionar correctamente tanto la organización de los productos como su envío a los canales de venta
+    \item \textbf{Comentarios:} Los trabajadores sólo pueden controlar cuentas \textit{User}, sin privilegios de creación ni modificación de cuentas.
+\end{itemize}
+
+\subsubsection{Soporte Técnico}
+
+\begin{itemize}
+    \item \textbf{Representante:} Soporte técnico de Plytix
+    \item \textbf{Descripción:} Encargado de soporte técnico
+    \item \textbf{Tipo:} Equipo de soporte técnico
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Gestionar el funcionamiento de una cuenta Plytix
+        \item Corregir errores en las empresas
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Resolver problemas y mantener un correcto funcionamiento del software
+    \item \textbf{Comentarios:} Representantes de soporte técnico pueden utilizar cualquier tipo de cuenta para solucionar problemas.
+\end{itemize}
+
+\subsubsection{Plytix Admin}
+
+\begin{itemize}
+    \item \textbf{Representante:} Administrador de Plytix
+    \item \textbf{Tipo:} Representante de Plytix / Alto cargo ejecutivo
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Crear las cuentas \textit{Owner} de las empresas
+        \item Gestionar y crear cuentas \textit{Agente} para soporte técnico
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Gestionar correctamente cuentas \textit{Owner} y \textit{Agente}
+    \item \textbf{Entregables:} Cuentas \textit{Owner} y soporte técnico para las empresas
+    \item \textbf{Comentarios:} El administrador tiene todos los permisos.
+\end{itemize}
+
+\subsection{Perfiles de Usuario}
+
+\subsubsection{Owner}
+
+\begin{itemize}
+    \item \textbf{Representante:} Owner
+    \item \textbf{Descripción:} Es el jefe o gerente de una empresa
+    \item \textbf{Tipo:} Alto cargo ejecutivo
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Crear cuentas para los trabajadores
+        \item Gestionar el plan de suscripción de la empresa
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Mantener un número adecuado de trabajadores y maximizar ventas
+    \item \textbf{Comentarios:} El \textit{Owner} es la cuenta principal de la empresa.
+\end{itemize}
+
+\subsubsection{Agente}
+
+\begin{itemize}
+    \item \textbf{Representante:} Agente
+    \item \textbf{Descripción:} Personal de servicio técnico de Plytix
+    \item \textbf{Tipo:} Servicio técnico
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Gestionar la funcionalidad de cuentas empresariales
+        \item Solucionar problemas en cuentas Plytix
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Mantener un número bajo de errores en cuentas Plytix
+    \item \textbf{Comentarios:} Agentes pueden adoptar permisos de \textit{Owner} y \textit{Usuario} para solucionar problemas.
+\end{itemize}
+
+\subsubsection{Usuario}
+
+\begin{itemize}
+    \item \textbf{Representante:} Usuario
+    \item \textbf{Descripción:} Representa a los trabajadores de la empresa
+    \item \textbf{Tipo:} Equipo de trabajo
+    \item \textbf{Responsabilidades:}
+    \begin{itemize}
+        \item Gestionar productos de la tienda
+        \item Mover productos a los canales de venta mediante CSV
+        \item Editar datos de productos
+    \end{itemize}
+    \item \textbf{Criterio de Éxito:} Maximizar número de productos en venta y mantener actualizada la información
+    \item \textbf{Comentarios:} Los usuarios sólo gestionan productos, sin acceso a gestión de cuentas o suscripciones.
+\end{itemize}
+
+\subsection{Alternativas y Competencia}
+
+\begin{itemize}
+    \item Plataformas E-Commerce.
+    \item Cualquier plataforma PIM.
+    \item Otro software de gestión de inventario.
+\end{itemize}
+
+
+\section{Visión General del Producto}
+
+\subsection{Entorno de Despliegue}
+
+\subsubsection{Entorno para la Implementación del Sistema Actual}
+El sistema se desplegará en un entorno SaaS adecuado para PyMEs, donde los usuarios podrán gestionar la información de sus productos y sincronizarlos con los distintos canales de venta. Se garantizará que el sistema cumpla con los requisitos de seguridad, escalabilidad y disponibilidad, necesarios para operar en plataformas de venta en línea.
+
+\subsubsection{Aplicaciones Colaboradoras}
+El Mini PIM de Plytix se integrará con diversas aplicaciones de comercio electrónico, tales como Amazon y Shopify, con el objetivo de facilitar la exportación de datos de productos hacia estos canales de venta. También podrá conectarse a plataformas internas de gestión de inventarios o de catálogo, que los clientes utilicen para preparar sus datos de productos antes de la sincronización.
+
+\subsection{Resumen de Características}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|p{10cm}|}
+    \hline
+    \textbf{Sistema} & Mini PIM \\
+    \hline
+    \textbf{Beneficios para el Cliente} & Permite a las PyMEs gestionar y centralizar la información de sus productos en un solo lugar, optimizando la organización y facilitando la exportación de estos datos a los canales de venta en línea. Aumenta la eficiencia operativa en la actualización y publicación de productos. \\
+    \hline
+    \textbf{Características de Soporte} & 
+    \begin{itemize}
+        \item CRUD (Crear, Leer, Actualizar y Eliminar) de productos y características.
+        \item Exportación directa de productos a plataformas de comercio electrónico.
+        \item Automatización para sincronizar y actualizar la información de productos en varios canales.
+    \end{itemize} \\
+    \hline
+\end{tabular}
+\end{table}
+
+\subsection{Suposiciones y Dependencias}
+
+\subsubsection{Factores Externos que Tienen un Efecto en el Producto, pero No son Restricciones Obligatorias}
+Factores como los cambios en las políticas de integración de los canales de venta (por ejemplo, Amazon o Shopify) y las actualizaciones en las regulaciones de privacidad de datos pueden afectar las funcionalidades de exportación del sistema, aunque no se consideran restricciones obligatorias en su diseño inicial.
+
+\subsubsection{Suposiciones que Asume el Equipo en Torno al Proyecto}
+Se asume que:
+\begin{itemize}
+    \item Los clientes cuentan con la infraestructura mínima necesaria para acceder al sistema.
+    \item Los datos de productos están organizados y en formatos compatibles para su importación al sistema.
+    \item La plataforma se mantendrá como una herramienta de soporte para la gestión de productos de PyMEs en mercados internacionales, por lo que se utilizará el ingés americano.
+\end{itemize}
+
+\subsection{Precio y Coste}
+El sistema funcionará bajo un modelo de suscripción mensual, el cual varía según la cantidad de usuarios que requieran acceso al sistema y el nivel de funcionalidades de soporte para exportación de productos. Los costos de mantenimiento y las actualizaciones periódicas se incluirán dentro del precio de suscripción.
+
+\subsection{Licencias e Instalación}
+Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estarán sujetas a los términos de uso y privacidad de la empresa.
+\section{Requisitos Funcionales}
+\subsection{RF1 Gestión de Cuenta}
+
+\begin{itemize}
+    \item \textbf{RF1.1 Creación de cuenta} \\
+    El sistema debe permitir la creación de una cuenta, diferenciando si es creada por Plytix o por un owner.
+
+    \item \textbf{RF1.2 Creación de cuentas de Usuario} \\
+    El sistema debe permitir al Owner crear cuentas de usuario para empleados de la empresa (usuarios).
+
+    \item \textbf{RF1.2 Visualizar datos de la cuenta} \\
+    El usuario debe poder ver los datos de su cuenta, como el nombre, correo y otros detalles relacionados.
+
+    \item \textbf{RF1.3 Actualizar datos de la cuenta} \\
+    El usuario debe poder modificar los datos de la cuenta, como la dirección de correo, nombre o logotipo de la empresa.
+
+    \item \textbf{RF1.4 Borrar cuenta} \\
+    El sistema debe permitir la eliminación de una cuenta, siguiendo políticas de seguridad y permisos.
+
+    \item \textbf{RF1.5 Iniciar sesión} \\
+    Los usuarios deben poder autenticarse en el sistema introduciendo credenciales válidas.
+
+    \item \textbf{RF1.6 Cerrar sesión} \\
+    El sistema debe permitir al usuario cerrar sesión de manera segura.
+
+    \item \textbf{RF1.7 Crear informe de cuenta} \\
+    El sistema debe generar un informe detallado con la información de la cuenta.
+    \begin{itemize}
+        \item \textbf{RF1.7.1 Exportar informe de cuenta} \\
+        El informe generado debe poder ser exportado en formato .json, incluyendo información como el nombre de la cuenta, fecha de creación, número de productos, assets y otros detalles relevantes.
+    \end{itemize}
+
+    \item \textbf{RF1.8 Creación y gestión de usuarios} \\
+    El Owner puede gestionar los datos de la tienda, incluyendo el nombre, logotipo y fecha de creación de la cuenta.
+
+    \item \textbf{RF1.9 Exportación de información de usuarios} \\
+    El Owner tiene permisos para generar y exportar informes detallados de cuentas, productos y assets de la tienda en formato JSON.
+
+    \item \textbf{RF1.10 Exportación de Gestión de usuarios} \\
+    El Owner tiene permisos para generar y exportar informes detallados de cuentas, productos y assets de la tienda en formato JSON.
+
+    \item \textbf{RF1.11 Emulación de cuenta} \\
+    El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
+
+    \item \textbf{RF1.12 Creación de cuenta Agente} \\
+    La cuenta de Agente debe crearse y eliminarse desde el sistema de administración central de Plytix.
+
+    \item \textbf{RF1.13 Emulación de cuenta} \\
+    El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
+
+    \item \textbf{RF1.14 Capacidad y duración de la cuenta Agente} \\
+    El Agente tiene permisos para ver y analizar los datos de productos y assets, pero no puede modificar ni eliminar información de la cuenta a la que brinda soporte y tiene tiempo de vida limitado hasta que se soluciona el problema.
+\end{itemize}
+
+\subsection{RF2 Gestión de Producto}
+
+\begin{itemize}
+    \item \textbf{RF2.1 Crear producto} \\
+    Los usuarios deben poder añadir nuevos productos al sistema, especificando datos como nombre, categoría, atributos, etc.
+
+    \item \textbf{RF2.2 Visualizar producto} \\
+    Los productos deben poder ser visualizados con todos sus detalles, como nombre, precio, categoría y atributos asociados.
+
+    \item \textbf{RF2.3 Editar producto} \\
+    El sistema debe permitir a los usuarios editar la información de los productos existentes.
+
+    \item \textbf{RF2.4 Borrar producto} \\
+    Los productos deben poder ser eliminados por los usuarios, siempre y cuando no estén asociados a otras entidades clave del sistema.
+
+    \item \textbf{RF2.5 Crear CSV para importación de productos} \\
+    Los usuarios deben poder crear un archivo CSV para importar productos en caso de pérdida de datos, permitiendo una copia de seguridad de sus productos en el PIM (Product Information Management).
+\end{itemize}
+
+\subsection{RF3 Gestión de Assets}
+
+\begin{itemize}
+    \item \textbf{RF3.1 Crear asset} \\
+    Los usuarios deben poder subir assets al sistema, como imágenes, videos o documentos.
+
+    \item \textbf{RF3.2 Visualizar asset} \\
+    El sistema debe permitir visualizar los assets almacenados, incluyendo detalles como nombre, tipo de archivo y tamaño.
+
+    \item \textbf{RF3.3 Editar asset} \\
+    Los usuarios deben poder modificar las propiedades de un asset.
+
+    \item \textbf{RF3.4 Borrar asset} \\
+    Los assets pueden ser eliminados, salvo que estén asociados a un producto.
+    \begin{itemize}
+        \item \textbf{RF3.4.1 Restricción de borrado de asset} \\
+        El sistema debe impedir la eliminación de un asset si está asociado a algún producto.
+    \end{itemize}
+
+    \item \textbf{RF3.5 Crear asociación de asset} \\
+    Los usuarios deben poder asociar assets a productos en el sistema.
+
+    \item \textbf{RF3.6 Ver asociación de asset} \\
+    Las asociaciones de assets con productos deben ser visibles y consultables por los usuarios.
+
+    \item \textbf{RF3.7 Editar asociación de asset} \\
+    El sistema debe permitir modificar las asociaciones entre assets y productos.
+
+    \item \textbf{RF3.8 Borrar asociación de asset} \\
+    Los usuarios deben poder eliminar asociaciones de assets, siempre y cuando no violen restricciones del sistema.
+\end{itemize}
+
+\subsection{RF4 Gestión de Etiquetas}
+
+\begin{itemize}
+    \item \textbf{RF4.1 Crear etiqueta} \\
+    Los usuarios pueden definir etiquetas para categorizar assets y productos.
+
+    \item \textbf{RF4.2 Visualizar etiquetas} \\
+    Las etiquetas creadas deben poder ser visualizadas en conjunto con la información de assets y productos asociados.
+
+    \item \textbf{RF4.3 Editar etiqueta} \\
+    El sistema debe permitir la modificación de las etiquetas existentes.
+
+    \item \textbf{RF4.4 Borrar etiqueta} \\
+    Los usuarios deben poder eliminar etiquetas, a excepción de que estas estén asociadas a otros elementos críticos en el sistema.
+\end{itemize}
+
+\subsection{RF5 Gestión de Relaciones}
+
+\begin{itemize}
+    \item \textbf{RF5.1 Crear relación} \\
+    Los usuarios deben poder crear relaciones entre productos, como recomendaciones de productos que se compran juntos o que pertenecen a la misma familia.
+
+    \item \textbf{RF5.2 Ver relación} \\
+    Las relaciones entre productos deben ser visibles y accesibles para los usuarios.
+
+    \item \textbf{RF5.3 Actualizar relación} \\
+    El sistema debe permitir la modificación de las relaciones existentes entre productos.
+
+    \item \textbf{RF5.4 Borrar relación} \\
+    Los usuarios deben poder eliminar relaciones, siempre y cuando no afecten la integridad de otras funciones del sistema.
+
+    \item \textbf{RF5.5 Relacionar productos} \\
+    El sistema debe permitir vincular productos mediante relaciones para mostrar recomendaciones al usuario.
+\end{itemize}
+
+\subsection{RF6 Gestión de Atributos}
+
+\begin{itemize}
+    \item \textbf{RF6.1 Crear atributo} \\
+    Los usuarios pueden definir atributos personalizados para los productos, como precio, dimensiones o SKU.
+
+    \item \textbf{RF6.2 Ver atributo} \\
+    Los atributos de productos deben ser visibles para los usuarios y mostrarse en los detalles del producto.
+
+    \item \textbf{RF6.3 Editar atributo} \\
+    El sistema debe permitir la modificación de los atributos de los productos, con un límite de hasta 5 atributos creados por el usuario.
+
+    \item \textbf{RF6.4 Borrar atributo} \\
+    Los usuarios deben poder eliminar atributos, siempre y cuando no afecten otras funcionalidades del sistema.
+
+    \item \textbf{RF6.5 Atributos del sistema} \\
+    Los atributos del sistema están disponibles para todos los productos de manera predeterminada.
+    \begin{itemize}
+        \item \textbf{RF6.5.1 LABEL (nombre)} \\
+        El sistema debe permitir asignar un nombre (etiqueta) a cada producto.
+
+        \item \textbf{RF6.5.2 SKU} \\
+        Cada producto debe tener un código único (SKU) que lo identifique.
+
+        \item \textbf{RF6.5.3 GTIN} \\
+        El sistema debe gestionar los atributos de GTIN para los productos.
+        \begin{itemize}
+            \item \textbf{RF6.5.3.1 Límite de caracteres de 14 para GTIN} \\
+            El GTIN no debe exceder los 14 caracteres. Cualquier intento de superar este límite debe ser rechazado.
+
+            \item \textbf{RF6.5.3.2 Validación de GTINs no válidos} \\
+            La aplicación debe impedir la creación de GTINs no válidos que excedan los 14 caracteres.
+
+            \item \textbf{RF6.5.3.3 Visualización de GTINs sin valor} \\
+            Si un producto no tiene un GTIN válido, este campo debe aparecer de todas maneras en la interfaz.
+        \end{itemize}
+
+        \item \textbf{RF6.5.4 Fecha de creación} \\
+        El sistema debe registrar la fecha en la que el producto fue creado.
+
+        \item \textbf{RF6.5.5 Fecha de modificación} \\
+        El sistema debe registrar la última fecha en la que se realizó una modificación al producto.
+
+        \item \textbf{RF6.5.6 Clave/Key} \\
+        El sistema debe permitir almacenar una clave o key para cada producto, como un valor o precio.
+
+        \item \textbf{RF6.5.7 Thumbnail} \\
+        El sistema debe mostrar una miniatura (thumbnail) representativa del producto en su interfaz.
+    \end{itemize}
+
+    \item \textbf{RF6.6 Creación de atributos personalizados} \\
+    El sistema debe permitir al usuario crear atributos personalizados asociados a los productos.
+    \begin{itemize}
+        \item \textbf{RF6.6.1 Límite de creación de atributos} \\
+        El usuario solo puede crear un máximo de 5 atributos personalizados por producto.
+    \end{itemize}
+\end{itemize}
+
+\subsection{RF7 Gestión de Plan de Suscripción}
+
+\begin{itemize}
+    \item \textbf{RF7.1 Ver plan} \\
+    El sistema debe permitir al usuario visualizar los detalles del plan de suscripción actual.
+
+    \item \textbf{RF7.2 Seleccionar plan} \\
+    Los usuarios deben poder seleccionar un plan de suscripción que se ajuste a sus necesidades.
+
+    \item \textbf{RF7.3 Deseleccionar plan} \\
+    El sistema debe permitir que los usuarios cancelen o cambien su plan de suscripción.
+
+    \item \textbf{RF7.4 Pagar con tarjeta} \\
+    El sistema debe permitir realizar pagos de suscripción mediante tarjeta de crédito.
+
+    \item \textbf{RF7.5 Pagar con Paypal} \\
+    Los usuarios deben tener la opción de pagar su suscripción utilizando Paypal.
+
+    \item \textbf{RF7.6 Pagar con Stripe} \\
+    El sistema debe ofrecer soporte para pagos mediante la plataforma Stripe.
+
+    \item \textbf{RF7.7 Reconocer el plan de suscripción} \\
+    El sistema debe identificar y mostrar al usuario el plan de suscripción activo, con información detallada sobre sus beneficios y restricciones.
+\end{itemize}
+
+\subsection{RF8 Gestión de Exportación}
+
+\begin{itemize}
+    \item \textbf{RF8.1 Owner y user son los que pueden exportar productos} \\
+    Los usuarios (owner y user) deben poder exportar productos a plataformas de terceros, utilizando filtros por categorías y atributos para seleccionar los productos a exportar.
+
+    \item \textbf{RF8.2 Seleccionar productos para exportación} \\
+    El sistema debe permitir seleccionar productos individualmente o en bloque para su exportación.
+    \begin{itemize}
+        \item \textbf{RF8.2.1 Filtro por categoría} \\
+        El sistema debe permitir aplicar un filtro por categoría para seleccionar productos a exportar.
+
+        \item \textbf{RF8.2.2 Filtro por atributo} \\
+        El sistema debe permitir aplicar un filtro por atributo para seleccionar productos a exportar.
+    \end{itemize}
+
+    \item \textbf{RF8.3 Seleccionar productos} \\
+    El sistema debe permitir seleccionar productos específicos para la exportación.
+
+    \item \textbf{RF8.4 Seleccionar todos los productos} \\
+    El sistema debe permitir seleccionar todos los productos disponibles para exportación con un solo clic.
+
+    \item \textbf{RF8.5 Deseleccionar productos} \\
+    El sistema debe permitir deseleccionar productos individualmente de la lista de exportación.
+
+    \item \textbf{RF8.6 Deseleccionar todos los productos} \\
+    El sistema debe permitir deseleccionar todos los productos con un solo clic.
+
+    \item \textbf{RF8.7 Selección de una página externa a la que queremos exportar} \\
+    El sistema debe permitir seleccionar una página externa o destino para exportar los productos.
+
+    \item \textbf{RF8.8 Mapeo de los productos a exportar en formato csv} \\
+    El sistema debe realizar un mapeo que "traduce" los atributos de los productos para el formato requerido por la tienda a la que se exportan los productos en formato CSV.
+
+    \item \textbf{RF8.9 Exportación de productos por API al canal de venta} \\
+    El sistema debe permitir la exportación de productos a través de una integración por API al canal de venta seleccionado.
+
+    \item \textbf{RF8.10 Manejo de atributos faltantes durante exportación} \\
+    Si una tienda solicita un atributo que no esté presente en el producto, el sistema debe generar un error y requerir que el atributo sea añadido antes de la exportación.
+\end{itemize}
+
+\section{Requisitos No Funcionales}
+\subsection{RNF1 Accesibilidad}
+El sistema debe cumplir con los estándares de accesibilidad WCAG 2.2 para asegurar su usabilidad por personas con discapacidades.
+
+\subsection{RNF2 Idioma}
+El sistema debe estar disponible en inglés americano.
+
+\subsection{RNF3 Eficiencia de memoria}
+La aplicación debe tener una gestión eficiente de la memoria para garantizar un rendimiento óptimo incluso con grandes volúmenes de datos.
+
+\subsection{RNF4 Seguridad}
+El sistema debe contar con medidas de seguridad robustas, incluyendo cifrado de datos sensibles y autenticación de usuarios para proteger la información.
+
+\subsection{RNF5 Capacidad}
+El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios concurrentes sin degradar su rendimiento.
+
+\subsection{RNF6 Disponibilidad}
+El sistema debe estar disponible para los usuarios en todo momento.
+
+\subsection{RNF7 Compatibilidad}
+El sistema debe ser compatible con los navegadores y plataformas más comunes.
+
+\subsection{RNF8 Exportación e integración}
+El sistema debe soportar exportaciones de datos a formatos JSON y CSV, así como la integración vía API.
+\section{Modelo del Dominio}
+\lipsum[22]
+
+\end{document}
