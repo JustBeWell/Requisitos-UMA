@@ -29,11 +29,12 @@
 
 \subsection{Objetivos}
 
-El sistema Mini PIM (Product Information Management) está diseñado para proporcionar a las pequeñas y medianas empresas (PyMEs) una plataforma accesible y eficiente para la gestión integral de información de productos. El objetivo principal es permitir que estas empresas administren sus productos, assets digitales, usuarios y relaciones de manera centralizada. Además, el sistema facilita la integración con múltiples canales de venta externos para exportar y sincronizar datos de manera automática, optimizando así la presencia digital de los productos y la eficiencia operativa de las PyMEs.
+El objetivo de este \textit{Documento General de Requisitos} es recoger, analizar y definir las características y necesidades de alto nivel del sistema Mini PIM (Product Information Management). Este documento se centra en describir las expectativas de cada una de las partes interesadas en el proyecto, así como de los usuarios finales, y justifica por qué estas necesidades existen. Además, se exploran las funcionalidades necesarias para el desarrollo del sistema y se establecen especificaciones claras para su implementación. Los detalles de cómo el sistema Mini PIM cumplirá con estas necesidades se ampliarán en los casos de uso y en las especificaciones adicionales.
 
 \subsection{Alcance}
 
-El sistema Mini PIM cubre una amplia gama de funcionalidades esenciales para la gestión de productos en PyMEs, incluyendo la gestión de cuentas de usuario (owner, agente, y usuario), assets (recursos digitales), categorías y relaciones entre productos. También permite la creación y exportación de informes en formato JSON, la integración con plataformas externas como Amazon, y la configuración de planes de suscripción y pagos mediante servicios como Stripe y Paypal. El alcance del sistema se centra en ofrecer una solución escalable, con diferentes planes de suscripción que se ajustan a las necesidades específicas y al crecimiento de las PyMEs.
+Este \textit{Documento General de Requisitos} proporciona una descripción breve del ámbito que cubre el sistema Mini PIM, destacando su relación con otros proyectos de gestión de información de productos para PyMEs y su conexión con plataformas de integración externas como Amazon. El documento establece los criterios de escalabilidad y requisitos funcionales esenciales, sentando las bases para la estructura de crecimiento del sistema, permitiendo futuras actualizaciones y estableciendo el marco en el que el sistema debe desarrollarse.
+
 
 \subsection{Definiciones, acrónimos y abreviaturas}
 
@@ -41,7 +42,7 @@ El sistema Mini PIM cubre una amplia gama de funcionalidades esenciales para la 
     \item \textbf{PIM}: Product Information Management (Gestión de Información de Producto)
     \item \textbf{SKU}: Stock Keeping Unit - Identificador único de producto
     \item \textbf{GTIN}: Global Trade Item Number - Identificador global para productos en comercio electrónico
-    \item \textbf{Assets}: Recursos digitales asociados a productos, como imágenes, videos, y PDFs
+    \item \textbf{Assets}: Recursos digitales asociados a productos, como imágenes, videos y documentos PDF
     \item \textbf{API}: Application Programming Interface - Interfaz para la integración con sistemas externos
 \end{itemize}
 
@@ -50,12 +51,12 @@ El sistema Mini PIM cubre una amplia gama de funcionalidades esenciales para la 
 \begin{itemize}
     \item Estándar de accesibilidad WCAG 2.2 (nivel AA) para asegurar la accesibilidad del sistema.
     \item Especificaciones técnicas para la integración con Amazon Prime y otros canales de venta: Buy with Prime.
-    \item Documentación interna de Plytix sobre la estructura y requisitos del sistema.
+    \item Documentación interna de Plytix sobre la estructura y requisitos del sistema Mini PIM.
 \end{itemize}
 
 \subsection{Resumen}
 
-El sistema Mini PIM proporciona una plataforma centralizada para que las PyMEs gestionen la información de sus productos y sus recursos digitales, establezcan relaciones entre productos, y exporten datos de manera eficiente a través de canales de venta externos. Además, el sistema está diseñado para ser escalable, ofreciendo distintos planes de suscripción que se ajustan al tamaño y las necesidades de cada empresa, garantizando flexibilidad y crecimiento.
+Este \textit{Documento General de Requisitos} organiza y estructura los contenidos para guiar la implementación del sistema Mini PIM de manera eficiente. Cada sección del documento se centra en un aspecto específico del sistema, comenzando con las directivas del proyecto, una breve descripción de los participantes y los usuarios, una visión general del producto y una identificación de requisitos funcionales y no funcionales, hasta llegar al modelo de dominio que describe el sistema. Esta organización facilita la implementación, gestión y evolución del sistema.
 
 \section{Directivas del proyecto}
 
@@ -276,7 +277,7 @@ El sistema funcionará bajo un modelo de suscripción mensual, el cual varía se
 \subsection{Licencias e Instalación}
 Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estarán sujetas a los términos de uso y privacidad de la empresa.
 \section{Requisitos Funcionales}
-\subsection{RF1 Gestión de Cuenta}
+\subsection*{RF1 Gestión de Cuenta}
 
 \begin{itemize}
     \item \textbf{RF1.1 Creación de cuenta} \\
@@ -313,23 +314,20 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF1.9 Exportación de información de usuarios} \\
     El Owner tiene permisos para generar y exportar informes detallados de cuentas, productos y assets de la tienda en formato JSON.
 
-    \item \textbf{RF1.10 Exportación de Gestión de usuarios} \\
-    El Owner tiene permisos para generar y exportar informes detallados de cuentas, productos y assets de la tienda en formato JSON.
 
-    \item \textbf{RF1.11 Emulación de cuenta} \\
+
+    \item \textbf{RF1.12 Emulación de cuenta} \\
     El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
 
-    \item \textbf{RF1.12 Creación de cuenta Agente} \\
+    \item \textbf{RF1.13 Creación de cuenta Agente} \\
     La cuenta de Agente debe crearse y eliminarse desde el sistema de administración central de Plytix.
 
-    \item \textbf{RF1.13 Emulación de cuenta} \\
-    El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
 
     \item \textbf{RF1.14 Capacidad y duración de la cuenta Agente} \\
     El Agente tiene permisos para ver y analizar los datos de productos y assets, pero no puede modificar ni eliminar información de la cuenta a la que brinda soporte y tiene tiempo de vida limitado hasta que se soluciona el problema.
 \end{itemize}
 
-\subsection{RF2 Gestión de Producto}
+\subsection*{RF2 Gestión de Producto}
 
 \begin{itemize}
     \item \textbf{RF2.1 Crear producto} \\
@@ -348,7 +346,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Los usuarios deben poder crear un archivo CSV para importar productos en caso de pérdida de datos, permitiendo una copia de seguridad de sus productos en el PIM (Product Information Management).
 \end{itemize}
 
-\subsection{RF3 Gestión de Assets}
+\subsection*{RF3 Gestión de Assets}
 
 \begin{itemize}
     \item \textbf{RF3.1 Crear asset} \\
@@ -380,7 +378,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Los usuarios deben poder eliminar asociaciones de assets, siempre y cuando no violen restricciones del sistema.
 \end{itemize}
 
-\subsection{RF4 Gestión de Etiquetas}
+\subsection*{RF4 Gestión de Etiquetas}
 
 \begin{itemize}
     \item \textbf{RF4.1 Crear etiqueta} \\
@@ -396,7 +394,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Los usuarios deben poder eliminar etiquetas, a excepción de que estas estén asociadas a otros elementos críticos en el sistema.
 \end{itemize}
 
-\subsection{RF5 Gestión de Relaciones}
+\subsection*{RF5 Gestión de Relaciones}
 
 \begin{itemize}
     \item \textbf{RF5.1 Crear relación} \\
@@ -415,7 +413,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     El sistema debe permitir vincular productos mediante relaciones para mostrar recomendaciones al usuario.
 \end{itemize}
 
-\subsection{RF6 Gestión de Atributos}
+\subsection*{RF6 Gestión de Atributos}
 
 \begin{itemize}
     \item \textbf{RF6.1 Crear atributo} \\
@@ -473,7 +471,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \end{itemize}
 \end{itemize}
 
-\subsection{RF7 Gestión de Plan de Suscripción}
+\subsection*{RF7 Gestión de Plan de Suscripción}
 
 \begin{itemize}
     \item \textbf{RF7.1 Ver plan} \\
@@ -498,7 +496,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     El sistema debe identificar y mostrar al usuario el plan de suscripción activo, con información detallada sobre sus beneficios y restricciones.
 \end{itemize}
 
-\subsection{RF8 Gestión de Exportación}
+\subsection*{RF8 Gestión de Exportación}
 
 \begin{itemize}
     \item \textbf{RF8.1 Owner y user son los que pueden exportar productos} \\
@@ -540,7 +538,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 \end{itemize}
 
 \section{Requisitos No Funcionales}
-\subsection{RNF1 Accesibilidad}
+\subsection*{RNF1 Accesibilidad}
 El sistema debe cumplir con los estándares de accesibilidad WCAG 2.2 para asegurar su usabilidad por personas con discapacidades.
 
 \subsection{RNF2 Idioma}
