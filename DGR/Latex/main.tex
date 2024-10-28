@@ -335,20 +335,20 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 \subsection*{RF1 Gestión de Cuenta}
 
 \begin{itemize}
-    \item \textbf{RF1.1 Creación de cuenta} \\
-    El sistema debe permitir la creación de una cuenta, diferenciando si es creada por Plytix o por un owner.
-
-    \item \textbf{RF1.2 Creación de cuentas de Usuario} \\
-    El sistema debe permitir al Owner crear cuentas de usuario para empleados de la empresa (usuarios).
+    \item \textbf{RF1.1 Creación de cuentas Owner} \\
+    El sistema debe permitir a los Plytix Admin crear cuentas Owner.
+    
+    \item \textbf{RF1.2 Creación de cuentas de User} \\
+    El sistema debe permitir al Owner crear cuentas de usuario para empleados de la empresa (User).
 
     \item \textbf{RF1.2 Visualizar datos de la cuenta} \\
-    El usuario debe poder ver los datos de su cuenta, como el nombre, correo y otros detalles relacionados.
+    El usuario debe poder ver los datos de su cuenta: nombre, logotipo, correo, contraseña, fecha y hora de creación.
 
     \item \textbf{RF1.3 Actualizar datos de la cuenta} \\
-    El usuario debe poder modificar los datos de la cuenta, como la dirección de correo, nombre o logotipo de la empresa.
+    El usuario debe poder modificar los datos de la cuenta.
 
     \item \textbf{RF1.4 Borrar cuenta} \\
-    El sistema debe permitir la eliminación de una cuenta, siguiendo políticas de seguridad y permisos.
+    El sistema debe permitir la eliminación de una cuenta a un Owner, siguiendo políticas de seguridad y permisos.
 
     \item \textbf{RF1.5 Iniciar sesión} \\
     Los usuarios deben poder autenticarse en el sistema introduciendo credenciales válidas.
@@ -357,28 +357,21 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     El sistema debe permitir al usuario cerrar sesión de manera segura.
 
     \item \textbf{RF1.7 Crear informe de cuenta} \\
-    El sistema debe generar un informe detallado con la información de la cuenta.
+    El sistema debe poder generar un informe detallado con la información de la cuenta.
     \begin{itemize}
         \item \textbf{RF1.7.1 Exportar informe de cuenta} \\
-        El informe generado debe poder ser exportado en formato .json, incluyendo información como el nombre de la cuenta, fecha de creación, número de productos, assets y otros detalles relevantes.
+        El informe generado debe poder ser exportado en formato .json, incluyendo la información  de: nombre de la cuenta, fecha de creación, número de productos, assets y tamaño utilizado de almacenamiento en bytes, número de categorías de productos y assets, número de atributos de usuario creados, número de relaciones creadas, una lista de los usuarios con su nombre, si existe, y su dirección de correo electrónico.
     \end{itemize}
 
-    \item \textbf{RF1.8 Creación y gestión de usuarios} \\
-    El Owner puede gestionar los datos de la tienda, incluyendo el nombre, logotipo y fecha de creación de la cuenta.
 
-    \item \textbf{RF1.9 Exportación de información de usuarios} \\
-    El Owner tiene permisos para generar y exportar informes detallados de cuentas, productos y assets de la tienda en formato JSON.
-
-
-
-    \item \textbf{RF1.12 Emulación de cuenta} \\
+    \item \textbf{RF1.8 Emulación de cuenta} \\
     El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
 
-    \item \textbf{RF1.13 Creación de cuenta Agente} \\
+    \item \textbf{RF1.9 Creación de cuenta Agente} \\
     La cuenta de Agente debe crearse y eliminarse desde el sistema de administración central de Plytix.
 
 
-    \item \textbf{RF1.14 Capacidad y duración de la cuenta Agente} \\
+    \item \textbf{RF1.10 Capacidad y duración de la cuenta Agente} \\
     El Agente tiene permisos para ver y analizar los datos de productos y assets, pero no puede modificar ni eliminar información de la cuenta a la que brinda soporte y tiene tiempo de vida limitado hasta que se soluciona el problema.
 \end{itemize}
 
@@ -386,10 +379,10 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF2.1 Crear producto} \\
-    Los usuarios deben poder añadir nuevos productos al sistema, especificando datos como nombre, categoría, atributos, etc.
+    Todos los usuarios deben poder añadir nuevos productos al sistema, especificando los atributos del sistema: GTIN, SKU, clave, thumbnail y label; los atributos de usuario, hasta 5 opcionales; y las categorías, assets, relaciones y labels.
 
     \item \textbf{RF2.2 Visualizar producto} \\
-    Los productos deben poder ser visualizados con todos sus detalles, como nombre, precio, categoría y atributos asociados.
+    Los productos deben poder ser visualizados con todos sus detalles.
 
     \item \textbf{RF2.3 Editar producto} \\
     El sistema debe permitir a los usuarios editar la información de los productos existentes.
@@ -405,10 +398,10 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF3.1 Crear asset} \\
-    Los usuarios deben poder subir assets al sistema, como imágenes, videos o documentos.
+    Todos los usuarios deben poder subir assets al sistema de tipo: pdf, imágen, vídeo, binario y ejecutable.
 
     \item \textbf{RF3.2 Visualizar asset} \\
-    El sistema debe permitir visualizar los assets almacenados, incluyendo detalles como nombre, tipo de archivo y tamaño.
+    El sistema debe permitir visualizar los assets almacenados, incluyendo el nombre, su fecha de adición, la asociación con otros productos, su thumbnail, el tipo de archivo y su tamaño.
 
     \item \textbf{RF3.3 Editar asset} \\
     Los usuarios deben poder modificar las propiedades de un asset.
@@ -437,10 +430,10 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF4.1 Crear etiqueta} \\
-    Los usuarios pueden definir etiquetas para categorizar assets y productos.
+    Todos los usuarios pueden definir etiquetas para categorizar assets y productos.
 
     \item \textbf{RF4.2 Visualizar etiquetas} \\
-    Las etiquetas creadas deben poder ser visualizadas en conjunto con la información de assets y productos asociados.
+    Las etiquetas creadas deben poder ser visualizadas junto a sus datos: nombre, número de assets y número de productos asociados.
 
     \item \textbf{RF4.3 Editar etiqueta} \\
     El sistema debe permitir la modificación de las etiquetas existentes.
@@ -453,10 +446,10 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF5.1 Crear relación} \\
-    Los usuarios deben poder crear relaciones entre productos, como recomendaciones de productos que se compran juntos o que pertenecen a la misma familia.
+    Todos los usuarios deben poder crear relaciones entre productos.
 
     \item \textbf{RF5.2 Ver relación} \\
-    Las relaciones entre productos deben ser visibles y accesibles para los usuarios.
+    Las relaciones entre productos deben ser visibles y accesibles para los usuarios junto a su nombre .
 
     \item \textbf{RF5.3 Actualizar relación} \\
     El sistema debe permitir la modificación de las relaciones existentes entre productos.
@@ -466,13 +459,17 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
     \item \textbf{RF5.5 Relacionar productos} \\
     El sistema debe permitir vincular productos mediante relaciones para mostrar recomendaciones al usuario.
+    
+    \item \textbf{RF5.6 Modificar datos} \\
+    El sistema debe permitir modificar los datos de la relación.
+    
 \end{itemize}
 
 \subsection*{RF6 Gestión de Atributos}
 
 \begin{itemize}
     \item \textbf{RF6.1 Crear atributo} \\
-    Los usuarios pueden definir atributos personalizados para los productos, como precio, dimensiones o SKU.
+    Todos los usuarios pueden definir atributos personalizados para los productos, tanto los del sistema como los atributos de usuario.
 
     \item \textbf{RF6.2 Ver atributo} \\
     Los atributos de productos deben ser visibles para los usuarios y mostrarse en los detalles del producto.
@@ -486,8 +483,8 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF6.5 Atributos del sistema} \\
     Los atributos del sistema están disponibles para todos los productos de manera predeterminada.
     \begin{itemize}
-        \item \textbf{RF6.5.1 LABEL (nombre)} \\
-        El sistema debe permitir asignar un nombre (etiqueta) a cada producto.
+        \item \textbf{RF6.5.1 LABEL} \\
+        El sistema debe permitir asignar un label a cada producto.
 
         \item \textbf{RF6.5.2 SKU} \\
         Cada producto debe tener un código único (SKU) que lo identifique.
@@ -548,7 +545,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     El sistema debe ofrecer soporte para pagos mediante la plataforma Stripe.
 
     \item \textbf{RF7.7 Reconocer el plan de suscripción} \\
-    El sistema debe identificar y mostrar al usuario el plan de suscripción activo, con información detallada sobre sus beneficios y restricciones.
+    El sistema debe identificar el plan de suscripción activo y restringir el uso del sistema en consecuencia con el mismo.
 \end{itemize}
 
 \subsection*{RF8 Gestión de Exportación}
@@ -616,6 +613,10 @@ El sistema debe ser compatible con los navegadores y plataformas más comunes.
 
 \subsection*{RNF8 Exportación e integración}
 El sistema debe soportar exportaciones de datos a formatos JSON y CSV, así como la integración vía API.
+
+\subsection*{RNF9 Página Web}
+El sistema debe funcionar en formato Web.
+
 \section{Modelo del Dominio}
 \lipsum[22]
 
