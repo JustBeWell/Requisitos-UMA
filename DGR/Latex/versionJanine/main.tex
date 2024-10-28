@@ -544,8 +544,8 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 \subsection*{RF8 Gestión de Exportación}
 
 \begin{itemize}
-    \item \textbf{RF8.1 Owner y user son los que pueden exportar productos} \\
-    Los usuarios (owner y user) deben poder exportar productos a plataformas de terceros, utilizando filtros por categorías y atributos para seleccionar los productos a exportar.
+    \item \textbf{RF8.1 Permisos de Exportación para Trabajador} \\
+    Los usuarios (Owner y User) deben poder exportar productos a plataformas de terceros, utilizando filtros por categorías y atributos para seleccionar los productos a exportar.
 
     \item \textbf{RF8.2 Seleccionar productos para exportación} \\
     El sistema debe permitir seleccionar productos individualmente o en bloque para su exportación.
@@ -618,7 +618,7 @@ El sistema debe ser desarrollado como una aplicación Web.
 
 \begin{figure}[h]   
     \centering
-    \includegraphics[width=1\textwidth]{modelo.png}
+    \includegraphics[width=1\textwidth]{modelo.jpg}
     \caption{Modelo del Dominio}
     \label{fig:mi_imagen}
 \end{figure}
@@ -685,18 +685,19 @@ El sistema debe ser desarrollado como una aplicación Web.
             \item \texttt{tipo: Plan:} Tipo de plan de suscripción al que el usuario está suscrito (Free, Basic, Enterprise).
              \item \texttt{añosContratados: int:} Número de años por los cuales el usuario ha contratado la suscripción. Este valor se utiliza para calcular el costo total del contrato.
              \item \texttt{precioTotal: int (derive):} Precio total del contrato, derivado en base al tipo de plan y los años contratados. Este valor se calcula automáticamente al considerar el costo anual del plan multiplicado por añosContratados.
-             \item \texttt{metodoPago: Metodo:} Método de pago utilizado para la suscripción (PayPal o Stripe).
+             \item \texttt{metodoPago: Metodo:} Método de pago utilizado para la suscripción (PayPal, Stripe o TarjetaDeCredito).
         \end{itemize}
     \end{itemize}
 
 
 \subsection{Metodo}
-    \text{(Enumeración)} \textbf{Descripción:} Representa los diferentes métodos de pago disponibles en el sistema (PayPal, Stripe).
+    \text{(Enumeración)} \textbf{Descripción:} Representa los diferentes métodos de pago disponibles en el sistema (PayPal, Stripe, Tarjeta de Crédito).
     \begin{itemize}
-        \item {\textbf{Atributos:}}
+        \item {\textbf{Enumeration Literal:}}
         \begin{itemize}
             \item \texttt{PayPal}
             \item \texttt{Stripe}
+            \item \texttt{TarjetaDeCredito}
         \end{itemize}
     \end{itemize}
 
@@ -704,7 +705,7 @@ El sistema debe ser desarrollado como una aplicación Web.
 \subsection{Plan}
     \text{(Enumeración)} \textbf{Descripción:}  Representa los diferentes tipos o categorías de planes disponibles en el sistema (Free, Basic, Enterprise)
     \begin{itemize}
-        \item {\textbf{Atributos:}}
+        \item {\textbf{Enumeration Literal:}}
         \begin{itemize}
             \item \texttt{Free}
             \item \texttt{Basic}
@@ -731,13 +732,13 @@ El sistema debe ser desarrollado como una aplicación Web.
     \end{itemize}
 
 \subsection{Producto}
-\textbf{Descripción:} Representa un producto que puede ser creado y gestionado por un Trabajador. Incluye identificadores únicos, detalles de creación y fechas de actualización.
+\textbf{Descripción:} Representa un producto que puede ser importado y gestionado por un Trabajador. Incluye identificadores únicos, detalles de creación y fechas de actualización.
     \begin{itemize}
         \item {\textbf{Atributos:}}
         \begin{itemize}
-            \item \texttt{GTIN: int:} Código de 14 dígitos que sirve como identificador global del producto (Global Trade Item Number), utilizado para el comercio internacional..
+            \item \texttt{GTIN: int:} Código de 14 dígitos que sirve como identificador global del producto (Global Trade Item Number), utilizado para el comercio internacional.
             \item \texttt{SKU: int:} Código de identificación interna que permite rastrear y gestionar el inventario del producto dentro del sistema (Stock Keeping Unit), facilitando su localización y manejo.
-            \item \texttt{clave: int:} Identificador único asignado al producto dentro del sistema, utilizado para referenciar y acceder a la información específica del producto.
+            \item \texttt{clave: int:} Valor asignado al producto dentro del sistema, utilizado para referenciar y acceder a la información específica del producto.
             \item \texttt{thumbnailProd: PNG:} Miniatura en formato PNG que representa visualmente el producto.
             \item \texttt{label: String:} Etiqueta que describe o categoriza el producto
             \item \texttt{fechaCreacion: date:} Fecha en la que se creó el producto en el sistema.
@@ -759,7 +760,7 @@ El sistema debe ser desarrollado como una aplicación Web.
     \begin{itemize}
         \item {\textbf{Atributos:}}
         \begin{itemize}
-            \item \texttt{nombre: String:} Nombre del atributo.
+            \item \texttt{nombre: String:} Nombre del atributo definido por el usuario. No pueden ser más  de 5 por cuenta
         \end{itemize}
     \end{itemize}
 
