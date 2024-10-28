@@ -345,7 +345,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     El usuario debe poder ver los datos de su cuenta: nombre, logotipo, correo, contraseña, fecha y hora de creación.
 
     \item \textbf{RF1.3 Actualizar datos de la cuenta} \\
-    El usuario debe poder modificar los datos de la cuenta.
+    El usuario debe poder modificar los datos de la cuenta, a excepción de la fecha y hora de creación.
 
     \item \textbf{RF1.4 Borrar cuenta} \\
     El sistema debe permitir la eliminación de una cuenta a un Owner, siguiendo políticas de seguridad y permisos.
@@ -426,20 +426,20 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Los usuarios deben poder eliminar asociaciones de assets, siempre y cuando no violen restricciones del sistema.
 \end{itemize}
 
-\subsection*{RF4 Gestión de Etiquetas}
+\subsection*{RF4 Gestión de Categorías}
 
 \begin{itemize}
-    \item \textbf{RF4.1 Crear etiqueta} \\
-    Todos los usuarios pueden definir etiquetas para categorizar assets y productos.
+    \item \textbf{RF4.1 Crear categoría} \\
+    Todos los usuarios pueden definir categorías.
 
-    \item \textbf{RF4.2 Visualizar etiquetas} \\
-    Las etiquetas creadas deben poder ser visualizadas junto a sus datos: nombre, número de assets y número de productos asociados.
+    \item \textbf{RF4.2 Visualizar categorías} \\
+    Las etiquetas creadas deben poder ser visualizadas junto a sus datos: nombre y número de productos asociados.
 
-    \item \textbf{RF4.3 Editar etiqueta} \\
-    El sistema debe permitir la modificación de las etiquetas existentes.
+    \item \textbf{RF4.3 Editar categoría} \\
+    El sistema debe permitir la modificación de los datos de las cateogorías existentes.
 
-    \item \textbf{RF4.4 Borrar etiqueta} \\
-    Los usuarios deben poder eliminar etiquetas, a excepción de que estas estén asociadas a otros elementos críticos en el sistema.
+    \item \textbf{RF4.4 Borrar categoría} \\
+    Los usuarios deben poder eliminar cateogorías, a excepción de que estas estén asociadas a otros elementos críticos en el sistema.
 \end{itemize}
 
 \subsection*{RF5 Gestión de Relaciones}
@@ -469,13 +469,13 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF6.1 Crear atributo} \\
-    Todos los usuarios pueden definir atributos personalizados para los productos, tanto los del sistema como los atributos de usuario.
+    Todos los usuarios pueden definir atributos personalizados para los productos con un límite de hasta 5 atributos creados por usuario.
 
     \item \textbf{RF6.2 Ver atributo} \\
     Los atributos de productos deben ser visibles para los usuarios y mostrarse en los detalles del producto.
 
     \item \textbf{RF6.3 Editar atributo} \\
-    El sistema debe permitir la modificación de los atributos de los productos, con un límite de hasta 5 atributos creados por el usuario.
+    El sistema debe permitir la modificación de los atributos de los productos.
 
     \item \textbf{RF6.4 Borrar atributo} \\
     Los usuarios deben poder eliminar atributos, siempre y cuando no afecten otras funcionalidades del sistema.
@@ -515,12 +515,6 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
         El sistema debe mostrar una miniatura (thumbnail) representativa del producto en su interfaz.
     \end{itemize}
 
-    \item \textbf{RF6.6 Creación de atributos personalizados} \\
-    El sistema debe permitir al usuario crear atributos personalizados asociados a los productos.
-    \begin{itemize}
-        \item \textbf{RF6.6.1 Límite de creación de atributos} \\
-        El usuario solo puede crear un máximo de 5 atributos personalizados por producto.
-    \end{itemize}
 \end{itemize}
 
 \subsection*{RF7 Gestión de Plan de Suscripción}
