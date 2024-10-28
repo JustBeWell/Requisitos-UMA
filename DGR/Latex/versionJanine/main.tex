@@ -624,7 +624,7 @@ El sistema debe ser desarrollado como una aplicación Web.
 \end{figure}
 
 \subsection{Trabajador}
-    \text{(Clase abstracta)} \textbf{Descripción:}  Clase base para los diferentes tipos de trabajadores, como Owner o Usuario. Su propósito es centralizar los atributos comunes a todos los trabajadores.
+    \text{(Clase abstracta)} \textbf{Descripción:}  Clase base para los diferentes tipos de trabajadores, como Owner o Usuario. Su propósito es centralizar los atributos comunes a todos los trabajadores y poder modelar la posibilidad de que tanto owners como users manejen productos.
 
     \begin{itemize}
         \item {\textbf{Atributos:}}
@@ -647,7 +647,7 @@ El sistema debe ser desarrollado como una aplicación Web.
     \end{itemize}
 
 \subsection{Owner}
-    \text{(Subclase de Trabajador)} \textbf{Descripción:} Representa la cuenta de un trabajador que es el dueño de la empresa y tiene la capacidad de crear cuentas de la clase Usuario.
+    \text{(Subclase de Trabajador)} \textbf{Descripción:} Representa la cuenta asociada a la tienda y tiene la capacidad de crear cuentas de la clase Usuario.
     \begin{itemize}
         \item {\textbf{Atributos:}} Hereda los atributos de la clase abstracta Trabajador.
         \begin{itemize}
@@ -703,7 +703,7 @@ El sistema debe ser desarrollado como una aplicación Web.
 
 
 \subsection{Plan}
-    \text{(Enumeración)} \textbf{Descripción:}  Representa los diferentes tipos o categorías de planes disponibles en el sistema (Free, Basic, Enterprise)
+    \text{(Enumeración)} \textbf{Descripción:}  Representa los diferentes tipos o categorías de planes disponibles en el sistema (Free, Basic, Enterprise).
     \begin{itemize}
         \item {\textbf{Enumeration Literal:}}
         \begin{itemize}
@@ -740,9 +740,9 @@ El sistema debe ser desarrollado como una aplicación Web.
             \item \texttt{SKU: int:} Código de identificación interna que permite rastrear y gestionar el inventario del producto dentro del sistema (Stock Keeping Unit), facilitando su localización y manejo.
             \item \texttt{clave: int:} Valor asignado al producto dentro del sistema, utilizado para referenciar y acceder a la información específica del producto.
             \item \texttt{thumbnailProd: PNG:} Miniatura en formato PNG que representa visualmente el producto.
-            \item \texttt{label: String:} Etiqueta que describe o categoriza el producto
+            \item \texttt{label: String:} Etiqueta que describe o categoriza el producto.
             \item \texttt{fechaCreacion: date:} Fecha en la que se creó el producto en el sistema.
-            \item \texttt{ultimaModificacion: date:} Fecha de la última modificación realizada en la información del producto
+            \item \texttt{ultimaModificacion: date:} Fecha de la última modificación realizada en la información del producto.
         \end{itemize}
     \end{itemize}
 
@@ -760,7 +760,7 @@ El sistema debe ser desarrollado como una aplicación Web.
     \begin{itemize}
         \item {\textbf{Atributos:}}
         \begin{itemize}
-            \item \texttt{nombre: String:} Nombre del atributo definido por el usuario. No pueden ser más  de 5 por cuenta
+            \item \texttt{nombre: String:} Nombre del atributo definido por el usuario. No pueden ser más  de 5 por cuenta.
         \end{itemize}
     \end{itemize}
 
