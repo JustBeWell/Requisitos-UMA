@@ -1,0 +1,115 @@
+rnf: pide 1 pagina web
+
+LAS CUENTAS OWNER REPRESENTAN 1 TIENDA. PUEDEN HABER DISTINTAS CUENTAS DE LA MISMA EMPRESA.
+
+participantes:
+owner: crear cuenta para representar su pyme. nombre, correo, contraseña
+user
+agente es un administrador de plytix que puede emular ser usuario u owner. 
+plytix
+canales de venta (amazon, aliexpress)
+
+rol adicional: administrador de plytix, crea agentes y owner.
+	- al crear agentes, solo tiene cuenta simulando ser owner o user de 1 empresa. cuando el problema ya está resuelto, la cuenta se elimina.
+
+requisitos:
+
+(CRUD) Create, Read, Update, Deleted GESTIÓN DE CUENTAS. puede ser requisito owner.
+- Datos: nombre, logotipo, fecha y hora de creacion
+- registrar cuenta
+- modificar cuenta
+- eliminar cuenta
+- leer cuenta: leer datos de cuenta
+- iniciar sesion
+- cerrar sesion
+- guardar usuario
+
+OWNER -> CRUD cuentas de usuario
+
+INFORME DE CUENTAS (.JSON)
+	- Nombre
+	- Fecha y hora creacion
+	- Num productos
+	- Num assets
+	- Tam utilizado
+	- Num de categorias de productos y assets
+	- Num de atributos de usuarios creados
+	- Num de relaciones
+	- Lista de usuario
+		- Nombre
+		- Correo electronico
+
+- CRUD producto
+	tiene que reconocer el plan de suscripcion, está limitado
+	- modificar prod
+	- eliminar
+	- Podemos meter un csv para importar productos y podemos exportar un csv para meterlo en la aplicacón.
+
+
+EXPORTACIÓN DE PRODUCTOS A TERCEROS
+	- Owner y user
+	- Podemos usar las categorías o atributos para elegir queé productos exportar (buscar/filtrar)
+	- Marcar todos productos
+	- Elección de página a a que queremos exportar. SE REALIZA UN MAPEO QUE "TRADUCE" NUESTROS ATRIBUTOS PARA LA TIENDA A LA QUE QUEREMOS EXPORTAR
+	Si una de las tiendas pide un atributo que no tenga el producto, salta error y hay que añadir ese atributo.
+		- Amazon (csv: titulo, price...)
+ 		- Aliexpress ()
+	- Integración por API. EL sistema debe de ser capaz de exportar los productos por csv y por API del canal de venta.
+		
+- CRUD asset creado por owner o user, relacionado a una cuenta
+	- tiene que reconocer el plan de suscripcion para limitar el num de assets y de capacidad, está limitado
+	- subir archivos
+	- ver asset
+	 CRU(D) de assets
+	- assets puede estar asociado a muchos productos, no puede ser eliminado si está asociado a un producto
+	- pdf, imagenes, videos, binario, ejecutable
+
+	tiene #productos asociados, nombre, thumbnail, fecha, size
+	
+
+- CRUD categorias/etiquetas: filtra y clasifica
+	- nombre, #num_assets, #num_productos
+	- asociacion a assets o productos o ambas cosas
+	- las categorias las define el owner o el usuario
+
+- CRUD relaciones
+	- tiene que reconocer el plan de suscripcion para limitar el num de assets y de capacidad, está limitado
+	- nombre
+	- las crea el owner y el usuario. el user asocia productos dentro de una relación
+
+- CRUD ATRIBUTOS
+	- tiene que reconocer el plan de suscripcion para limitar el num de assets y de capacidad, está limitado
+	- tiene que reconocer el plan de suscripcion, está limitado
+	- nombre, tipo
+
+el atributo del sistema: siempre está para todo los productos
+	[- nombre: label
+	- SKU
+	- GTIN
+	- FECHA CREACION
+	- FECHA MODIFICACION
+	- clave : valor
+	- thumbnail: miniatura del rpoducto]
+	-> si alguno de los atributos no tienen información no se muestra
+
+atributo que crea el usuario solo 5: 
+	- limitado dependiendo del plan
+	- limite de caracteres de 14 para GTIN: APLICACION NO PUEDE TENER GTINS NO VALIDOS
+	- SI NO TIENEN VALOR, APARECEN IGUALMENTE
+
+
+
+GESTION PLAN DE SUSCRIPCION
+-Elegir plan 
+-Pagar con tarjeta
+-Pagar con Paypal
+-Pagar con Stripe
+- No vamos a trabajar cancelación del pago
+
+REQ. ACCESIBILIDAD WCAG 2.2
+
+REQ. IDIOMA
+
+
+
+plytix crea la cuenta de los owner -> es administrador que crea

@@ -1,30 +1,84 @@
-\documentclass{article}
+\documentclass[12pt.a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{graphicx} 
+\usepackage{geometry}
+\usepackage{float} % Para controlar la ubicación de las figuras
 \usepackage{tabularx}
-\geometry{a4paper, margin=1in}
 \usepackage{titlesec}
 \usepackage{lipsum}
+\usepackage{geometry} % Paquete para controlar los márgenes
+\usepackage[colorlinks= true, allcolors=blue]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+\usepackage{lastpage}
+
+% Configuración de márgenes
+\geometry{
+    left=2.5cm,  % Margen izquierdo
+    right=2.5cm, % Margen derecho
+    top=3cm,     % Margen superior
+    bottom=3cm   % Margen inferior
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+\fancyhead[R]{
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=north east,xshift=-5mm,yshift=-5mm] at (current page.north east) {
+            \fbox{
+                \begin{tabular}{r l}
+                    Revisión: & 01 \\
+                    Clave: & DOC-001 \\
+                    Página: & \thepage\ de \pageref{LastPage}
+                \end{tabular}
+            }
+        };
+    \end{tikzpicture}
+}
 
 \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
 
 
-\title{Documento General de Requisitos Mini PIM}
-
-\author{}
-\date{}
-
 \begin{document}
 
-\maketitle
+% Portada
+\begin{titlepage}
+\centering
+{\bfseries\LARGE Universidad de Málaga\par}
+\vspace{1cm}
+{\scshape\Large ETSI Informática\par}
+\vspace{2cm}
+{\scshape\Huge Documento General de Requisitos Mini PIM}
+\vspace{2cm}
+\begin{figure}[H]
+    \centering
+     \includegraphics[width=0.25\linewidth]{umaLogo.png}
+\end{figure}
+\vfill
+{\Large Diego Sicre Cortizo\par}
+{\Large Pablo Ortega Serapio\par}
+{\Large Angel Nicolás Escaño López\par}
+{\Large Francisco Javier Jordá Garay\par}
+{\Large Janine Bernadeth Olegario Laguit\par}
+\vspace{1cm}
+{\Large Grupo 01}
+\vfill
+{\Large Octubre 2024}
 
+\end{titlepage}
+
+\thispagestyle{empty} %quita el numero de la primera pagina
 \tableofcontents
 
-\newpage
 
+\newpage
+\setcounter{page}{1}
 \section{Introducción}
 
 \subsection{Objetivos}
@@ -56,7 +110,7 @@ Este \textit{Documento General de Requisitos} proporciona una descripción breve
 
 \subsection{Resumen}
 
-Este \textit{Documento General de Requisitos} organiza y estructura los contenidos para guiar la implementación del sistema Mini PIM de manera eficiente. Cada sección del documento se centra en un aspecto específico del sistema, comenzando con las directivas del proyecto, una breve descripción de los participantes y los usuarios, una visión general del producto y una identificación de requisitos funcionales y no funcionales, hasta llegar al modelo de dominio que describe el sistema. Esta organización facilita la implementación, gestión y evolución del sistema.
+Este \textit{Documento General de Requisitos} organiza y estructura los contenidos para guiar la implementación del sistema Mini PIM de manera eficiente. Cada sección del documento se centra en un aspecto específico del sistema, comenzando con las directivas del proyecto, una breve descripción de los participantes y los usuarios, una visión general del producto y una identificación de requisitos funcionales y no funcionales, hasta llegar al modelo de dominio que lo describe. Esta organización facilita la implementación, gestión y evolución de este.
 
 \section{Directivas del proyecto}
 
@@ -83,12 +137,12 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
 
     \item \textbf{Canales de venta (Amazon, AliExpress, ...)} \\
         Encargados de realizar la venta de los objetos que, mediante el uso del sistema, serán publicados y puestos a la venta.
-    \item \textbf{Canales de pago (PayPal)} \\
+    \item \textbf{Canales de pago (PayPal y Stripe)} \\
         Asegurarán que las suscripciones de pago de los usuarios sean cobradas correctamente y que se puedan modificar las suscripciones abiertamente.
     \item \textbf{Jefe o gerente de la empresa} \\
-        Es el jefe de la tienda, quien será el encargado de proveer una cuenta a cada uno de los trabajadores de la tienda.
+        Es el owner, quien será el encargado de proveer una cuenta a cada uno de los trabajadores de la tienda.
     \item \textbf{Soporte Técnico} \\
-        Es capaz tanto de simular una cuenta de \textit{Owner} como de un usuario normal con fines de soporte técnico.
+        Es capaz tanto de simular una cuenta de \textit{Owner} como de \textit{User} con fines de soporte técnico.
     \item \textbf{Empleado} \\
         Es la cuenta que utilizará un trabajador normal, con la capacidad de gestionar los productos de una tienda.
     \item \textbf{Plytix Admin} \\
@@ -103,9 +157,9 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
     \hline
     Owner & Es el jefe de la tienda, encargado de proveer una cuenta a cada trabajador & Se asocia al participante Jefe o Gerente \\
     \hline
-    Agente & Puede simular tanto una cuenta de \textit{Owner} como de usuario & Se asocia al participante Soporte Técnico \\
+    Agente & Puede simular tanto una cuenta de \textit{Owner} como de \textit{User} & Se asocia al participante Soporte Técnico \\
     \hline
-    Usuario & Representa a un trabajador que gestiona productos de la tienda & Se asocia al participante Empleado \\
+    User & Representa a un trabajador que gestiona productos de la tienda & Se asocia al participante Empleado \\
     \hline
 \end{tabularx}
 
@@ -114,45 +168,45 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
 \subsubsection{Jefe / Gerente}
 
 \begin{itemize}
-    \item \textbf{Representante:} Jefe o gerente de la empresa
-    \item \textbf{Descripción:} Es el jefe o gerente de una empresa
-    \item \textbf{Tipo:} Alto cargo ejecutivo
+    \item \textbf{Representante:} Jefe o gerente de la empresa.
+    \item \textbf{Descripción:} Es el jefe o gerente de una empresa.
+    \item \textbf{Tipo:} Alto cargo ejecutivo.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Gestionar el funcionamiento de la empresa
-        \item Encargado de crear las cuentas \textit{User} para los trabajadores
+        \item Gestionar el funcionamiento de la empresa.
+        \item Encargado de crear las cuentas \textit{User} para los trabajadores.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Crear y gestionar correctamente las cuentas \textit{User} creadas y mantener buena comunicación con soporte técnico
-    \item \textbf{Comentarios:} Encargados de crear las cuentas tipo \textit{Usuario} y realizar las gestiones de pago.
+    \item \textbf{Criterio de Éxito:} Crear y gestionar correctamente las cuentas \textit{User}, mantener buena comunicación con soporte técnico para gestionar eficientemente los productos de la empresa.
+    \item \textbf{Comentarios:} Encargados de crear las cuentas tipo \textit{User} y realizar las gestiones de pago.
 \end{itemize}
 
 \subsubsection{Trabajador}
 
 \begin{itemize}
-    \item \textbf{Representante:} Trabajador
-    \item \textbf{Descripción:} Es un trabajador de una empresa
-    \item \textbf{Tipo:} Equipo laboral de una empresa
+    \item \textbf{Representante:} Trabajador.
+    \item \textbf{Descripción:} Es un trabajador de una empresa.
+    \item \textbf{Tipo:} Equipo laboral de una empresa.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Utilizar y gestionar sus cuentas \textit{Usuario}
-        \item Gestionar los productos de la tienda
+        \item Utilizar y gestionar sus cuentas \textit{User}.
+        \item Gestionar los productos de la tienda.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Gestionar correctamente tanto la organización de los productos como su envío a los canales de venta
+    \item \textbf{Criterio de Éxito:} Gestionar correctamente tanto la organización de los productos como su envío a los canales de venta.
     \item \textbf{Comentarios:} Los trabajadores sólo pueden controlar cuentas \textit{User}, sin privilegios de creación ni modificación de cuentas.
 \end{itemize}
 
 \subsubsection{Soporte Técnico}
 
 \begin{itemize}
-    \item \textbf{Representante:} Soporte técnico de Plytix
-    \item \textbf{Descripción:} Encargado de soporte técnico
-    \item \textbf{Tipo:} Equipo de soporte técnico
+    \item \textbf{Representante:} Soporte técnico de Plytix.
+    \item \textbf{Descripción:} Encargado de soporte técnico.
+    \item \textbf{Tipo:} Equipo de soporte técnico.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Gestionar el funcionamiento de una cuenta Plytix
-        \item Corregir errores en las empresas
+        \item Gestionar el funcionamiento de una cuenta Plytix.
+        \item Corregir errores en el sistema y ayudar a las empresas.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Resolver problemas y mantener un correcto funcionamiento del software
+    \item \textbf{Criterio de Éxito:} Resolver problemas y mantener un correcto funcionamiento del software.
     \item \textbf{Comentarios:} Representantes de soporte técnico pueden utilizar cualquier tipo de cuenta para solucionar problemas.
 \end{itemize}
 
@@ -163,11 +217,11 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
     \item \textbf{Tipo:} Representante de Plytix / Alto cargo ejecutivo
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Crear las cuentas \textit{Owner} de las empresas
-        \item Gestionar y crear cuentas \textit{Agente} para soporte técnico
+        \item Crear las cuentas \textit{Owner} de las empresas.
+        \item Gestionar y crear cuentas \textit{Agente} para soporte técnico.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Gestionar correctamente cuentas \textit{Owner} y \textit{Agente}
-    \item \textbf{Entregables:} Cuentas \textit{Owner} y soporte técnico para las empresas
+    \item \textbf{Criterio de Éxito:} Gestionar correctamente cuentas \textit{Owner} y \textit{Agente}.
+    \item \textbf{Entregables:} Cuentas \textit{Owner} y soporte técnico para las empresas.
     \item \textbf{Comentarios:} El administrador tiene todos los permisos.
 \end{itemize}
 
@@ -176,46 +230,46 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
 \subsubsection{Owner}
 
 \begin{itemize}
-    \item \textbf{Representante:} Owner
-    \item \textbf{Descripción:} Es el jefe o gerente de una empresa
-    \item \textbf{Tipo:} Alto cargo ejecutivo
+    \item \textbf{Representante:} Owner.
+    \item \textbf{Descripción:} Es el jefe o gerente de una empresa.
+    \item \textbf{Tipo:} Alto cargo ejecutivo.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Crear cuentas para los trabajadores
-        \item Gestionar el plan de suscripción de la empresa
+        \item Crear cuentas para los trabajadores.
+        \item Gestionar el plan de suscripción de la empresa.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Mantener un número adecuado de trabajadores y maximizar ventas
+    \item \textbf{Criterio de Éxito:} Mantener un número adecuado de trabajadores y maximizar ventas.
     \item \textbf{Comentarios:} El \textit{Owner} es la cuenta principal de la empresa.
 \end{itemize}
 
 \subsubsection{Agente}
 
 \begin{itemize}
-    \item \textbf{Representante:} Agente
-    \item \textbf{Descripción:} Personal de servicio técnico de Plytix
-    \item \textbf{Tipo:} Servicio técnico
+    \item \textbf{Representante:} Agente.
+    \item \textbf{Descripción:} Personal de servicio técnico de Plytix.
+    \item \textbf{Tipo:} Servicio técnico.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Gestionar la funcionalidad de cuentas empresariales
-        \item Solucionar problemas en cuentas Plytix
+        \item Gestionar la funcionalidad de cuentas empresariales.
+        \item Solucionar problemas en cuentas Plytix.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Mantener un número bajo de errores en cuentas Plytix
-    \item \textbf{Comentarios:} Agentes pueden adoptar permisos de \textit{Owner} y \textit{Usuario} para solucionar problemas.
+    \item \textbf{Criterio de Éxito:} Solventar adecuadamente los errores que surjan a los clientes durante el uso del sistema.
+    \item \textbf{Comentarios:} Agentes pueden adoptar permisos de \textit{Owner} y \textit{User} para solucionar problemas.
 \end{itemize}
 
-\subsubsection{Usuario}
+\subsubsection{User}
 
 \begin{itemize}
-    \item \textbf{Representante:} Usuario
-    \item \textbf{Descripción:} Representa a los trabajadores de la empresa
-    \item \textbf{Tipo:} Equipo de trabajo
+    \item \textbf{Representante:} Usuario.
+    \item \textbf{Descripción:} Representa a los trabajadores de la empresa.
+    \item \textbf{Tipo:} Equipo de trabajo.
     \item \textbf{Responsabilidades:}
     \begin{itemize}
-        \item Gestionar productos de la tienda
-        \item Mover productos a los canales de venta mediante CSV
-        \item Editar datos de productos
+        \item Gestionar productos de la tienda.
+        \item Mover productos a los canales de venta mediante CSV o APIs.
+        \item Editar datos de productos.
     \end{itemize}
-    \item \textbf{Criterio de Éxito:} Maximizar número de productos en venta y mantener actualizada la información
+    \item \textbf{Criterio de Éxito:} Mantener actualizada la información y gestionar los productos, sus atributos y relaciones de forma adecuada.
     \item \textbf{Comentarios:} Los usuarios sólo gestionan productos, sin acceso a gestión de cuentas o suscripciones.
 \end{itemize}
 
@@ -236,11 +290,11 @@ El Mini PIM se diferencia de sus competidores por ofrecer planes de suscripción
 El sistema se desplegará en un entorno SaaS adecuado para PyMEs, donde los usuarios podrán gestionar la información de sus productos y sincronizarlos con los distintos canales de venta. Se garantizará que el sistema cumpla con los requisitos de seguridad, escalabilidad y disponibilidad, necesarios para operar en plataformas de venta en línea.
 
 \subsubsection{Aplicaciones Colaboradoras}
-El Mini PIM de Plytix se integrará con diversas aplicaciones de comercio electrónico, tales como Amazon y Shopify, con el objetivo de facilitar la exportación de datos de productos hacia estos canales de venta. También podrá conectarse a plataformas internas de gestión de inventarios o de catálogo, que los clientes utilicen para preparar sus datos de productos antes de la sincronización.
+El Mini PIM de Plytix se integrará con diversas aplicaciones de comercio electrónico, tales como Amazon y Shopify, con el objetivo de facilitar la exportación de datos de productos hacia estos canales de venta. También podrá conectarse a plataformas internas de gestión de inventarios o de catálogo, que los clientes utilicen para preparar sus datos de productos antes de la sincronización, de las cuales podrán importar información en formato CSV.
 
 \subsection{Resumen de Características}
 
-\begin{table}[h!]
+\begin{table}[H]
 \centering
 \begin{tabular}{|l|p{10cm}|}
     \hline
@@ -257,6 +311,7 @@ El Mini PIM de Plytix se integrará con diversas aplicaciones de comercio electr
     \hline
 \end{tabular}
 \end{table}
+
 
 \subsection{Suposiciones y Dependencias}
 
