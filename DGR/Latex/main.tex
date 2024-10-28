@@ -338,40 +338,40 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF1.1 Creación de cuentas Owner} \\
     El sistema debe permitir a los Plytix Admin crear cuentas Owner.
     
-    \item \textbf{RF1.2 Creación de cuentas de User} \\
+    \item \textbf{RF1.3 Creación de cuentas User} \\
     El sistema debe permitir al Owner crear cuentas de usuario para empleados de la empresa (User).
 
-    \item \textbf{RF1.2 Visualizar datos de la cuenta} \\
+    \item \textbf{RF1.4 Visualizar datos de la cuenta} \\
     El usuario debe poder ver los datos de su cuenta: nombre, logotipo, correo, contraseña, fecha y hora de creación.
 
-    \item \textbf{RF1.3 Actualizar datos de la cuenta} \\
+    \item \textbf{RF1.5 Actualizar datos de la cuenta} \\
     El usuario debe poder modificar los datos de la cuenta, a excepción de la fecha y hora de creación.
 
-    \item \textbf{RF1.4 Borrar cuenta} \\
+    \item \textbf{RF1.6 Borrar cuenta} \\
     El sistema debe permitir la eliminación de una cuenta a un Owner, siguiendo políticas de seguridad y permisos.
 
-    \item \textbf{RF1.5 Iniciar sesión} \\
+    \item \textbf{RF1.7 Iniciar sesión} \\
     Los usuarios deben poder autenticarse en el sistema introduciendo credenciales válidas.
 
-    \item \textbf{RF1.6 Cerrar sesión} \\
+    \item \textbf{RF1.8 Cerrar sesión} \\
     El sistema debe permitir al usuario cerrar sesión de manera segura.
 
-    \item \textbf{RF1.7 Crear informe de cuenta} \\
+    \item \textbf{RF1.9 Crear informe de cuenta} \\
     El sistema debe poder generar un informe detallado con la información de la cuenta.
     \begin{itemize}
-        \item \textbf{RF1.7.1 Exportar informe de cuenta} \\
+        \item \textbf{RF1.9.1 Exportar informe de cuenta} \\
         El informe generado debe poder ser exportado en formato .json, incluyendo la información  de: nombre de la cuenta, fecha de creación, número de productos, assets y tamaño utilizado de almacenamiento en bytes, número de categorías de productos y assets, número de atributos de usuario creados, número de relaciones creadas, una lista de los usuarios con su nombre, si existe, y su dirección de correo electrónico.
     \end{itemize}
 
 
-    \item \textbf{RF1.8 Emulación de cuenta} \\
-    El Agente puede emular una cuenta de Owner o Usuario para brindar soporte y verificar problemas específicos de la cuenta.
+    \item \textbf{RF1.10 Emulación de cuenta} \\
+    El Agente puede emular una cuenta de  \textit{Owner} o  \textit{User} para brindar soporte y verificar problemas específicos de la cuenta.
 
-    \item \textbf{RF1.9 Creación de cuenta Agente} \\
+    \item \textbf{RF1.11 Creación de cuenta Agente} \\
     La cuenta de Agente debe crearse y eliminarse desde el sistema de administración central de Plytix.
 
 
-    \item \textbf{RF1.10 Capacidad y duración de la cuenta Agente} \\
+    \item \textbf{RF1.12 Capacidad y duración de la cuenta Agente} \\
     El Agente tiene permisos para ver y analizar los datos de productos y assets, pero no puede modificar ni eliminar información de la cuenta a la que brinda soporte y tiene tiempo de vida limitado hasta que se soluciona el problema.
 \end{itemize}
 
@@ -379,7 +379,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
 
 \begin{itemize}
     \item \textbf{RF2.1 Crear producto} \\
-    Todos los usuarios deben poder añadir nuevos productos al sistema, especificando los atributos del sistema: GTIN, SKU, clave, thumbnail y label; los atributos de usuario, hasta 5 opcionales; y las categorías, assets, relaciones y labels.
+    Todos los usuarios deben poder añadir nuevos productos al sistema, especificando los atributos del sistema: GTIN, SKU, clave, thumbnail y label; los atributos de usuario, hasta 5 opcionales; y las categorías, assets y relaciones.
 
     \item \textbf{RF2.2 Visualizar producto} \\
     Los productos deben poder ser visualizados con todos sus detalles.
@@ -390,8 +390,8 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF2.4 Borrar producto} \\
     Los productos deben poder ser eliminados por los usuarios, siempre y cuando no estén asociados a otras entidades clave del sistema.
 
-    \item \textbf{RF2.5 Crear CSV para importación de productos} \\
-    Los usuarios deben poder crear un archivo CSV para importar productos en caso de pérdida de datos, permitiendo una copia de seguridad de sus productos en el PIM (Product Information Management).
+    \item \textbf{RF2.5 Importación de productos en plataformas externas} \\
+    Los usuarios deben poder importar productos de plataformas externas al sistema.
 \end{itemize}
 
 \subsection*{RF3 Gestión de Assets}
@@ -449,7 +449,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Todos los usuarios deben poder crear relaciones entre productos.
 
     \item \textbf{RF5.2 Ver relación} \\
-    Las relaciones entre productos deben ser visibles y accesibles para los usuarios junto a su nombre .
+    Las relaciones entre productos deben ser visibles y accesibles para los usuarios junto a su nombre.
 
     \item \textbf{RF5.3 Actualizar relación} \\
     El sistema debe permitir la modificación de las relaciones existentes entre productos.
@@ -458,7 +458,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     Los usuarios deben poder eliminar relaciones, siempre y cuando no afecten la integridad de otras funciones del sistema.
 
     \item \textbf{RF5.5 Relacionar productos} \\
-    El sistema debe permitir vincular productos mediante relaciones para mostrar recomendaciones al usuario.
+    El sistema debe permitir vincular productos mediante relaciones.
     
     \item \textbf{RF5.6 Modificar datos} \\
     El sistema debe permitir modificar los datos de la relación.
@@ -483,7 +483,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF6.5 Atributos del sistema} \\
     Los atributos del sistema están disponibles para todos los productos de manera predeterminada.
     \begin{itemize}
-        \item \textbf{RF6.5.1 LABEL} \\
+        \item \textbf{RF6.5.1 Label} \\
         El sistema debe permitir asignar un label a cada producto.
 
         \item \textbf{RF6.5.2 SKU} \\
@@ -573,7 +573,7 @@ Mini PIM ofrecerá licencias de suscripción para el uso del sistema, que estar�
     \item \textbf{RF8.7 Selección de una página externa a la que queremos exportar} \\
     El sistema debe permitir seleccionar una página externa o destino para exportar los productos.
 
-    \item \textbf{RF8.8 Mapeo de los productos a exportar en formato csv} \\
+    \item \textbf{RF8.8 Mapeo de los productos a exportar en formato CSV} \\
     El sistema mapea los atributos de los productos para el formato requerido por el canal de venta al que se exportan los productos en formato CSV.
 
     \item \textbf{RF8.9 Exportación de productos por API al canal de venta} \\
@@ -591,25 +591,29 @@ El sistema debe cumplir con los estándares de accesibilidad WCAG 2.2 para asegu
 El sistema debe estar disponible en inglés americano.
 
 \subsection*{RNF3 Eficiencia de memoria}
-La aplicación debe tener una gestión eficiente de la memoria para garantizar un rendimiento óptimo incluso con grandes volúmenes de datos.
+La aplicación debe tener una gestión de la memoria de no más de \textit{1.3 GB}.
 
 \subsection*{RNF4 Seguridad}
-El sistema debe contar con medidas de seguridad robustas, incluyendo cifrado de datos sensibles y autenticación de usuarios para proteger la información.
+El sistema debe contar con cifrado de datos sensibles y autenticación de usuarios para proteger la información.
 
 \subsection*{RNF5 Capacidad}
-El sistema debe ser capaz de manejar grandes volúmenes de datos y usuarios concurrentes sin degradar su rendimiento.
+El sistema debe ser capaz de manejar la cantidad de datos máxima definida por el plan de suscripción contratado.
 
 \subsection*{RNF6 Disponibilidad}
-El sistema debe estar disponible para los usuarios en todo momento.
+El sistema debe estar disponible en todo momento.
 
 \subsection*{RNF7 Compatibilidad}
-El sistema debe ser compatible con los navegadores y plataformas más comunes.
+El sistema debe ser compatible con navegadores Chromium.
 
 \subsection*{RNF8 Exportación e integración}
 El sistema debe soportar exportaciones de datos a formatos JSON y CSV, así como la integración vía API.
 
-\subsection*{RNF9 Página Web}
-El sistema debe funcionar en formato Web.
+\subsection*{RNF9 Importación de productos mediante CSV}
+El sistema debe soportar importaciones de datos al sistema en formato CSV con el estándar establecido.
+
+
+\subsection*{RNF10 Página Web}
+El sistema debe ser desarrollado como una aplicación Web.
 
 \section{Modelo del Dominio}
 \lipsum[22]
