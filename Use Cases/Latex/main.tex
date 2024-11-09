@@ -1,0 +1,101 @@
+\documentclass[12pt, a4paper, titlepage]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx} 
+\usepackage{float} 
+\usepackage{listings}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{tocloft}
+\usepackage{subfiles}
+\usepackage[colorlinks=true, allcolors=blue, linktoc=all]{hyperref}
+\usepackage{bookmark}
+\usepackage{xr}
+
+
+% Configuración de márgenes
+\geometry{
+    left=2.5cm,  % Margen izquierdo
+    right=2.5cm, % Margen derecho
+    top=3cm,     % Margen superior
+    bottom=3cm   % Margen inferior
+}
+
+
+% Definimos una nueva forma de referirnos a las \section, \subsection y \subsubsection.
+% Ahora en los subarchivos tex al llamarlas de esta forma aseguramos que en la
+% Table of Contents (ToC) aparezcan los números de las secciones que seleccionemos
+%     \subsection*{} hace que salga el titulo en formato subsection pero no aparece en el ToC
+%     \numberedsubsection hara que si salga en la ToC
+\newcommand{\numberedsection}[1]{%
+  \stepcounter{section}%
+  \section*{#1}%
+  \addcontentsline{toc}{section}{\protect\numberline{\thesection}#1}%
+}
+\newcommand{\numberedsubsection}[1]{%
+  \stepcounter{subsection}%
+  \subsection*{#1}%
+  \addcontentsline{toc}{subsection}{\protect\numberline{\thesubsection}#1}%
+}
+\newcommand{\numberedsubsubsection}[1]{%
+  \stepcounter{subsubsection}%
+  \subsubsection*{#1}%
+  \addcontentsline{toc}{subsubsection}{\protect\numberline{\thesubsubsection}#1}%
+}
+
+\begin{document}
+
+% PORTADA
+\begin{titlepage}
+    \centering
+    {\bfseries\LARGE Universidad de Málaga\par}
+    \vspace{1cm}
+    {\scshape\Large ETSI Informática\par}
+    \vspace{2cm}
+    {\scshape\Huge Memoria de la\par}
+    \vspace{0.1cm}
+    {\scshape\Huge $1^{ra}$ iteración}
+    \vspace{2cm}
+    \begin{figure}[H]
+        \centering
+         \includegraphics[width=0.30\linewidth]{assets/umaLogo.png}
+    \end{figure}
+    \vfill
+    {\scshape\Large Ingeniería de Requisitos (2024-25)\par}
+    \vfill
+    {\Large Diego Sicre Cortizo\par}
+    {\Large Pablo Ortega Serapio\par}
+    {\Large Angel Nicolás Escaño López\par}
+    {\Large Francisco Javier Jordá Garay\par}
+    {\Large Janine Bernadeth Olegario Laguit\par}
+    \vspace{1cm}
+    {\Large Grupo 01}
+    \vfill
+    {\Large Noviembre 2024}
+\end{titlepage}
+% FIN PORTADA
+
+% ÍNDICE
+\tableofcontents % Crea el Índice
+\thispagestyle{empty} % Quita el número de la primera página
+\newpage
+\listoffigures % Crea un Índice de figuras (registra imágenes)
+\thispagestyle{empty}
+\newpage
+% FIN ÍNDICE
+
+
+% CUERPO DEL DOCUMENTO
+\setcounter{page}{4} % Inicia a contar las páginas a partir de {}
+
+\include{body/RF2.1_CrearProducto/page}
+
+
+
+
+
+\end{document}
