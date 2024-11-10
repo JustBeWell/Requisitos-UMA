@@ -9,8 +9,13 @@
 \contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{9}{Item.14}%
 \contentsline {subsection}{\numberline {2.3}Casos de Prueba}{9}{Item.14}%
 \contentsline {subsection}{\numberline {2.4}Bocetos}{10}{Item.14}%
-\contentsline {section}{\numberline {3}RF6.1 Crear Atributo}{12}{section*.3}%
+\contentsline {section}{\numberline {3}RF2.2 Editar Producto}{12}{section*.3}%
 \contentsline {subsection}{\numberline {3.1}Escenario principal}{12}{section*.3}%
-\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{13}{Item.21}%
+\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{12}{Item.21}%
 \contentsline {subsection}{\numberline {3.3}Casos de Prueba}{13}{Item.21}%
 \contentsline {subsection}{\numberline {3.4}Bocetos}{14}{Item.21}%
+\contentsline {section}{\numberline {4}RF6.1 Crear Atributo}{15}{section*.4}%
+\contentsline {subsection}{\numberline {4.1}Escenario principal}{15}{section*.4}%
+\contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{16}{Item.28}%
+\contentsline {subsection}{\numberline {4.3}Casos de Prueba}{16}{Item.28}%
+\contentsline {subsection}{\numberline {4.4}Bocetos}{17}{Item.28}%
