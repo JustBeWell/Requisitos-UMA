@@ -19,43 +19,47 @@
 \contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{15}{Item.25}%
 \contentsline {subsection}{\numberline {4.3}Casos de Prueba}{15}{Item.25}%
 \contentsline {subsection}{\numberline {4.4}Bocetos}{16}{Item.25}%
-\contentsline {section}{\numberline {5}RF4.1 Crear categoría}{18}{section*.5}%
+\contentsline {section}{\numberline {5}RF2.5 Mostrar Producto}{18}{section*.5}%
 \contentsline {subsection}{\numberline {5.1}Escenario principal}{18}{section*.5}%
-\contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{18}{Item.34}%
-\contentsline {subsection}{\numberline {5.3}Casos de Prueba}{19}{Item.34}%
-\contentsline {subsection}{\numberline {5.4}Bocetos}{21}{Item.34}%
-\contentsline {section}{\numberline {6}RF4.2 Visualizar categoría}{22}{figure.9}%
-\contentsline {subsection}{\numberline {6.1}Escenario principal}{23}{figure.9}%
-\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{23}{Item.36}%
-\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{23}{Item.36}%
-\contentsline {subsection}{\numberline {6.4}Bocetos}{24}{Item.36}%
-\contentsline {section}{\numberline {7}RF4.3 Editar categoría}{25}{figure.11}%
-\contentsline {subsection}{\numberline {7.1}Escenario principal}{26}{figure.11}%
-\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{26}{Item.44}%
-\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{26}{Item.44}%
-\contentsline {subsection}{\numberline {7.4}Bocetos}{28}{Item.44}%
-\contentsline {section}{\numberline {8}RF4.4 Borrar categoría}{29}{figure.13}%
-\contentsline {subsection}{\numberline {8.1}Escenario principal}{30}{figure.13}%
-\contentsline {subsection}{\numberline {8.2}Escenarios alternativos}{30}{Item.53}%
-\contentsline {subsection}{\numberline {8.3}Casos de Prueba}{31}{Item.53}%
-\contentsline {subsection}{\numberline {8.4}Bocetos}{32}{Item.53}%
-\contentsline {section}{\numberline {9}RF6.1 Crear Atributo}{34}{section*.6}%
-\contentsline {subsection}{\numberline {9.1}Escenario principal}{34}{section*.6}%
-\contentsline {subsection}{\numberline {9.2}Escenarios alternativos}{35}{Item.60}%
-\contentsline {subsection}{\numberline {9.3}Casos de Prueba}{35}{Item.60}%
-\contentsline {subsection}{\numberline {9.4}Bocetos}{36}{Item.60}%
-\contentsline {section}{\numberline {10}RF6.2 Leer Atributo}{38}{section*.7}%
-\contentsline {subsection}{\numberline {10.1}Escenario principal}{38}{section*.7}%
-\contentsline {subsection}{\numberline {10.2}Escenarios alternativos}{38}{Item.62}%
-\contentsline {subsection}{\numberline {10.3}Casos de Prueba}{38}{Item.62}%
-\contentsline {subsection}{\numberline {10.4}Bocetos}{39}{Item.62}%
-\contentsline {section}{\numberline {11}RF6.3 Modificar Atributo}{41}{section*.8}%
-\contentsline {subsection}{\numberline {11.1}Escenario principal}{41}{section*.8}%
-\contentsline {subsection}{\numberline {11.2}Escenarios alternativos}{42}{Item.70}%
-\contentsline {subsection}{\numberline {11.3}Casos de Prueba}{42}{Item.70}%
-\contentsline {subsection}{\numberline {11.4}Bocetos}{43}{Item.70}%
-\contentsline {section}{\numberline {12}RF6.4 Borrar Atributo}{44}{section*.9}%
-\contentsline {subsection}{\numberline {12.1}Escenario principal}{44}{section*.9}%
+\contentsline {subsection}{\numberline {5.2}Casos de Prueba}{18}{Item.29}%
+\contentsline {subsection}{\numberline {5.3}Bocetos}{19}{Item.29}%
+\contentsline {section}{\numberline {6}RF4.1 Crear categoría}{20}{section*.6}%
+\contentsline {subsection}{\numberline {6.1}Escenario principal}{20}{section*.6}%
+\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{20}{Item.38}%
+\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{21}{Item.38}%
+\contentsline {subsection}{\numberline {6.4}Bocetos}{23}{Item.38}%
+\contentsline {section}{\numberline {7}RF4.2 Visualizar categoría}{24}{figure.10}%
+\contentsline {subsection}{\numberline {7.1}Escenario principal}{25}{figure.10}%
+\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{25}{Item.40}%
+\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{25}{Item.40}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{26}{Item.40}%
+\contentsline {section}{\numberline {8}RF4.3 Editar categoría}{27}{figure.12}%
+\contentsline {subsection}{\numberline {8.1}Escenario principal}{28}{figure.12}%
+\contentsline {subsection}{\numberline {8.2}Escenarios alternativos}{28}{Item.48}%
+\contentsline {subsection}{\numberline {8.3}Casos de Prueba}{28}{Item.48}%
+\contentsline {subsection}{\numberline {8.4}Bocetos}{30}{Item.48}%
+\contentsline {section}{\numberline {9}RF4.4 Borrar categoría}{31}{figure.14}%
+\contentsline {subsection}{\numberline {9.1}Escenario principal}{32}{figure.14}%
+\contentsline {subsection}{\numberline {9.2}Escenarios alternativos}{32}{Item.57}%
+\contentsline {subsection}{\numberline {9.3}Casos de Prueba}{33}{Item.57}%
+\contentsline {subsection}{\numberline {9.4}Bocetos}{34}{Item.57}%
+\contentsline {section}{\numberline {10}RF6.1 Crear Atributo}{36}{section*.7}%
+\contentsline {subsection}{\numberline {10.1}Escenario principal}{36}{section*.7}%
+\contentsline {subsection}{\numberline {10.2}Escenarios alternativos}{37}{Item.64}%
+\contentsline {subsection}{\numberline {10.3}Casos de Prueba}{37}{Item.64}%
+\contentsline {subsection}{\numberline {10.4}Bocetos}{38}{Item.64}%
+\contentsline {section}{\numberline {11}RF6.2 Leer Atributo}{40}{section*.8}%
+\contentsline {subsection}{\numberline {11.1}Escenario principal}{40}{section*.8}%
+\contentsline {subsection}{\numberline {11.2}Escenarios alternativos}{40}{Item.66}%
+\contentsline {subsection}{\numberline {11.3}Casos de Prueba}{40}{Item.66}%
+\contentsline {subsection}{\numberline {11.4}Bocetos}{41}{Item.66}%
+\contentsline {section}{\numberline {12}RF6.3 Modificar Atributo}{43}{section*.9}%
+\contentsline {subsection}{\numberline {12.1}Escenario principal}{43}{section*.9}%
 \contentsline {subsection}{\numberline {12.2}Escenarios alternativos}{44}{Item.74}%
 \contentsline {subsection}{\numberline {12.3}Casos de Prueba}{44}{Item.74}%
 \contentsline {subsection}{\numberline {12.4}Bocetos}{45}{Item.74}%
+\contentsline {section}{\numberline {13}RF6.4 Borrar Atributo}{46}{section*.10}%
+\contentsline {subsection}{\numberline {13.1}Escenario principal}{46}{section*.10}%
+\contentsline {subsection}{\numberline {13.2}Escenarios alternativos}{46}{Item.78}%
+\contentsline {subsection}{\numberline {13.3}Casos de Prueba}{46}{Item.78}%
+\contentsline {subsection}{\numberline {13.4}Bocetos}{47}{Item.78}%
