@@ -1,0 +1,26 @@
+Flujo de la aplicación.
+
+1. GESTION DE PRODUCTOS -Clickamos en productos y aparece el grid view del mockup con todos los productos, se puede buscar por SKU (leer el caso de uso).
+
+-> Listar
+
+-Desde este grid se puede añadir un producto (caso de uso a parte, con un nuevo boceto pop-up))
+-> Crear
+-> Consultar
+-> Modificar/Editar
+-> Eliminar
+
+POR DEFINIR:
+Una vez dentro de la edición/visualización del producto se puede clickar en el CRUD de atributos de usuario¿? y eso despliega otro pop-up, se pueden editar ahí directamente¿?.
+
+2. GESTIÓN DE ATRIBUTOS DE USUARIO (MAX 5)
+-> CRUD (TIPO DEL ATRIBUTO, NOMBRE)
+	-> SI EL TIPO ES STRING, CARACTER MAX 250
+
+
+PROPOSICIÓN DIEGO: Que sea una sección a parte a la que le das desde los breadcrumbs
+3. GESTIÓN DE ETIQUETAS/CATEGORÍAS
+->CRUD
+	NOMBRE
+
+4. RNF EN INGLÉS AMERICANO
