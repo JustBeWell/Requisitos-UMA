@@ -2,7 +2,7 @@
 \numberedsection{RF2 Gestión general de Productos (\textit{Listado})}
 
 \subsection*{Descripción}
-El sistema muestra una lista de productos en formato \textit{DataGridView} en la sección de productos. La lista incluye los atributos de cada producto que permiten identificarlo, tanto los atributos de sistema Thumbnail, SKU y label, como los atributos personalizados por el usuario, con una limitación de la descripción de 50 caracteres. Además, la interfaz permite buscar productos por SKU y proporciona botones para editar, añadir y borrar productos, aunque la funcionalidad de estos botones se detalla en otros casos de uso.
+El sistema muestra una lista de productos en formato \textit{DataGridView} en la sección de productos. La lista incluye los atributos de cada producto que permiten identificarlo, tanto los atributos de sistema Thumbnail, SKU y label, como los atributos personalizados por el usuario, con una limitación de la descripción de 50 caracteres. Además, la interfaz permite buscar productos por SKU, y por label, y proporciona botones para editar, añadir y borrar productos, aunque la funcionalidad de estos botones se detalla en otros casos de uso.
 
 \vspace{0.15cm}
 
@@ -37,9 +37,9 @@ Diego Sicre\par
         \item Label (etiqueta del producto)
         \item Atributos personalizados (hasta 5 atributos de usuario)
     \end{itemize}
-    \item El sistema permite al usuario buscar productos mediante los campos SKU..
+    \item El sistema permite al usuario buscar productos mediante los campos SKU o label.
     \item El usuario ingresa un SKU en el campo de búsqueda y confirma la acción.
-    \item El sistema filtra la lista de productos para mostrar solo aquellos que coinciden con el SKU ingresado.
+    \item El sistema filtra la lista de productos para mostrar solo aquellos que coinciden con el SKU o label ingresado.
     \item Para cada fila del \textit{DataGridView}, el sistema muestra botones de acción: Editar, Añadir y Borrar.
 \end{enumerate}
 
@@ -50,7 +50,7 @@ Diego Sicre\par
         \item[3.a.1] El sistema muestra un mensaje indicando que no hay productos que coincidan con los criterios de búsqueda.
     \end{enumerate}
 
-    \item[*.a] El usuario cancela la búsqueda sin ingresar un SKU.
+    \item[*.a] El usuario cancela la búsqueda sin ingresar un SKU o un label.
     \begin{enumerate}
         \item[*.a.1] El sistema muestra la lista completa de productos sin aplicar filtros.
     \end{enumerate}
@@ -65,14 +65,13 @@ Diego Sicre\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
-\textbf{Y} se encuentra en la sección de productos,\par
 \textbf{Cuando} selecciona la opción de “Productos” en el menú principal,\par
 \textbf{Entonces} el sistema carga y muestra la lista de productos en un \textit{DataGridView} con todos los atributos visibles.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 3.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que el usuario intenta buscar un producto mediante SKU,\par
+\textbf{Dado} que el usuario intenta buscar un producto mediante  o label,\par
 \textbf{Cuando} no hay productos que coincidan con los criterios de búsqueda,\par
 \textbf{Entonces} el sistema muestra un mensaje indicando que no hay productos que coincidan.\par
 \vspace{0.20cm}
@@ -80,7 +79,7 @@ Diego Sicre\par
 \underline{Escenario: Alternativo *.a}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha abierto la sección de productos,\par
-\textbf{Cuando} cancela la búsqueda sin ingresar un SKU,\par
+\textbf{Cuando} cancela la búsqueda sin ingresar un SKU o label,\par
 \textbf{Entonces} el sistema muestra la lista completa de productos sin aplicar filtros.\par
 \vspace{0.20cm}
 
@@ -96,6 +95,12 @@ Diego Sicre\par
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2- Gestión General de Productos (listado).png}
     \caption{Listado de Productos}
+   \end{figure}
+\vspace{1.0cm}
+
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{mockups/RF2- Gestión General de Productos (listado por búsqueda).png}
+    \caption{Listado de Productos por búsqueda}
    \end{figure}
 \vspace{1.0cm}
 
