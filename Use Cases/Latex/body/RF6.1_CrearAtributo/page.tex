@@ -13,7 +13,7 @@ El usuario ha iniciado sesión en su cuenta en Mini PIM y tiene acceso a la secc
 \textbf{Post-condición}
 \begin{itemize}
     \item Caso de éxito: El atributo es creado y reflejado en la base de datos, asociado al usuario correspondiente.
-    \item Caso mínimo: El sistema notifica al usuario el resultado de la acción crear producto; exitosa o fallida.
+    \item Caso mínimo: El sistema notifica al usuario el resultado de la acción crear atributo; exitosa o fallida.
 \end{itemize}
 
 \textbf{Prioridad: }
@@ -21,7 +21,7 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autor(es): }
-Diego Sicre\par
+Diego Sicre y Pablo Ortega\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: }
@@ -31,7 +31,7 @@ Diego Sicre\par
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario selecciona la opción “Añadir atributo” en la sección de gestión de atributos.
+    \item El usuario selecciona la opción “Añadir atributo” en la sección de gestión de atributos de usuario.
     \item El sistema despliega un formulario solicitando los siguientes datos:
     \begin{itemize}
         \item Nombre del atributo (campo obligatorio).
@@ -75,7 +75,7 @@ Diego Sicre\par
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
 \textbf{Y} se encuentra en la sección de atributos,\par
 \textbf{Cuando} selecciona la opción de “Añadir atributo”,\par
-\textbf{Y} introduce un nombre y selecciona un tipo de dato válido,\par
+\textbf{E} introduce un nombre y selecciona un tipo de dato válido,\par
 \textbf{Y} confirma la creación,\par
 \textbf{Entonces} el sistema almacena el nuevo atributo en la base de datos y lo muestra en la lista de atributos disponibles.\par
 \vspace{0.20cm}
@@ -104,7 +104,7 @@ Diego Sicre\par
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{mockups/RF2.1_boceto1.png}
+    \includegraphics[width=1\linewidth]{mockups/RF6_1Crear Atrbuto.png}
     \caption{Apartado Productos}
    \end{figure}
 \vspace{1.0cm}
