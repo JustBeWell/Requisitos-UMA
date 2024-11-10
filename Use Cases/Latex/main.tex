@@ -1,20 +1,21 @@
 \documentclass[12pt, a4paper, titlepage]{article}
 
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\usepackage{graphicx} 
-\usepackage{float} 
-\usepackage{listings}
-\usepackage[explicit]{titlesec}
-\usepackage{xcolor}
-\usepackage[utf8]{inputenc}
-\usepackage{geometry}
-\usepackage{lipsum}
-\usepackage{tocloft}
-\usepackage{subfiles}
-\usepackage[colorlinks=true, allcolors=blue, linktoc=all]{hyperref}
-\usepackage{bookmark}
-\usepackage{xr}
+\usepackage[utf8]{inputenc}     % Permite el uso de caracteres como ñ y acentos
+\usepackage[spanish]{babel}     % Configura el documento en español
+\usepackage{graphicx}           % Para manipular gráficos e imágenes en el documento
+\usepackage{float}              % Permite forzar una ubicación exacta de imágenes con [H]
+\usepackage{listings}           % Permite formato de fragmentos de código de programación
+\usepackage[autostyle=false, style=english]{csquotes} % Permite escribir "" con \enquote{}
+\usepackage[explicit]{titlesec} % Permite personalizar el estilo de los títulos y secciones
+\usepackage{xcolor}             % Para definir y usar colores personalizados en texto
+\usepackage{geometry}           % Para configuración de los márgenes y el tamaño de la página
+\usepackage{lipsum}             % Para generar texto de relleno ("Lorem ipsum")
+\usepackage{tocloft}            % Para personalizar el formato del índice
+\usepackage{subfiles}           % Para incluir de otros archivos .tex en el main mediante \include{}
+\usepackage[colorlinks=true, allcolors=blue, linktoc=all]{hyperref} % Crea enlaces dentro del documento 
+\usepackage{bookmark}           % Mejora la administración de los marcadores (bookmarks) en documentos PDF generados
+\usepackage{xr}                 % Permite referenciar elementos de otros documentos .tex
+
 
 
 % Configuración de márgenes
@@ -30,7 +31,7 @@
 % Ahora en los subarchivos tex al llamarlas de esta forma aseguramos que en la
 % Table of Contents (ToC) aparezcan los números de las secciones que seleccionemos
 %     \subsection*{} hace que salga el titulo en formato subsection pero no aparece en el ToC
-%     \numberedsubsection hara que si salga en la ToC
+%     \numberedsubsection hará que si salga en la ToC
 \newcommand{\numberedsection}[1]{%
   \stepcounter{section}%
   \section*{#1}%
@@ -65,7 +66,7 @@
          \includegraphics[width=0.30\linewidth]{assets/umaLogo.png}
     \end{figure}
     \vfill
-    {\scshape\Large Ingeniería de Requisitos (2024-25)\par}
+    {\scshape\Large Ingeniería de Requisitos (2024$-$25)\par}
     \vfill
     {\Large Diego Sicre Cortizo\par}
     {\Large Pablo Ortega Serapio\par}
@@ -97,10 +98,11 @@
 \include{body/RF2.X_EditarProducto/page}
 \include{body/RF2.X_BorrarProducto/page}
 \include{body/RF2.X_MostrarProducto/page}
+\include{body/RF4_GestionDeCategorias/page}
 \include{body/RF6.1_CrearAtributo/page}
-
-
-
+\include{body/RF6.2_LeerAtributo/page}
+\include{body/RF6.3_ModificarAtributo/page}
+\include{body/RF6.4_BorrarAtributo/page}
 
 
 
