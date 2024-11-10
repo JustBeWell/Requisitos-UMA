@@ -159,6 +159,9 @@ INPUT body\RF2.1_CrearProducto\page.aux
 INPUT .\body\RF2.X_EditarProducto\page.aux
 INPUT .\body\RF2.X_EditarProducto\page.aux
 INPUT body\RF2.X_EditarProducto\page.aux
+INPUT .\body\RF2.X_BorrarProducto\page.aux
+INPUT .\body\RF2.X_BorrarProducto\page.aux
+INPUT body\RF2.X_BorrarProducto\page.aux
 INPUT .\body\RF6.1_CrearAtributo\page.aux
 INPUT .\body\RF6.1_CrearAtributo\page.aux
 INPUT body\RF6.1_CrearAtributo\page.aux
@@ -270,6 +273,26 @@ INPUT .\mockups\RF2-X Editar Producto.png
 INPUT .\mockups\RF2-X Editar Producto.png
 INPUT .\mockups\RF2-X Editar Producto.png
 INPUT .\mockups\RF2-X Editar Producto.png
+INPUT .\body\RF2.X_BorrarProducto\page.tex
+INPUT .\body\RF2.X_BorrarProducto\page.tex
+OUTPUT body\RF2.X_BorrarProducto\page.aux
+INPUT .\body\RF2.X_BorrarProducto\page.tex
+INPUT .\body\RF2.X_BorrarProducto\page.tex
+INPUT body\RF2.X_BorrarProducto\page.tex
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
 INPUT .\body\RF6.1_CrearAtributo\page.tex
 INPUT .\body\RF6.1_CrearAtributo\page.tex
 OUTPUT body\RF6.1_CrearAtributo\page.aux
@@ -294,6 +317,9 @@ INPUT body\RF2.1_CrearProducto\page.aux
 INPUT .\body\RF2.X_EditarProducto\page.aux
 INPUT .\body\RF2.X_EditarProducto\page.aux
 INPUT body\RF2.X_EditarProducto\page.aux
+INPUT .\body\RF2.X_BorrarProducto\page.aux
+INPUT .\body\RF2.X_BorrarProducto\page.aux
+INPUT body\RF2.X_BorrarProducto\page.aux
 INPUT .\body\RF6.1_CrearAtributo\page.aux
 INPUT .\body\RF6.1_CrearAtributo\page.aux
 INPUT body\RF6.1_CrearAtributo\page.aux

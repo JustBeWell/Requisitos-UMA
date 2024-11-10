@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.10)  10 NOV 2024 16:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.10)  10 NOV 2024 16:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -317,7 +317,7 @@ Package: xr 2024-04-10 v6.00 eXternal References (DPC)
 ) (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- (body/RF2_GestionGeneralDeProductos/page.aux) (body/RF2.1_CrearProducto/page.aux) (body/RF2.X_EditarProducto/page.aux) (body/RF6.1_CrearAtributo/page.aux))
+ (body/RF2_GestionGeneralDeProductos/page.aux) (body/RF2.1_CrearProducto/page.aux) (body/RF2.X_EditarProducto/page.aux) (body/RF2.X_BorrarProducto/page.aux) (body/RF6.1_CrearAtributo/page.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -448,7 +448,7 @@ LaTeX Info: Redefining \% on input line 1.
 [4
 
 ]
-<mockups/RF2- Gestión General de Productos (listado).png, id=103, 1014.79124pt x 823.075pt>
+<mockups/RF2- Gestión General de Productos (listado).png, id=121, 1014.79124pt x 823.075pt>
 File: mockups/RF2- Gestión General de Productos (listado).png Graphic file (type png)
 <use mockups/RF2- Gestión General de Productos (listado).png>
 Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado).png  used on input line 96.
@@ -456,7 +456,7 @@ Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado).pn
 
 
 [5]
-<mockups/RF2- Gestión General de Productos (listado por búsqueda).png, id=109, 1014.79124pt x 823.075pt>
+<mockups/RF2- Gestión General de Productos (listado por búsqueda).png, id=127, 1014.79124pt x 823.075pt>
 File: mockups/RF2- Gestión General de Productos (listado por búsqueda).png Graphic file (type png)
 <use mockups/RF2- Gestión General de Productos (listado por búsqueda).png>
 Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado por búsqueda).png  used on input line 102.
@@ -477,12 +477,12 @@ Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado por
 ]
 
 [9]
-<mockups/RF2.1_boceto1.png, id=135, 761.09344pt x 617.30624pt>
+<mockups/RF2.1_boceto1.png, id=153, 761.09344pt x 617.30624pt>
 File: mockups/RF2.1_boceto1.png Graphic file (type png)
 <use mockups/RF2.1_boceto1.png>
 Package pdftex.def Info: mockups/RF2.1_boceto1.png  used on input line 111.
 (pdftex.def)             Requested size: 455.24411pt x 369.24686pt.
-<mockups/RF2.1_boceto2.png, id=136, 761.09344pt x 549.55313pt>
+<mockups/RF2.1_boceto2.png, id=154, 761.09344pt x 549.55313pt>
 File: mockups/RF2.1_boceto2.png Graphic file (type png)
 <use mockups/RF2.1_boceto2.png>
 Package pdftex.def Info: mockups/RF2.1_boceto2.png  used on input line 117.
@@ -501,7 +501,7 @@ Package pdftex.def Info: mockups/RF2.1_boceto2.png  used on input line 117.
 
 
 ]
-<mockups/RF2-X Editar Producto.png, id=157, 1014.79124pt x 823.075pt>
+<mockups/RF2-X Editar Producto.png, id=175, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Editar Producto.png Graphic file (type png)
 <use mockups/RF2-X Editar Producto.png>
 Package pdftex.def Info: mockups/RF2-X Editar Producto.png  used on input line 91.
@@ -511,11 +511,35 @@ Package pdftex.def Info: mockups/RF2-X Editar Producto.png  used on input line 9
 [13]
 
 [14 <./mockups/RF2-X Editar Producto.png>])
+\openout2 = `body/RF2.X_BorrarProducto/page.aux'.
+
+ (body/RF2.X_BorrarProducto/page.tex
+
+[15
+
+
+
+]
+<mockups/RF2-X Borrar Producto (Borrar Producto Paso1).png, id=193, 1014.79124pt x 823.075pt>
+File: mockups/RF2-X Borrar Producto (Borrar Producto Paso1).png Graphic file (type png)
+<use mockups/RF2-X Borrar Producto (Borrar Producto Paso1).png>
+Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso1).png  used on input line 68.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+<mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png, id=194, 1014.79124pt x 823.075pt>
+File: mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png Graphic file (type png)
+<use mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png>
+Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png  used on input line 74.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+
+
+[16 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso1).png>]
+
+[17 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png>])
 \openout2 = `body/RF6.1_CrearAtributo/page.aux'.
 
  (body/RF6.1_CrearAtributo/page.tex
 
-[15
+[18
 
 
 
@@ -526,36 +550,36 @@ Package pdftex.def Info: mockups/RF2.1_boceto1.png  used on input line 107.
 (pdftex.def)             Requested size: 455.24411pt x 369.24686pt.
 
 
-[16]
+[19]
 File: mockups/RF2.1_boceto2.png Graphic file (type png)
 <use mockups/RF2.1_boceto2.png>
 Package pdftex.def Info: mockups/RF2.1_boceto2.png  used on input line 113.
 (pdftex.def)             Requested size: 455.24411pt x 328.71977pt.
 
 
-[17]
+[20]
 
-[18]) (main.aux
+[21]) (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
- (body/RF2_GestionGeneralDeProductos/page.aux) (body/RF2.1_CrearProducto/page.aux) (body/RF2.X_EditarProducto/page.aux) (body/RF6.1_CrearAtributo/page.aux))
+ (body/RF2_GestionGeneralDeProductos/page.aux) (body/RF2.1_CrearProducto/page.aux) (body/RF2.X_EditarProducto/page.aux) (body/RF2.X_BorrarProducto/page.aux) (body/RF6.1_CrearAtributo/page.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 13954 strings out of 473701
- 228514 string characters out of 5719416
- 734921 words of memory out of 5000000
- 36761 multiletter control sequences out of 15000+600000
+ 14011 strings out of 473701
+ 230902 string characters out of 5719416
+ 736311 words of memory out of 5000000
+ 36800 multiletter control sequences out of 15000+600000
  567041 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,93p,683b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/byani/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (18 pages, 874318 bytes).
+Output written on main.pdf (21 pages, 1002654 bytes).
 PDF statistics:
- 295 PDF objects out of 1000 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 350 PDF objects out of 1000 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
