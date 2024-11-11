@@ -54,14 +54,14 @@
 \contentsline {subsection}{\numberline {11.1}Escenario principal}{43}{section*.8}%
 \contentsline {subsection}{\numberline {11.2}Escenarios alternativos}{43}{Item.65}%
 \contentsline {subsection}{\numberline {11.3}Casos de Prueba}{43}{Item.65}%
-\contentsline {subsection}{\numberline {11.4}Bocetos}{44}{Item.65}%
-\contentsline {section}{\numberline {12}RF6.3 Modificar Atributo}{46}{section*.9}%
-\contentsline {subsection}{\numberline {12.1}Escenario principal}{46}{section*.9}%
-\contentsline {subsection}{\numberline {12.2}Escenarios alternativos}{47}{Item.73}%
-\contentsline {subsection}{\numberline {12.3}Casos de Prueba}{47}{Item.73}%
-\contentsline {subsection}{\numberline {12.4}Bocetos}{48}{Item.73}%
-\contentsline {section}{\numberline {13}RF6.4 Borrar Atributo}{49}{section*.10}%
-\contentsline {subsection}{\numberline {13.1}Escenario principal}{49}{section*.10}%
-\contentsline {subsection}{\numberline {13.2}Escenarios alternativos}{49}{Item.77}%
-\contentsline {subsection}{\numberline {13.3}Casos de Prueba}{49}{Item.77}%
-\contentsline {subsection}{\numberline {13.4}Bocetos}{50}{Item.77}%
+\contentsline {section}{\numberline {12}RF6.3 Modificar Atributo}{45}{section*.9}%
+\contentsline {subsection}{\numberline {12.1}Escenario principal}{45}{section*.9}%
+\contentsline {subsection}{\numberline {12.2}Escenarios alternativos}{46}{Item.73}%
+\contentsline {subsection}{\numberline {12.3}Casos de Prueba}{46}{Item.73}%
+\contentsline {subsection}{\numberline {12.4}Bocetos}{47}{Item.73}%
+\contentsline {section}{\numberline {13}RF6.4 Borrar Atributo}{48}{section*.10}%
+\contentsline {subsection}{\numberline {13.1}Escenario principal}{48}{section*.10}%
+\contentsline {subsection}{\numberline {13.2}Escenarios alternativos}{48}{Item.79}%
+\contentsline {subsection}{\numberline {13.3}Casos de Prueba}{49}{Item.79}%
+\contentsline {subsection}{\numberline {13.4}Bocetos}{49}{Item.79}%
+\contentsline {subsection}{\numberline {13.5}Bocetos}{50}{figure.24}%

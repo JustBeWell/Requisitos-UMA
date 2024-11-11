@@ -3,7 +3,7 @@
 \numberedsection{RF6.2 Leer Atributo}
 
 \subsection*{Descripción}
-Los usuarios pueden leer atributos personalizados para los productos, desde la seccion de atributos.
+Los usuarios pueden leer atributos personalizados para los productos, desde la seccion de atributos en el \textit{GridAtributos}.
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
@@ -12,7 +12,7 @@ El usuario ha iniciado sesión en su cuenta en Mini PIM y tiene acceso a la secc
 
 \textbf{Post-condición}
 \begin{itemize}
-    \item Caso de éxito: El User puede leer correctamente los atributos de usuario
+    \item Caso de éxito: El User puede leer correctamente los atributos de usuario.
     \item Caso mínimo: El sistema notifica al usuario el resultado de la acción crear atributo; exitosa o fallida.
 \end{itemize}
 
@@ -21,7 +21,7 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autor(es): }
-Pablo Ortega\par
+Pablo Ortega y Diego Sicre.\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: }
@@ -32,7 +32,7 @@ Pablo Ortega\par
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
     \item El usuario selecciona la pestaña de atributos.
-    \item El sistema muestra la pestaña con los atributos de usuario que hay en la vase de datos actualmente.
+    \item El sistema muestra la pestaña con los atributos de usuario que hay en la base de datos actualmente en el \textit{GridAtributos}.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
@@ -49,7 +49,7 @@ Pablo Ortega\par
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
 \textbf{Cuando} selecciona la pestaña de atributo,\par
 \textbf{Y} tiene acceso a dicho apartado,\par
-\textbf{Entonces} El sistema muestra el listado de atributos de usuarios que hay actualmente en la base de datos.\par
+\textbf{Entonces} El sistema muestra el listado de atributos de usuarios que hay actualmente en la base de datos en el \textit{GridAtributos}.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 2.a}\par
@@ -60,16 +60,11 @@ Pablo Ortega\par
 \textbf{Entonces} el sistema muestra un mensaje de error y no le muestra la pestaña de atributos.\par
 \vspace{0.20cm}
 
-\numberedsubsection{Bocetos}
-\begin{figure}[H]
-    \includegraphics[width=1\linewidth]{mockups/RF6.2Leer_Atributo.png}
-    \caption{Apartado Productos}
-   \end{figure}
-\vspace{1.0cm}
+
 
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{mockups/RF6.2Leer_Atributo.png}
-    \caption{Menú de creación}
+    \includegraphics[width=1\linewidth]{mockups/RF6.1Crear_Atributo.png}
+    \caption{Menú de Visualización}
    \end{figure}
 \vspace{1.0cm}
 

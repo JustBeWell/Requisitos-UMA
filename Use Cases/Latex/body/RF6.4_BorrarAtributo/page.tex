@@ -12,7 +12,7 @@ El usuario ha iniciado sesión en su cuenta en Mini PIM, tiene acceso a la secci
 
 \textbf{Post-condición}
 \begin{itemize}
-    \item Caso de éxito: El atributo es borrado y eliminado de la base de datos
+    \item Caso de éxito: El atributo es borrado y eliminado de la base de datos.
     \item Caso mínimo: El sistema notifica al usuario el resultado de la acción borrar atributo; exitosa o fallida.
 \end{itemize}
 
@@ -21,7 +21,7 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autor(es): }
-Pablo Ortega\par
+Diego Sicre y Pablo Ortega\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: }
@@ -29,37 +29,59 @@ Pablo Ortega\par
     \item Versión 1: Definición del caso de uso.
 \end{itemize}
 
+
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario selecciona el atributo que quiere modificar.
-    \item El usuario pulsa el botón de borrar.
-    \item El sistema borra el atributo.
+    \item El usuario selecciona el atributo que quiere borrar.
+    \item El usuario pulsa el icono de borrar.
+    \item El sistema pregunta al usuario si está seguro de su decisión.
+    \item El usuario confirma seleccionando "Sí".
+    \item El sistema borra el atributo de la base de datos.
     \item El sistema muestra al usuario un mensaje confirmando que el atributo ha sido borrado con éxito.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
+\begin{description}
+
+    \item[4.a] El usuario decide no borrar el atributo.
+    \begin{enumerate}
+        \item[4.a.1] El usuario selecciona "No" en el mensaje de confirmación.
+        \item[4.a.2] El sistema cancela la acción de borrado y vuelve a mostrar la lista de atributos sin cambios.
+    \end{enumerate}
+
+\end{description}
 
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
 \textbf{Y} se encuentra en la sección de atributos,\par
-\textbf{Y} selecciona un atributo,
-\textbf{Cuando} pulsa el botón de borrar,\par
+\textbf{Y} selecciona un atributo,\par
+\textbf{Cuando} pulsa el botón de borrar y confirma la acción,\par
 \textbf{Entonces} el sistema borra el atributo de la base de datos y vuelve a mostrar la lista de atributos.\par
 \vspace{0.20cm}
 
+\underline{Escenario: Alternativo 3.a}\par
+\vspace{0.15cm}
+\textbf{Dado} que el usuario ha iniciado la acción de borrar un atributo,\par
+\textbf{Y} el sistema muestra un mensaje de confirmación,\par
+\textbf{Cuando} el usuario selecciona "No" en la confirmación,\par
+\textbf{Entonces} el sistema cancela la acción y muestra la lista de atributos sin cambios.\par
+\vspace{0.20cm}
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{mockups/RF6.2Leer_Atributo.png}
-    \caption{Apartado Productos}
+    \includegraphics[width=1\linewidth]{mockups/RF6.4BorrarAtributo.png}
+    \caption{Borrar Atributo}
+   \end{figure}
+\vspace{1.0cm}
+\numberedsubsection{Bocetos}
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{mockups/RF6.4BorrarAtributoDespuesDeBorrar.png}
+    \caption{Borrar Atributos Paso 2}
    \end{figure}
 \vspace{1.0cm}
 
-\begin{figure}[H]
-    \includegraphics[width=1\linewidth]{mockups/RF6.2Leer_Atributo.png}
-    \caption{Menú de creación}
-   \end{figure}
-\vspace{1.0cm}
+
+
 
 \newpage %Inicia en una nueva página otro caso de uso
