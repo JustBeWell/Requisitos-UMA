@@ -16,7 +16,7 @@ El usuario debe de tener la sesión iniciada en Mini PIM. \par
 \end{itemize}
 
 \textbf{Prioridad: }
-Alta
+Media
 \vspace{0.15cm}
 
 \textbf{Autor: }
@@ -33,39 +33,35 @@ Janine Bernadeth Olegario Laguit\par
     \item El sistema verifica el número total de categorías creadas por el usuario y compara el número de categorías creadas con el límite establecido por el plan de suscripción del usuario.
     \item El sistema muestra el menú de creación de categoría.
     \item El usuario ingresa el nombre deseado y confirma la creación de la categoría.
-    \item El sistema verifica que el nombre de la categoría no esté vacío
-    \item El sistema crea la nueva categoría y actualiza la lista de categorías para incluirla
+    \item El sistema verifica que el nombre de la categoría no esté vacío.
+    \item El sistema crea la nueva categoría y actualiza la lista de categorías para incluirla.
     \item El usuario visualiza la nueva categoría en la lista, con el nombre ingresado y un contador de productos asociados que empieza en cero.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[2.a.] El sistema no puede acceder a la base de datos de categorías.
-    \begin{enumerate}
-        \item[2.a.1] El sistema muestra un mensaje de error indicando problemas de conexión y no permite la creación de categorías.
-    \end{enumerate}
 
     \item[3.a] El sistema muestra un mensaje de error indicando que se ha alcanzado el límite de categorías permitido.
     \begin{enumerate}
-        \item[3.a.1] El sistema no permite que el menú de creación de categoría se abra.
+        \item[3.a.1] El sistema no permite crear categorías adicionales hasta que se elimine una de las ya existentes o se amplíe el plan de suscripción.
     \end{enumerate}
 
     \item[5.a] El usuario cancela la acción de crear una categoría nueva seleccionando la opción que cierra el menú.
     \begin{enumerate}
-        \item[5.a.1] El sistema regresa a la sección de gestión de categorías.de los datos.
+        \item[5.a.1] El sistema regresa a la sección de gestión de categorías de los datos.
     \end{enumerate}
 
     \item[7.a] El sistema detecta que el nombre de la categoría está vacío.
     \begin{enumerate}
         \item[7.a.1] El sistema muestra un mensaje de error solicitando un nombre válido.
-        \item[7.a.2]El usuario ingresa un nombre válido y confirma nuevamente.
+        \item[7.a.2] El sistema devuelve al usuario a la pestaña de gestión de categorías.
     \end{enumerate}
 \end{description}
 
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono la opción de “Añadir categoría”\par
 \textbf{E} introduzco correctamente el nombre de la categoría que deseo crear\par
@@ -76,36 +72,24 @@ Janine Bernadeth Olegario Laguit\par
 
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 2.a}\par
-\vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de “Añadir categoría”\par
-\textbf{E} ingreso correctamente el nombre de la nueva categoría\par
-\textbf{Entonces} el sistema intenta almacenar la categoría, pero detecta un fallo en la conexión
-\textbf{Y} muestra un mensaje de error indicando problemas de conexión\par
-\textbf{Y} regresa al menú de creación sin almacenar la categoría.
-
-
-\vspace{0.20cm}
 
 \underline{Escenario: Alternativo 3.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono la opción de “Añadir categoría”\par
 \textbf{Y} el sistema verifica el número de categorías creadas y el límite de categorías de mi plan de suscripción\par
 \textbf{Entonces} el sistema me notifica que he alcanzado el límite de categorías permitido por mi plan\par
-\textbf{Y} no me permite acceder al menú de creación de categoría\par
+\textbf{Y} no me permite crear más categorías hasta que elimine una de las ya existentes o se amplíe el plan de suscripción.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 5.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
+\textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono la opción de “Añadir categoría”\par
 \textbf{Y} selecciono la opción de cancelar o cerrar el menú de creación sin ingresar ningún nombre\par
 \textbf{Entonces} el sistema regresa a la sección de gestión de categorías\par
@@ -116,15 +100,12 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 7.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías
 \textbf{Cuando} selecciono la opción de “Añadir categoría”\par
 \textbf{Y} dejo el campo de nombre de la categoría vacío\par
 \textbf{Entonces} el sistema me notifica que el campo de nombre no puede estar vacío\par
-\textbf{Y} muestra un mensaje de error solicitando un nombre válido\par
-\textbf{Entonces} el usuario ingresa un nombre válido y confirma nuevamente\par
-\textbf{Y} el sistema procesa la creación de la categoría con el nombre ingresado\par
-
+\textbf{Y} muestra un mensaje de error y me devuelve al apartado de categorías sin ningún cambio.\par
 
 \vspace{0.20cm}
 
@@ -158,7 +139,7 @@ El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Ca
 \end{itemize}
 
 \textbf{Prioridad: }
-Alta
+Media
 \vspace{0.15cm}
 
 \textbf{Autor: }
@@ -180,17 +161,13 @@ Janine Bernadeth Olegario Laguit\par
         \item[2.a.1] El sistema muestra una lista vacía, con la opción de crear categorías nuevas.
     \end{enumerate}
 
-    \item[2.b] El sistema detecta un error en la conexión con la base de datos.
-    \begin{enumerate}
-        \item[2.b.1] El sistema muestra un mensaje de error indicando que no se pueden visualizar las categorías en este momento.
-    \end{enumerate}
 \end{description}
 
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Entonces} el sistema muestra la lista de categorías existentes\par
 \textbf{Y} cada categoría se visualiza junto a su nombre y el número de productos asociados.\par
@@ -201,22 +178,12 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 2.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Y} no existen categorías registradas en el sistema\par
 \textbf{Entonces} el sistema muestra una lista vacía, con la opción de crear categorías nuevas.\par
 
 
-\vspace{0.20cm}
-
-\underline{Escenario: Alternativo 2.b}\par
-\vspace{0.15cm}
-
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Entonces} el sistema intenta recuperar los datos, pero detecta un error en la conexión a la base de datos\par
-\textbf{Y} muestra un mensaje de error indicando que no se pueden visualizar las categorías en este momento\par
-\textbf{Y} regresa al menú de Categorías.\par
 
 \vspace{0.20cm}
 
@@ -250,7 +217,7 @@ El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Ge
 \end{itemize}
 
 \textbf{Prioridad: }
-Alta
+Media
 \vspace{0.15cm}
 
 \textbf{Autor: }
@@ -273,11 +240,6 @@ Janine Bernadeth Olegario Laguit\par
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[2.a.] El sistema no puede acceder a la base de datos de categorías.
-    \begin{enumerate}
-        \item[2.a.1] El sistema muestra un mensaje de error indicando problemas de conexión y no permite la edición del nombre para la categoría.
-    \end{enumerate}
-
     \item[4.a] El usuario cancela la acción de editar la categoría seleccionada.
     \begin{enumerate}
         \item[4.a.1] El sistema regresa a la sección de gestión de categorías sin realizar ningún cambio.
@@ -294,7 +256,7 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono la opción de editar una categoría existente\par
 \textbf{Y} el sistema presenta un menú con el nombre actual de la categoría\par
@@ -308,24 +270,11 @@ Janine Bernadeth Olegario Laguit\par
 
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 2.a}\par
-\vspace{0.15cm}
-
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} intento editar el nombre de una categoría existente\par
-\textbf{Y} el sistema detecta que no puede acceder a la base de datos de categorías\par
-\textbf{Entonces} el sistema muestra un mensaje de error indicando problemas de conexión\par
-\textbf{Y} no permite la edición del nombre de la categoría\par
-\textbf{Y} regresa a la sección de gestión de categorías sin realizar ningún cambio.\par
-
-
-\vspace{0.20cm}
 
 \underline{Escenario: Alternativo 4.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono una categoría para editar\par
 \textbf{Y} selecciono la opción de cancelar la acción de edición\par
@@ -335,16 +284,12 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 6.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
 \textbf{Cuando} selecciono una categoría para editar\par
 \textbf{Y} dejo el campo de nombre de la categoría vacío\par
-\textbf{Entonces} el sistema muestra un mensaje de error solicitando un nombre válido\par
-\textbf{Y} no permite continuar con la edición hasta que el campo esté completo\par
-\textbf{E} ingreso un nombre válido y confirma nuevamente\par
-\textbf{Y} el sistema actualiza el nombre de la categoría con el nombre ingresado.\par
-
-
+\textbf{Entonces} el sistema muestra un mensaje de error\par
+\textbf{Y} me devuelve al gestor de categorías sin realizar ningún cambio.\par
 
 \vspace{0.20cm}
 
@@ -378,7 +323,7 @@ El usuario debe tener la sesión iniciada en Mini PIM y tener acceso a la secci�
 \end{itemize}
 
 \textbf{Prioridad: }
-Alta
+Media
 \vspace{0.15cm}
 
 \textbf{Autor: }
@@ -402,11 +347,7 @@ Janine Bernadeth Olegario Laguit\par
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[3.a.] El sistema no puede acceder a la base de datos.
-    \begin{enumerate}
-        \item[3.a.1] El sistema muestra un mensaje de error indicando problema de conexión y no permite la eliminación de la categoría
-    \end{enumerate}
-
+  
     \item[4.a] El usuario cancela la acción de eliminar la categoría seleccionada.
     \begin{enumerate}
         \item[4.a.1] El sistema regresa a la sección de gestión de categorías sin realizar ningún cambio.
@@ -423,9 +364,9 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de "Eliminar" en una categoría\par
+\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
 \textbf{Y} confirmo la eliminación de la categoría en la ventana emergente\par
 \textbf{Entonces} el sistema elimina la categoría de la base de datos\par
 \textbf{Y} actualiza la lista de categorías, removiendo la categoría eliminada\par
@@ -433,29 +374,16 @@ Janine Bernadeth Olegario Laguit\par
 
 
 
-\vspace{0.20cm}
-
-\underline{Escenario: Alternativo 3.a}\par
-\vspace{0.15cm}
-
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de "Eliminar" en una categoría\par
-\textbf{Y} el sistema intenta eliminar la categoría\par
-\textbf{Y} detecta un fallo en la conexión con la base de datos\par
-\textbf{Entonces} el sistema muestra un mensaje de error indicando problemas de conexión\par
-\textbf{Y} no permite la eliminación de la categoría.\par
-
 
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 4.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente
 \textbf{Y} estoy en el apartado de Categorías\par
-Cuando selecciono la opción de "Eliminar" en una categoría\par
-\textbf{Y} selecciono la opción de "Cancelar" en la ventana emergente de confirmación\par
+\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
+\textbf{Y} selecciono la opción de Cancelar en la ventana emergente de confirmación\par
 \textbf{Entonces} el sistema regresa a la sección de gestión de categorías\par
 \textbf{Y} muestra la lista de categorías sin realizar ningún cambio.\par
 
@@ -465,10 +393,10 @@ Cuando selecciono la opción de "Eliminar" en una categoría\par
 \underline{Escenario: Alternativo 6.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
 \textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de "Eliminar" en una categoría\par
-\textbf{Y} el sistema detecta que la categoría está asociada algún producto\par
+\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
+\textbf{Y} el sistema detecta que la categoría está asociada a algún producto\par
 \textbf{Entonces} el sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a su asociación con otros elementos importantes\par
 \textbf{Y} el sistema me redirige a la sección de gestión de categorías\par
 

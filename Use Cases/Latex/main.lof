@@ -1,6 +1,6 @@
 \babel@toc {spanish}{}\relax 
 \contentsline {figure}{\numberline {1}{\ignorespaces Listado de Productos}}{6}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Listado de Productos por búsqueda}}{7}{figure.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Listado de Productos búsqueda filtrada por label}}{7}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Apartado Productos Click en “Añadir”}}{10}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Menú de creación}}{11}{figure.4}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Edicion de Productos Click en “Editar”}}{14}{figure.5}%
@@ -10,17 +10,17 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Borrar Producto Paso2}}{19}{figure.9}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Mostrar Producto}}{21}{figure.10}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Mostrar Producto}}{22}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Creación de categoría}}{26}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Error por llegar al máximo de categorías}}{27}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Visualización de categorías}}{29}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Visualización de lista vacía}}{30}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Editar el nombre de categoría}}{33}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Error por dejar el nombre vacío}}{34}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Mensaje esperando confirmación para eliminar categoría}}{37}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Mensaje de error porque la categoría a borrar tiene productos asociados}}{38}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Apartado Productos}}{41}{figure.20}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Menú de creación tras clickar}}{42}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Menú de Visualización}}{44}{figure.22}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Apartado Atributos}}{47}{figure.23}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Borrar Atributo}}{49}{figure.24}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Borrar Atributos Paso 2}}{50}{figure.25}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Creación de categoría}}{25}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Error por llegar al máximo de categorías}}{26}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Visualización de categorías}}{28}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Visualización de lista vacía}}{29}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Editar el nombre de categoría}}{31}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Error por dejar el nombre vacío}}{32}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Mensaje esperando confirmación para eliminar categoría}}{35}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Mensaje de error porque la categoría a borrar tiene productos asociados}}{36}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Apartado Productos}}{39}{figure.20}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Menú de creación tras clickar}}{40}{figure.21}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Menú de Visualización}}{42}{figure.22}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Apartado Atributos}}{45}{figure.23}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Borrar Atributo}}{47}{figure.24}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Borrar Atributos Paso 2}}{48}{figure.25}%

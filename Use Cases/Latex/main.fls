@@ -276,13 +276,13 @@ INPUT .\mockups\RF2.1_boceto1.png
 INPUT .\mockups\RF2.1_boceto1.png
 INPUT .\mockups\RF2.1_boceto1.png
 INPUT .\mockups\RF2.1_boceto1.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
-INPUT .\mockups\RF2.1_bocetoCreacion.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
+INPUT .\mockups\RF2.1_bocetoCreacionV2.png
 INPUT .\body\RF2.X_EditarProducto\page.tex
 INPUT .\body\RF2.X_EditarProducto\page.tex
 OUTPUT body\RF2.X_EditarProducto\page.aux
@@ -296,13 +296,13 @@ INPUT .\mockups\RF2-X Editar Producto Click en Lapiz.png
 INPUT .\mockups\RF2-X Editar Producto Click en Lapiz.png
 INPUT .\mockups\RF2-X Editar Producto Click en Lapiz.png
 INPUT .\mockups\RF2-X Editar Producto Click en Lapiz.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
-INPUT .\mockups\RF2-X Editar Producto.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
+INPUT .\mockups\RF2-X Editar ProductoV2.png
 INPUT .\body\RF2.X_BorrarProducto\page.tex
 INPUT .\body\RF2.X_BorrarProducto\page.tex
 OUTPUT body\RF2.X_BorrarProducto\page.aux
@@ -316,13 +316,13 @@ INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto desde listado).png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto desde listado).png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto desde listado).png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto desde listado).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
-INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1).png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
+INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso1)V2.png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
 INPUT .\mockups\RF2-X Borrar Producto (Borrar Producto Paso2).png
@@ -518,8 +518,6 @@ INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr17.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr17.pfb
-INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr6.pfb
-INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr6.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT D:\Programas\LaTeXDistribution\fonts\type1\public\amsfonts\cm\cmsy10.pfb
