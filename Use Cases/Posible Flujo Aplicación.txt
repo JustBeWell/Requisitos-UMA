@@ -4,22 +4,21 @@ Flujo de la aplicación.
 
 -> Listar
 
--Desde este grid se puede añadir un producto (caso de uso a parte, con un nuevo boceto pop-up))
+-Desde este grid se puede añadir, editar y borrar un producto (caso de uso a parte, con un nuevo boceto pop-up)).
 -> Crear
 -> Consultar
 -> Modificar/Editar
 -> Eliminar
+-> Categoría, label, atributo de usuario, de sistema, específico se añade aquí.
 
-POR DEFINIR:
-Una vez dentro de la edición/visualización del producto se puede clickar en el CRUD de atributos de usuario¿? y eso despliega otro pop-up, se pueden editar ahí directamente¿?.
-
+Los atributos de usuario se gestionan (añaden hasta 5, con su tipo y nombre) en el breadcrumb de Atributos.
 2. GESTIÓN DE ATRIBUTOS DE USUARIO (MAX 5)
 -> CRUD (TIPO DEL ATRIBUTO, NOMBRE)
 	-> SI EL TIPO ES STRING, CARACTER MAX 250
 
 
+3. GESTIÓN DE ETIQUETAS/CATEGORÍAS 
 PROPOSICIÓN DIEGO: Que sea una sección a parte a la que le das desde los breadcrumbs
-3. GESTIÓN DE ETIQUETAS/CATEGORÍAS
 ->CRUD
 	NOMBRE
 
