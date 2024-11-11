@@ -1,12 +1,11 @@
-\phantomsection
-\numberedsection{RF4.1 Crear categoría}
+\phantomsection\numberedsection{RF4.1 Crear categoría}
 
 \subsection*{Descripción}
 Permite a los usuarios definir nuevas categorías para poder relacionarlas como etiquetas para los productos y facilitar la organización de forma personalizada.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario debe de tener la sesión iniciada en Mini PIM. \par
+El usuario debe de tener la sesión iniciada en Mini PIM.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -61,13 +60,13 @@ Janine Bernadeth Olegario Laguit\par
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de “Añadir categoría”\par
-\textbf{E} introduzco correctamente el nombre de la categoría que deseo crear\par
-\textbf{Y} selecciono “Confirmar” para guardar los datos\par
-\textbf{Entonces} el sistema almacena la información de la nueva categoría en la base de datos del Mini PIM\par
-\textbf{Y} actualiza la lista de categorías con la nueva categoría creada\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir categoría},\par
+\textbf{E} introduzco correctamente el nombre de la categoría que deseo crear,\par
+\textbf{Y} selecciono \enquote{Confirmar} para guardar los datos,\par
+\textbf{Entonces} el sistema almacena la información de la nueva categoría en la base de datos del Mini PIM,\par
+\textbf{Y} actualiza la lista de categorías con la nueva categoría creada,\par
 \textbf{Y} muestra el apartado de Categorías con todas las categorías almacenadas, incluyendo la nueva con un contador de productos en cero.\par
 
 \vspace{0.20cm}
@@ -77,22 +76,22 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 3.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de “Añadir categoría”\par
-\textbf{Y} el sistema verifica el número de categorías creadas y el límite de categorías de mi plan de suscripción\par
-\textbf{Entonces} el sistema me notifica que he alcanzado el límite de categorías permitido por mi plan\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir categoría},\par
+\textbf{Y} el sistema verifica el número de categorías creadas y el límite de categorías de mi plan de suscripción,\par
+\textbf{Entonces} el sistema me notifica que he alcanzado el límite de categorías permitido por mi plan,\par
 \textbf{Y} no me permite crear más categorías hasta que elimine una de las ya existentes o se amplíe el plan de suscripción.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 5.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de “Añadir categoría”\par
-\textbf{Y} selecciono la opción de cancelar o cerrar el menú de creación sin ingresar ningún nombre\par
-\textbf{Entonces} el sistema regresa a la sección de gestión de categorías\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir categoría},\par
+\textbf{Y} selecciono la opción de cancelar o cerrar el menú de creación sin ingresar ningún nombre,\par
+\textbf{Entonces} el sistema regresa a la sección de gestión de categorías,\par
 \textbf{Y} muestra el apartado de Categorías sin ningún cambio.\par
 
 \vspace{0.20cm}
@@ -100,11 +99,11 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 7.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías
-\textbf{Cuando} selecciono la opción de “Añadir categoría”\par
-\textbf{Y} dejo el campo de nombre de la categoría vacío\par
-\textbf{Entonces} el sistema me notifica que el campo de nombre no puede estar vacío\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,
+\textbf{Cuando} selecciono la opción de \enquote{Añadir categoría},\par
+\textbf{Y} dejo el campo de nombre de la categoría vacío,\par
+\textbf{Entonces} el sistema me notifica que el campo de nombre no puede estar vacío,\par
 \textbf{Y} muestra un mensaje de error y me devuelve al apartado de categorías sin ningún cambio.\par
 
 \vspace{0.20cm}
@@ -122,6 +121,8 @@ Janine Bernadeth Olegario Laguit\par
    \end{figure}
 \vspace{1.0cm}
 
+\newpage % Nuevo caso de uso en nueva página
+
 \numberedsection{RF4.2 Visualizar categoría}
 
 \subsection*{Descripción}
@@ -129,7 +130,7 @@ Permite a los usuarios visualizar una lista de categorías creadas en el sistema
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Categorías. \par
+El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Categorías.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -167,9 +168,9 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Entonces} el sistema muestra la lista de categorías existentes\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Entonces} el sistema muestra la lista de categorías existentes,\par
 \textbf{Y} cada categoría se visualiza junto a su nombre y el número de productos asociados.\par
 
 
@@ -178,12 +179,10 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 2.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Y} no existen categorías registradas en el sistema\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Y} no existen categorías registradas en el sistema,\par
 \textbf{Entonces} el sistema muestra una lista vacía, con la opción de crear categorías nuevas.\par
-
-
 
 \vspace{0.20cm}
 
@@ -200,6 +199,8 @@ Janine Bernadeth Olegario Laguit\par
    \end{figure}
 \vspace{1.0cm}
 
+\newpage % Nuevo caso de uso en nueva página
+
 \numberedsection{RF4.3 Editar categoría}
 
 \subsection*{Descripción}
@@ -207,7 +208,7 @@ Permite a los usuarios modificar los datos de las categorías existentes.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Gestión de Categorías. La categoría a editar debe existir en el sistema. \par
+El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Gestión de Categorías. La categoría a editar debe existir en el sistema.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -256,39 +257,37 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de editar una categoría existente\par
-\textbf{Y} el sistema presenta un menú con el nombre actual de la categoría\par
-\textbf{E} introduzco el nuevo nombre para la categoría\par
-\textbf{Y} confirmo la modificación del nombre\par
-\textbf{Entonces} el sistema valida el nuevo nombre\par
-\textbf{Y} el sistema actualiza la categoría en la base de datos con el nuevo nombre\par
-\textbf{Y} el sistema muestra un mensaje de éxito\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de editar una categoría existente,\par
+\textbf{Y} el sistema presenta un menú con el nombre actual de la categoría,\par
+\textbf{E} introduzco el nuevo nombre para la categoría,\par
+\textbf{Y} confirmo la modificación del nombre,\par
+\textbf{Entonces} el sistema valida el nuevo nombre,\par
+\textbf{Y} el sistema actualiza la categoría en la base de datos con el nuevo nombre,\par
+\textbf{Y} el sistema muestra un mensaje de éxito,\par
 \textbf{Y} refleja el nuevo nombre de la categoría en la lista de categorías.\par
 
-
 \vspace{0.20cm}
-
 
 \underline{Escenario: Alternativo 4.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono una categoría para editar\par
-\textbf{Y} selecciono la opción de cancelar la acción de edición\par
-\textbf{Entonces} el sistema regresa a la sección de gestión de categorías\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono una categoría para editar,\par
+\textbf{Y} selecciono la opción de cancelar la acción de edición,\par
+\textbf{Entonces} el sistema regresa a la sección de gestión de categorías,\par
 \textbf{Y} muestra la lista de categorías sin realizar ningún cambio en la categoría seleccionada.\par
 
 \underline{Escenario: Alternativo 6.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono una categoría para editar\par
-\textbf{Y} dejo el campo de nombre de la categoría vacío\par
-\textbf{Entonces} el sistema muestra un mensaje de error\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono una categoría para editar,\par
+\textbf{Y} dejo el campo de nombre de la categoría vacío,\par
+\textbf{Entonces} el sistema muestra un mensaje de error,\par
 \textbf{Y} me devuelve al gestor de categorías sin realizar ningún cambio.\par
 
 \vspace{0.20cm}
@@ -306,14 +305,16 @@ Janine Bernadeth Olegario Laguit\par
    \end{figure}
 \vspace{1.0cm}
 
+\newpage % Nuevo caso de uso en nueva página
+
 \numberedsection{RF4.4 Borrar categoría}
 
 \subsection*{Descripción}
-Permite a los usuarios eliminar una categoría existente en el sistema. La eliminación de una categoría solo será permitida si no está asociada a productos. \par
+Permite a los usuarios eliminar una categoría existente en el sistema. La eliminación de una categoría solo será permitida si no está asociada a productos.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario debe tener la sesión iniciada en Mini PIM y tener acceso a la sección de gestión de categorías. La categoría a eliminar debe de existir en el sistema. \par
+El usuario debe tener la sesión iniciada en Mini PIM y tener acceso a la sección de gestión de categorías. La categoría a eliminar debe de existir en el sistema.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -335,14 +336,14 @@ Janine Bernadeth Olegario Laguit\par
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
     \item El usuario accede a la sección de gestión de categorías.
-    \item El sistema muestra la lista de categorías existentes
-    \item El usuario selecciona la opción de eliminar una categoría
-    \item El sistema muestra una ventana emergente de confirmación para la eliminación de la categoría
-    \item El sistema verifica si la categoría está asociada a algún producto
-    \item Si la categoría no está asociada a elementos críticos, el usuario confirma la eliminación
-    \item El sistema elimina la categoría de la base de datos
-    \item El sistema actualiza la lista de categorías, eliminando la categoría seleccionada
-    \item El sistema muestra un mensaje de éxito indicando que la categoría ha sido eliminada correctamente
+    \item El sistema muestra la lista de categorías existentes.
+    \item El usuario selecciona la opción de \enquote{Eliminar} una categoría.
+    \item El sistema muestra una ventana emergente de confirmación para la eliminación de la categoría.
+    \item El sistema verifica si la categoría está asociada a algún producto.
+    \item Si la categoría no está asociada a elementos críticos, el usuario confirma la eliminación.
+    \item El sistema elimina la categoría de la base de datos.
+    \item El sistema actualiza la lista de categorías, eliminando la categoría seleccionada.
+    \item El sistema muestra un mensaje de éxito indicando que la categoría ha sido eliminada correctamente.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
@@ -355,8 +356,8 @@ Janine Bernadeth Olegario Laguit\par
 
      \item[6.a] La categoría seleccionada no puede ser eliminada por estar asociada a productos.
     \begin{enumerate}
-        \item[6.a.1]  El sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a que está asociada a algún producto.
-        \item[6.a.2]  El sistema regresa a la sección de gestión de categorías.
+        \item[6.a.1] El sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a que está asociada a algún producto.
+        \item[6.a.2] El sistema regresa a la sección de gestión de categorías.
     \end{enumerate}
 \end{description}
 
@@ -364,27 +365,24 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
-\textbf{Y} confirmo la eliminación de la categoría en la ventana emergente\par
-\textbf{Entonces} el sistema elimina la categoría de la base de datos\par
-\textbf{Y} actualiza la lista de categorías, removiendo la categoría eliminada\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Eliminar} en una categoría,\par
+\textbf{Y} confirmo la eliminación de la categoría en la ventana emergente,\par
+\textbf{Entonces} el sistema elimina la categoría de la base de datos,\par
+\textbf{Y} actualiza la lista de categorías, removiendo la categoría eliminada,\par
 \textbf{Y} muestra un mensaje de éxito indicando que la categoría ha sido eliminada correctamente.\par
-
-
-
 
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 4.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
-\textbf{Y} selecciono la opción de Cancelar en la ventana emergente de confirmación\par
-\textbf{Entonces} el sistema regresa a la sección de gestión de categorías\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Eliminar} en una categoría,\par
+\textbf{Y} selecciono la opción de Cancelar en la ventana emergente de confirmación,\par
+\textbf{Entonces} el sistema regresa a la sección de gestión de categorías,\par
 \textbf{Y} muestra la lista de categorías sin realizar ningún cambio.\par
 
 
@@ -393,12 +391,12 @@ Janine Bernadeth Olegario Laguit\par
 \underline{Escenario: Alternativo 6.a}\par
 \vspace{0.15cm}
 
-\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Categorías\par
-\textbf{Cuando} selecciono la opción de Eliminar en una categoría\par
-\textbf{Y} el sistema detecta que la categoría está asociada a algún producto\par
-\textbf{Entonces} el sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a su asociación con otros elementos importantes\par
-\textbf{Y} el sistema me redirige a la sección de gestión de categorías\par
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de Categorías,\par
+\textbf{Cuando} selecciono la opción de \enquote{Eliminar} en una categoría,\par
+\textbf{Y} el sistema detecta que la categoría está asociada a algún producto,\par
+\textbf{Entonces} el sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a su asociación con otros elementos importantes,\par
+\textbf{Y} el sistema me redirige a la sección de gestión de categorías.\par
 
 
 \vspace{0.20cm}

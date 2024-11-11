@@ -1,5 +1,4 @@
-\phantomsection
-\numberedsection{RF2 Gestión general de Productos (\textit{Listado})}
+\phantomsection\numberedsection{RF2 Gestión general de Productos (\textit{Listado})}
 
 \subsection*{Descripción}
 El sistema muestra una lista de productos en formato \textit{DataGrid} en la sección de productos. La lista incluye los atributos de cada producto que permiten identificarlo, tanto los atributos de sistema: Thumbnail, SKU y label, como los atributos personalizados por el usuario, con una limitación de la descripción de 50 caracteres. Además, la interfaz permite buscar productos por SKU, y por label, y proporciona botones para editar, añadir y borrar productos, aunque la funcionalidad de estos botones se detalla en otros casos de uso.
@@ -28,7 +27,7 @@ Diego Sicre\par
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario selecciona la opción "Productos" desde el menú principal.
+    \item El usuario selecciona la opción \enquote{Productos} desde el menú principal.
     \item El sistema carga y muestra un \textit{DataGrid} con la lista de productos disponibles.
     \item Cada fila en el \textit{DataGrid} incluye los siguientes datos:
     \begin{itemize}
@@ -65,7 +64,7 @@ Diego Sicre\par
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
-\textbf{Cuando} selecciona la opción de “Productos” en el menú principal,\par
+\textbf{Cuando} selecciona la opción de \enquote{Productos} en el menú principal,\par
 \textbf{Entonces} el sistema carga y muestra la lista de productos en un \textit{DataGrid} con todos los atributos visibles.\par
 \vspace{0.20cm}
 
@@ -86,7 +85,7 @@ Diego Sicre\par
 \underline{Escenario: Alternativo 5.a}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión en Mini PIM,\par
-\textbf{Cuando} selecciona la opción de “Productos” y no hay productos registrados en el sistema,\par
+\textbf{Cuando} selecciona la opción de \enquote{Productos} y no hay productos registrados en el sistema,\par
 \textbf{Entonces} el sistema muestra un mensaje indicando que no hay productos disponibles para mostrar.\par
 \vspace{0.20cm}
 
@@ -100,7 +99,7 @@ Diego Sicre\par
 
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2- Gestión General de Productos (listado por búsqueda).png}
-    \caption{Listado de Productos búsqueda filtrada por label}
+    \caption{Listado de Productos con búsqueda filtrada por label}
    \end{figure}
 \vspace{1.0cm}
 

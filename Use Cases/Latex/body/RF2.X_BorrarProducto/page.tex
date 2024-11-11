@@ -1,9 +1,7 @@
-\phantomsection
-\numberedsection{RF2.4 Borrar Producto}
+\phantomsection\numberedsection{RF2.4 Borrar Producto}
 
 \subsection*{Descripción}
-Los usuarios deben de poder borrar cualquier producto creado.
-\par
+Los usuarios deben de poder borrar cualquier producto creado.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
@@ -28,7 +26,7 @@ Angel Nicolas Escaño Lopez y Diego Sicre\par
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario se encuentra en el apartado de productos y selecciona la opción de “Borrar”, que es una imagen con una papelera justo después de dicho producto.
+    \item El usuario se encuentra en el apartado de productos y selecciona la opción de \enquote{Borrar}, que es una imagen con una papelera justo después de dicho producto.
     \item El sistema muestra un menú con un botón de confirmar.
     \item El usuario confirma el borrado.
     \item El sistema muestra la página de productos sin el producto borrado.
@@ -45,41 +43,41 @@ Angel Nicolas Escaño Lopez y Diego Sicre\par
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
-\textbf{Dado} que hay al menos un producto creado\par
-\textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opcion de “Borrar”\par
-\textbf{Y} Selecciono “confirmar”\par
-\textbf{Entonces} el sistema borra la información de la base de datos de Mini PIM\par
-\textbf{Y} actualiza la información del total de productos registrados en la base de datos\par
+\textbf{Dado} que hay al menos un producto creado,\par
+\textbf{Y} estoy en el apartado de Productos,\par
+\textbf{Cuando} selecciono la opción de \enquote{Borrar},\par
+\textbf{Y} Selecciono \enquote{Confirmar},\par
+\textbf{Entonces} el sistema borra la información de la base de datos de Mini PIM,\par
+\textbf{Y} actualiza la información del total de productos registrados en la base de datos,\par
 \textbf{Y} muestra el apartado de visualización de productos sin el producto borrado.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 2.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que hay un producto creado\par
-\textbf{Y} estoy en el apartado de visualización de productos\par
-\textbf{Cuando} selecciono la opción de "Borrar"\par
-\textbf{Y} selecciono la opción de cancelar\par
+\textbf{Dado} que hay un producto creado,\par
+\textbf{Y} estoy en el apartado de visualización de productos,\par
+\textbf{Cuando} selecciono la opción de \enquote{Borrar},\par
+\textbf{Y} selecciono la opción de cancelar,\par
 \textbf{Entonces} el sistema muestra el apartado de visualización de productos mostrando todos los recursos almacenados sin ningún cambio.\par
 \vspace{0.20cm}
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png}
-    \caption{Borrar Producto Paso1}
+    \caption{Apartado Productos hacer clic en \enquote{Borrar}}
    \end{figure}
 \vspace{1.0cm}
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png}
-    \caption{Borrar Producto Paso1}
+    \caption{Apartado Productos tras clicar \enquote{Borrar}}
    \end{figure}
 \vspace{1.0cm}
 
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png}
-    \caption{Borrar Producto Paso2}
+    \caption{Apartado Productos tras producto borrado}
    \end{figure}
 \vspace{1.0cm}
 

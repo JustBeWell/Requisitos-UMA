@@ -78,20 +78,26 @@
     \vfill
     {\Large Noviembre 2024}
 \end{titlepage}
+\thispagestyle{empty}
 % FIN PORTADA
 
 % ÍNDICE
 \tableofcontents % Crea el Índice
 \thispagestyle{empty} % Quita el número de la primera página
+\addtocontents{toc}{\protect\thispagestyle{empty}} % Asegura que cada página del índice sea sin número de página
+
 \newpage
+
 \listoffigures % Crea un Índice de figuras (registra imágenes)
 \thispagestyle{empty}
+\addtocontents{lof}{\protect\thispagestyle{empty}}
+
 \newpage
 % FIN ÍNDICE
 
 
 % CUERPO DEL DOCUMENTO
-\setcounter{page}{4} % Inicia a contar las páginas a partir de {}
+\setcounter{page}{5} % Inicia a contar las páginas a partir de {}
 
 \include{body/RF2_GestionGeneralDeProductos/page}
 \include{body/RF2.1_CrearProducto/page}
