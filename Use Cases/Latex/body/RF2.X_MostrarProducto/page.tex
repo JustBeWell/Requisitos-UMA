@@ -2,7 +2,7 @@
 \numberedsection{RF2.5 Mostrar Producto}
 
 \subsection*{Descripción}
-Los usuarios deben de poder leer los productos creados\par
+Los usuarios deben de poder ver los productos creados.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
@@ -20,16 +20,15 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autor: }
-Angel Nicolas Escaño Lopez\par
+Angel Nicolas Escaño Lopez y Diego Sicre.\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: } Versión 1: Definición del caso de uso
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario accede al apartado de visualización de productos.
-    \item El sistema muestra dicho apartado con la tabla de los productos.
-    \item El usuario seleccióna un producto a mostrar
+    \item El usuario se encuentra en el listado de productos.
+    \item El usuario accede al apartado de visualización de productos haciendo doble click en una fila del \textit{DataGrid}.
     \item El sistema muestra dicho producto con sus respectivos atributos.
 \end{enumerate}
 
@@ -38,7 +37,7 @@ Angel Nicolas Escaño Lopez\par
 \vspace{0.15cm}
 \textbf{Dado} que haya al menos un producto creado\par
 \textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opción de visualizar producto\par
+\textbf{Cuando} selecciono la opción de visualizar producto haciedo doble click en la fila\par
 \textbf{Entonces} el sistema muestra el apartado de visualización de producto con sus respectibos atributos.\par
 \vspace{0.20cm}
 
@@ -51,6 +50,13 @@ Angel Nicolas Escaño Lopez\par
 \textbf{Entonces} el sistema muestra el apartado de visualización de productos mostrando todos los recursos almacenados sin ningún cambio.\par
 \vspace{0.20cm}
 
+
+\numberedsubsection{Bocetos}
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{mockups/RF2.X_MostrarProducto(Desde Listado).png}
+    \caption{Mostrar Producto}
+   \end{figure}
+\vspace{1.0cm}
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF2.X_MostrarProducto(Menu visualizacion).png}
