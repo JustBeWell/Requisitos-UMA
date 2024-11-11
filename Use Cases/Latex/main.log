@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  11 NOV 2024 13:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  11 NOV 2024 13:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -703,16 +703,16 @@ Package pdftex.def Info: mockups/RF6.1Crear_Atributo.png  used on input line 107
 
 
 [40]
-<mockups/RF2.1_boceto2.png, id=511, 1014.79124pt x 732.7375pt>
-File: mockups/RF2.1_boceto2.png Graphic file (type png)
-<use mockups/RF2.1_boceto2.png>
-Package pdftex.def Info: mockups/RF2.1_boceto2.png  used on input line 113.
-(pdftex.def)             Requested size: 455.24411pt x 328.7114pt.
+<mockups/RF6.1Crear_Atributo tras Clickar.png, id=511, 1014.79124pt x 823.075pt>
+File: mockups/RF6.1Crear_Atributo tras Clickar.png Graphic file (type png)
+<use mockups/RF6.1Crear_Atributo tras Clickar.png>
+Package pdftex.def Info: mockups/RF6.1Crear_Atributo tras Clickar.png  used on input line 113.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
 [41 <./mockups/RF6.1Crear_Atributo.png>]
 
-[42 <./mockups/RF2.1_boceto2.png>])
+[42 <./mockups/RF6.1Crear_Atributo tras Clickar.png>])
 \openout2 = `body/RF6.2_LeerAtributo/page.aux'.
 
  (body/RF6.2_LeerAtributo/page.tex
@@ -788,14 +788,14 @@ L3 programming layer <2024-10-09>
  ) 
 Here is how much of TeX's memory you used:
  14992 strings out of 473701
- 251542 string characters out of 5726039
+ 251675 string characters out of 5726039
  762782 words of memory out of 5000000
  37635 multiletter control sequences out of 15000+600000
  567041 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,7n,93p,698b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Programas/LaTeXDistribution/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (52 pages, 2024495 bytes).
+Output written on main.pdf (52 pages, 2020502 bytes).
 PDF statistics:
  853 PDF objects out of 1000 (max. 8388607)
  165 named destinations out of 1000 (max. 500000)
