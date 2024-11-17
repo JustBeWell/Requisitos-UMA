@@ -239,6 +239,7 @@ INPUT .\main.lof
 INPUT .\main.lof
 INPUT main.lof
 OUTPUT main.lof
+INPUT C:\MikTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\body\RF2_GestionGeneralDeProductos\page.tex
 INPUT .\body\RF2_GestionGeneralDeProductos\page.tex
 OUTPUT body\RF2_GestionGeneralDeProductos\page.aux
@@ -248,7 +249,6 @@ INPUT body\RF2_GestionGeneralDeProductos\page.tex
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\MikTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT .\mockups\RF2- Gestión General de Productos (listado).png
 INPUT .\mockups\RF2- Gestión General de Productos (listado).png
 INPUT .\mockups\RF2- Gestión General de Productos (listado).png

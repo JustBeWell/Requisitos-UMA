@@ -5,7 +5,7 @@ Los usuarios pueden borrar los atributos de usuario ya existentes en la cuenta.
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario ha iniciado sesión en su cuenta en Mini PIM, tiene acceso a la sección de gestión de atributos y hay al menos un atributo de usuario creado.\par
+El usuario ha iniciado sesión en su cuenta en Mini PIM y hay al menos un atributo de usuario creado.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -31,7 +31,7 @@ Diego Sicre y Francisco Javier Jordá Garay\par
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
     \item El usuario selecciona el atributo que quiere borrar.
-    \item El usuario pulsa el icono de \enquote{Borrar}.
+    \item El usuario pulsa el opción de \enquote{Borrar}.
     \item El sistema pregunta al usuario si está seguro de su decisión.
     \item El usuario confirma seleccionando \enquote{Sí}.
     \item El sistema borra el atributo de la base de datos.
@@ -44,9 +44,27 @@ Diego Sicre y Francisco Javier Jordá Garay\par
     \item[4.a] El usuario decide no borrar el atributo.
     \begin{enumerate}
         \item[4.a.1] El usuario selecciona \enquote{No} en el mensaje de confirmación.
-        \item[4.a.2] El sistema cancela la acción de borrado y vuelve a mostrar la lista de atributos sin cambios.
+        \item[4.a.2] El sistema cancela la acción de borrado.
+        \item[4.a.3] El sistema muestra la lista de atributos sin cambios.  
     \end{enumerate}
-
+    \item[4.b] El usuario decide borrar el atributo pero está ligado a algún(os) producto(s).
+    \begin{enumerate}
+        \item[4.b.1] El usuario selecciona \enquote{Si} en el mensaje de confirmación.
+        \item[4.b.2] El sistema notifica al usuario de que existen productos asociados al atributo que se desea borrar.
+        \item[4.b.3] El sistema muestra un listado de los productos asociados al atributo.
+        \item[4.b.4] El sistema pregunta al usuario si realmente quiere borrar el atributo.
+        \begin{enumerate}
+            \item[4.b.4.a.1] El usuario selecciona \enquote{No} en el mensaje de confirmación.
+            \item[4.b.4.a.2] El sistema cancela la acción de borrado.
+            \item[4.b.4.a.3] El sistema muestra la lista de atributos sin cambios 
+        \end{enumerate}
+        \begin{enumerate}
+            \item[4.b.4.b.1] El usuario selecciona \enquote{Si} en el mensaje de confirmación.
+            \item[4.b.4.b.2] El sistema borra el atributo. 
+            \item[4.b.4.b.3] El sistema actualiza todos los productos relacionados al atributo borrado asignando un valor nulo. 
+            \item[4.b.4.b.4] El sistema muestra la lista de atributos sin el atributo borrado.
+        \end{enumerate} 
+    \end{enumerate}
 \end{description}
 
 \numberedsubsection{Casos de Prueba}
@@ -55,7 +73,8 @@ Diego Sicre y Francisco Javier Jordá Garay\par
 \textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
 \textbf{Y} se encuentra en la sección de atributos,\par
 \textbf{Y} selecciona un atributo,\par
-\textbf{Cuando} pulsa el botón de \enquote{Borrar} y confirma la acción,\par
+\textbf{Cuando} pulsa el botón de \enquote{Borrar},\par
+\textbf{Y} confirma la acción,\par
 \textbf{Entonces} el sistema borra el atributo de la base de datos y vuelve a mostrar la lista de atributos.\par
 \vspace{0.20cm}
 
@@ -64,7 +83,8 @@ Diego Sicre y Francisco Javier Jordá Garay\par
 \textbf{Dado} que el usuario ha iniciado la acción de \enquote{Borrar} un atributo,\par
 \textbf{Y} el sistema muestra un mensaje de confirmación,\par
 \textbf{Cuando} el usuario selecciona \enquote{No} en la confirmación,\par
-\textbf{Entonces} el sistema cancela la acción y muestra la lista de atributos sin cambios.\par
+\textbf{Entonces} el sistema cancela la acción,\par
+\textbf{Y} muestra la lista de atributos sin cambios.\par
 
 \vspace{0.20cm}
 

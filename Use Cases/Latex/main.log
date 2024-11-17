@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  11 NOV 2024 19:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  17 NOV 2024 20:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -447,7 +447,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 ...berline {8.3}Casos de Prueba}{32}{Item.47}
+l.42 ...{9}RF4.4 Borrar categoría}{37}{figure.17}
                                                   % [1])
 \tf@toc=\write3
 \openout3 = `main.toc'.
@@ -464,21 +464,28 @@ LaTeX Info: Redefining \% on input line 1.
 
 
 [3]
+
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 \end{abstract}
+                     [1]
 \openout2 = `body/RF2_GestionGeneralDeProductos/page.aux'.
 
  (body/RF2_GestionGeneralDeProductos/page.tex
 
-[5
+[6
 
 ]
-<mockups/RF2- Gestión General de Productos (listado).png, id=266, 1014.79124pt x 823.075pt>
+<mockups/RF2- Gestión General de Productos (listado).png, id=265, 1014.79124pt x 823.075pt>
 File: mockups/RF2- Gestión General de Productos (listado).png Graphic file (type png)
 <use mockups/RF2- Gestión General de Productos (listado).png>
 Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado).png  used on input line 95.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[6]
+[7]
 <mockups/RF2- Gestión General de Productos (listado por búsqueda).png, id=272, 1014.79124pt x 823.075pt>
 File: mockups/RF2- Gestión General de Productos (listado por búsqueda).png Graphic file (type png)
 <use mockups/RF2- Gestión General de Productos (listado por búsqueda).png>
@@ -486,282 +493,288 @@ Package pdftex.def Info: mockups/RF2- Gestión General de Productos (listado por
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[7 <./mockups/RF2- Gestión General de Productos (listado).png>]
+[8 <./mockups/RF2- Gestión General de Productos (listado).png>]
 
-[8 <./mockups/RF2- Gestión General de Productos (listado por búsqueda).png>])
+[9 <./mockups/RF2- Gestión General de Productos (listado por búsqueda).png>])
 \openout2 = `body/RF2.1_CrearProducto/page.aux'.
 
  (body/RF2.1_CrearProducto/page.tex
 
-[9
+[10
 
 
 
 ]
 
-[10]
+[11]
 <mockups/RF2.1_boceto1.png, id=298, 1014.79124pt x 823.075pt>
 File: mockups/RF2.1_boceto1.png Graphic file (type png)
 <use mockups/RF2.1_boceto1.png>
-Package pdftex.def Info: mockups/RF2.1_boceto1.png  used on input line 110.
+Package pdftex.def Info: mockups/RF2.1_boceto1.png  used on input line 126.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<mockups/RF2.1_bocetoCreacionV2.png, id=299, 1014.79124pt x 823.075pt>
+
+
+[12]
+<mockups/RF2.1_bocetoCreacionV2.png, id=303, 1014.79124pt x 823.075pt>
 File: mockups/RF2.1_bocetoCreacionV2.png Graphic file (type png)
 <use mockups/RF2.1_bocetoCreacionV2.png>
-Package pdftex.def Info: mockups/RF2.1_bocetoCreacionV2.png  used on input line 116.
+Package pdftex.def Info: mockups/RF2.1_bocetoCreacionV2.png  used on input line 132.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[11 <./mockups/RF2.1_boceto1.png>]
+[13 <./mockups/RF2.1_boceto1.png>]
 
-[12 <./mockups/RF2.1_bocetoCreacionV2.png>])
+[14 <./mockups/RF2.1_bocetoCreacionV2.png>])
 \openout2 = `body/RF2.X_EditarProducto/page.aux'.
 
  (body/RF2.X_EditarProducto/page.tex
 
-[13
+[15
 
 
 
 ]
-<mockups/RF2-X Editar Producto Click en Lapiz.png, id=321, 1014.79124pt x 823.075pt>
+<mockups/RF2-X Editar Producto Click en Lapiz.png, id=325, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Editar Producto Click en Lapiz.png Graphic file (type png)
 <use mockups/RF2-X Editar Producto Click en Lapiz.png>
 Package pdftex.def Info: mockups/RF2-X Editar Producto Click en Lapiz.png  used on input line 91.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[14]
-<mockups/RF2-X Editar ProductoV2.png, id=326, 1014.79124pt x 823.075pt>
+[16]
+<mockups/RF2-X Editar ProductoV2.png, id=330, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Editar ProductoV2.png Graphic file (type png)
 <use mockups/RF2-X Editar ProductoV2.png>
 Package pdftex.def Info: mockups/RF2-X Editar ProductoV2.png  used on input line 98.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[15 <./mockups/RF2-X Editar Producto Click en Lapiz.png>]
+[17 <./mockups/RF2-X Editar Producto Click en Lapiz.png>]
 
-[16 <./mockups/RF2-X Editar ProductoV2.png>])
+[18 <./mockups/RF2-X Editar ProductoV2.png>])
 \openout2 = `body/RF2.X_BorrarProducto/page.aux'.
 
  (body/RF2.X_BorrarProducto/page.tex
 
-[17
+[19
 
 
 
 ]
-<mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png, id=344, 1014.79124pt x 823.075pt>
+<mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png, id=349, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png Graphic file (type png)
 <use mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png>
 Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png  used on input line 66.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png, id=345, 1014.79124pt x 823.075pt>
+<mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png, id=350, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png Graphic file (type png)
 <use mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png>
-Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png  used on input line 73.
+Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png  used on input line 72.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[18 <./mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png>]
-<mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png, id=351, 1014.79124pt x 823.075pt>
+[20 <./mockups/RF2-X Borrar Producto (Borrar Producto desde listado).png>]
+<mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png, id=356, 1014.79124pt x 823.075pt>
 File: mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png Graphic file (type png)
 <use mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png>
-Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png  used on input line 79.
+Package pdftex.def Info: mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[19 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png>]
+[21 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso1)V2.png>]
 
-[20 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png>])
+[22 <./mockups/RF2-X Borrar Producto (Borrar Producto Paso2).png>])
 \openout2 = `body/RF2.X_MostrarProducto/page.aux'.
 
  (body/RF2.X_MostrarProducto/page.tex
-<mockups/RF2.X_MostrarProducto(Desde Listado).png, id=363, 1014.79124pt x 823.075pt>
+<mockups/RF2.X_MostrarProducto(Desde Listado).png, id=367, 1014.79124pt x 823.075pt>
 File: mockups/RF2.X_MostrarProducto(Desde Listado).png Graphic file (type png)
 <use mockups/RF2.X_MostrarProducto(Desde Listado).png>
 Package pdftex.def Info: mockups/RF2.X_MostrarProducto(Desde Listado).png  used on input line 48.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[21
+[23
 
 
 
 ]
-<mockups/RF2.X_MostrarProducto(Menu visualizacion).png, id=370, 1014.79124pt x 823.075pt>
+<mockups/RF2.X_MostrarProducto(Menu visualizacion).png, id=374, 1014.79124pt x 823.075pt>
 File: mockups/RF2.X_MostrarProducto(Menu visualizacion).png Graphic file (type png)
 <use mockups/RF2.X_MostrarProducto(Menu visualizacion).png>
 Package pdftex.def Info: mockups/RF2.X_MostrarProducto(Menu visualizacion).png  used on input line 54.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[22 <./mockups/RF2.X_MostrarProducto(Desde Listado).png>]
+[24 <./mockups/RF2.X_MostrarProducto(Desde Listado).png>]
 
-[23 <./mockups/RF2.X_MostrarProducto(Menu visualizacion).png>])
+[25 <./mockups/RF2.X_MostrarProducto(Menu visualizacion).png>])
 \openout2 = `body/RF4_GestionDeCategorias/page.aux'.
 
  (body/RF4_GestionDeCategorias/page.tex
 
-[24
+[26
 
 
 
 ]
 
-[25]
-<mockups/RF4.1_1.png, id=398, 1014.79124pt x 823.075pt>
+[27]
+<mockups/RF4.1_1.png, id=402, 1014.79124pt x 823.075pt>
 File: mockups/RF4.1_1.png Graphic file (type png)
 <use mockups/RF4.1_1.png>
 Package pdftex.def Info: mockups/RF4.1_1.png  used on input line 113.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<mockups/RF4.1_2.png, id=399, 1014.79124pt x 823.075pt>
+<mockups/RF4.1_2.png, id=403, 1014.79124pt x 823.075pt>
 File: mockups/RF4.1_2.png Graphic file (type png)
 <use mockups/RF4.1_2.png>
 Package pdftex.def Info: mockups/RF4.1_2.png  used on input line 119.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[26 <./mockups/RF4.1_1.png>]
+[28 <./mockups/RF4.1_1.png>]
 
-[27 <./mockups/RF4.1_2.png>]
-<mockups/RF4.2_1.png, id=410, 1014.79124pt x 823.075pt>
+[29 <./mockups/RF4.1_2.png>]
+<mockups/RF4.2_1.png, id=414, 1014.79124pt x 823.075pt>
 File: mockups/RF4.2_1.png Graphic file (type png)
 <use mockups/RF4.2_1.png>
 Package pdftex.def Info: mockups/RF4.2_1.png  used on input line 191.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[28]
-<mockups/RF4.2_2.png, id=416, 1014.79124pt x 823.075pt>
+[30]
+<mockups/RF4.2_2.png, id=420, 1014.79124pt x 823.075pt>
 File: mockups/RF4.2_2.png Graphic file (type png)
 <use mockups/RF4.2_2.png>
 Package pdftex.def Info: mockups/RF4.2_2.png  used on input line 197.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[29 <./mockups/RF4.2_1.png>]
+[31 <./mockups/RF4.2_1.png>]
 
-[30 <./mockups/RF4.2_2.png>]
+[32 <./mockups/RF4.2_2.png>]
 
-[31]
-<mockups/RF4.3_1.png, id=439, 1014.79124pt x 823.075pt>
+[33]
+<mockups/RF4.3_1.png, id=443, 1014.79124pt x 823.075pt>
 File: mockups/RF4.3_1.png Graphic file (type png)
 <use mockups/RF4.3_1.png>
 Package pdftex.def Info: mockups/RF4.3_1.png  used on input line 297.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[32]
-<mockups/RF4.3_2.png, id=444, 1014.79124pt x 823.075pt>
+[34]
+<mockups/RF4.3_2.png, id=448, 1014.79124pt x 823.075pt>
 File: mockups/RF4.3_2.png Graphic file (type png)
 <use mockups/RF4.3_2.png>
 Package pdftex.def Info: mockups/RF4.3_2.png  used on input line 303.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[33 <./mockups/RF4.3_1.png>]
+[35 <./mockups/RF4.3_1.png>]
 
-[34 <./mockups/RF4.3_2.png>]
+[36 <./mockups/RF4.3_2.png>]
 
-[35]
-<mockups/RF4.4_1.png, id=467, 1014.79124pt x 823.075pt>
+[37]
+<mockups/RF4.4_1.png, id=472, 1014.79124pt x 823.075pt>
 File: mockups/RF4.4_1.png Graphic file (type png)
 <use mockups/RF4.4_1.png>
-Package pdftex.def Info: mockups/RF4.4_1.png  used on input line 406.
+Package pdftex.def Info: mockups/RF4.4_1.png  used on input line 407.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[36]
-<mockups/RF4.4_2.png, id=472, 1014.79124pt x 823.075pt>
+[38]
+<mockups/RF4.4_2.png, id=477, 1014.79124pt x 823.075pt>
 File: mockups/RF4.4_2.png Graphic file (type png)
 <use mockups/RF4.4_2.png>
-Package pdftex.def Info: mockups/RF4.4_2.png  used on input line 412.
+Package pdftex.def Info: mockups/RF4.4_2.png  used on input line 413.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[37 <./mockups/RF4.4_1.png>]
+[39 <./mockups/RF4.4_1.png>]
 
-[38 <./mockups/RF4.4_2.png>])
+[40 <./mockups/RF4.4_2.png>])
 \openout2 = `body/RF6.1_CrearAtributo/page.aux'.
 
  (body/RF6.1_CrearAtributo/page.tex
 
-[39
+[41
 
 
 
 ]
-<mockups/RF6.1Crear_Atributo tras Clickar.png, id=494, 1014.79124pt x 823.075pt>
+<mockups/RF6.1Crear_Atributo tras Clickar.png, id=498, 1014.79124pt x 823.075pt>
 File: mockups/RF6.1Crear_Atributo tras Clickar.png Graphic file (type png)
 <use mockups/RF6.1Crear_Atributo tras Clickar.png>
-Package pdftex.def Info: mockups/RF6.1Crear_Atributo tras Clickar.png  used on input line 105.
+Package pdftex.def Info: mockups/RF6.1Crear_Atributo tras Clickar.png  used on input line 101.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[40]
+[42]
 
-[41 <./mockups/RF6.1Crear_Atributo tras Clickar.png>])
+[43 <./mockups/RF6.1Crear_Atributo tras Clickar.png>])
 \openout2 = `body/RF6.2_LeerAtributo/page.aux'.
 
  (body/RF6.2_LeerAtributo/page.tex
-
-[42
-
-
-
-]
-<mockups/RF6.1Crear_Atributo.png, id=509, 1014.79124pt x 823.075pt>
-File: mockups/RF6.1Crear_Atributo.png Graphic file (type png)
-<use mockups/RF6.1Crear_Atributo.png>
-Package pdftex.def Info: mockups/RF6.1Crear_Atributo.png  used on input line 63.
-(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-
-
-[43 <./mockups/RF6.1Crear_Atributo.png>])
-\openout2 = `body/RF6.3_ModificarAtributo/page.aux'.
-
- (body/RF6.3_ModificarAtributo/page.tex
 
 [44
 
 
 
 ]
-<mockups/RF6.3Modificar_AtributoV2.png, id=527, 1014.79124pt x 823.075pt>
+<mockups/RF6.1Crear_Atributo.png, id=514, 1014.79124pt x 823.075pt>
+File: mockups/RF6.1Crear_Atributo.png Graphic file (type png)
+<use mockups/RF6.1Crear_Atributo.png>
+Package pdftex.def Info: mockups/RF6.1Crear_Atributo.png  used on input line 63.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+
+
+[45 <./mockups/RF6.1Crear_Atributo.png>])
+\openout2 = `body/RF6.3_ModificarAtributo/page.aux'.
+
+ (body/RF6.3_ModificarAtributo/page.tex
+
+[46
+
+
+
+]
+<mockups/RF6.3Modificar_AtributoV2.png, id=531, 1014.79124pt x 823.075pt>
 File: mockups/RF6.3Modificar_AtributoV2.png Graphic file (type png)
 <use mockups/RF6.3Modificar_AtributoV2.png>
 Package pdftex.def Info: mockups/RF6.3Modificar_AtributoV2.png  used on input line 90.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[45]
+[47]
 
-[46 <./mockups/RF6.3Modificar_AtributoV2.png>])
+[48 <./mockups/RF6.3Modificar_AtributoV2.png>])
 \openout2 = `body/RF6.4_BorrarAtributo/page.aux'.
 
  (body/RF6.4_BorrarAtributo/page.tex
 
-[47
+[49
 
 
 
 ]
-<mockups/RF6.4BorrarAtributo.png, id=546, 1014.79124pt x 823.075pt>
+<mockups/RF6.4BorrarAtributo.png, id=551, 1014.79124pt x 823.075pt>
 File: mockups/RF6.4BorrarAtributo.png Graphic file (type png)
 <use mockups/RF6.4BorrarAtributo.png>
-Package pdftex.def Info: mockups/RF6.4BorrarAtributo.png  used on input line 73.
+Package pdftex.def Info: mockups/RF6.4BorrarAtributo.png  used on input line 93.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<mockups/RF6.4BorrarAtributoDespuesDeBorrar.png, id=547, 1014.79124pt x 823.075pt>
+
+
+[50]
+<mockups/RF6.4BorrarAtributoDespuesDeBorrar.png, id=556, 1014.79124pt x 823.075pt>
 File: mockups/RF6.4BorrarAtributoDespuesDeBorrar.png Graphic file (type png)
 <use mockups/RF6.4BorrarAtributoDespuesDeBorrar.png>
-Package pdftex.def Info: mockups/RF6.4BorrarAtributoDespuesDeBorrar.png  used on input line 79.
+Package pdftex.def Info: mockups/RF6.4BorrarAtributoDespuesDeBorrar.png  used on input line 99.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[48 <./mockups/RF6.4BorrarAtributo.png>]
+[51 <./mockups/RF6.4BorrarAtributo.png>]
 
-[49 <./mockups/RF6.4BorrarAtributoDespuesDeBorrar.png>]) (main.aux
+[52 <./mockups/RF6.4BorrarAtributoDespuesDeBorrar.png>]) (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (body/RF2_GestionGeneralDeProductos/page.aux) (body/RF2.1_CrearProducto/page.aux) (body/RF2.X_EditarProducto/page.aux) (body/RF2.X_BorrarProducto/page.aux) (body/RF2.X_MostrarProducto/page.aux) (body/RF4_GestionDeCategorias/page.aux) (body/RF6.1_CrearAtributo/page.aux) (body/RF6.2_LeerAtributo/page.aux) (body/RF6.3_ModificarAtributo/page.aux) (body/RF6.4_BorrarAtributo/page.aux))
@@ -771,17 +784,17 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14985 strings out of 473702
- 250094 string characters out of 5735993
- 762782 words of memory out of 5000000
- 37630 multiletter control sequences out of 15000+600000
+ 14990 strings out of 473702
+ 250220 string characters out of 5735993
+ 762783 words of memory out of 5000000
+ 37632 multiletter control sequences out of 15000+600000
  567041 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,7n,93p,738b,841s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,7n,93p,738b,833s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (49 pages, 2074455 bytes).
+Output written on main.pdf (52 pages, 2079185 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 654 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 831 PDF objects out of 1000 (max. 8388607)
+ 165 named destinations out of 1000 (max. 500000)
+ 638 words of extra memory for PDF output out of 10000 (max. 10000000)
 

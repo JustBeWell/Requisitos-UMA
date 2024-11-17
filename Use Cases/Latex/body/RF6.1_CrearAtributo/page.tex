@@ -5,7 +5,7 @@ Los usuarios pueden crear atributos personalizados para los productos, con un l�
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario ha iniciado sesión en su cuenta en Mini PIM y tiene acceso a la sección de gestión de atributos.\par
+El usuario ha iniciado sesión en su cuenta en Mini PIM y no tiene la máxima cantidad de atributos de usuario creados.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -19,7 +19,7 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autor: }
-Diego Sicre, Francisco Garay y Pablo Ortega.\par
+Diego Sicre y Pablo Ortega.\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: }
@@ -51,19 +51,9 @@ Diego Sicre, Francisco Garay y Pablo Ortega.\par
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[2.a] El usuario selecciona un tipo de dato incorrecto o no soportado por el sistema.
-    \begin{enumerate}
-        \item[2.a.1] El sistema muestra un mensaje de error indicando que el tipo de dato seleccionado no es válido y permite al usuario realizar los ajustes necesarios.
-    \end{enumerate}
-
     \item[4.a] El sistema detecta que el usuario ha alcanzado el límite de 5 atributos creados.
     \begin{enumerate}
         \item[4.a.1] El sistema muestra un mensaje indicando que no es posible crear más atributos, ya que se ha alcanzado el límite permitido.
-    \end{enumerate}
-
-    \item[5.a] El sistema detecta un error en la validación del nombre o tipo de dato del atributo.
-    \begin{enumerate}
-        \item[5.a.1] El sistema notifica al usuario el error específico en el campo afectado y permite editar los datos.
     \end{enumerate}
 \end{description}
 
@@ -80,21 +70,27 @@ Diego Sicre, Francisco Garay y Pablo Ortega.\par
 
 \underline{Escenario: Alternativo 2.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que el usuario intenta seleccionar un tipo de dato no soportado,\par
+\textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
+\textbf{Y} se encuentra en la sección de atributos,\par
+\textbf{E} intenta seleccionar un tipo de dato no soportado,\par
 \textbf{Cuando} confirma la creación del atributo,\par
 \textbf{Entonces} el sistema muestra un mensaje de error y permite al usuario corregir la selección del tipo de dato.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 4.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que el usuario ya ha creado 5 atributos,\par
+\textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
+\textbf{Y} se encuentra en la sección de atributos,\par
+\textbf{Y} que el usuario ya ha creado 5 atributos,\par
 \textbf{Cuando} intenta crear uno nuevo,\par
 \textbf{Entonces} el sistema notifica que se ha alcanzado el límite de atributos permitidos y no permite la creación.\par
 \vspace{0.20cm}
 
 \underline{Escenario: Alternativo 5.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que el usuario ha dejado el nombre del atributo vacío,\par
+\textbf{Dado} que el usuario ha iniciado sesión en su cuenta en Mini PIM,\par
+\textbf{Y} se encuentra en la sección de atributos,\par
+\textbf{Y} que el usuario hay un error en el nombre del atributo,\par
 \textbf{Cuando} intenta confirmar la creación,\par
 \textbf{Entonces} el sistema muestra un mensaje de error indicando el campo faltante y permite al usuario corregirlo.\par
 \vspace{0.20cm}

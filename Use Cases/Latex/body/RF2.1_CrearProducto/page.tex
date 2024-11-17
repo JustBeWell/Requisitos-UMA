@@ -29,14 +29,15 @@ Francisco Javier Jordá Garay\par
     \item El usuario se encuentra en el apartado de productos y selecciona la opción de \enquote{Añadir}.
     \item El sistema muestra el menú de creación solicitando al usuario:
     \begin{itemize}
-        \item GTIN (atributo sistema $-$ comprueba validez de longitud)
-        \item SKU (atributo sistema)
+        \item GTIN (atributo sistema $-$ comprueba validez de 14 caracteres de longitud)
+        \item SKU (atributo sistema $-$ comprueba que sea único)
         \item Thumbnail (atributo sistema $-$ comprueba tamaño 200$\times$200px y formato)
         \item Label (atributo sistema $-$ comprueba máximo de 250 caracteres)
         \item Atributos (opcional $-$ comprueba máximo 5 nuevos atributos usuario)
         \item Categorías (opcional)
     \end{itemize}
-    \item El usuario introduce los datos obligatorios y los que decida de opcionales y selecciona \enquote{Confirmar}.
+    \item El sistema no activa la función \enquote{Confirmar} hasta que todos los atributos del sistema han sido introducidos.
+    \item El usuario selecciona \enquote{Confirmar} después de introducir correctamente todos los atributos del sistema.
     \item El sistema comprueba la validez de los datos introducidos por el usuario.
     \item El sistema almacena el producto creado en la base de datos registrando la fecha de creación.
     \item El sistema actualiza la información del total de datos registrados en la base de datos.
@@ -45,64 +46,79 @@ Francisco Javier Jordá Garay\par
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[2.a.] El sistema no puede almacenar el producto por superar el máximo de almacenamiento ligado al plan de suscripción del usuario.
-    \begin{enumerate}
-        \item[2.a.1] El sistema notifica al usuario que ha llegado al máximo de capacidad permitida en el plan de almacenamiento.
-    \end{enumerate}
-
     \item[*.a] El usuario cancela la acción de crear un nuevo producto seleccionando la opción que cierra el menú de creación.
     \begin{enumerate}
         \item[*.a.1] El sistema regresa al apartado de \enquote{Productos}.
     \end{enumerate}
 
-    \item[4.a] El sistema detecta un fallo en la comprobación de los datos obligatorios.
+    \item[1.a.] El sistema notifica al usuario que ha llegado al máximo de capacidad permitida en su plan de suscripción.
     \begin{enumerate}
-        \item[4.a.1] El sistema notifica del error de comprobación al usuario mostrando el atributo del producto afectado.
-        \item[4.a.2] El sistema regresa al menú de creación permitiendo edición de los datos.
+        \item[1.a.1] El sistema cancela la acción de crear un nuevo producto.
+        \item[1.a.2] El sistema deshabilita la opción de \enquote{Añadir}.
+        \item[1.a.3] El sistema regresa al apartado de \enquote{Productos}.
+    \end{enumerate}
+
+    \item[5.a] El sistema detecta un fallo en la comprobación de los datos obligatorios. Los fallos posibles son:
+    \begin{enumerate}
+        \item[-] El GTIN no cumple con 14 caracteres de longitud.
+        \item[-] El SKU no es único dentro de la cuenta.
+        \item[-] El Thumbnail tiene un formato que no reconoce el sistema o la imagen supera el tamaño permitido.
+        \item[-] El label supera los 250 caracteres permitidos.
+    \end{enumerate}
+    \begin{enumerate}
+        \item[5.a.1] El sistema notifica del error de comprobación al usuario mostrando el atributo del producto afectado.
+        \item[5.a.2] El sistema regresa al menú de creación permitiendo edición de los datos.
     \end{enumerate}
 \end{description}
 
 \numberedsubsection{Casos de Prueba}
 \underline{Escenario: Principal}\par
 \vspace{0.15cm}
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opción de \enquote{Añadir}\par
-\textbf{E} introduzco correctamente los atributos del producto que deseo crear\par
-\textbf{Y} selecciono \enquote{confirmar} para guardar los datos\par
-\textbf{Entonces} el sistema almacena la información en la base de datos de Mini PIM\par
-\textbf{Y} actualiza la información del total de datos registrados en la base de datos\par
+\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} no he llegado al límite de productos permitidos en mi plan de suscripción,\par
+\textbf{Y} estoy en el apartado de \enquote{Productos},\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir},\par
+\textbf{E} introduzco correctamente los atributos del producto que deseo crear,\par
+\textbf{Y} selecciono \enquote{confirmar} para guardar los datos,\par
+\textbf{Entonces} el sistema almacena la información en la base de datos de Mini PIM,\par
+\textbf{Y} actualiza la información del total de datos registrados en la base de datos,\par
 \textbf{Y} muestra el apartado de Productos con todos los recursos almacenados para esta sección.\par
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 2.a}\par
+\underline{Escenario: Alternativo *.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} tengo el límite de productos\par
-\textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opción de \enquote{Añadir}\par
-\textbf{E} introduzco correctamente los atributos del producto que deseo crear\par
-\textbf{Y} selecciono \enquote{confirmar} para guardar los datos\par
-\textbf{Entonces} el sistema me notifica que no puede almacenar el producto por superar el máximo de almacenamiento ligado a mi plan de suscripción actual\par
+\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} no he llegado al límite de productos permitidos en mi plan de suscripción,\par
+\textbf{Y} estoy en el apartado de \enquote{Productos},\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir},\par
+\textbf{Y} selecciono la opción de \enquote{cancelar},\par
+\textbf{Entonces} el sistema regresa al apartado de \enquote{Productos} mostrando todos los recursos almacenados sin ningún cambio.\par
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 3.a}\par
+\underline{Escenario: Alternativo 1.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opción de \enquote{Añadir}\par
-\textbf{Y} selecciono la opción de cancelar\par
-\textbf{Entonces} el sistema muestra el apartado de Productos mostrando todos los recursos almacenados sin ningún cambio.\par
+\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} he llegado al límite de productos permitidos en mi plan de suscripción,\par
+\textbf{Y} estoy en el apartado de \enquote{Productos}s,\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir},\par
+\textbf{Entonces} el sistema me notifica que no puede almacenar un nuevo producto porque superaría el máximo de almacenamiento ligado a mi plan de suscripción actual,\par
+\textbf{Y} cancela la acción de crear un nuevo producto,\par
+\textbf{Y} deshabilita la opción de \enquote{Añadir}.
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 4.a}\par
+\underline{Escenario: Alternativo 5.a}\par
 \vspace{0.15cm}
-\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente\par
-\textbf{Y} estoy en el apartado de Productos\par
-\textbf{Cuando} selecciono la opción de \enquote{Añadir}\par
-\textbf{Y} escribo los datos del producto y dejo uno obligatorio vacío\par
-\textbf{Entonces} el sistema me muestra cual es el atributo que falla\par
-\textbf{Y} regresa al menú de creación.\par
+\textbf{Dado} que inicié sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} no he llegado al límite de productos permitidos en mi plan de suscripción,\par
+\textbf{Y} estoy en el apartado de \enquote{Productos},\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir},\par
+\textbf{Y} escribo los todos los atributos obligatorios del sistema para el nuevo producto,\par
+\textbf{Y} los que desee de los opcionales,\par
+\textbf{Y} selecciono \enquote{Confirmar},\par
+\textbf{Entonces} el sistema comprueba la validez de los datos,\par
+\textbf{Y} detecta uno de los posibles errores,\par
+\textbf{Y} me notifica cuál es el atributo que falla,\par
+\textbf{Y} regresa al menú de creación permitiendo la edición de los datos.\par
 \vspace{0.20cm}
 
 \numberedsubsection{Bocetos}

@@ -314,7 +314,7 @@ Permite a los usuarios eliminar una categoría existente en el sistema. La elimi
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario debe tener la sesión iniciada en Mini PIM y tener acceso a la sección de gestión de categorías. La categoría a eliminar debe de existir en el sistema.\par
+El usuario debe tener la sesión iniciada en Mini PIM. La categoría a eliminar debe de existir en el sistema y no debe estar asociada a ningún producto.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
@@ -340,7 +340,7 @@ Janine Bernadeth Olegario Laguit\par
     \item El usuario selecciona la opción de \enquote{Eliminar} una categoría.
     \item El sistema muestra una ventana emergente de confirmación para la eliminación de la categoría.
     \item El sistema verifica si la categoría está asociada a algún producto.
-    \item Si la categoría no está asociada a elementos críticos, el usuario confirma la eliminación.
+    \item Si la categoría no está asociada algún producto, el usuario confirma la eliminación.
     \item El sistema elimina la categoría de la base de datos.
     \item El sistema actualiza la lista de categorías, eliminando la categoría seleccionada.
     \item El sistema muestra un mensaje de éxito indicando que la categoría ha sido eliminada correctamente.
@@ -381,7 +381,7 @@ Janine Bernadeth Olegario Laguit\par
 \textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,
 \textbf{Y} estoy en el apartado de Categorías,\par
 \textbf{Cuando} selecciono la opción de \enquote{Eliminar} en una categoría,\par
-\textbf{Y} selecciono la opción de Cancelar en la ventana emergente de confirmación,\par
+\textbf{Y} selecciono la opción de \enquote{cancelar} en la ventana emergente de confirmación,\par
 \textbf{Entonces} el sistema regresa a la sección de gestión de categorías,\par
 \textbf{Y} muestra la lista de categorías sin realizar ningún cambio.\par
 
@@ -394,8 +394,9 @@ Janine Bernadeth Olegario Laguit\par
 \textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
 \textbf{Y} estoy en el apartado de Categorías,\par
 \textbf{Cuando} selecciono la opción de \enquote{Eliminar} en una categoría,\par
+\textbf{Y} la categoría esta asociada algún producto,\par
 \textbf{Y} el sistema detecta que la categoría está asociada a algún producto,\par
-\textbf{Entonces} el sistema muestra un mensaje de error indicando que no se puede eliminar la categoría debido a su asociación con otros elementos importantes,\par
+\textbf{Entonces} el sistema muestra un mensaje de error indicando que no se puede eliminar la categoría,\par
 \textbf{Y} el sistema me redirige a la sección de gestión de categorías.\par
 
 
