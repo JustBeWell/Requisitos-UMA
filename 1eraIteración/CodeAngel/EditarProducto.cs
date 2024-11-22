@@ -116,12 +116,10 @@ namespace WindowsFormsApplication2
         private void Confirmar_Click(object sender, EventArgs e)
         {
             DataClasses1DataContext db = new DataClasses1DataContext();
-            // Buscar el producto actual en la base de datos
             var producto = db.Producto.FirstOrDefault(p => p.SKU == prod.SKU);
 
             if (producto != null)
             {
-                // Verificar y actualizar cada campo según el CheckBox y el valor del TextBox
                 if (GtinCheck.Checked && !string.IsNullOrWhiteSpace(textBoxGTIN.Text))
                 {
                     producto.GTIN = textBoxGTIN.Text.Trim();
@@ -132,33 +130,43 @@ namespace WindowsFormsApplication2
                     producto.Label = textBoxLabel.Text.Trim();
                 }
 
-                // Actualizar los atributos dinámicos
-                if (U1Check.Checked && !string.IsNullOrWhiteSpace(textBoxU1.Text))
+                var atributos = db.Atributo.Take(5).ToList();
+
+                if (atributos.Count > 0 && U1Check.Checked && !string.IsNullOrWhiteSpace(textBoxU1.Text))
                 {
-                    ActualizarAtributo(db, producto.SKU, 1, textBoxU1.Text.Trim());
+                    var atributoU1 = atributos.ElementAtOrDefault(0);
+                    if (atributoU1 != null)
+                        ActualizarAtributo(db, producto.SKU, atributoU1.id, textBoxU1.Text.Trim());
                 }
 
-                if (U2Check.Checked && !string.IsNullOrWhiteSpace(textBoxU2.Text))
+                if (atributos.Count > 1 && U2Check.Checked && !string.IsNullOrWhiteSpace(textBoxU2.Text))
                 {
-                    ActualizarAtributo(db, producto.SKU, 2, textBoxU2.Text.Trim());
+                    var atributoU2 = atributos.ElementAtOrDefault(1);
+                    if (atributoU2 != null)
+                        ActualizarAtributo(db, producto.SKU, atributoU2.id, textBoxU2.Text.Trim());
                 }
 
-                if (U3Check.Checked && !string.IsNullOrWhiteSpace(textBoxU3.Text))
+                if (atributos.Count > 2 && U3Check.Checked && !string.IsNullOrWhiteSpace(textBoxU3.Text))
                 {
-                    ActualizarAtributo(db, producto.SKU, 3, textBoxU3.Text.Trim());
+                    var atributoU3 = atributos.ElementAtOrDefault(2);
+                    if (atributoU3 != null)
+                        ActualizarAtributo(db, producto.SKU, atributoU3.id, textBoxU3.Text.Trim());
                 }
 
-                if (U4Check.Checked && !string.IsNullOrWhiteSpace(textBoxU4.Text))
+                if (atributos.Count > 3 && U4Check.Checked && !string.IsNullOrWhiteSpace(textBoxU4.Text))
                 {
-                    ActualizarAtributo(db, producto.SKU, 4, textBoxU4.Text.Trim());
+                    var atributoU4 = atributos.ElementAtOrDefault(3);
+                    if (atributoU4 != null)
+                        ActualizarAtributo(db, producto.SKU, atributoU4.id, textBoxU4.Text.Trim());
                 }
 
-                if (U5Check.Checked && !string.IsNullOrWhiteSpace(textBoxU5.Text))
+                if (atributos.Count > 4 && U5Check.Checked && !string.IsNullOrWhiteSpace(textBoxU5.Text))
                 {
-                    ActualizarAtributo(db, producto.SKU, 5, textBoxU5.Text.Trim());
+                    var atributoU5 = atributos.ElementAtOrDefault(4);
+                    if (atributoU5 != null)
+                        ActualizarAtributo(db, producto.SKU, atributoU5.id, textBoxU5.Text.Trim());
                 }
 
-                // Actualizar la categoría si el CheckBox está seleccionado
                 if (CategoriasCheck.Checked && Categorias.SelectedValue != null)
                 {
                     int categoriaId = (int)Categorias.SelectedValue;
