@@ -20,7 +20,7 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadAllProducts();
-
+            dataGridViewProductos.ClearSelection();
             
 
         }
@@ -140,12 +140,52 @@ namespace WindowsFormsApplication2
 
         private void Editar_Click(object sender, EventArgs e)
         {
+            if (dataGridViewProductos.SelectedRows[0] != null)
+            {
+                var filaSeleccionada = dataGridViewProductos.SelectedRows[0];
+                try
+                {
+                    Producto p = new Producto()
+                    {
+                        SKU = filaSeleccionada.Cells[0].Value.ToString(),
+                        GTIN = filaSeleccionada.Cells[1].Value.ToString(),
+                        Label = filaSeleccionada.Cells[2].Value.ToString(),
+                        Thumbnail = filaSeleccionada.Cells[3].Value.ToString()
+                    };
+                    EditarProducto editar = new EditarProducto(this, p);
+                    editar.ShowDialog();
+                }
+                catch (NullReferenceException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
 
+            }
         }
 
         private void Borrar_Click(object sender, EventArgs e)
         {
-
+            if (dataGridViewProductos.SelectedRows[0] != null)
+            {
+                var filaSeleccionada = dataGridViewProductos.SelectedRows[0];
+                try
+                {
+                    Producto p = new Producto()
+                    {
+                        SKU = filaSeleccionada.Cells[0].Value.ToString(),
+                        GTIN = filaSeleccionada.Cells[1].Value.ToString(),
+                        Label = filaSeleccionada.Cells[2].Value.ToString(),
+                        Thumbnail = filaSeleccionada.Cells[3].Value.ToString()
+                    };
+                    BorrarProducto borrar = new BorrarProducto(this, p);
+                    borrar.ShowDialog();
+                }
+                catch (NullReferenceException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+            }
         }
 
         public void cambiarColor(Color color)

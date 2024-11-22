@@ -27,3 +27,4 @@ C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.csproj.Genera
 C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.MainForm.resources
 C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
 C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
