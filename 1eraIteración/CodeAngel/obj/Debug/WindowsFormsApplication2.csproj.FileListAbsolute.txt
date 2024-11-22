@@ -1,0 +1,29 @@
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
