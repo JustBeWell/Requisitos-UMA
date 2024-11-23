@@ -76,9 +76,8 @@
             this.CategoriasCheck.AutoSize = true;
             this.CategoriasCheck.Location = new System.Drawing.Point(530, 299);
             this.CategoriasCheck.Name = "CategoriasCheck";
-            this.CategoriasCheck.Size = new System.Drawing.Size(80, 17);
+            this.CategoriasCheck.Size = new System.Drawing.Size(15, 14);
             this.CategoriasCheck.TabIndex = 42;
-            this.CategoriasCheck.Text = "checkBox9";
             this.CategoriasCheck.UseVisualStyleBackColor = true;
             this.CategoriasCheck.CheckedChanged += new System.EventHandler(this.CategoriasCheck_CheckedChanged);
             // 
@@ -87,9 +86,8 @@
             this.LabelCheck.AutoSize = true;
             this.LabelCheck.Location = new System.Drawing.Point(530, 60);
             this.LabelCheck.Name = "LabelCheck";
-            this.LabelCheck.Size = new System.Drawing.Size(80, 17);
+            this.LabelCheck.Size = new System.Drawing.Size(15, 14);
             this.LabelCheck.TabIndex = 40;
-            this.LabelCheck.Text = "checkBox7";
             this.LabelCheck.UseVisualStyleBackColor = true;
             this.LabelCheck.CheckedChanged += new System.EventHandler(this.LabelCheck_CheckedChanged);
             // 
@@ -98,9 +96,8 @@
             this.U1Check.AutoSize = true;
             this.U1Check.Location = new System.Drawing.Point(530, 102);
             this.U1Check.Name = "U1Check";
-            this.U1Check.Size = new System.Drawing.Size(80, 17);
+            this.U1Check.Size = new System.Drawing.Size(15, 14);
             this.U1Check.TabIndex = 39;
-            this.U1Check.Text = "checkBox6";
             this.U1Check.UseVisualStyleBackColor = true;
             this.U1Check.CheckedChanged += new System.EventHandler(this.U1Check_CheckedChanged);
             // 
@@ -109,9 +106,8 @@
             this.U2Check.AutoSize = true;
             this.U2Check.Location = new System.Drawing.Point(530, 141);
             this.U2Check.Name = "U2Check";
-            this.U2Check.Size = new System.Drawing.Size(80, 17);
+            this.U2Check.Size = new System.Drawing.Size(15, 14);
             this.U2Check.TabIndex = 38;
-            this.U2Check.Text = "checkBox5";
             this.U2Check.UseVisualStyleBackColor = true;
             this.U2Check.CheckedChanged += new System.EventHandler(this.U2Check_CheckedChanged);
             // 
@@ -120,9 +116,8 @@
             this.U3Check.AutoSize = true;
             this.U3Check.Location = new System.Drawing.Point(530, 182);
             this.U3Check.Name = "U3Check";
-            this.U3Check.Size = new System.Drawing.Size(80, 17);
+            this.U3Check.Size = new System.Drawing.Size(15, 14);
             this.U3Check.TabIndex = 37;
-            this.U3Check.Text = "checkBox4";
             this.U3Check.UseVisualStyleBackColor = true;
             this.U3Check.CheckedChanged += new System.EventHandler(this.U3Check_CheckedChanged);
             // 
@@ -131,9 +126,8 @@
             this.U4Check.AutoSize = true;
             this.U4Check.Location = new System.Drawing.Point(530, 225);
             this.U4Check.Name = "U4Check";
-            this.U4Check.Size = new System.Drawing.Size(80, 17);
+            this.U4Check.Size = new System.Drawing.Size(15, 14);
             this.U4Check.TabIndex = 36;
-            this.U4Check.Text = "checkBox3";
             this.U4Check.UseVisualStyleBackColor = true;
             this.U4Check.CheckedChanged += new System.EventHandler(this.U4Check_CheckedChanged);
             // 
@@ -142,9 +136,8 @@
             this.U5Check.AutoSize = true;
             this.U5Check.Location = new System.Drawing.Point(530, 261);
             this.U5Check.Name = "U5Check";
-            this.U5Check.Size = new System.Drawing.Size(80, 17);
+            this.U5Check.Size = new System.Drawing.Size(15, 14);
             this.U5Check.TabIndex = 35;
-            this.U5Check.Text = "checkBox2";
             this.U5Check.UseVisualStyleBackColor = true;
             this.U5Check.CheckedChanged += new System.EventHandler(this.U5Check_CheckedChanged);
             // 
@@ -153,9 +146,8 @@
             this.GtinCheck.AutoSize = true;
             this.GtinCheck.Location = new System.Drawing.Point(530, 23);
             this.GtinCheck.Name = "GtinCheck";
-            this.GtinCheck.Size = new System.Drawing.Size(80, 17);
+            this.GtinCheck.Size = new System.Drawing.Size(15, 14);
             this.GtinCheck.TabIndex = 34;
-            this.GtinCheck.Text = "checkBox1";
             this.GtinCheck.UseVisualStyleBackColor = true;
             this.GtinCheck.CheckedChanged += new System.EventHandler(this.GtinCheck_CheckedChanged);
             // 

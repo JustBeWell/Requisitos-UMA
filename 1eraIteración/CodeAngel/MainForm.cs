@@ -192,6 +192,17 @@ namespace WindowsFormsApplication2
         {
             this.BackColor = color;
         }
+
+        private void Categoria_Click(object sender, EventArgs e)
+        {
+            CategoriasMain cat = new CategoriasMain();
+            cat.ShowDialog();
+        }
+
+        private void Atributo_Click(object sender, EventArgs e)
+        {
+
+        }
 }
 
 

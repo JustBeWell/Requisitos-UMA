@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BorrarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrarCategoria.Designer.cs">
+      <DependentUpon>BorrarCategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -56,6 +62,24 @@
     </Compile>
     <Compile Include="BorrarProducto.Designer.cs">
       <DependentUpon>BorrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriasMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriasMain.Designer.cs">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarCategoria.Designer.cs">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCategoria.Designer.cs">
+      <DependentUpon>CrearCategoria.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -80,8 +104,20 @@
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="BorrarCategoria.resx">
+      <DependentUpon>BorrarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BorrarProducto.resx">
       <DependentUpon>BorrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoriasMain.resx">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCategoria.resx">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCategoria.resx">
+      <DependentUpon>CrearCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -116,10 +116,12 @@ namespace WindowsFormsApplication2
         private void Confirmar_Click(object sender, EventArgs e)
         {
             DataClasses1DataContext db = new DataClasses1DataContext();
+            // Buscar el producto actual en la base de datos
             var producto = db.Producto.FirstOrDefault(p => p.SKU == prod.SKU);
 
             if (producto != null)
             {
+                // Verificar y actualizar cada campo según el CheckBox y el valor del TextBox
                 if (GtinCheck.Checked && !string.IsNullOrWhiteSpace(textBoxGTIN.Text))
                 {
                     producto.GTIN = textBoxGTIN.Text.Trim();
@@ -167,6 +169,7 @@ namespace WindowsFormsApplication2
                         ActualizarAtributo(db, producto.SKU, atributoU5.id, textBoxU5.Text.Trim());
                 }
 
+                // Actualizar la categoría si el CheckBox está seleccionado
                 if (CategoriasCheck.Checked && Categorias.SelectedValue != null)
                 {
                     int categoriaId = (int)Categorias.SelectedValue;
