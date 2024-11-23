@@ -59,7 +59,7 @@ namespace WindowsFormsApplication2
                 {
                     producto_SKU = p.SKU,
                     atributo_id = atributos[1].id,
-                    valor = textBoxU3.Text.Trim()
+                    valor = textBoxU2.Text.Trim()
                 });
                 db.SubmitChanges();
             }
@@ -144,7 +144,7 @@ namespace WindowsFormsApplication2
 
         private void U3Check_CheckedChanged(object sender, EventArgs e)
         {
-            if (!U3Check.Checked) textBoxU3.Enabled = true;
+            if (U3Check.Checked) textBoxU3.Enabled = true;
             else textBoxU3.Enabled = false;
         }
 
@@ -205,6 +205,21 @@ namespace WindowsFormsApplication2
         {
             _form1.cambiarColor(Color.White);
             this.Close();
+        }
+
+        private void textBoxU3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSKU_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxU1_TextChanged(object sender, EventArgs e)
+        {
+
         }
         }
 }

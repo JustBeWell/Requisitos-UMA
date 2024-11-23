@@ -81,6 +81,12 @@
     <Compile Include="CrearCategoria.Designer.cs">
       <DependentUpon>CrearCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="MostrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarProducto.Designer.cs">
+      <DependentUpon>MostrarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EditarProducto.resx">
       <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarProducto.resx">
+      <DependentUpon>MostrarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

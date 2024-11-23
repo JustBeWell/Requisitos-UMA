@@ -19,7 +19,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
             _form1 = form1;
             this.cat = cat;
-            _form1.cambiarColor(Color.Gray);
+
         }
 
         private void Confirmar_Click(object sender, EventArgs e)
@@ -31,7 +31,7 @@ namespace WindowsFormsApplication2
                 {      
                     categoria.nombre = textBox1.Text;
                     bd.SubmitChanges();
-                    _form1.cambiarColor(Color.White);
+
                     _form1.load();           
                      this.Close();
                }

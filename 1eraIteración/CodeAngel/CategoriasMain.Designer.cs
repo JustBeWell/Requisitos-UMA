@@ -58,7 +58,7 @@
             // Categorias
             // 
             this.Categorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Categorias.Location = new System.Drawing.Point(70, 168);
+            this.Categorias.Location = new System.Drawing.Point(70, 159);
             this.Categorias.Name = "Categorias";
             this.Categorias.Size = new System.Drawing.Size(756, 238);
             this.Categorias.TabIndex = 1;
@@ -88,68 +88,68 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.Ayuda);
-            this.panel1.Controls.Add(this.Relacion);
-            this.panel1.Controls.Add(this.Atributo);
-            this.panel1.Controls.Add(this.Categoria);
-            this.panel1.Controls.Add(this.Assets);
-            this.panel1.Controls.Add(this.Producto);
             this.panel1.Controls.Add(this.Dashboard);
-            this.panel1.Location = new System.Drawing.Point(70, 21);
+            this.panel1.Controls.Add(this.Producto);
+            this.panel1.Controls.Add(this.Relacion);
+            this.panel1.Controls.Add(this.Assets);
+            this.panel1.Controls.Add(this.Categoria);
+            this.panel1.Controls.Add(this.Atributo);
+            this.panel1.Location = new System.Drawing.Point(70, 45);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(720, 51);
+            this.panel1.Size = new System.Drawing.Size(548, 51);
             this.panel1.TabIndex = 6;
             // 
             // Ayuda
             // 
-            this.Ayuda.Location = new System.Drawing.Point(612, 0);
+            this.Ayuda.Location = new System.Drawing.Point(467, 12);
             this.Ayuda.Name = "Ayuda";
-            this.Ayuda.Size = new System.Drawing.Size(108, 51);
+            this.Ayuda.Size = new System.Drawing.Size(66, 25);
             this.Ayuda.TabIndex = 7;
             this.Ayuda.Text = "Help";
             this.Ayuda.UseVisualStyleBackColor = true;
             // 
             // Relacion
             // 
-            this.Relacion.Location = new System.Drawing.Point(512, 0);
+            this.Relacion.Location = new System.Drawing.Point(388, 12);
             this.Relacion.Name = "Relacion";
-            this.Relacion.Size = new System.Drawing.Size(102, 51);
+            this.Relacion.Size = new System.Drawing.Size(73, 25);
             this.Relacion.TabIndex = 11;
             this.Relacion.Text = "Relationships";
             this.Relacion.UseVisualStyleBackColor = true;
             // 
             // Atributo
             // 
-            this.Atributo.Location = new System.Drawing.Point(407, 0);
+            this.Atributo.Location = new System.Drawing.Point(310, 12);
             this.Atributo.Name = "Atributo";
-            this.Atributo.Size = new System.Drawing.Size(107, 51);
+            this.Atributo.Size = new System.Drawing.Size(72, 25);
             this.Atributo.TabIndex = 10;
             this.Atributo.Text = "Attributes";
             this.Atributo.UseVisualStyleBackColor = true;
             // 
             // Categoria
             // 
-            this.Categoria.Location = new System.Drawing.Point(301, 0);
+            this.Categoria.Location = new System.Drawing.Point(232, 12);
             this.Categoria.Name = "Categoria";
-            this.Categoria.Size = new System.Drawing.Size(109, 51);
+            this.Categoria.Size = new System.Drawing.Size(72, 25);
             this.Categoria.TabIndex = 9;
             this.Categoria.Text = "Categories";
             this.Categoria.UseVisualStyleBackColor = true;
             // 
             // Assets
             // 
-            this.Assets.Location = new System.Drawing.Point(208, 0);
+            this.Assets.Location = new System.Drawing.Point(167, 12);
             this.Assets.Name = "Assets";
             this.Assets.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Assets.Size = new System.Drawing.Size(97, 51);
+            this.Assets.Size = new System.Drawing.Size(59, 25);
             this.Assets.TabIndex = 8;
             this.Assets.Text = "Assets";
             this.Assets.UseVisualStyleBackColor = true;
             // 
             // Producto
             // 
-            this.Producto.Location = new System.Drawing.Point(107, 0);
+            this.Producto.Location = new System.Drawing.Point(96, 12);
             this.Producto.Name = "Producto";
-            this.Producto.Size = new System.Drawing.Size(103, 51);
+            this.Producto.Size = new System.Drawing.Size(65, 25);
             this.Producto.TabIndex = 7;
             this.Producto.Text = "Products";
             this.Producto.UseVisualStyleBackColor = true;
@@ -157,9 +157,9 @@
             // 
             // Dashboard
             // 
-            this.Dashboard.Location = new System.Drawing.Point(0, 0);
+            this.Dashboard.Location = new System.Drawing.Point(14, 12);
             this.Dashboard.Name = "Dashboard";
-            this.Dashboard.Size = new System.Drawing.Size(109, 51);
+            this.Dashboard.Size = new System.Drawing.Size(76, 25);
             this.Dashboard.TabIndex = 6;
             this.Dashboard.Text = "Dashboard";
             this.Dashboard.UseVisualStyleBackColor = true;

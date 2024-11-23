@@ -100,6 +100,7 @@
             this.textBoxU3.Name = "textBoxU3";
             this.textBoxU3.Size = new System.Drawing.Size(258, 20);
             this.textBoxU3.TabIndex = 4;
+            this.textBoxU3.TextChanged += new System.EventHandler(this.textBoxU3_TextChanged);
             // 
             // textBoxU4
             // 
@@ -132,6 +133,7 @@
             this.textBoxU1.Name = "textBoxU1";
             this.textBoxU1.Size = new System.Drawing.Size(258, 20);
             this.textBoxU1.TabIndex = 8;
+            this.textBoxU1.TextChanged += new System.EventHandler(this.textBoxU1_TextChanged);
             // 
             // textBoxLabel
             // 
@@ -150,6 +152,7 @@
             this.textBoxSKU.Size = new System.Drawing.Size(258, 20);
             this.textBoxSKU.TabIndex = 10;
             this.textBoxSKU.Text = "SKU";
+            this.textBoxSKU.TextChanged += new System.EventHandler(this.textBoxSKU_TextChanged);
             // 
             // GtinCheck
             // 

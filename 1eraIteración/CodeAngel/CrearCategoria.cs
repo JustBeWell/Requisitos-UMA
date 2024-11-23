@@ -17,7 +17,7 @@ namespace WindowsFormsApplication2
         {
             InitializeComponent();
             _form1 = form1;
-            _form1.cambiarColor(Color.Gray);
+
         }
 
         private void Confirmar_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace WindowsFormsApplication2
                 bd.SubmitChanges();
 
                 _form1.load();
-                _form1.cambiarColor(Color.White);
+
                 this.Close();
             }
         }

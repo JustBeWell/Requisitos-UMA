@@ -21,6 +21,7 @@ namespace WindowsFormsApplication2
         {
             LoadAllProducts();
             dataGridViewProductos.ClearSelection();
+            ResaltarBoton(this.Producto);
             
 
         }
@@ -94,6 +95,7 @@ namespace WindowsFormsApplication2
 
 
             dataGridViewProductos.DataSource = query.ToList();
+            labelProductoCount.Text = db.Producto.Count().ToString() + " Products";
             }
         private void FilterProducts(string searchText)
         {
@@ -195,14 +197,86 @@ namespace WindowsFormsApplication2
 
         private void Categoria_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            
             CategoriasMain cat = new CategoriasMain();
-            cat.ShowDialog();
+            cat.FormClosed += (s, args) =>
+            {
+                this.Show(); // Muestra el MainForm nuevamente
+                ResaltarBoton(this.Producto); // Resalta el botón de productos
+            };
+            cat.Show();
+            this.ActiveControl = null;
+            
         }
 
         private void Atributo_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void Dashboard_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelProductoCount_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void ResaltarBoton(Button botonSeleccionado)
+        {
+            // Restaurar estilo de todos los botones en el panel
+            foreach (Control control in panel1.Controls)
+            {
+                    Button boton = control as Button; // Intenta convertir el control a Button
+                    if (boton != null)
+                    {
+                        boton.BackColor = SystemColors.Control; // Color predeterminado
+                        boton.ForeColor = Color.Black; // Texto en negro
+                    }
+            } 
+
+            // Resaltar el botón seleccionado
+            botonSeleccionado.BackColor = Color.Blue; // Color azul
+            botonSeleccionado.ForeColor = Color.White; // Texto blanco
+        }
+
+        private void Producto_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton((Button)sender);
+        }
+
+        private void dataGridViewProductos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+    // Verifica que la fila seleccionada sea válida
+            if (e.RowIndex >= 0)
+            {
+                // Obtén los valores de la fila seleccionada
+                var filaSeleccionada = dataGridViewProductos.Rows[e.RowIndex];
+
+                try
+                {
+                    // Crea una instancia del objeto Producto usando los valores de la fila seleccionada
+                    Producto productoSeleccionado = new Producto()
+                    {
+                        SKU = filaSeleccionada.Cells["SKU"].Value.ToString(),
+                        GTIN = filaSeleccionada.Cells["GTIN"].Value.ToString(),
+                        Label = filaSeleccionada.Cells["Label"].Value.ToString(),
+                        Thumbnail = filaSeleccionada.Cells["Thumbnail"].Value.ToString()
+                    };
+
+                    // Abre el formulario MostrarProducto
+                    MostrarProducto mostrarProductoForm = new MostrarProducto(this, productoSeleccionado);
+                    mostrarProductoForm.ShowDialog();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error al mostrar el producto: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                }
+           }
+
 }
 
 

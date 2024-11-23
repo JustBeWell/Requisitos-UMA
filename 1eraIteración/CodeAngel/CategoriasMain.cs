@@ -20,6 +20,7 @@ namespace WindowsFormsApplication2
         private void CategoriasMain_Load(object sender, EventArgs e)
         {
             load();
+            ResaltarBoton(this.Categoria);
         }
         public void load()
         {
@@ -109,7 +110,25 @@ namespace WindowsFormsApplication2
 
         private void Producto_Click(object sender, EventArgs e)
         {
+            
             this.Close();
+        }
+        private void ResaltarBoton(Button botonSeleccionado)
+        {
+            // Restaurar estilo de todos los botones en el panel
+            foreach (Control control in panel1.Controls)
+            {
+                Button boton = control as Button; // Intenta convertir el control a Button
+                if (boton != null)
+                {
+                    boton.BackColor = SystemColors.Control; // Color predeterminado
+                    boton.ForeColor = Color.Black; // Texto en negro
+                }
+            }
+
+            // Resaltar el botón seleccionado
+            botonSeleccionado.BackColor = Color.Blue; // Color azul
+            botonSeleccionado.ForeColor = Color.White; // Texto blanco
         }
     }
 }

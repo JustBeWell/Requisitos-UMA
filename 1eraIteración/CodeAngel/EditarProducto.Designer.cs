@@ -49,6 +49,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Upload = new System.Windows.Forms.Button();
             this.Confirmar = new System.Windows.Forms.Button();
+            this.textBoxSKU = new System.Windows.Forms.TextBox();
+            this.checkBoxSKU = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@
             // 
             this.Categorias.Enabled = false;
             this.Categorias.FormattingEnabled = true;
-            this.Categorias.Location = new System.Drawing.Point(256, 299);
+            this.Categorias.Location = new System.Drawing.Point(256, 326);
             this.Categorias.Name = "Categorias";
             this.Categorias.Size = new System.Drawing.Size(258, 21);
             this.Categorias.TabIndex = 43;
@@ -74,7 +76,7 @@
             // CategoriasCheck
             // 
             this.CategoriasCheck.AutoSize = true;
-            this.CategoriasCheck.Location = new System.Drawing.Point(530, 299);
+            this.CategoriasCheck.Location = new System.Drawing.Point(530, 326);
             this.CategoriasCheck.Name = "CategoriasCheck";
             this.CategoriasCheck.Size = new System.Drawing.Size(15, 14);
             this.CategoriasCheck.TabIndex = 42;
@@ -84,7 +86,7 @@
             // LabelCheck
             // 
             this.LabelCheck.AutoSize = true;
-            this.LabelCheck.Location = new System.Drawing.Point(530, 60);
+            this.LabelCheck.Location = new System.Drawing.Point(530, 91);
             this.LabelCheck.Name = "LabelCheck";
             this.LabelCheck.Size = new System.Drawing.Size(15, 14);
             this.LabelCheck.TabIndex = 40;
@@ -94,7 +96,7 @@
             // U1Check
             // 
             this.U1Check.AutoSize = true;
-            this.U1Check.Location = new System.Drawing.Point(530, 102);
+            this.U1Check.Location = new System.Drawing.Point(530, 129);
             this.U1Check.Name = "U1Check";
             this.U1Check.Size = new System.Drawing.Size(15, 14);
             this.U1Check.TabIndex = 39;
@@ -104,7 +106,7 @@
             // U2Check
             // 
             this.U2Check.AutoSize = true;
-            this.U2Check.Location = new System.Drawing.Point(530, 141);
+            this.U2Check.Location = new System.Drawing.Point(530, 168);
             this.U2Check.Name = "U2Check";
             this.U2Check.Size = new System.Drawing.Size(15, 14);
             this.U2Check.TabIndex = 38;
@@ -114,7 +116,7 @@
             // U3Check
             // 
             this.U3Check.AutoSize = true;
-            this.U3Check.Location = new System.Drawing.Point(530, 182);
+            this.U3Check.Location = new System.Drawing.Point(530, 209);
             this.U3Check.Name = "U3Check";
             this.U3Check.Size = new System.Drawing.Size(15, 14);
             this.U3Check.TabIndex = 37;
@@ -124,7 +126,7 @@
             // U4Check
             // 
             this.U4Check.AutoSize = true;
-            this.U4Check.Location = new System.Drawing.Point(530, 225);
+            this.U4Check.Location = new System.Drawing.Point(530, 252);
             this.U4Check.Name = "U4Check";
             this.U4Check.Size = new System.Drawing.Size(15, 14);
             this.U4Check.TabIndex = 36;
@@ -134,7 +136,7 @@
             // U5Check
             // 
             this.U5Check.AutoSize = true;
-            this.U5Check.Location = new System.Drawing.Point(530, 261);
+            this.U5Check.Location = new System.Drawing.Point(530, 288);
             this.U5Check.Name = "U5Check";
             this.U5Check.Size = new System.Drawing.Size(15, 14);
             this.U5Check.TabIndex = 35;
@@ -154,7 +156,7 @@
             // textBoxLabel
             // 
             this.textBoxLabel.Enabled = false;
-            this.textBoxLabel.Location = new System.Drawing.Point(256, 60);
+            this.textBoxLabel.Location = new System.Drawing.Point(256, 87);
             this.textBoxLabel.Name = "textBoxLabel";
             this.textBoxLabel.Size = new System.Drawing.Size(258, 20);
             this.textBoxLabel.TabIndex = 32;
@@ -163,7 +165,7 @@
             // textBoxU1
             // 
             this.textBoxU1.Enabled = false;
-            this.textBoxU1.Location = new System.Drawing.Point(256, 102);
+            this.textBoxU1.Location = new System.Drawing.Point(256, 129);
             this.textBoxU1.Name = "textBoxU1";
             this.textBoxU1.Size = new System.Drawing.Size(258, 20);
             this.textBoxU1.TabIndex = 31;
@@ -171,7 +173,7 @@
             // textBoxU2
             // 
             this.textBoxU2.Enabled = false;
-            this.textBoxU2.Location = new System.Drawing.Point(256, 139);
+            this.textBoxU2.Location = new System.Drawing.Point(256, 166);
             this.textBoxU2.Name = "textBoxU2";
             this.textBoxU2.Size = new System.Drawing.Size(258, 20);
             this.textBoxU2.TabIndex = 30;
@@ -179,7 +181,7 @@
             // textBoxU5
             // 
             this.textBoxU5.Enabled = false;
-            this.textBoxU5.Location = new System.Drawing.Point(256, 261);
+            this.textBoxU5.Location = new System.Drawing.Point(256, 288);
             this.textBoxU5.Name = "textBoxU5";
             this.textBoxU5.Size = new System.Drawing.Size(258, 20);
             this.textBoxU5.TabIndex = 29;
@@ -187,7 +189,7 @@
             // textBoxU4
             // 
             this.textBoxU4.Enabled = false;
-            this.textBoxU4.Location = new System.Drawing.Point(256, 225);
+            this.textBoxU4.Location = new System.Drawing.Point(256, 252);
             this.textBoxU4.Name = "textBoxU4";
             this.textBoxU4.Size = new System.Drawing.Size(258, 20);
             this.textBoxU4.TabIndex = 28;
@@ -195,7 +197,7 @@
             // textBoxU3
             // 
             this.textBoxU3.Enabled = false;
-            this.textBoxU3.Location = new System.Drawing.Point(256, 182);
+            this.textBoxU3.Location = new System.Drawing.Point(256, 209);
             this.textBoxU3.Name = "textBoxU3";
             this.textBoxU3.Size = new System.Drawing.Size(258, 20);
             this.textBoxU3.TabIndex = 27;
@@ -239,11 +241,32 @@
             this.Confirmar.UseVisualStyleBackColor = true;
             this.Confirmar.Click += new System.EventHandler(this.Confirmar_Click);
             // 
+            // textBoxSKU
+            // 
+            this.textBoxSKU.Enabled = false;
+            this.textBoxSKU.Location = new System.Drawing.Point(256, 56);
+            this.textBoxSKU.Name = "textBoxSKU";
+            this.textBoxSKU.Size = new System.Drawing.Size(258, 20);
+            this.textBoxSKU.TabIndex = 45;
+            this.textBoxSKU.Text = "SKU";
+            // 
+            // checkBoxSKU
+            // 
+            this.checkBoxSKU.AutoSize = true;
+            this.checkBoxSKU.Location = new System.Drawing.Point(530, 58);
+            this.checkBoxSKU.Name = "checkBoxSKU";
+            this.checkBoxSKU.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxSKU.TabIndex = 46;
+            this.checkBoxSKU.UseVisualStyleBackColor = true;
+            this.checkBoxSKU.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // EditarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(769, 559);
+            this.Controls.Add(this.checkBoxSKU);
+            this.Controls.Add(this.textBoxSKU);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Categorias);
             this.Controls.Add(this.CategoriasCheck);
@@ -295,5 +318,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Upload;
         private System.Windows.Forms.Button Confirmar;
+        private System.Windows.Forms.TextBox textBoxSKU;
+        private System.Windows.Forms.CheckBox checkBoxSKU;
     }
 }

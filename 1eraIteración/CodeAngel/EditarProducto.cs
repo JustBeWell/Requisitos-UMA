@@ -184,6 +184,12 @@ namespace WindowsFormsApplication2
                         categoria_id = categoriaId
                     });
                 }
+
+                //Para no modificar la referencia al SKU se va a actualizar al final
+                if (checkBoxSKU.Checked && !string.IsNullOrWhiteSpace(textBoxSKU.Text))
+                {
+                    producto.SKU = textBoxSKU.Text.Trim();
+                }
             }
 
                 db.SubmitChanges();
@@ -208,6 +214,17 @@ namespace WindowsFormsApplication2
                     valor = valor
                 });
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e) //Check SKU
+        {
+            if (this.checkBoxSKU.Checked) this.textBoxSKU.Enabled = true;
+            else textBoxSKU.Enabled = false;
         }
 
     }
