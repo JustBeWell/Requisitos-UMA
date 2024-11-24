@@ -21,95 +21,95 @@ namespace WindowsFormsApplication2
 
         private void Confirmar_Click(object sender, EventArgs e)
         {
-            //Aqui se insertaria el producto antes de irse todo a la mierda :)
-            DataClasses1DataContext db = new DataClasses1DataContext();
-            if (string.IsNullOrWhiteSpace(textBoxSKU.Text) ||
-                string.IsNullOrWhiteSpace(textBoxGTIN.Text) ||
-                string.IsNullOrWhiteSpace(textBoxLabel.Text)){
-                    MessageBox.Show("Incomplete Data", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            try
+            {
+                DataClasses1DataContext db = new DataClasses1DataContext();
+
+                // Comprobaciones iniciales
+                if (string.IsNullOrWhiteSpace(textBoxSKU.Text) || !SKUCheck.Checked ||
+                    string.IsNullOrWhiteSpace(textBoxGTIN.Text) || !GtinCheck.Checked ||
+                    string.IsNullOrWhiteSpace(textBoxLabel.Text) || !LabelCheck.Checked)
+                {
+                    MessageBox.Show("Datos incompletos", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-            }
-            Producto p = new Producto
-            {
+                }
 
-                SKU = textBoxSKU.Text.Trim(),
-                GTIN = textBoxGTIN.Text.Trim(),
-                Label = textBoxLabel.Text.Trim(),
-                Thumbnail = pictureBox1.ImageLocation ?? string.Empty
-             
-            };
-            db.Producto.InsertOnSubmit(p);
-            db.SubmitChanges();
-            var atributos = db.Atributo.Take(5).ToList();
-            if (!string.IsNullOrWhiteSpace(textBoxU1.Text))
-            {
-                
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                // Comprobación GTIN
+                if (textBoxGTIN.Text.Trim().Length > 14)
                 {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[0].id,
-                    valor = textBoxU1.Text.Trim()
-                });
-                db.SubmitChanges();
-            }
+                    MessageBox.Show("El GTIN debe tener como máximo 14 caracteres.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-            if (!string.IsNullOrWhiteSpace(textBoxU2.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                // Comprobación SKU único
+                if (db.Producto.Any(p => p.SKU == textBoxSKU.Text.Trim()))
                 {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[1].id,
-                    valor = textBoxU2.Text.Trim()
-                });
-                db.SubmitChanges();
-            }
+                    MessageBox.Show("El SKU debe ser único. Ya existe un producto con este SKU.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
 
-             if (!string.IsNullOrWhiteSpace(textBoxU3.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                // Comprobación Label
+                if (textBoxLabel.Text.Trim().Length > 250)
                 {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[2].id,
-                    valor = textBoxU3.Text.Trim()
-                });
+                    MessageBox.Show("El Label no debe exceder los 250 caracteres.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Comprobación Thumbnail
+                if (!string.IsNullOrEmpty(pictureBox1.ImageLocation))
+                {
+                    var thumbnail = new Bitmap(pictureBox1.ImageLocation);
+                    if (thumbnail.Width != 200 || thumbnail.Height != 200)
+                    {
+                        MessageBox.Show("El Thumbnail debe tener un tamaño de 200×200 píxeles.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (!pictureBox1.ImageLocation.EndsWith(".png") && !pictureBox1.ImageLocation.EndsWith(".jpg"))
+                    {
+                        MessageBox.Show("El Thumbnail debe estar en formato PNG o JPG.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                Producto prod = new Producto
+                {
+
+                    SKU = textBoxSKU.Text.Trim(),
+                    GTIN = textBoxGTIN.Text.Trim(),
+                    Label = textBoxLabel.Text.Trim(),
+                    Thumbnail = pictureBox1.ImageLocation ?? string.Empty
+
+                };
+
+                db.Producto.InsertOnSubmit(prod);
                 db.SubmitChanges();
-            }
-             if (!string.IsNullOrWhiteSpace(textBoxU4.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+
+                var atributos = db.Atributo.Take(5).ToList();
+
+                // Insertar categoría
+                if (Categorias.SelectedValue != null)
                 {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[3].id, 
-                    valor = textBoxU4.Text.Trim()
-                });
+                    int categoriaId = (int)Categorias.SelectedValue;
+                    var categoriaExistente = db.Categoria.FirstOrDefault(c => c.id == categoriaId);
+                    if (categoriaExistente != null)
+                    {
+                        db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
+                        {
+                            producto_SKU = prod.SKU,
+                            categoria_id = categoriaExistente.id
+                        });
+                    }
+                }
+
                 db.SubmitChanges();
+                _form1.load();
+                _form1.cambiarColor(Color.White);
+                this.Close();
             }
-             if (!string.IsNullOrWhiteSpace(textBoxU5.Text))
+            catch (Exception ex)
             {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[4].id, 
-                    valor = textBoxU5.Text.Trim()
-                });
-                db.SubmitChanges();
+                MessageBox.Show(ex.Message);
             }
-            // Insertar categoría
-            if (Categorias.SelectedValue != null)
-            {
-                int categoriaId = (int)Categorias.SelectedValue;
-                var categoriaExistente = db.Categoria.FirstOrDefault(c => c.id == categoriaId);
-                if (categoriaExistente == null) return;
-                db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
-                {
-                    producto_SKU = p.SKU,
-                    categoria_id = categoriaExistente.id
-                });
-            }
-            db.SubmitChanges();
-            _form1.load();
-            _form1.cambiarColor(Color.White);
-            this.Close();
         }
 
         private void GtinCheck_CheckedChanged(object sender, EventArgs e)
@@ -132,6 +132,7 @@ namespace WindowsFormsApplication2
 
         private void U1Check_CheckedChanged(object sender, EventArgs e)
         {
+
             if (U1Check.Checked) textBoxU1.Enabled = true;
             else textBoxU1.Enabled = false;
         }
@@ -199,6 +200,39 @@ namespace WindowsFormsApplication2
             Categorias.DisplayMember = "nombre"; 
             Categorias.ValueMember = "id";     
             Categorias.SelectedIndex = -1;
+            int numOfAtributes = db.Atributo.Count();
+            if (numOfAtributes < 1)
+            {
+                U1Check.Enabled = false;
+                textBoxU1.Enabled = false;
+                 textBoxU1.Text = "No User Atribute 1";
+            }
+            if (numOfAtributes < 2)
+            {
+                U2Check.Enabled = false;
+                textBoxU2.Enabled = false;
+                 textBoxU2.Text = "No User Atribute 2";
+            }
+            if (numOfAtributes < 3)
+            {
+                U3Check.Enabled = false;
+                textBoxU3.Enabled = false;
+                 textBoxU3.Text = "No User Atribute 3";
+            }
+            if (numOfAtributes < 4)
+            {
+                U4Check.Enabled = false;
+                textBoxU4.Enabled = false;
+                 textBoxU4.Text = "No User Atribute 4";
+            }
+            if (numOfAtributes < 5)
+            {
+                U5Check.Enabled = false;
+                textBoxU5.Enabled = false;
+                 textBoxU5.Text = "No User Atribute 5";
+            }
+
+
         }
 
         private void Salir_Click(object sender, EventArgs e)

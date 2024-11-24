@@ -69,11 +69,14 @@
     <Compile Include="BorrarProducto.Designer.cs">
       <DependentUpon>BorrarProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainCategorias.cs">
+    <Compile Include="CategoriasMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainCategorias.Designer.cs">
-      <DependentUpon>MainCategorias.cs</DependentUpon>
+    <Compile Include="CategoriasMain.Designer.cs">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataGridComboBoxColumn.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="EditarCategoria.cs">
       <SubType>Form</SubType>
@@ -86,6 +89,12 @@
     </Compile>
     <Compile Include="CrearCategoria.Designer.cs">
       <DependentUpon>CrearCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarAtributo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrarAtributo.Designer.cs">
+      <DependentUpon>BorrarAtributo.cs</DependentUpon>
     </Compile>
     <Compile Include="MainAtributos.cs">
       <SubType>Form</SubType>
@@ -117,8 +126,14 @@
     <Compile Include="EditarProducto.Designer.cs">
       <DependentUpon>EditarProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="myComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
@@ -128,17 +143,23 @@
     <EmbeddedResource Include="BorrarProducto.resx">
       <DependentUpon>BorrarProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainCategorias.resx">
-      <DependentUpon>MainCategorias.cs</DependentUpon>
+    <EmbeddedResource Include="CategoriasMain.resx">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearAtributo.resx">
       <DependentUpon>CrearAtributo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataGridComboBoxColumn.resx">
+      <DependentUpon>DataGridComboBoxColumn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EditarCategoria.resx">
       <DependentUpon>EditarCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearCategoria.resx">
       <DependentUpon>CrearCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BorrarAtributo.resx">
+      <DependentUpon>BorrarAtributo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainAtributos.resx">
       <DependentUpon>MainAtributos.cs</DependentUpon>
@@ -155,6 +176,9 @@
     <EmbeddedResource Include="MostrarProducto.resx">
       <DependentUpon>MostrarProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="myComboBox.resx">
+      <DependentUpon>myComboBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -163,6 +187,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -184,6 +209,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

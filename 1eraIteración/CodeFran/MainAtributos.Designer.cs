@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_AñadirAtributo = new System.Windows.Forms.Button();
-            this.label_MaxReached = new System.Windows.Forms.Label();
             this.label_AvailableAttributes = new System.Windows.Forms.Label();
             this.label_UserAttributes = new System.Windows.Forms.Label();
             this.dataGridViewAtributos = new System.Windows.Forms.DataGridView();
@@ -41,38 +39,17 @@
             this.Assets = new System.Windows.Forms.Button();
             this.Categoria = new System.Windows.Forms.Button();
             this.Atributo = new System.Windows.Forms.Button();
+            this.btn_AñadirAtributo = new WindowsFormsApplication2.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAtributos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_AñadirAtributo
-            // 
-            this.btn_AñadirAtributo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_AñadirAtributo.Location = new System.Drawing.Point(1160, 348);
-            this.btn_AñadirAtributo.Name = "btn_AñadirAtributo";
-            this.btn_AñadirAtributo.Size = new System.Drawing.Size(250, 142);
-            this.btn_AñadirAtributo.TabIndex = 20;
-            this.btn_AñadirAtributo.Text = "Add attribute";
-            this.btn_AñadirAtributo.UseVisualStyleBackColor = true;
-            this.btn_AñadirAtributo.Click += new System.EventHandler(this.btn_AñadirAtributo_Click);
-            // 
-            // label_MaxReached
-            // 
-            this.label_MaxReached.AutoSize = true;
-            this.label_MaxReached.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_MaxReached.ForeColor = System.Drawing.Color.Red;
-            this.label_MaxReached.Location = new System.Drawing.Point(98, 201);
-            this.label_MaxReached.Name = "label_MaxReached";
-            this.label_MaxReached.Size = new System.Drawing.Size(1312, 38);
-            this.label_MaxReached.TabIndex = 19;
-            this.label_MaxReached.Text = "Warning: no more attributes can be created. Max number of user attributes reached" +
-    ".";
             // 
             // label_AvailableAttributes
             // 
             this.label_AvailableAttributes.AutoSize = true;
             this.label_AvailableAttributes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_AvailableAttributes.Location = new System.Drawing.Point(1155, 293);
+            this.label_AvailableAttributes.Location = new System.Drawing.Point(1016, 294);
+            this.label_AvailableAttributes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_AvailableAttributes.Name = "label_AvailableAttributes";
             this.label_AvailableAttributes.Size = new System.Drawing.Size(242, 29);
             this.label_AvailableAttributes.TabIndex = 18;
@@ -82,7 +59,8 @@
             // 
             this.label_UserAttributes.AutoSize = true;
             this.label_UserAttributes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_UserAttributes.Location = new System.Drawing.Point(86, 293);
+            this.label_UserAttributes.Location = new System.Drawing.Point(86, 294);
+            this.label_UserAttributes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_UserAttributes.Name = "label_UserAttributes";
             this.label_UserAttributes.Size = new System.Drawing.Size(183, 29);
             this.label_UserAttributes.TabIndex = 17;
@@ -91,11 +69,16 @@
             // dataGridViewAtributos
             // 
             this.dataGridViewAtributos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewAtributos.Location = new System.Drawing.Point(91, 348);
+            this.dataGridViewAtributos.Location = new System.Drawing.Point(92, 349);
+            this.dataGridViewAtributos.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewAtributos.Name = "dataGridViewAtributos";
             this.dataGridViewAtributos.RowTemplate.Height = 31;
-            this.dataGridViewAtributos.Size = new System.Drawing.Size(817, 237);
+            this.dataGridViewAtributos.Size = new System.Drawing.Size(818, 294);
             this.dataGridViewAtributos.TabIndex = 16;
+            this.dataGridViewAtributos.CellBeginEdit += new System.Windows.Forms.DataGridViewCellCancelEventHandler(this.dataGridViewAtributos_CellBeginEdit);
+            this.dataGridViewAtributos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellContentClick);
+            this.dataGridViewAtributos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellDoubleClick);
+            this.dataGridViewAtributos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellValueChanged);
             this.dataGridViewAtributos.SelectionChanged += new System.EventHandler(this.dataGridAtributos_SelectionChanged);
             // 
             // panel1
@@ -107,7 +90,7 @@
             this.panel1.Controls.Add(this.Assets);
             this.panel1.Controls.Add(this.Categoria);
             this.panel1.Controls.Add(this.Atributo);
-            this.panel1.Location = new System.Drawing.Point(65, 50);
+            this.panel1.Location = new System.Drawing.Point(64, 50);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1023, 94);
@@ -187,17 +170,29 @@
             this.Atributo.UseVisualStyleBackColor = true;
             this.Atributo.Click += new System.EventHandler(this.Atributo_Click);
             // 
+            // btn_AñadirAtributo
+            // 
+            this.btn_AñadirAtributo.BackColor = System.Drawing.Color.Silver;
+            this.btn_AñadirAtributo.Location = new System.Drawing.Point(1078, 349);
+            this.btn_AñadirAtributo.Margin = new System.Windows.Forms.Padding(6);
+            this.btn_AñadirAtributo.Name = "btn_AñadirAtributo";
+            this.btn_AñadirAtributo.Size = new System.Drawing.Size(238, 222);
+            this.btn_AñadirAtributo.TabIndex = 20;
+            this.btn_AñadirAtributo.Text = " Add Attribute";
+            this.btn_AñadirAtributo.UseVisualStyleBackColor = false;
+            this.btn_AñadirAtributo.Click += new System.EventHandler(this.btn_AñadirAtributo_Click);
+            // 
             // MainAtributos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1525, 879);
             this.Controls.Add(this.btn_AñadirAtributo);
-            this.Controls.Add(this.label_MaxReached);
             this.Controls.Add(this.label_AvailableAttributes);
             this.Controls.Add(this.label_UserAttributes);
             this.Controls.Add(this.dataGridViewAtributos);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainAtributos";
             this.Text = "MainAtributos";
             this.Load += new System.EventHandler(this.MainAtributos_Load);
@@ -210,8 +205,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_AñadirAtributo;
-        private System.Windows.Forms.Label label_MaxReached;
         private System.Windows.Forms.Label label_AvailableAttributes;
         private System.Windows.Forms.Label label_UserAttributes;
         private System.Windows.Forms.DataGridView dataGridViewAtributos;
@@ -223,5 +216,6 @@
         private System.Windows.Forms.Button Assets;
         private System.Windows.Forms.Button Categoria;
         private System.Windows.Forms.Button Atributo;
+        private RoundButton btn_AñadirAtributo;
     }
 }

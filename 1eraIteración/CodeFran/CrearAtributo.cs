@@ -12,13 +12,14 @@ namespace WindowsFormsApplication2
 {
     public partial class CrearAtributo : Form
     {
-
+        private MainAtributos _form1;
         public Atributo AtributoCreado { get; private set; }
 
-        public CrearAtributo()
+        public CrearAtributo(MainAtributos form1)
         {
             InitializeComponent();
             LoadTipoAtributos();
+            _form1 = form1;
         }
 
         private void LoadTipoAtributos()
@@ -46,8 +47,14 @@ namespace WindowsFormsApplication2
                 tipo = (int)comboBox_Type.SelectedValue
             };
 
+            DataClasses1DataContext bd = new DataClasses1DataContext();
+            bd.Atributo.InsertOnSubmit(AtributoCreado);
+            bd.SubmitChanges();
+
+            _form1.load();
+
             DialogResult = DialogResult.OK;
-            Close();
+            this.Close();
         }
 
 

@@ -12,22 +12,33 @@ namespace WindowsFormsApplication2
 {
     public partial class BorrarCategoria : Form
     {
-        private MainCategorias _form1;
+        private CategoriasMain _form1;
         private Categoria catg;
-        public BorrarCategoria(MainCategorias form1, Categoria catg)
+        private int numCatAss;
+        public BorrarCategoria(CategoriasMain form1, Categoria catg, int numCatAss)
         {
             InitializeComponent();
             _form1 = form1;
             this.catg = catg;
+            this.numCatAss = numCatAss;
         }
 
         private void Yes_Click(object sender, EventArgs e)
         {
             DataClasses1DataContext db = new DataClasses1DataContext();
             var categoriaAEliminar = db.Categoria.FirstOrDefault(p => p.nombre == catg.nombre);
-            db.Categoria.DeleteOnSubmit(categoriaAEliminar);
-            db.SubmitChanges();
-            _form1.load();
+            if (numCatAss > 0)
+            {
+                MessageBox.Show("You cannot delete a category that has associated products");
+                
+            }
+            else
+            {
+                db.Categoria.DeleteOnSubmit(categoriaAEliminar);
+                db.SubmitChanges();
+                _form1.load();
+            }
+            
 
             this.Close();
         }

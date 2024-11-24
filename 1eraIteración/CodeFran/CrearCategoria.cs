@@ -12,8 +12,8 @@ namespace WindowsFormsApplication2
 {
     public partial class CrearCategoria : Form
     {
-        private MainCategorias _form1;
-        public CrearCategoria(MainCategorias form1)
+        private CategoriasMain _form1;
+        public CrearCategoria(CategoriasMain form1)
         {
             InitializeComponent();
             _form1 = form1;
@@ -22,6 +22,7 @@ namespace WindowsFormsApplication2
 
         private void Confirmar_Click(object sender, EventArgs e)
         {
+            
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 DataClasses1DataContext bd = new DataClasses1DataContext();
@@ -39,6 +40,11 @@ namespace WindowsFormsApplication2
 
                 _form1.load();
 
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("You must insert some string in order to add the category");
                 this.Close();
             }
         }

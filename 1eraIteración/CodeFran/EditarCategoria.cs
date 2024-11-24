@@ -12,9 +12,9 @@ namespace WindowsFormsApplication2
 {
     public partial class EditarCategoria : Form
     {
-        private MainCategorias _form1;
+        private CategoriasMain _form1;
         private Categoria cat;
-        public EditarCategoria(MainCategorias form1,Categoria cat)
+        public EditarCategoria(CategoriasMain form1,Categoria cat)
         {
             InitializeComponent();
             _form1 = form1;
@@ -35,6 +35,11 @@ namespace WindowsFormsApplication2
                     _form1.load();           
                      this.Close();
                }
+            }
+            else
+            {
+                MessageBox.Show("You must insert some string in order to add the category");
+                
             }
         }
     }

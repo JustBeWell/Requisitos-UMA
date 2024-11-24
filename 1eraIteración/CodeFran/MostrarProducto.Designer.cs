@@ -41,6 +41,7 @@
             this.textBoxGTIN = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Upload = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,11 +160,22 @@
             this.Upload.Text = "Upload Asset";
             this.Upload.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(220, 337);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 13);
+            this.label1.TabIndex = 68;
+            this.label1.Text = "labelThumbnail";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // MostrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 712);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSKU);
             this.Controls.Add(this.Salir);
             this.Controls.Add(this.Categorias);
@@ -199,5 +211,6 @@
         private System.Windows.Forms.TextBox textBoxGTIN;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Upload;
+        private System.Windows.Forms.Label label1;
     }
 }

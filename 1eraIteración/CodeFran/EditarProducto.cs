@@ -40,6 +40,38 @@ namespace WindowsFormsApplication2
             Categorias.DisplayMember = "nombre";
             Categorias.ValueMember = "id";
             Categorias.SelectedIndex = -1;
+
+            int numOfAtributes = db.Atributo.Count();
+            if (numOfAtributes < 1)
+            {
+                U1Check.Enabled = false;
+                textBoxU1.Enabled = false;
+                 textBoxU1.Text = "No User Atribute 1";
+            }
+            if (numOfAtributes < 2)
+            {
+                U2Check.Enabled = false;
+                textBoxU2.Enabled = false;
+                 textBoxU2.Text = "No User Atribute 2";
+            }
+            if (numOfAtributes < 3)
+            {
+                U3Check.Enabled = false;
+                textBoxU3.Enabled = false;
+                textBoxU3.Text = "No User Atribute 3";
+            }
+            if (numOfAtributes < 4)
+            {
+                U4Check.Enabled = false;
+                textBoxU4.Enabled = false;
+                 textBoxU4.Text = "No User Atribute 4";
+            }
+            if (numOfAtributes < 5)
+            {
+                U5Check.Enabled = false;
+                textBoxU5.Enabled = false;
+                 textBoxU5.Text = "No User Atribute 5";
+            }
         }
 
         private void Salir_Click(object sender, EventArgs e)
