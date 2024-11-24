@@ -21,25 +21,57 @@ namespace WindowsFormsApplication2
 
         private void Confirmar_Click(object sender, EventArgs e)
         {
-            //Aqui se insertaria el producto antes de irse todo a la mierda :)
-            //Fran haz que compruebe esto por favor no es dificil 
-            /* GTIN (atributo sistema − comprueba validez de 14 caracteres de longitud)
-            SKU (atributo sistema − comprueba que sea ´ unico)
-            Thumbnail (atributo sistema − comprueba tama˜ no 200×200px y formato)
-            Label (atributo sistema − comprueba m´ aximo de 250 caracteres)
-            Atributos (opcional − comprueba m´ aximo 5 nuevos atributos usuario)
-            Categor´ ıas (opcional)*/
             try
             {
                 DataClasses1DataContext db = new DataClasses1DataContext();
-                if ((string.IsNullOrWhiteSpace(textBoxSKU.Text) || !SKUCheck.Checked) ||
-                    (string.IsNullOrWhiteSpace(textBoxGTIN.Text) || !GtinCheck.Checked) ||
-                    (string.IsNullOrWhiteSpace(textBoxLabel.Text) || !LabelCheck.Checked))
+
+                // Comprobaciones iniciales
+                if (string.IsNullOrWhiteSpace(textBoxSKU.Text) || !SKUCheck.Checked ||
+                    string.IsNullOrWhiteSpace(textBoxGTIN.Text) || !GtinCheck.Checked ||
+                    string.IsNullOrWhiteSpace(textBoxLabel.Text) || !LabelCheck.Checked)
                 {
-                    MessageBox.Show("Incomplete Data", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Datos incompletos", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                Producto p = new Producto
+
+                // Comprobación GTIN
+                if (textBoxGTIN.Text.Trim().Length > 14)
+                {
+                    MessageBox.Show("El GTIN debe tener como máximo 14 caracteres.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Comprobación SKU único
+                if (db.Producto.Any(p => p.SKU == textBoxSKU.Text.Trim()))
+                {
+                    MessageBox.Show("El SKU debe ser único. Ya existe un producto con este SKU.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Comprobación Label
+                if (textBoxLabel.Text.Trim().Length > 250)
+                {
+                    MessageBox.Show("El Label no debe exceder los 250 caracteres.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Comprobación Thumbnail
+                if (!string.IsNullOrEmpty(pictureBox1.ImageLocation))
+                {
+                    var thumbnail = new Bitmap(pictureBox1.ImageLocation);
+                    if (thumbnail.Width != 200 || thumbnail.Height != 200)
+                    {
+                        MessageBox.Show("El Thumbnail debe tener un tamaño de 200×200 píxeles.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (!pictureBox1.ImageLocation.EndsWith(".png") && !pictureBox1.ImageLocation.EndsWith(".jpg"))
+                    {
+                        MessageBox.Show("El Thumbnail debe estar en formato PNG o JPG.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
+
+                Producto prod = new Producto
                 {
 
                     SKU = textBoxSKU.Text.Trim(),
@@ -48,75 +80,27 @@ namespace WindowsFormsApplication2
                     Thumbnail = pictureBox1.ImageLocation ?? string.Empty
 
                 };
-                db.Producto.InsertOnSubmit(p);
+
+                db.Producto.InsertOnSubmit(prod);
                 db.SubmitChanges();
+
                 var atributos = db.Atributo.Take(5).ToList();
 
-                if (U1Check.Checked && !string.IsNullOrWhiteSpace(textBoxU1.Text))
-                {
-
-                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                    {
-                        producto_SKU = p.SKU,
-                        atributo_id = atributos[0].id,
-                        valor = textBoxU1.Text.Trim()
-                    });
-                    db.SubmitChanges();
-                }
-
-                if (U2Check.Checked && !string.IsNullOrWhiteSpace(textBoxU2.Text))
-                {
-                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                    {
-                        producto_SKU = p.SKU,
-                        atributo_id = atributos[1].id,
-                        valor = textBoxU2.Text.Trim()
-                    });
-                    db.SubmitChanges();
-                }
-
-                if (U3Check.Checked && !string.IsNullOrWhiteSpace(textBoxU3.Text))
-                {
-                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                    {
-                        producto_SKU = p.SKU,
-                        atributo_id = atributos[2].id,
-                        valor = textBoxU3.Text.Trim()
-                    });
-                    db.SubmitChanges();
-                }
-                if (U4Check.Checked && !string.IsNullOrWhiteSpace(textBoxU4.Text))
-                {
-                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                    {
-                        producto_SKU = p.SKU,
-                        atributo_id = atributos[3].id,
-                        valor = textBoxU4.Text.Trim()
-                    });
-                    db.SubmitChanges();
-                }
-                if (U5Check.Checked && !string.IsNullOrWhiteSpace(textBoxU5.Text))
-                {
-                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                    {
-                        producto_SKU = p.SKU,
-                        atributo_id = atributos[4].id,
-                        valor = textBoxU5.Text.Trim()
-                    });
-                    db.SubmitChanges();
-                }
                 // Insertar categoría
                 if (Categorias.SelectedValue != null)
                 {
                     int categoriaId = (int)Categorias.SelectedValue;
                     var categoriaExistente = db.Categoria.FirstOrDefault(c => c.id == categoriaId);
-                    if (categoriaExistente == null) return;
-                    db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
+                    if (categoriaExistente != null)
                     {
-                        producto_SKU = p.SKU,
-                        categoria_id = categoriaExistente.id
-                    });
+                        db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
+                        {
+                            producto_SKU = prod.SKU,
+                            categoria_id = categoriaExistente.id
+                        });
+                    }
                 }
+
                 db.SubmitChanges();
                 _form1.load();
                 _form1.cambiarColor(Color.White);
@@ -124,8 +108,6 @@ namespace WindowsFormsApplication2
             }
             catch (Exception ex)
             {
-                //Comprueba el tamaño de cada cadena para notificar al usuario de porque peta (según a lo que pusiste en tu caso de uso).
-                //Cambia MessageBox.Show(ex.Message); por lo nuevo
                 MessageBox.Show(ex.Message);
             }
         }

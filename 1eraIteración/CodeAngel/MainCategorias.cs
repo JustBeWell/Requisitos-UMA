@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication2
 {
-    public partial class CategoriasMain : Form
+    public partial class MainCategorias : Form
     {
-        public CategoriasMain()
+        public MainCategorias()
         {
             InitializeComponent();
         }
@@ -97,7 +97,7 @@ namespace WindowsFormsApplication2
                 }
                 else if (Categorias.Columns[e.ColumnIndex].Name == "Eliminar")
                 {
-                    BorrarCategoria borrarForm = new BorrarCategoria(this, categoriaSeleccionada, numeroDeProductos);
+                    BorrarCategoria borrarForm = new BorrarCategoria(this, categoriaSeleccionada);
                     borrarForm.ShowDialog();
                 }
             }
@@ -131,25 +131,9 @@ namespace WindowsFormsApplication2
             botonSeleccionado.ForeColor = Color.White; // Texto blanco
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Categoria_Click(object sender, EventArgs e)
         {
-            CrearCategoria crear = new CrearCategoria(this);
-            crear.ShowDialog();
-        }
 
-        private void Atributo_Click(object sender, EventArgs e) //No furula
-        {
-            this.Hide();
-
-            MainAtributos atrib = new MainAtributos();
-            atrib.FormClosed += (s, args) =>
-            {
-                this.Show(); // Se muestra el form de productos nuevamente
-                ResaltarBoton(this.Categoria);
-            };
-
-            atrib.Show();
-            this.ActiveControl = null;
         }
     }
 }

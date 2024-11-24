@@ -239,8 +239,18 @@ namespace WindowsFormsApplication2
 
         private void Atributo_Click(object sender, EventArgs e)
         {
+            this.Hide();
 
-        }
+            AtributoMain atrib = new AtributoMain();
+            atrib.FormClosed += (s, args) =>
+                {
+                    this.Show(); // Se muestra el form de productos nuevamente
+                    ResaltarBoton(this.Producto);
+                };
+
+            atrib.Show();
+            this.ActiveControl = null;
+;        }
 
         private void Dashboard_Click(object sender, EventArgs e)
         {
