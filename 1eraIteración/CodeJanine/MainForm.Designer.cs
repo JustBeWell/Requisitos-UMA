@@ -29,26 +29,36 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.dataGridViewCategorias = new System.Windows.Forms.DataGridView();
+            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
             this.textBoxSearchby = new System.Windows.Forms.TextBox();
             this.Añadir = new System.Windows.Forms.Button();
             this.Editar = new System.Windows.Forms.Button();
             this.Borrar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategorias)).BeginInit();
+            this.Dashboard = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.Ayuda = new System.Windows.Forms.Button();
+            this.Relacion = new System.Windows.Forms.Button();
+            this.Atributo = new System.Windows.Forms.Button();
+            this.Categoria = new System.Windows.Forms.Button();
+            this.Assets = new System.Windows.Forms.Button();
+            this.Producto = new System.Windows.Forms.Button();
+            this.labelProductoCount = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridViewCategorias
+            // dataGridViewProductos
             // 
-            this.dataGridViewCategorias.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCategorias.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dataGridViewCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCategorias.Location = new System.Drawing.Point(66, 134);
-            this.dataGridViewCategorias.Name = "dataGridViewCategorias";
-            this.dataGridViewCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCategorias.Size = new System.Drawing.Size(918, 282);
-            this.dataGridViewCategorias.TabIndex = 0;
-            this.dataGridViewCategorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductos_CellContentClick);
+            this.dataGridViewProductos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewProductos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProductos.Location = new System.Drawing.Point(66, 134);
+            this.dataGridViewProductos.Name = "dataGridViewProductos";
+            this.dataGridViewProductos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridViewProductos.Size = new System.Drawing.Size(918, 282);
+            this.dataGridViewProductos.TabIndex = 0;
+            this.dataGridViewProductos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductos_CellContentClick);
+            this.dataGridViewProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProductos_CellDoubleClick);
             // 
             // textBoxSearchby
             // 
@@ -95,30 +105,115 @@
             this.Borrar.UseVisualStyleBackColor = true;
             this.Borrar.Click += new System.EventHandler(this.Borrar_Click);
             // 
-            // label1
+            // Dashboard
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(363, 81);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(21, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Dashboard";
+            this.Dashboard.Location = new System.Drawing.Point(0, 17);
+            this.Dashboard.Name = "Dashboard";
+            this.Dashboard.Size = new System.Drawing.Size(73, 21);
+            this.Dashboard.TabIndex = 6;
+            this.Dashboard.Text = "Dashboard";
+            this.Dashboard.UseVisualStyleBackColor = true;
+            this.Dashboard.Click += new System.EventHandler(this.Dashboard_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.Ayuda);
+            this.panel1.Controls.Add(this.Relacion);
+            this.panel1.Controls.Add(this.Atributo);
+            this.panel1.Controls.Add(this.Categoria);
+            this.panel1.Controls.Add(this.Assets);
+            this.panel1.Controls.Add(this.Producto);
+            this.panel1.Controls.Add(this.Dashboard);
+            this.panel1.Location = new System.Drawing.Point(66, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(528, 53);
+            this.panel1.TabIndex = 5;
+            // 
+            // Ayuda
+            // 
+            this.Ayuda.Location = new System.Drawing.Point(412, 17);
+            this.Ayuda.Name = "Ayuda";
+            this.Ayuda.Size = new System.Drawing.Size(65, 21);
+            this.Ayuda.TabIndex = 7;
+            this.Ayuda.Text = "Help";
+            this.Ayuda.UseVisualStyleBackColor = true;
+            // 
+            // Relacion
+            // 
+            this.Relacion.Location = new System.Drawing.Point(347, 17);
+            this.Relacion.Name = "Relacion";
+            this.Relacion.Size = new System.Drawing.Size(59, 21);
+            this.Relacion.TabIndex = 11;
+            this.Relacion.Text = "Relationships";
+            this.Relacion.UseVisualStyleBackColor = true;
+            // 
+            // Atributo
+            // 
+            this.Atributo.Location = new System.Drawing.Point(277, 17);
+            this.Atributo.Name = "Atributo";
+            this.Atributo.Size = new System.Drawing.Size(64, 21);
+            this.Atributo.TabIndex = 10;
+            this.Atributo.Text = "Attributes";
+            this.Atributo.UseVisualStyleBackColor = true;
+            this.Atributo.Click += new System.EventHandler(this.Atributo_Click);
+            // 
+            // Categoria
+            // 
+            this.Categoria.Location = new System.Drawing.Point(205, 17);
+            this.Categoria.Name = "Categoria";
+            this.Categoria.Size = new System.Drawing.Size(66, 21);
+            this.Categoria.TabIndex = 9;
+            this.Categoria.Text = "Categories";
+            this.Categoria.UseVisualStyleBackColor = true;
+            this.Categoria.Click += new System.EventHandler(this.Categoria_Click);
+            // 
+            // Assets
+            // 
+            this.Assets.Location = new System.Drawing.Point(145, 17);
+            this.Assets.Name = "Assets";
+            this.Assets.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Assets.Size = new System.Drawing.Size(54, 21);
+            this.Assets.TabIndex = 8;
+            this.Assets.Text = "Assets";
+            this.Assets.UseVisualStyleBackColor = true;
+            // 
+            // Producto
+            // 
+            this.Producto.Location = new System.Drawing.Point(79, 16);
+            this.Producto.Name = "Producto";
+            this.Producto.Size = new System.Drawing.Size(60, 21);
+            this.Producto.TabIndex = 7;
+            this.Producto.Text = "Products";
+            this.Producto.UseVisualStyleBackColor = true;
+            this.Producto.Click += new System.EventHandler(this.Producto_Click);
+            // 
+            // labelProductoCount
+            // 
+            this.labelProductoCount.AutoSize = true;
+            this.labelProductoCount.Location = new System.Drawing.Point(63, 115);
+            this.labelProductoCount.Name = "labelProductoCount";
+            this.labelProductoCount.Size = new System.Drawing.Size(35, 13);
+            this.labelProductoCount.TabIndex = 6;
+            this.labelProductoCount.Text = "label1";
+            this.labelProductoCount.Click += new System.EventHandler(this.labelProductoCount_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1062, 598);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelProductoCount);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Borrar);
             this.Controls.Add(this.Editar);
             this.Controls.Add(this.Añadir);
             this.Controls.Add(this.textBoxSearchby);
-            this.Controls.Add(this.dataGridViewCategorias);
+            this.Controls.Add(this.dataGridViewProductos);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCategorias)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,12 +221,20 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridViewCategorias;
+        private System.Windows.Forms.DataGridView dataGridViewProductos;
         private System.Windows.Forms.TextBox textBoxSearchby;
         private System.Windows.Forms.Button Añadir;
         private System.Windows.Forms.Button Editar;
         private System.Windows.Forms.Button Borrar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Dashboard;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button Ayuda;
+        private System.Windows.Forms.Button Relacion;
+        private System.Windows.Forms.Button Atributo;
+        private System.Windows.Forms.Button Categoria;
+        private System.Windows.Forms.Button Assets;
+        private System.Windows.Forms.Button Producto;
+        private System.Windows.Forms.Label labelProductoCount;
     }
 }
 

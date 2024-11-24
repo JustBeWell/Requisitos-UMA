@@ -46,28 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </Compile>
     <Compile Include="BorrarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BorrarCategoria.Designer.cs">
       <DependentUpon>BorrarCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="CrearAtributo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="CrearAtributo.Designer.cs">
+      <DependentUpon>CrearAtributo.cs</DependentUpon>
     </Compile>
-    <Compile Include="CrearCategoria.cs">
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrearCategoria.Designer.cs">
-      <DependentUpon>CrearCategoria.cs</DependentUpon>
+    <Compile Include="BorrarProducto.Designer.cs">
+      <DependentUpon>BorrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoriasMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoriasMain.Designer.cs">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
     </Compile>
     <Compile Include="EditarCategoria.cs">
       <SubType>Form</SubType>
@@ -75,22 +81,82 @@
     <Compile Include="EditarCategoria.Designer.cs">
       <DependentUpon>EditarCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="CrearCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCategoria.Designer.cs">
+      <DependentUpon>CrearCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainAtributos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainAtributos.Designer.cs">
+      <DependentUpon>MainAtributos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MostrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MostrarProducto.Designer.cs">
+      <DependentUpon>MostrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearProducto.Designer.cs">
+      <DependentUpon>CrearProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarProducto.Designer.cs">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
     <EmbeddedResource Include="BorrarCategoria.resx">
       <DependentUpon>BorrarCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="BorrarProducto.resx">
+      <DependentUpon>BorrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoriasMain.resx">
+      <DependentUpon>CategoriasMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearAtributo.resx">
+      <DependentUpon>CrearAtributo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarCategoria.resx">
+      <DependentUpon>EditarCategoria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CrearCategoria.resx">
       <DependentUpon>CrearCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EditarCategoria.resx">
-      <DependentUpon>EditarCategoria.cs</DependentUpon>
+    <EmbeddedResource Include="MainAtributos.resx">
+      <DependentUpon>MainAtributos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearProducto.resx">
+      <DependentUpon>CrearProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarProducto.resx">
+      <DependentUpon>EditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MostrarProducto.resx">
+      <DependentUpon>MostrarProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,6 +166,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DataClasses1.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -121,6 +188,15 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="suma_2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

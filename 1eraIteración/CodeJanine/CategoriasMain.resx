@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABGdBTUEAALGPC/xhBQAABBpJREFUeF7t
+        nM9LFGEYx3dXZZwdd9cNtU72g6KLhpm6GOoSiRKdvYggeFDw4Nnb/j9ePOQh8eA9DxFUBysqS9Kgg0Zd
+        UqfneVvFttncH/Pja30/8MUH0fd95/nMOwozszFCqiU+MTHR4Ed0rF9DklpJFL/6SRBj/heYs3lxcTE7
+        Pj4+ODIyMpzP54dqzdjY2N3Z2dk2MzJ3StWYs3hgYOCe4zjblmW5fsS27Z2enp4HZoZYTC9hpELiruvG
+        WlpaNqR2JT8kR3XmQOKK4Jc6tsBdUiGmUdo0Oau3pDwsRrtYT4yYZDK5s7KykpVaoZQKOBEizXunpcQv
+        Ia7suk8UUh2nhbzXUuKnEO6QKqEQMCgEDAoBg0LAoBAwKAQMCgGDQsCgEDAoBAwKAYNCwKAQMCgEDAoB
+        g0LAoBAwKAQMCgGDQsCgEDAoBAwKAYNCwKAQMCikDLrYKKKvIsS3t7fFRzBClpaWLkh9MldEqYrI3zIq
+        7pBAHrbe3d1tkTpqKu6xsacNyefzl3K53MUw09/fb+acm5u7IkI+6lIkvgmRMT/PzMzcPD1XmNGeam+L
+        nLlTjLXu7u772Wz2mW3be5Zl7UeVeDzuh4jfImMeydhfS+cKKXvNzc17mUzmRVdX10NZiyyp/E4x17bV
+        1VUnnU5/kNrzgBh/4jjOl8nJSf3nwvRd8gfGVHt7+/VEIqHbW89OjdZRxfNgfIjXXGHmUHrs9vX13ZZa
+        8dwl5pupVOqGbmspjxdeejCMD2loaDgaHh7ulVqhkKgjQlwKAQqFgIVCwEIhYKEQsFAIWCgELBQCFgoB
+        C4WAhULAQiFgoRCwUAhYRMjR0NDQHamV8kI6OzuvyQ/rjSn9jELN8Y2qKOJ5MD7Ea64wc6A3qHK53C2p
+        FU8h5lai3oBvbW19LrXXgTA+Ra5EbwuFgj79UvYWrmJMDQ4OdnV0dDxyHGfTtu3NZDIZZl4Vv76Ws0g/
+        jdTzgGqNjHkgY78pmSuUaC+1p9Lbx729vX+9XJ3G2GpsbDSPAoWd9fX1xuNaDiKQB+VkjrbSucKM9rZI
+        2Z1Rilo701yQ6MKDErK8vNwqdZTU3N/j61uY0YX+64+SnivMgoPcIXz6vTooBAwKAYNCwKAQMCgEDAoB
+        g0LAoBAwKAQMCgGDQsCgEDAoBAwKAYNCwKAQMCgEDAoBg0LAoBAwKAQMCgGDQsCgEDAoBAwKAeO0kEA+
+        lZRCquNEiGVZW1KqDH2TSxtaT3ScQ9u2d9fW1jJSKxRSIQlB3+Ral9rrbK85qVTqicoWIn3d4rxhXhMY
+        HR3tzmQyG47j7Mvl63sd+SZjfE2n00/PetGSnEFTU1NsYWGhc2pq6ur09PSVWqK/Oz8/f7m4M0gdBHEW
+        c2fUSbxQKGgT60pxDP4RJ4QQv4jFfgLUsypmv185qQAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>

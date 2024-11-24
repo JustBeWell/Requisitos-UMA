@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApplication2
 {
-    partial class BorrarCategoria
+    partial class BorrarProducto
     {
         /// <summary>
         /// Required designer variable.
@@ -39,9 +39,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(130, 179);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 25);
+            this.label1.Size = new System.Drawing.Size(401, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Are you sure you want to delete this category?";
+            this.label1.Text = "Are you sure you want to delete this product?";
             // 
             // Yes
             // 
@@ -63,7 +63,7 @@
             this.No.UseVisualStyleBackColor = true;
             this.No.Click += new System.EventHandler(this.No_Click);
             // 
-            // BorrarCategoria
+            // BorrarProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,7 +71,7 @@
             this.Controls.Add(this.No);
             this.Controls.Add(this.Yes);
             this.Controls.Add(this.label1);
-            this.Name = "BorrarCategoria";
+            this.Name = "BorrarProducto";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.BorrarProducto_Load);
             this.ResumeLayout(false);
