@@ -20,7 +20,7 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadAllProducts();
-            dataGridViewProductos.ClearSelection();
+
             ResaltarBoton(this.Producto);
             
 
@@ -89,11 +89,23 @@ namespace WindowsFormsApplication2
                             GTIN = grouped.Key.GTIN,
                             Thumbnail = grouped.Key.Thumbnail,
                             Label = grouped.Key.Label,
-                            UserAttribute1 = grouped.Where(g => g.a != null).OrderBy(g => g.a.id).Select(g => g.va.valor).FirstOrDefault(),
-                            UserAttribute2 = grouped.Where(g => g.a != null).OrderBy(g => g.a.id).Select(g => g.va.valor).Skip(1).FirstOrDefault()
+                            UserAttribute1 = grouped
+                            .Where(g => g.a != null)
+                            .OrderBy(g => g.a.id)
+                            .Select(g => g.va.valor.Length > 50 ? g.va.valor.Substring(0, 50) : g.va.valor)
+                            .FirstOrDefault(),
+                            UserAttribute2 = grouped
+                            .Where(g => g.a != null)
+                            .OrderBy(g => g.a.id)
+                            .Select(g => g.va.valor.Length > 50 ? g.va.valor.Substring(0, 50) : g.va.valor)
+                            .Skip(1)
+                            .FirstOrDefault()
                         };
 
-
+            if (query.Count() == 0)
+            {
+                MessageBox.Show("There are no products loaded in the system");
+            }
             dataGridViewProductos.DataSource = query.ToList();
             labelProductoCount.Text = db.Producto.Count().ToString() + " Products";
             }
@@ -127,9 +139,15 @@ namespace WindowsFormsApplication2
                                 UserAttribute2 = grouped.Where(g => g.a != null).OrderBy(g => g.a.id).Select(g => g.va.valor).Skip(1).FirstOrDefault()
                             };
 
-
+                
+                if(query.Count() == 0)
+                {
+                    labelProductoCount.Text = query.Count().ToString() + " Products";
+                    MessageBox.Show("There are no products matching the search criteria");
+                    
+                }
                 dataGridViewProductos.DataSource = query.ToList();
-
+                
 
             }
         }
@@ -151,14 +169,23 @@ namespace WindowsFormsApplication2
                     {
                         SKU = filaSeleccionada.Cells[0].Value.ToString(),
                         GTIN = filaSeleccionada.Cells[1].Value.ToString(),
-                        Label = filaSeleccionada.Cells[2].Value.ToString(),
-                        Thumbnail = filaSeleccionada.Cells[3].Value.ToString()
+                        Label = filaSeleccionada.Cells[3].Value.ToString(),
+                        
                     };
+                    if (filaSeleccionada.Cells["Thumbnail"].Value == null)
+                    {
+                        p.Thumbnail = "No Thumbnail yet";
+                    }
+                    else
+                    {
+                        p.Thumbnail = filaSeleccionada.Cells["Thumbnail"].Value.ToString();
+                    }
                     EditarProducto editar = new EditarProducto(this, p);
                     editar.ShowDialog();
                 }
-                catch (NullReferenceException ex)
+                catch (Exception ex)
                 {
+                    cambiarColor(Color.White);
                     MessageBox.Show(ex.Message);
                 }
 
@@ -258,14 +285,21 @@ namespace WindowsFormsApplication2
                 try
                 {
                     // Crea una instancia del objeto Producto usando los valores de la fila seleccionada
+
                     Producto productoSeleccionado = new Producto()
                     {
                         SKU = filaSeleccionada.Cells["SKU"].Value.ToString(),
                         GTIN = filaSeleccionada.Cells["GTIN"].Value.ToString(),
-                        Label = filaSeleccionada.Cells["Label"].Value.ToString(),
-                        Thumbnail = filaSeleccionada.Cells["Thumbnail"].Value.ToString()
+                        Label = filaSeleccionada.Cells["Label"].Value.ToString()
                     };
-
+                    if (filaSeleccionada.Cells["Thumbnail"].Value == null)
+                    {
+                        productoSeleccionado.Thumbnail = "No Thumbnail yet";
+                    }
+                    else
+                    {
+                        productoSeleccionado.Thumbnail = filaSeleccionada.Cells["Thumbnail"].Value.ToString();
+                    }
                     // Abre el formulario MostrarProducto
                     MostrarProducto mostrarProductoForm = new MostrarProducto(this, productoSeleccionado);
                     mostrarProductoForm.ShowDialog();

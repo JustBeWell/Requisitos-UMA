@@ -22,6 +22,7 @@ namespace WindowsFormsApplication2
 
         private void Confirmar_Click(object sender, EventArgs e)
         {
+            
             if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 DataClasses1DataContext bd = new DataClasses1DataContext();
@@ -39,6 +40,11 @@ namespace WindowsFormsApplication2
 
                 _form1.load();
 
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("You must insert some string in order to add the category");
                 this.Close();
             }
         }

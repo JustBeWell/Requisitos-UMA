@@ -36,6 +36,11 @@ namespace WindowsFormsApplication2
                      this.Close();
                }
             }
+            else
+            {
+                MessageBox.Show("You must insert some string in order to add the category");
+                
+            }
         }
     }
 }

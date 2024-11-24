@@ -22,94 +22,112 @@ namespace WindowsFormsApplication2
         private void Confirmar_Click(object sender, EventArgs e)
         {
             //Aqui se insertaria el producto antes de irse todo a la mierda :)
-            DataClasses1DataContext db = new DataClasses1DataContext();
-            if (string.IsNullOrWhiteSpace(textBoxSKU.Text) ||
-                string.IsNullOrWhiteSpace(textBoxGTIN.Text) ||
-                string.IsNullOrWhiteSpace(textBoxLabel.Text)){
+            //Fran haz que compruebe esto por favor no es dificil 
+            /* GTIN (atributo sistema − comprueba validez de 14 caracteres de longitud)
+            SKU (atributo sistema − comprueba que sea ´ unico)
+            Thumbnail (atributo sistema − comprueba tama˜ no 200×200px y formato)
+            Label (atributo sistema − comprueba m´ aximo de 250 caracteres)
+            Atributos (opcional − comprueba m´ aximo 5 nuevos atributos usuario)
+            Categor´ ıas (opcional)*/
+            try
+            {
+                DataClasses1DataContext db = new DataClasses1DataContext();
+                if ((string.IsNullOrWhiteSpace(textBoxSKU.Text) || !SKUCheck.Checked) ||
+                    (string.IsNullOrWhiteSpace(textBoxGTIN.Text) || !GtinCheck.Checked) ||
+                    (string.IsNullOrWhiteSpace(textBoxLabel.Text) || !LabelCheck.Checked))
+                {
                     MessageBox.Show("Incomplete Data", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
-            }
-            Producto p = new Producto
-            {
+                }
+                Producto p = new Producto
+                {
 
-                SKU = textBoxSKU.Text.Trim(),
-                GTIN = textBoxGTIN.Text.Trim(),
-                Label = textBoxLabel.Text.Trim(),
-                Thumbnail = pictureBox1.ImageLocation ?? string.Empty
-             
-            };
-            db.Producto.InsertOnSubmit(p);
-            db.SubmitChanges();
-            var atributos = db.Atributo.Take(5).ToList();
-            if (!string.IsNullOrWhiteSpace(textBoxU1.Text))
-            {
-                
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[0].id,
-                    valor = textBoxU1.Text.Trim()
-                });
-                db.SubmitChanges();
-            }
+                    SKU = textBoxSKU.Text.Trim(),
+                    GTIN = textBoxGTIN.Text.Trim(),
+                    Label = textBoxLabel.Text.Trim(),
+                    Thumbnail = pictureBox1.ImageLocation ?? string.Empty
 
-            if (!string.IsNullOrWhiteSpace(textBoxU2.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[1].id,
-                    valor = textBoxU2.Text.Trim()
-                });
+                };
+                db.Producto.InsertOnSubmit(p);
                 db.SubmitChanges();
-            }
+                var atributos = db.Atributo.Take(5).ToList();
 
-             if (!string.IsNullOrWhiteSpace(textBoxU3.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                if (U1Check.Checked && !string.IsNullOrWhiteSpace(textBoxU1.Text))
                 {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[2].id,
-                    valor = textBoxU3.Text.Trim()
-                });
+
+                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                    {
+                        producto_SKU = p.SKU,
+                        atributo_id = atributos[0].id,
+                        valor = textBoxU1.Text.Trim()
+                    });
+                    db.SubmitChanges();
+                }
+
+                if (U2Check.Checked && !string.IsNullOrWhiteSpace(textBoxU2.Text))
+                {
+                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                    {
+                        producto_SKU = p.SKU,
+                        atributo_id = atributos[1].id,
+                        valor = textBoxU2.Text.Trim()
+                    });
+                    db.SubmitChanges();
+                }
+
+                if (U3Check.Checked && !string.IsNullOrWhiteSpace(textBoxU3.Text))
+                {
+                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                    {
+                        producto_SKU = p.SKU,
+                        atributo_id = atributos[2].id,
+                        valor = textBoxU3.Text.Trim()
+                    });
+                    db.SubmitChanges();
+                }
+                if (U4Check.Checked && !string.IsNullOrWhiteSpace(textBoxU4.Text))
+                {
+                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                    {
+                        producto_SKU = p.SKU,
+                        atributo_id = atributos[3].id,
+                        valor = textBoxU4.Text.Trim()
+                    });
+                    db.SubmitChanges();
+                }
+                if (U5Check.Checked && !string.IsNullOrWhiteSpace(textBoxU5.Text))
+                {
+                    db.ValorAtributo.InsertOnSubmit(new ValorAtributo
+                    {
+                        producto_SKU = p.SKU,
+                        atributo_id = atributos[4].id,
+                        valor = textBoxU5.Text.Trim()
+                    });
+                    db.SubmitChanges();
+                }
+                // Insertar categoría
+                if (Categorias.SelectedValue != null)
+                {
+                    int categoriaId = (int)Categorias.SelectedValue;
+                    var categoriaExistente = db.Categoria.FirstOrDefault(c => c.id == categoriaId);
+                    if (categoriaExistente == null) return;
+                    db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
+                    {
+                        producto_SKU = p.SKU,
+                        categoria_id = categoriaExistente.id
+                    });
+                }
                 db.SubmitChanges();
+                _form1.load();
+                _form1.cambiarColor(Color.White);
+                this.Close();
             }
-             if (!string.IsNullOrWhiteSpace(textBoxU4.Text))
+            catch (Exception ex)
             {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[3].id, 
-                    valor = textBoxU4.Text.Trim()
-                });
-                db.SubmitChanges();
+                //Comprueba el tamaño de cada cadena para notificar al usuario de porque peta (según a lo que pusiste en tu caso de uso).
+                //Cambia MessageBox.Show(ex.Message); por lo nuevo
+                MessageBox.Show(ex.Message);
             }
-             if (!string.IsNullOrWhiteSpace(textBoxU5.Text))
-            {
-                db.ValorAtributo.InsertOnSubmit(new ValorAtributo
-                {
-                    producto_SKU = p.SKU,
-                    atributo_id = atributos[4].id, 
-                    valor = textBoxU5.Text.Trim()
-                });
-                db.SubmitChanges();
-            }
-            // Insertar categoría
-            if (Categorias.SelectedValue != null)
-            {
-                int categoriaId = (int)Categorias.SelectedValue;
-                var categoriaExistente = db.Categoria.FirstOrDefault(c => c.id == categoriaId);
-                if (categoriaExistente == null) return;
-                db.ProductoCategoria.InsertOnSubmit(new ProductoCategoria
-                {
-                    producto_SKU = p.SKU,
-                    categoria_id = categoriaExistente.id
-                });
-            }
-            db.SubmitChanges();
-            _form1.load();
-            _form1.cambiarColor(Color.White);
-            this.Close();
         }
 
         private void GtinCheck_CheckedChanged(object sender, EventArgs e)
@@ -132,6 +150,7 @@ namespace WindowsFormsApplication2
 
         private void U1Check_CheckedChanged(object sender, EventArgs e)
         {
+
             if (U1Check.Checked) textBoxU1.Enabled = true;
             else textBoxU1.Enabled = false;
         }
@@ -199,6 +218,39 @@ namespace WindowsFormsApplication2
             Categorias.DisplayMember = "nombre"; 
             Categorias.ValueMember = "id";     
             Categorias.SelectedIndex = -1;
+            int numOfAtributes = db.Atributo.Count();
+            if (numOfAtributes < 1)
+            {
+                U1Check.Enabled = false;
+                textBoxU1.Enabled = false;
+                 textBoxU1.Text = "No User Atribute 1";
+            }
+            if (numOfAtributes < 2)
+            {
+                U2Check.Enabled = false;
+                textBoxU2.Enabled = false;
+                 textBoxU2.Text = "No User Atribute 2";
+            }
+            if (numOfAtributes < 3)
+            {
+                U3Check.Enabled = false;
+                textBoxU3.Enabled = false;
+                 textBoxU3.Text = "No User Atribute 3";
+            }
+            if (numOfAtributes < 4)
+            {
+                U4Check.Enabled = false;
+                textBoxU4.Enabled = false;
+                 textBoxU4.Text = "No User Atribute 4";
+            }
+            if (numOfAtributes < 5)
+            {
+                U5Check.Enabled = false;
+                textBoxU5.Enabled = false;
+                 textBoxU5.Text = "No User Atribute 5";
+            }
+
+
         }
 
         private void Salir_Click(object sender, EventArgs e)

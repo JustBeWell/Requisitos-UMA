@@ -97,7 +97,7 @@ namespace WindowsFormsApplication2
                 }
                 else if (Categorias.Columns[e.ColumnIndex].Name == "Eliminar")
                 {
-                    BorrarCategoria borrarForm = new BorrarCategoria(this, categoriaSeleccionada);
+                    BorrarCategoria borrarForm = new BorrarCategoria(this, categoriaSeleccionada, numeroDeProductos);
                     borrarForm.ShowDialog();
                 }
             }
@@ -129,6 +129,12 @@ namespace WindowsFormsApplication2
             // Resaltar el botón seleccionado
             botonSeleccionado.BackColor = Color.Blue; // Color azul
             botonSeleccionado.ForeColor = Color.White; // Texto blanco
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            CrearCategoria crear = new CrearCategoria(this);
+            crear.ShowDialog();
         }
     }
 }

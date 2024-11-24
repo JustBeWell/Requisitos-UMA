@@ -23,75 +23,68 @@ namespace WindowsFormsApplication2
             this.textBoxGTIN.Text = prod.GTIN;
             this.textBoxLabel.Text = prod.Label;
             this.textBoxSKU.Text = prod.SKU;
+            this.label1.Text = prod.Thumbnail;
             DataClasses1DataContext db = new DataClasses1DataContext();
             List<ValorAtributo> atributosDelProducto = (from va in db.ValorAtributo
                                                        where va.producto_SKU.Equals(prod.SKU)
                                                        select va).Take(5).ToList();
+            var categoriasProducto = from pc in db.ProductoCategoria
+                                     join c in db.Categoria on pc.categoria_id equals c.id
+                                     where pc.producto_SKU == prod.SKU // Asegúrate de que `prod.SKU` sea el SKU del producto actual
+                                     select c;
 
-            /*if (atributosDelProducto.Count < 1 || atributosDelProducto[0].valor.Equals(""))
-            {
-                this.textBoxU1.Text = "NULL";
-            }else{
-                this.textBoxU1.Text = atributosDelProducto[0].valor;
-            }
-            if (atributosDelProducto.Count < 2 || atributosDelProducto[1].valor.Equals(""))
-            {
-                this.textBoxU2.Text = "NULL";
-            }
-            else
-            {
-                this.textBoxU2.Text = atributosDelProducto[1].valor;
-            }
-            if (atributosDelProducto.Count < 3 || atributosDelProducto[2].valor.Equals(""))
-            {
-                this.textBoxU3.Text = "NULL";
-            }
-            else
-            {
-                this.textBoxU3.Text = atributosDelProducto[2].valor;
-            }
-            if (atributosDelProducto.Count < 4 || atributosDelProducto[3].valor.Equals(""))
-            {
-                this.textBoxU4.Text = "NULL";
-            }
-            else
-            {
-                this.textBoxU4.Text = atributosDelProducto[3].valor;
-            }
-            if (atributosDelProducto.Count < 5 || atributosDelProducto[4].valor.Equals(""))
-            {
-                this.textBoxU5.Text = "NULL";
-            }
-            else
-            {
-                this.textBoxU5.Text = atributosDelProducto[4].valor;
-            } 
-            var categorias = db.Categoria.Take(100).ToList();
-           
-            Categorias.DataSource = categorias;
-            Categorias.DisplayMember = "nombre";
-            Categorias.ValueMember = "id";
-            Categorias.SelectedIndex = -1;*/
-        }
-
-        private void MostrarProducto_Load(object sender, EventArgs e)
-        {
-            _form1.cambiarColor(Color.Gray);
-            DataClasses1DataContext db = new DataClasses1DataContext();
-            var atributos = db.Atributo.Take(5).ToList();
-
-            if (atributos.Count > 0) textBoxU1.Text = atributos.ElementAtOrDefault(0).nombre ?? string.Empty;
-            if (atributos.Count > 1) textBoxU2.Text = atributos.ElementAtOrDefault(1).nombre ?? string.Empty;
-            if (atributos.Count > 2) textBoxU3.Text = atributos.ElementAtOrDefault(2).nombre ?? string.Empty;
-            if (atributos.Count > 3) textBoxU4.Text = atributos.ElementAtOrDefault(3).nombre ?? string.Empty;
-            if (atributos.Count > 4) textBoxU5.Text = atributos.ElementAtOrDefault(4).nombre ?? string.Empty;
-
-            var categorias = db.Categoria.Take(100).ToList();
-
-            Categorias.DataSource = categorias;
+            // Asignar las categorías a la combobox
+            Categorias.Enabled = true;
+            Categorias.DataSource = categoriasProducto.ToList();
             Categorias.DisplayMember = "nombre";
             Categorias.ValueMember = "id";
             Categorias.SelectedIndex = -1;
+
+
+            var valoresAtributos = (from va in db.ValorAtributo
+                                    join a in db.Atributo on va.atributo_id equals a.id
+                                    where va.producto_SKU == prod.SKU
+                                    select va.valor).Take(5).ToList();
+
+            // Asignar los valores a los TextBox correspondientes
+            textBoxU1.Text = valoresAtributos.ElementAtOrDefault(0) ?? "No User Attribute 1";
+            textBoxU2.Text = valoresAtributos.ElementAtOrDefault(1) ?? "No User Attribute 2";
+            textBoxU3.Text = valoresAtributos.ElementAtOrDefault(2) ?? "No User Attribute 3";
+            textBoxU4.Text = valoresAtributos.ElementAtOrDefault(3) ?? "No User Attribute 4";
+            textBoxU5.Text = valoresAtributos.ElementAtOrDefault(4) ?? "No User Attribute 5";
+            int numOfAtributes = db.Atributo.Count();
+            if (numOfAtributes < 1)
+            {
+       
+                textBoxU1.Enabled = false;
+                textBoxU1.Text = "No User Atribute 1";
+            }
+            if (numOfAtributes < 2)
+            {
+  
+                textBoxU2.Enabled = false;
+                textBoxU2.Text = "No User Atribute 2";
+            }
+            if (numOfAtributes < 3)
+            {
+
+                textBoxU3.Enabled = false;
+                textBoxU3.Text = "No User Atribute 3";
+            }
+            if (numOfAtributes < 4)
+            {
+
+                textBoxU4.Enabled = false;
+                textBoxU4.Text = "No User Atribute 4";
+            }
+            if (numOfAtributes < 5)
+            {
+      
+                textBoxU5.Enabled = false;
+                textBoxU5.Text = "No User Atribute 5";
+            }
+
+
         }
 
         private void Salir_Click(object sender, EventArgs e)
@@ -133,6 +126,11 @@ namespace WindowsFormsApplication2
         }
 
         private void MostrarProducto_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
