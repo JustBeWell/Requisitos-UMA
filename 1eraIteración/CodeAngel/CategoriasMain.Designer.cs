@@ -108,6 +108,7 @@
             this.Ayuda.TabIndex = 7;
             this.Ayuda.Text = "Help";
             this.Ayuda.UseVisualStyleBackColor = true;
+            this.Ayuda.Click += new System.EventHandler(this.Ayuda_Click);
             // 
             // Dashboard
             // 

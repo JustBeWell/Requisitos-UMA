@@ -102,12 +102,6 @@
     <Compile Include="AtributoMain.Designer.cs">
       <DependentUpon>AtributoMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainAtributos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainAtributos.Designer.cs">
-      <DependentUpon>MainAtributos.cs</DependentUpon>
-    </Compile>
     <Compile Include="MostrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,9 +163,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BorrarAtributo.resx">
       <DependentUpon>BorrarAtributo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainAtributos.resx">
-      <DependentUpon>MainAtributos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>

@@ -153,5 +153,10 @@ namespace WindowsFormsApplication2
             atrib.Show();
             this.ActiveControl = null;
         }
+
+        private void Ayuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Desde categoria tambien chulo?");
+        }
     }
 }

@@ -102,6 +102,7 @@
             this.Ayuda.TabIndex = 7;
             this.Ayuda.Text = "Help";
             this.Ayuda.UseVisualStyleBackColor = true;
+            this.Ayuda.Click += new System.EventHandler(this.Ayuda_Click);
             // 
             // Dashboard
             // 
@@ -159,6 +160,7 @@
             this.Atributo.TabIndex = 10;
             this.Atributo.Text = "Attributes";
             this.Atributo.UseVisualStyleBackColor = true;
+            this.Atributo.Click += new System.EventHandler(this.Atributo_Click);
             // 
             // btn_AñadirAtributo
             // 

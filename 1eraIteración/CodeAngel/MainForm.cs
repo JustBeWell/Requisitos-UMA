@@ -321,6 +321,12 @@ namespace WindowsFormsApplication2
                 }
            }
 
+        private void Ayuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("De que vas chulo?");
+           
+        }
+
 }
 
 

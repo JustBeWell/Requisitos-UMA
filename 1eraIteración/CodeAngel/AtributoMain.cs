@@ -33,6 +33,7 @@ namespace WindowsFormsApplication2
             ActualizarInterfaz();
             CargarDatos(); // Cargar los datos de la base de datos
             ConfigurarInterfaz(); // Configurar las columnas y el DataGridView
+            ResaltarBoton(Atributo);
         }
         private void ActualizarInterfaz()
     {
@@ -299,6 +300,16 @@ namespace WindowsFormsApplication2
 
             main.Show();
             this.ActiveControl = null;
+        }
+
+        private void Ayuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ya te estas colando friki");
+        }
+
+        private void Atributo_Click(object sender, EventArgs e)
+        {
+            ResaltarBoton(Atributo);
         }
 
 
