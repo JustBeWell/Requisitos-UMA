@@ -226,7 +226,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
             
-            CategoriasMain cat = new CategoriasMain();
+            CategoriasMain cat = new CategoriasMain(this);
             cat.FormClosed += (s, args) =>
             {
                 this.Show(); // Muestra el MainForm nuevamente
@@ -241,7 +241,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
 
-            AtributoMain atrib = new AtributoMain();
+            AtributoMain atrib = new AtributoMain(this);
             atrib.FormClosed += (s, args) =>
                 {
                     this.Show(); // Se muestra el form de productos nuevamente

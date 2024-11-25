@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_AñadirAtributo = new WindowsFormsApplication2.RoundButton();
             this.label_AvailableAttributes = new System.Windows.Forms.Label();
             this.label_UserAttributes = new System.Windows.Forms.Label();
             this.dataGridViewAtributos = new System.Windows.Forms.DataGridView();
@@ -40,20 +39,10 @@
             this.Assets = new System.Windows.Forms.Button();
             this.Categoria = new System.Windows.Forms.Button();
             this.Atributo = new System.Windows.Forms.Button();
+            this.btn_AñadirAtributo = new WindowsFormsApplication2.RoundButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAtributos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_AñadirAtributo
-            // 
-            this.btn_AñadirAtributo.BackColor = System.Drawing.Color.Silver;
-            this.btn_AñadirAtributo.Location = new System.Drawing.Point(625, 251);
-            this.btn_AñadirAtributo.Name = "btn_AñadirAtributo";
-            this.btn_AñadirAtributo.Size = new System.Drawing.Size(130, 120);
-            this.btn_AñadirAtributo.TabIndex = 25;
-            this.btn_AñadirAtributo.Text = " Add Attribute";
-            this.btn_AñadirAtributo.UseVisualStyleBackColor = false;
-            this.btn_AñadirAtributo.Click += new System.EventHandler(this.btn_AñadirAtributo_Click);
             // 
             // label_AvailableAttributes
             // 
@@ -87,6 +76,8 @@
             this.dataGridViewAtributos.Size = new System.Drawing.Size(446, 159);
             this.dataGridViewAtributos.TabIndex = 22;
             this.dataGridViewAtributos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellContentClick);
+            this.dataGridViewAtributos.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellContentDoubleClick);
+            this.dataGridViewAtributos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellDoubleClick);
             this.dataGridViewAtributos.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewAtributos_CellValueChanged);
             // 
             // panel1
@@ -129,6 +120,7 @@
             this.Producto.TabIndex = 7;
             this.Producto.Text = "Products";
             this.Producto.UseVisualStyleBackColor = true;
+            this.Producto.Click += new System.EventHandler(this.Producto_Click);
             // 
             // Relacion
             // 
@@ -157,6 +149,7 @@
             this.Categoria.TabIndex = 9;
             this.Categoria.Text = "Categories";
             this.Categoria.UseVisualStyleBackColor = true;
+            this.Categoria.Click += new System.EventHandler(this.Categoria_Click);
             // 
             // Atributo
             // 
@@ -166,6 +159,17 @@
             this.Atributo.TabIndex = 10;
             this.Atributo.Text = "Attributes";
             this.Atributo.UseVisualStyleBackColor = true;
+            // 
+            // btn_AñadirAtributo
+            // 
+            this.btn_AñadirAtributo.BackColor = System.Drawing.Color.Silver;
+            this.btn_AñadirAtributo.Location = new System.Drawing.Point(625, 251);
+            this.btn_AñadirAtributo.Name = "btn_AñadirAtributo";
+            this.btn_AñadirAtributo.Size = new System.Drawing.Size(130, 120);
+            this.btn_AñadirAtributo.TabIndex = 25;
+            this.btn_AñadirAtributo.Text = " Add Attribute";
+            this.btn_AñadirAtributo.UseVisualStyleBackColor = false;
+            this.btn_AñadirAtributo.Click += new System.EventHandler(this.btn_AñadirAtributo_Click);
             // 
             // AtributoMain
             // 

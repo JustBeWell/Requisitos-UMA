@@ -12,13 +12,15 @@ namespace WindowsFormsApplication2
 {
     public partial class AtributoMain : Form
     {
+        private Form _form1;
         private const int MaxAttributes = 5;   // Una misma cuenta no puede tener más de 5 atributos de usuario
         private int UserAttributes;
 
-        public AtributoMain()
+        public AtributoMain(Form form1)
         {
             InitializeComponent();
             dataGridViewAtributos.CellValueChanged += dataGridViewAtributos_CellValueChanged;
+            _form1 = form1;
         }
 
         private void AtributoMain_Load(object sender, EventArgs e)
@@ -74,17 +76,7 @@ namespace WindowsFormsApplication2
         {
             dataGridViewAtributos.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             // Configurar columnas como editables o no
-            foreach (DataGridViewColumn column in dataGridViewAtributos.Columns)
-            {
-                if (column.Name == "Name") // Permitir edición solo en la columna "Name"
-                {
-                    column.ReadOnly = false;
-                }
-                else
-                {
-                    column.ReadOnly = true;
-                }
-            }
+            AgregarColumnaName(); // Agregar la columna "Name" como TextBox
             // Ocultar columnas innecesarias como IDs
             if (dataGridViewAtributos.Columns["TypeID"] != null)
                 dataGridViewAtributos.Columns["TypeID"].Visible = false;
@@ -98,7 +90,25 @@ namespace WindowsFormsApplication2
             // Agregar la columna de acción (Eliminar)
             AgregarColumnaBotonEliminar();
         }
+        private void AgregarColumnaName()
+        {
+            // Verifica si la columna "Name" ya existe, para evitar duplicados
+            if (!dataGridViewAtributos.Columns.Contains("Name"))
+            {
+                // Crear una columna de tipo TextBox
+                DataGridViewTextBoxColumn nameColumn = new DataGridViewTextBoxColumn
+                {
+                    Name = "Name",
+                    HeaderText = "Name", // Título de la columna
+                    DataPropertyName = "Name", // Campo vinculado al modelo de datos
+                    AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill, // Ajustar tamaño automáticamente
+                    ReadOnly = false // Hacerla editable
+                };
 
+                // Agregar la columna al DataGridView
+                dataGridViewAtributos.Columns.Add(nameColumn);
+            }
+        }
         private void AgregarColumnaComboBox()
         {
             using (DataClasses1DataContext db = new DataClasses1DataContext())
@@ -178,39 +188,32 @@ namespace WindowsFormsApplication2
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                DataGridViewRow row = dataGridViewAtributos.Rows[e.RowIndex];
-                dynamic atributoModificado = row.DataBoundItem;
+                string columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
 
-                if (atributoModificado != null)
+                if (columnName == "Name")
                 {
+                    // Obtener el valor modificado y el ID del atributo
+                    DataGridViewRow row = dataGridViewAtributos.Rows[e.RowIndex];
+                    string nuevoNombre = row.Cells["Name"].Value.ToString();
+                    int atributoID = (int)row.Cells["AtributoID"].Value;
+
+                    // Actualizar el nombre en la base de datos
                     using (var context = new DataClasses1DataContext())
                     {
-                        int atributoID = atributoModificado.AtributoID;
                         var atributoEnDB = context.Atributo.FirstOrDefault(a => a.id == atributoID);
-
                         if (atributoEnDB != null)
                         {
-                            // Guardar cambios en "Name"
-                            if (dataGridViewAtributos.Columns[e.ColumnIndex].Name == "Name")
-                            {
-                                atributoEnDB.nombre = row.Cells["Name"].Value.ToString();
-                            }
-                            // Guardar cambios en "TypeEditable"
-                            else if (dataGridViewAtributos.Columns[e.ColumnIndex].Name == "TypeEditable")
-                            {
-                                atributoEnDB.tipo = (int)row.Cells["TypeEditable"].Value;
-                            }
-
-                            context.SubmitChanges(); // Guardar cambios en la base de datos
+                            atributoEnDB.nombre = nuevoNombre; // Actualizar el nombre
+                            context.SubmitChanges(); // Guardar los cambios
+                            MessageBox.Show("Nombre actualizado correctamente.");
                         }
                     }
-
+                }
+            }
                     // Recargar la interfaz
                     CargarDatos();
                     ActualizarInterfaz();
-                }
-            }
-        }
+         }
 
         private void btn_AñadirAtributo_Click(object sender, EventArgs e)
         {
@@ -221,6 +224,81 @@ namespace WindowsFormsApplication2
             CargarNumeroDeAtributos();
             ActualizarInterfaz();
             CargarDatos();
+        }
+
+        private void dataGridViewAtributos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
+
+                // Solo permitir edición en la columna "Name"
+                if (columnName == "Name")
+                {
+                    dataGridViewAtributos.BeginEdit(true); // Comienza la edición
+                }
+            }
+        }
+
+        private void dataGridViewAtributos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
+
+                // Solo permitir edición en la columna "Name"
+                if (columnName == "Name")
+                {
+                    dataGridViewAtributos.BeginEdit(true); // Comienza la edición
+                }
+            }
+        }
+        private void ResaltarBoton(Button botonSeleccionado)
+        {
+            // Restaurar estilo de todos los botones en el panel
+            foreach (Control control in panel1.Controls)
+            {
+                Button boton = control as Button; // Intenta convertir el control a Button
+                if (boton != null)
+                {
+                    boton.BackColor = SystemColors.Control; // Color predeterminado
+                    boton.ForeColor = Color.Black; // Texto en negro
+                }
+            }
+
+            // Resaltar el botón seleccionado
+            botonSeleccionado.BackColor = Color.Blue; // Color azul
+            botonSeleccionado.ForeColor = Color.White; // Texto blanco
+        }
+
+        private void Categoria_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            CategoriasMain cat = new CategoriasMain(this);
+            cat.FormClosed += (s, args) =>
+            {
+                this.Show(); // Se muestra el form de productos nuevamente
+                ResaltarBoton(this.Categoria);
+            };
+
+            cat.Show();
+            this.ActiveControl = null;
+        }
+
+        private void Producto_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            MainForm main = new MainForm();
+            main.FormClosed += (s, args) =>
+            {
+                this.Show(); // Se muestra el form de productos nuevamente
+                ResaltarBoton(this.Categoria);
+            };
+
+            main.Show();
+            this.ActiveControl = null;
         }
 
 

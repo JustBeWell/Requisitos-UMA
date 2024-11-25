@@ -12,9 +12,11 @@ namespace WindowsFormsApplication2
 {
     public partial class CategoriasMain : Form
     {
-        public CategoriasMain()
+        private Form _form1;
+        public CategoriasMain(Form form1)
         {
             InitializeComponent();
+            _form1 = form1;
         }
 
         private void CategoriasMain_Load(object sender, EventArgs e)
@@ -141,7 +143,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
 
-            MainAtributos atrib = new MainAtributos();
+            AtributoMain atrib = new AtributoMain(this);
             atrib.FormClosed += (s, args) =>
             {
                 this.Show(); // Se muestra el form de productos nuevamente
