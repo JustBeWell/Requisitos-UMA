@@ -31,8 +31,10 @@ namespace WindowsFormsApplication2
         {
             CargarNumeroDeAtributos();
             ActualizarInterfaz();
-            CargarDatos(); // Cargar los datos de la base de datos
+            // Cargar los datos de la base de datos
+            CargarDatos();
             ConfigurarInterfaz(); // Configurar las columnas y el DataGridView
+            
             ResaltarBoton(Atributo);
         }
         private void ActualizarInterfaz()
@@ -43,7 +45,7 @@ namespace WindowsFormsApplication2
         label_AvailableAttributes.Text = string.Format("Available: {0} of {1}", MaxAttributes - UserAttributes, MaxAttributes);
 
         // Habilitar o deshabilitar el botón de añadir atributos según el límite
-        btn_AñadirAtributo.Enabled = UserAttributes < MaxAttributes;
+        //btn_AñadirAtributo.Enabled = UserAttributes < MaxAttributes;
     }
         private void CargarNumeroDeAtributos()
         {
@@ -125,7 +127,7 @@ namespace WindowsFormsApplication2
                         DataSource = db.TipoAtributo.ToList(), // Fuente de datos para el ComboBox
                         DisplayMember = "nombre", // Mostrar el nombre del tipo
                         ValueMember = "id", // Asociar con el ID del tipo
-                        AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
+                        AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill,
                     };
 
                     // Reemplazar la columna existente "Type" con el ComboBox

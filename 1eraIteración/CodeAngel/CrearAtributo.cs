@@ -48,8 +48,16 @@ namespace WindowsFormsApplication2
             };
 
             DataClasses1DataContext bd = new DataClasses1DataContext();
-            bd.Atributo.InsertOnSubmit(AtributoCreado);
-            bd.SubmitChanges();
+            if (bd.Atributo.Count() >= 5)
+            {
+                MessageBox.Show("Maximum amount of User Attributes reached");
+            }
+            else
+            {
+                bd.Atributo.InsertOnSubmit(AtributoCreado);
+                bd.SubmitChanges();
+            }
+            
 
             _form1.load();
 
