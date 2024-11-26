@@ -14,22 +14,30 @@ namespace WindowsFormsApplication2
     {
 
         private const int MaxAttributes = 5;   // Una misma cuenta no puede tener más de 5 atributos de usuario
-        private List<Atributo> UserAttributes;
+        private int UserAttributes = 0;
 
         public MainAtributos()
         {
             InitializeComponent();
             dataGridViewAtributos.EditMode = DataGridViewEditMode.EditOnEnter; // Permite la edición al entrar a la celda
-            dataGridViewAtributos.CellDoubleClick += dataGridViewAtributos_CellDoubleClick;
+            dataGridViewAtributos.CellDoubleClick += dataGridViewAtributos_CellContentDoubleClick;
             dataGridViewAtributos.CellValueChanged += dataGridViewAtributos_CellValueChanged;
             dataGridViewAtributos.CellBeginEdit += dataGridViewAtributos_CellBeginEdit;
 
         }
 
+        private void CargarNumeroDeAtributos()
+        {
+            using (DataClasses1DataContext db = new DataClasses1DataContext())
+            {
+                // Contar el número de atributos en la base de datos
+                UserAttributes = db.Atributo.Count();
+            }
+        }
 
         private void MainAtributos_Load(object sender, EventArgs e)
         {
-            UserAttributes = new List<Atributo>();
+            CargarNumeroDeAtributos();
 
             ResaltarBoton(this.Atributo);
             ActualizarInterfaz();
@@ -41,16 +49,13 @@ namespace WindowsFormsApplication2
         {
             dataGridViewAtributos.DataSource = null;
             dataGridViewAtributos.Rows.Clear();
-            foreach (var atributo in UserAttributes)
-            {
-                dataGridViewAtributos.Rows.Add(atributo.tipo, atributo.nombre);
-            }
+            
 
             // Actualiza contadores en pantalla según la cuenta actual de User Attributes creados
-            label_UserAttributes.Text = string.Format("User Attributes: {0}", UserAttributes.Count);
-            label_AvailableAttributes.Text = string.Format("Available: {0}", MaxAttributes - UserAttributes.Count);
+            label_UserAttributes.Text = string.Format("User Attributes: {0}", UserAttributes);
+            label_AvailableAttributes.Text = string.Format("Available: {0}", MaxAttributes - UserAttributes);
 
-            Boolean maxReached = UserAttributes.Count >= MaxAttributes;
+            Boolean maxReached = UserAttributes >= MaxAttributes;
 
             if (maxReached)
             {
@@ -125,17 +130,17 @@ namespace WindowsFormsApplication2
         {
             DataClasses1DataContext db = new DataClasses1DataContext();
 
-            // Crear una columna ComboBox editable
+            // Crear una columna ComboBox editable si no existe
             if (dataGridViewAtributos.Columns["TypeEditable"] == null)
             {
                 DataGridViewComboBoxColumn comboColumn = new DataGridViewComboBoxColumn
                 {
                     HeaderText = "Type",
-                    DataPropertyName = "TypeID",
+                    DataPropertyName = "TypeID", // Vincula al valor en la base de datos
                     Name = "TypeEditable",
-                    DataSource = db.TipoAtributo.ToList(), // Fuente de datos
+                    DataSource = db.TipoAtributo.ToList(), // Fuente de datos para el ComboBox
                     DisplayMember = "nombre", // Campo a mostrar
-                    ValueMember = "id", // Valor a asociar
+                    ValueMember = "id", // Valor asociado al ComboBox
                     AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
                 };
 
@@ -212,8 +217,7 @@ namespace WindowsFormsApplication2
 
         private void btn_AñadirAtributo_Click(object sender, EventArgs e)
         {
-            CrearAtributo nuevoAtributo = new CrearAtributo(this);
-            nuevoAtributo.ShowDialog();
+            
             // Arreglar que cuando regrese de CrearAtributo no se cambien las columnas de lugar
         }
 
@@ -227,50 +231,44 @@ namespace WindowsFormsApplication2
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
-                DataGridViewRow row = dataGridViewAtributos.Rows[e.RowIndex];
-                dynamic atributoModificado = row.DataBoundItem;
+                string columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
 
-                if (atributoModificado != null)
+                // Solo manejar cambios en "Name" y "TypeEditable"
+                if (columnName == "Name" || columnName == "TypeEditable")
                 {
-                    using (var context = new DataClasses1DataContext())
+                    DataGridViewRow row = dataGridViewAtributos.Rows[e.RowIndex];
+                    dynamic atributoModificado = row.DataBoundItem;
+
+                    if (atributoModificado != null)
                     {
-                        int atributoID = atributoModificado.AtributoID;
-                        var atributoEnDB = context.Atributo.FirstOrDefault(a => a.id == atributoID);
-
-                        if (atributoEnDB != null)
+                        using (var context = new DataClasses1DataContext())
                         {
-                            // Actualizar los valores según las columnas editadas
-                            if (dataGridViewAtributos.Columns[e.ColumnIndex].Name == "Name")
-                            {
-                                atributoEnDB.nombre = atributoModificado.Name;
-                            }
-                            else if (dataGridViewAtributos.Columns[e.ColumnIndex].Name == "TypeEditable")
-                            {
-                                atributoEnDB.tipo = (int)row.Cells["TypeEditable"].Value;
-                            }
+                            int atributoID = atributoModificado.AtributoID;
+                            var atributoEnDB = context.Atributo.FirstOrDefault(a => a.id == atributoID);
 
-                            context.SubmitChanges(); // Guardar cambios en la base de datos
+                            if (atributoEnDB != null)
+                            {
+                                // Guardar cambios en "Name"
+                                if (columnName == "Name")
+                                {
+                                    atributoEnDB.nombre = row.Cells["Name"].Value.ToString();
+                                }
+                                // Guardar cambios en "TypeEditable"
+                                else if (columnName == "TypeEditable")
+                                {
+                                    atributoEnDB.tipo = (int)row.Cells["TypeEditable"].Value;
+                                }
+
+                                context.SubmitChanges(); // Guardar cambios en la base de datos
+                            }
                         }
+
+                        // Refrescar la interfaz
+                        load();
                     }
                 }
             }
         }
-
-
-
-        private void dataGridViewAtributos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
-            {
-                var columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
-                // Solo permitir edición en la columna "Name"
-                if (columnName == "Name")
-                {
-                    dataGridViewAtributos.BeginEdit(true); // Comienza la edición
-                }
-            }
-        }
-
 
         private void dataGridViewAtributos_CellBeginEdit(object sender, DataGridViewCellCancelEventArgs e)
         {
@@ -304,8 +302,23 @@ namespace WindowsFormsApplication2
                             context.Atributo.DeleteOnSubmit(atributo);
                             context.SubmitChanges();
                             ActualizarInterfaz(); // Actualizar la interfaz después de eliminar
+                            load();
                         }
                     }
+                }
+            }
+        }
+
+        private void dataGridViewAtributos_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                var columnName = dataGridViewAtributos.Columns[e.ColumnIndex].Name;
+
+                // Solo permitir edición en la columna "Name"
+                if (columnName == "Name")
+                {
+                    dataGridViewAtributos.BeginEdit(true); // Comienza la edición
                 }
             }
         }

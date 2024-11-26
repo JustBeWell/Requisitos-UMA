@@ -226,7 +226,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
             
-            CategoriasMain cat = new CategoriasMain();
+            CategoriasMain cat = new CategoriasMain(this);
             cat.FormClosed += (s, args) =>
             {
                 this.Show(); // Muestra el MainForm nuevamente
@@ -241,7 +241,7 @@ namespace WindowsFormsApplication2
         {
             this.Hide();
 
-            MainAtributos atrib = new MainAtributos();
+            AtributoMain atrib = new AtributoMain(this);
             atrib.FormClosed += (s, args) =>
                 {
                     this.Show(); // Se muestra el form de productos nuevamente
@@ -320,6 +320,12 @@ namespace WindowsFormsApplication2
                 }
                 }
            }
+
+        private void Ayuda_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("De que vas chulo?");
+           
+        }
 
 }
 

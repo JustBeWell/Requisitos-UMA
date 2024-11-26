@@ -12,10 +12,10 @@ namespace WindowsFormsApplication2
 {
     public partial class CrearAtributo : Form
     {
-        private MainAtributos _form1;
+        private AtributoMain _form1;
         public Atributo AtributoCreado { get; private set; }
 
-        public CrearAtributo(MainAtributos form1)
+        public CrearAtributo(AtributoMain form1)
         {
             InitializeComponent();
             LoadTipoAtributos();
@@ -48,10 +48,16 @@ namespace WindowsFormsApplication2
             };
 
             DataClasses1DataContext bd = new DataClasses1DataContext();
-            bd.Atributo.InsertOnSubmit(AtributoCreado);
-            bd.SubmitChanges();
+            if (bd.Atributo.Count() >= 5)
+            {
+                MessageBox.Show("Maximum amount of User Attributes reached");
+            }
+            else
+            {
+                bd.Atributo.InsertOnSubmit(AtributoCreado);
+                bd.SubmitChanges();
+            }
 
-            _form1.load();
 
             DialogResult = DialogResult.OK;
             this.Close();
