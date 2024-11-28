@@ -37,8 +37,8 @@
             // 
             // btn_Confirm
             // 
-            this.btn_Confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Confirm.Location = new System.Drawing.Point(652, 391);
+            this.btn_Confirm.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btn_Confirm.Location = new System.Drawing.Point(556, 391);
             this.btn_Confirm.Name = "btn_Confirm";
             this.btn_Confirm.Size = new System.Drawing.Size(410, 143);
             this.btn_Confirm.TabIndex = 9;
@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(473, 292);
+            this.label1.Location = new System.Drawing.Point(382, 292);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(99, 32);
             this.label1.TabIndex = 8;
@@ -60,7 +60,7 @@
             // 
             this.comboBox_Type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Type.FormattingEnabled = true;
-            this.comboBox_Type.Location = new System.Drawing.Point(627, 292);
+            this.comboBox_Type.Location = new System.Drawing.Point(514, 292);
             this.comboBox_Type.Name = "comboBox_Type";
             this.comboBox_Type.Size = new System.Drawing.Size(205, 40);
             this.comboBox_Type.TabIndex = 7;
@@ -69,7 +69,7 @@
             // 
             this.label_Name.AutoSize = true;
             this.label_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Name.Location = new System.Drawing.Point(341, 199);
+            this.label_Name.Location = new System.Drawing.Point(250, 199);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(231, 32);
             this.label_Name.TabIndex = 6;
@@ -78,7 +78,7 @@
             // tBox_Nombre
             // 
             this.tBox_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBox_Nombre.Location = new System.Drawing.Point(627, 199);
+            this.tBox_Nombre.Location = new System.Drawing.Point(514, 199);
             this.tBox_Nombre.Name = "tBox_Nombre";
             this.tBox_Nombre.Size = new System.Drawing.Size(457, 39);
             this.tBox_Nombre.TabIndex = 5;
@@ -87,14 +87,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1558, 806);
+            this.ClientSize = new System.Drawing.Size(1476, 1056);
             this.Controls.Add(this.btn_Confirm);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox_Type);
             this.Controls.Add(this.label_Name);
             this.Controls.Add(this.tBox_Nombre);
             this.Name = "CrearAtributo";
-            this.Text = "CrearAtributo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.CrearAtributo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

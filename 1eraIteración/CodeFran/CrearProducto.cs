@@ -185,6 +185,7 @@ namespace WindowsFormsApplication2
 
         private void Form2_Load(object sender, EventArgs e){
             _form1.cambiarColor(Color.Gray);
+            this.Size = new Size(900, 700);
             DataClasses1DataContext db = new DataClasses1DataContext();
             var atributos = db.Atributo.Take(5).ToList();
 

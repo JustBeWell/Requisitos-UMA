@@ -96,7 +96,7 @@
             this.panel1.Controls.Add(this.Assets);
             this.panel1.Controls.Add(this.Categoria);
             this.panel1.Controls.Add(this.Atributo);
-            this.panel1.Location = new System.Drawing.Point(132, 164);
+            this.panel1.Location = new System.Drawing.Point(121, 109);
             this.panel1.Margin = new System.Windows.Forms.Padding(6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1023, 94);
@@ -195,7 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1542, 923);
+            this.ClientSize = new System.Drawing.Size(1976, 1364);
             this.Controls.Add(this.btn_AñadirAtributo);
             this.Controls.Add(this.label_AvailableAttributes);
             this.Controls.Add(this.label_UserAttributes);
@@ -203,7 +203,8 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "AtributoMain";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Mini PIM";
             this.Load += new System.EventHandler(this.AtributoMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAtributos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tipoAtributoBindingSource1)).EndInit();

@@ -15,6 +15,8 @@ namespace WindowsFormsApplication2
         private AtributoMain _form1;
         public Atributo AtributoCreado { get; private set; }
 
+        DataClasses1DataContext database = new DataClasses1DataContext();
+
         public CrearAtributo(AtributoMain form1)
         {
             InitializeComponent();
@@ -24,13 +26,10 @@ namespace WindowsFormsApplication2
 
         private void LoadTipoAtributos()
         {
-            using (var db = new DataClasses1DataContext())
-            {
-                var tipos = db.TipoAtributo.Select(t => new { t.id, t.nombre }).ToList();
-                comboBox_Type.DataSource = tipos;
-                comboBox_Type.DisplayMember = "nombre";
-                comboBox_Type.ValueMember = "id";
-            }
+            var tipos = database.TipoAtributo.Select(t => new { t.id, t.nombre }).ToList();
+            comboBox_Type.DataSource = tipos;
+            comboBox_Type.DisplayMember = "nombre";
+            comboBox_Type.ValueMember = "id"; 
         }
 
         private void btn_Confirm_Click(object sender, EventArgs e)
@@ -47,20 +46,24 @@ namespace WindowsFormsApplication2
                 tipo = (int)comboBox_Type.SelectedValue
             };
 
-            DataClasses1DataContext bd = new DataClasses1DataContext();
-            if (bd.Atributo.Count() >= 5)
+            if (database.Atributo.Count() >= 5)
             {
                 MessageBox.Show("Maximum amount of User Attributes reached");
             }
             else
             {
-                bd.Atributo.InsertOnSubmit(AtributoCreado);
-                bd.SubmitChanges();
+                database.Atributo.InsertOnSubmit(AtributoCreado);
+                database.SubmitChanges();
             }
 
 
             DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void CrearAtributo_Load(object sender, EventArgs e)
+        {
+
         }
 
 

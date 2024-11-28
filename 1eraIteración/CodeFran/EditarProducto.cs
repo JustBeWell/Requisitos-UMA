@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
 
         private void EditarProducto_Load(object sender, EventArgs e)
         {
-            _form1.cambiarColor(Color.Gray);
+            this.Size = new Size(900, 700);
             DataClasses1DataContext db = new DataClasses1DataContext();
             var atributos = db.Atributo.Take(5).ToList();
 
@@ -107,7 +107,7 @@ namespace WindowsFormsApplication2
 
         private void U3Check_CheckedChanged(object sender, EventArgs e)
         {
-            if (!U3Check.Checked) textBoxU3.Enabled = true;
+            if (U3Check.Checked) textBoxU3.Enabled = true;
             else textBoxU3.Enabled = false;
         }
 

@@ -135,6 +135,11 @@ namespace WindowsFormsApplication2
 
         }
 
+        private void Categorias_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
     }

@@ -37,17 +37,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 179);
+            this.label1.Location = new System.Drawing.Point(118, 120);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 25);
+            this.label1.Size = new System.Drawing.Size(727, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "Are you sure you want to delete this category?";
             // 
             // Yes
             // 
-            this.Yes.Location = new System.Drawing.Point(135, 248);
+            this.Yes.Location = new System.Drawing.Point(136, 243);
+            this.Yes.Margin = new System.Windows.Forms.Padding(6);
             this.Yes.Name = "Yes";
-            this.Yes.Size = new System.Drawing.Size(193, 112);
+            this.Yes.Size = new System.Drawing.Size(275, 135);
             this.Yes.TabIndex = 1;
             this.Yes.Text = "YES";
             this.Yes.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // No
             // 
-            this.No.Location = new System.Drawing.Point(334, 248);
+            this.No.Location = new System.Drawing.Point(532, 243);
+            this.No.Margin = new System.Windows.Forms.Padding(6);
             this.No.Name = "No";
-            this.No.Size = new System.Drawing.Size(197, 112);
+            this.No.Size = new System.Drawing.Size(275, 135);
             this.No.TabIndex = 2;
             this.No.Text = "NO";
             this.No.UseVisualStyleBackColor = true;
@@ -65,14 +68,15 @@
             // 
             // BorrarCategoria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 466);
+            this.ClientSize = new System.Drawing.Size(976, 436);
             this.Controls.Add(this.No);
             this.Controls.Add(this.Yes);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "BorrarCategoria";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.BorrarProducto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

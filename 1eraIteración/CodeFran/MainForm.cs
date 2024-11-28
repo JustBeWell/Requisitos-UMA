@@ -20,7 +20,7 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadAllProducts();
-
+            this.Size = new Size(1200, 700);
             ResaltarBoton(this.Producto);
             
 

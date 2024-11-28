@@ -22,6 +22,7 @@ namespace WindowsFormsApplication2
         private void CategoriasMain_Load(object sender, EventArgs e)
         {
             load();
+            this.Size = new Size(1200, 700);
             ResaltarBoton(this.Categoria);
         }
         public void load()

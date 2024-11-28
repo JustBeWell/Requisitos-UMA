@@ -175,3 +175,4 @@ C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProdu
 C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
 C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache

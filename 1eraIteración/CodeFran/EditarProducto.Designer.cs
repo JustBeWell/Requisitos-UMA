@@ -56,9 +56,10 @@
             // 
             // Salir
             // 
-            this.Salir.Location = new System.Drawing.Point(28, 426);
+            this.Salir.Location = new System.Drawing.Point(70, 796);
+            this.Salir.Margin = new System.Windows.Forms.Padding(6);
             this.Salir.Name = "Salir";
-            this.Salir.Size = new System.Drawing.Size(176, 98);
+            this.Salir.Size = new System.Drawing.Size(350, 230);
             this.Salir.TabIndex = 44;
             this.Salir.Text = "EXIT";
             this.Salir.UseVisualStyleBackColor = true;
@@ -67,18 +68,21 @@
             // Categorias
             // 
             this.Categorias.Enabled = false;
+            this.Categorias.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.Categorias.FormattingEnabled = true;
-            this.Categorias.Location = new System.Drawing.Point(256, 326);
+            this.Categorias.Location = new System.Drawing.Point(493, 602);
+            this.Categorias.Margin = new System.Windows.Forms.Padding(6);
             this.Categorias.Name = "Categorias";
-            this.Categorias.Size = new System.Drawing.Size(258, 21);
+            this.Categorias.Size = new System.Drawing.Size(470, 37);
             this.Categorias.TabIndex = 43;
             // 
             // CategoriasCheck
             // 
             this.CategoriasCheck.AutoSize = true;
-            this.CategoriasCheck.Location = new System.Drawing.Point(530, 326);
+            this.CategoriasCheck.Location = new System.Drawing.Point(996, 612);
+            this.CategoriasCheck.Margin = new System.Windows.Forms.Padding(6);
             this.CategoriasCheck.Name = "CategoriasCheck";
-            this.CategoriasCheck.Size = new System.Drawing.Size(15, 14);
+            this.CategoriasCheck.Size = new System.Drawing.Size(22, 21);
             this.CategoriasCheck.TabIndex = 42;
             this.CategoriasCheck.UseVisualStyleBackColor = true;
             this.CategoriasCheck.CheckedChanged += new System.EventHandler(this.CategoriasCheck_CheckedChanged);
@@ -86,9 +90,10 @@
             // LabelCheck
             // 
             this.LabelCheck.AutoSize = true;
-            this.LabelCheck.Location = new System.Drawing.Point(530, 91);
+            this.LabelCheck.Location = new System.Drawing.Point(996, 184);
+            this.LabelCheck.Margin = new System.Windows.Forms.Padding(6);
             this.LabelCheck.Name = "LabelCheck";
-            this.LabelCheck.Size = new System.Drawing.Size(15, 14);
+            this.LabelCheck.Size = new System.Drawing.Size(22, 21);
             this.LabelCheck.TabIndex = 40;
             this.LabelCheck.UseVisualStyleBackColor = true;
             this.LabelCheck.CheckedChanged += new System.EventHandler(this.LabelCheck_CheckedChanged);
@@ -96,9 +101,10 @@
             // U1Check
             // 
             this.U1Check.AutoSize = true;
-            this.U1Check.Location = new System.Drawing.Point(530, 129);
+            this.U1Check.Location = new System.Drawing.Point(996, 248);
+            this.U1Check.Margin = new System.Windows.Forms.Padding(6);
             this.U1Check.Name = "U1Check";
-            this.U1Check.Size = new System.Drawing.Size(15, 14);
+            this.U1Check.Size = new System.Drawing.Size(22, 21);
             this.U1Check.TabIndex = 39;
             this.U1Check.UseVisualStyleBackColor = true;
             this.U1Check.CheckedChanged += new System.EventHandler(this.U1Check_CheckedChanged);
@@ -106,9 +112,10 @@
             // U2Check
             // 
             this.U2Check.AutoSize = true;
-            this.U2Check.Location = new System.Drawing.Point(530, 168);
+            this.U2Check.Location = new System.Drawing.Point(996, 316);
+            this.U2Check.Margin = new System.Windows.Forms.Padding(6);
             this.U2Check.Name = "U2Check";
-            this.U2Check.Size = new System.Drawing.Size(15, 14);
+            this.U2Check.Size = new System.Drawing.Size(22, 21);
             this.U2Check.TabIndex = 38;
             this.U2Check.UseVisualStyleBackColor = true;
             this.U2Check.CheckedChanged += new System.EventHandler(this.U2Check_CheckedChanged);
@@ -116,9 +123,10 @@
             // U3Check
             // 
             this.U3Check.AutoSize = true;
-            this.U3Check.Location = new System.Drawing.Point(530, 209);
+            this.U3Check.Location = new System.Drawing.Point(996, 396);
+            this.U3Check.Margin = new System.Windows.Forms.Padding(6);
             this.U3Check.Name = "U3Check";
-            this.U3Check.Size = new System.Drawing.Size(15, 14);
+            this.U3Check.Size = new System.Drawing.Size(22, 21);
             this.U3Check.TabIndex = 37;
             this.U3Check.UseVisualStyleBackColor = true;
             this.U3Check.CheckedChanged += new System.EventHandler(this.U3Check_CheckedChanged);
@@ -126,9 +134,10 @@
             // U4Check
             // 
             this.U4Check.AutoSize = true;
-            this.U4Check.Location = new System.Drawing.Point(530, 252);
+            this.U4Check.Location = new System.Drawing.Point(996, 475);
+            this.U4Check.Margin = new System.Windows.Forms.Padding(6);
             this.U4Check.Name = "U4Check";
-            this.U4Check.Size = new System.Drawing.Size(15, 14);
+            this.U4Check.Size = new System.Drawing.Size(22, 21);
             this.U4Check.TabIndex = 36;
             this.U4Check.UseVisualStyleBackColor = true;
             this.U4Check.CheckedChanged += new System.EventHandler(this.U4Check_CheckedChanged);
@@ -136,9 +145,10 @@
             // U5Check
             // 
             this.U5Check.AutoSize = true;
-            this.U5Check.Location = new System.Drawing.Point(530, 288);
+            this.U5Check.Location = new System.Drawing.Point(996, 542);
+            this.U5Check.Margin = new System.Windows.Forms.Padding(6);
             this.U5Check.Name = "U5Check";
-            this.U5Check.Size = new System.Drawing.Size(15, 14);
+            this.U5Check.Size = new System.Drawing.Size(22, 21);
             this.U5Check.TabIndex = 35;
             this.U5Check.UseVisualStyleBackColor = true;
             this.U5Check.CheckedChanged += new System.EventHandler(this.U5Check_CheckedChanged);
@@ -146,9 +156,10 @@
             // GtinCheck
             // 
             this.GtinCheck.AutoSize = true;
-            this.GtinCheck.Location = new System.Drawing.Point(530, 23);
+            this.GtinCheck.Location = new System.Drawing.Point(996, 52);
+            this.GtinCheck.Margin = new System.Windows.Forms.Padding(6);
             this.GtinCheck.Name = "GtinCheck";
-            this.GtinCheck.Size = new System.Drawing.Size(15, 14);
+            this.GtinCheck.Size = new System.Drawing.Size(22, 21);
             this.GtinCheck.TabIndex = 34;
             this.GtinCheck.UseVisualStyleBackColor = true;
             this.GtinCheck.CheckedChanged += new System.EventHandler(this.GtinCheck_CheckedChanged);
@@ -156,58 +167,72 @@
             // textBoxLabel
             // 
             this.textBoxLabel.Enabled = false;
-            this.textBoxLabel.Location = new System.Drawing.Point(256, 87);
+            this.textBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxLabel.Location = new System.Drawing.Point(493, 174);
+            this.textBoxLabel.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxLabel.Name = "textBoxLabel";
-            this.textBoxLabel.Size = new System.Drawing.Size(258, 20);
+            this.textBoxLabel.Size = new System.Drawing.Size(470, 34);
             this.textBoxLabel.TabIndex = 32;
             this.textBoxLabel.Text = "Label";
             // 
             // textBoxU1
             // 
             this.textBoxU1.Enabled = false;
-            this.textBoxU1.Location = new System.Drawing.Point(256, 129);
+            this.textBoxU1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxU1.Location = new System.Drawing.Point(493, 238);
+            this.textBoxU1.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxU1.Name = "textBoxU1";
-            this.textBoxU1.Size = new System.Drawing.Size(258, 20);
+            this.textBoxU1.Size = new System.Drawing.Size(470, 34);
             this.textBoxU1.TabIndex = 31;
             // 
             // textBoxU2
             // 
             this.textBoxU2.Enabled = false;
-            this.textBoxU2.Location = new System.Drawing.Point(256, 166);
+            this.textBoxU2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxU2.Location = new System.Drawing.Point(493, 306);
+            this.textBoxU2.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxU2.Name = "textBoxU2";
-            this.textBoxU2.Size = new System.Drawing.Size(258, 20);
+            this.textBoxU2.Size = new System.Drawing.Size(470, 34);
             this.textBoxU2.TabIndex = 30;
             // 
             // textBoxU5
             // 
             this.textBoxU5.Enabled = false;
-            this.textBoxU5.Location = new System.Drawing.Point(256, 288);
+            this.textBoxU5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxU5.Location = new System.Drawing.Point(493, 532);
+            this.textBoxU5.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxU5.Name = "textBoxU5";
-            this.textBoxU5.Size = new System.Drawing.Size(258, 20);
+            this.textBoxU5.Size = new System.Drawing.Size(470, 34);
             this.textBoxU5.TabIndex = 29;
             // 
             // textBoxU4
             // 
             this.textBoxU4.Enabled = false;
-            this.textBoxU4.Location = new System.Drawing.Point(256, 252);
+            this.textBoxU4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxU4.Location = new System.Drawing.Point(493, 465);
+            this.textBoxU4.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxU4.Name = "textBoxU4";
-            this.textBoxU4.Size = new System.Drawing.Size(258, 20);
+            this.textBoxU4.Size = new System.Drawing.Size(470, 34);
             this.textBoxU4.TabIndex = 28;
             // 
             // textBoxU3
             // 
             this.textBoxU3.Enabled = false;
-            this.textBoxU3.Location = new System.Drawing.Point(256, 209);
+            this.textBoxU3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxU3.Location = new System.Drawing.Point(493, 386);
+            this.textBoxU3.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxU3.Name = "textBoxU3";
-            this.textBoxU3.Size = new System.Drawing.Size(258, 20);
+            this.textBoxU3.Size = new System.Drawing.Size(470, 34);
             this.textBoxU3.TabIndex = 27;
             // 
             // textBoxGTIN
             // 
             this.textBoxGTIN.Enabled = false;
-            this.textBoxGTIN.Location = new System.Drawing.Point(256, 21);
+            this.textBoxGTIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxGTIN.Location = new System.Drawing.Point(493, 39);
+            this.textBoxGTIN.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxGTIN.Name = "textBoxGTIN";
-            this.textBoxGTIN.Size = new System.Drawing.Size(258, 20);
+            this.textBoxGTIN.Size = new System.Drawing.Size(470, 34);
             this.textBoxGTIN.TabIndex = 26;
             this.textBoxGTIN.Text = "GTIN";
             // 
@@ -215,17 +240,20 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(51, 33);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(6);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 265);
+            this.pictureBox1.Size = new System.Drawing.Size(323, 489);
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
             // Upload
             // 
-            this.Upload.Location = new System.Drawing.Point(28, 289);
+            this.Upload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.Upload.Location = new System.Drawing.Point(51, 534);
+            this.Upload.Margin = new System.Windows.Forms.Padding(6);
             this.Upload.Name = "Upload";
-            this.Upload.Size = new System.Drawing.Size(176, 39);
+            this.Upload.Size = new System.Drawing.Size(323, 72);
             this.Upload.TabIndex = 24;
             this.Upload.Text = "Upload Asset";
             this.Upload.UseVisualStyleBackColor = true;
@@ -233,9 +261,10 @@
             // 
             // Confirmar
             // 
-            this.Confirmar.Location = new System.Drawing.Point(548, 414);
+            this.Confirmar.Location = new System.Drawing.Point(1056, 797);
+            this.Confirmar.Margin = new System.Windows.Forms.Padding(6);
             this.Confirmar.Name = "Confirmar";
-            this.Confirmar.Size = new System.Drawing.Size(191, 124);
+            this.Confirmar.Size = new System.Drawing.Size(350, 229);
             this.Confirmar.TabIndex = 23;
             this.Confirmar.Text = "CONFIRM";
             this.Confirmar.UseVisualStyleBackColor = true;
@@ -244,27 +273,30 @@
             // textBoxSKU
             // 
             this.textBoxSKU.Enabled = false;
-            this.textBoxSKU.Location = new System.Drawing.Point(256, 56);
+            this.textBoxSKU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.textBoxSKU.Location = new System.Drawing.Point(493, 103);
+            this.textBoxSKU.Margin = new System.Windows.Forms.Padding(6);
             this.textBoxSKU.Name = "textBoxSKU";
-            this.textBoxSKU.Size = new System.Drawing.Size(258, 20);
+            this.textBoxSKU.Size = new System.Drawing.Size(470, 34);
             this.textBoxSKU.TabIndex = 45;
             this.textBoxSKU.Text = "SKU";
             // 
             // checkBoxSKU
             // 
             this.checkBoxSKU.AutoSize = true;
-            this.checkBoxSKU.Location = new System.Drawing.Point(530, 58);
+            this.checkBoxSKU.Location = new System.Drawing.Point(996, 113);
+            this.checkBoxSKU.Margin = new System.Windows.Forms.Padding(6);
             this.checkBoxSKU.Name = "checkBoxSKU";
-            this.checkBoxSKU.Size = new System.Drawing.Size(15, 14);
+            this.checkBoxSKU.Size = new System.Drawing.Size(22, 21);
             this.checkBoxSKU.TabIndex = 46;
             this.checkBoxSKU.UseVisualStyleBackColor = true;
             this.checkBoxSKU.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // EditarProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 559);
+            this.ClientSize = new System.Drawing.Size(1476, 1056);
             this.Controls.Add(this.checkBoxSKU);
             this.Controls.Add(this.textBoxSKU);
             this.Controls.Add(this.Salir);
@@ -287,8 +319,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Upload);
             this.Controls.Add(this.Confirmar);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "EditarProducto";
-            this.Text = "Form3";
             this.Load += new System.EventHandler(this.EditarProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

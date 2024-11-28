@@ -25,15 +25,16 @@ namespace WindowsFormsApplication2
         }
 
         /*
-         * Método que se ejecuta al abrir la seccion de Attributes
+         * Evento que se ejecuta al abrir la seccion de Attributes
          */ 
         private void AtributoMain_Load(object sender, EventArgs e)
         {
             load();
+            this.Size = new Size(1200, 700);
         }
 
         /*
-         * Método que recarga los valores de la DataGridViewAtributos
+         * Evento que recarga los valores de la DataGridViewAtributos
          */ 
         private void load()
         {
@@ -110,7 +111,7 @@ namespace WindowsFormsApplication2
         }
 
         /*
-         * Método que permite al usuario crear un nuevo atributo
+         * Evento que permite al usuario crear un nuevo atributo
          * Carga el Form de CrearAtributo
          */ 
         private void btn_AñadirAtributo_Click(object sender, EventArgs e)
@@ -142,16 +143,16 @@ namespace WindowsFormsApplication2
         }
 
         /*
-         * Métodos de Navegación entre menús
+         * Eventos de Navegación entre menús
          */
         private void Producto_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             MainForm FormProductos = new MainForm();
             FormProductos.FormClosed += (s, args) =>
             {
                 this.Show();
-                ResaltarBoton(this.Categoria);
+                ResaltarBoton(this.Producto);
             };
             FormProductos.Show();
             this.ActiveControl = null;
@@ -164,7 +165,7 @@ namespace WindowsFormsApplication2
 
         private void Categoria_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             CategoriasMain FormCategorias = new CategoriasMain(this);
             FormCategorias.FormClosed += (s, args) =>
             {
@@ -191,7 +192,7 @@ namespace WindowsFormsApplication2
         }
 
         /*
-         * Métodos del DataGridViewAtributos
+         * Eventos del DataGridViewAtributos
          */
 
         /*
@@ -353,7 +354,7 @@ namespace WindowsFormsApplication2
         }
 
         /*
-         * Método para subir el nuevo tipo de atributo a la base de datos y eliminar la ComboBox
+         * Evento para subir el nuevo tipo de atributo a la base de datos y eliminar la ComboBox
          */  
         private void ComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -421,7 +422,7 @@ namespace WindowsFormsApplication2
                         ActualizarInterfaz();
                         CargarDatos();
                     }
-                    // Si dice que No ninguna acción se ejecuta
+                    // Si dice que "No", ninguna acción se ejecuta
                 }
             }
         }
