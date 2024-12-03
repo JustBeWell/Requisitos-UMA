@@ -1,0 +1,57 @@
+\babel@toc {spanish}{}\relax 
+\thispagestyle {empty}
+\contentsline {section}{\numberline {1}RF1.4 Visualizar datos de la cuenta}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Escenario principal}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.2}Escenarios alternativos}{5}{Item.8}%
+\contentsline {subsection}{\numberline {1.3}Casos de Prueba}{5}{Item.8}%
+\contentsline {subsection}{\numberline {1.4}Bocetos}{7}{subsection.1.4}%
+\contentsline {section}{\numberline {2}RF1.5 Actualizar datos de cuenta}{9}{section*.2}%
+\contentsline {subsection}{\numberline {2.1}Escenario principal}{9}{section*.2}%
+\contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{9}{Item.12}%
+\contentsline {subsection}{\numberline {2.3}Casos de Prueba}{9}{Item.12}%
+\contentsline {subsection}{\numberline {2.4}Bocetos}{10}{Item.12}%
+\contentsline {section}{\numberline {3}RF2.2 Editar Producto}{13}{section*.3}%
+\contentsline {subsection}{\numberline {3.1}Escenario principal}{13}{section*.3}%
+\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{13}{Item.19}%
+\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{14}{Item.19}%
+\contentsline {subsection}{\numberline {3.4}Bocetos}{15}{Item.19}%
+\contentsline {section}{\numberline {4}RF5.1 Crear relación}{17}{section*.4}%
+\contentsline {subsection}{\numberline {4.1}Escenario principal}{17}{section*.4}%
+\contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{17}{Item.28}%
+\contentsline {subsection}{\numberline {4.3}Casos de Prueba}{18}{Item.28}%
+\contentsline {subsection}{\numberline {4.4}Bocetos}{19}{Item.28}%
+\contentsline {section}{\numberline {5}RF5.2 Visualizar relación}{21}{figure.9}%
+\contentsline {subsection}{\numberline {5.1}Escenario principal}{21}{figure.9}%
+\contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{21}{Item.30}%
+\contentsline {subsection}{\numberline {5.3}Casos de Prueba}{21}{Item.30}%
+\contentsline {subsection}{\numberline {5.4}Bocetos}{22}{Item.30}%
+\contentsline {section}{\numberline {6}RF5.3 Editar relación}{24}{figure.11}%
+\contentsline {subsection}{\numberline {6.1}Escenario principal}{24}{figure.11}%
+\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{24}{Item.38}%
+\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{25}{Item.38}%
+\contentsline {subsection}{\numberline {6.4}Bocetos}{26}{Item.38}%
+\contentsline {section}{\numberline {7}RF5.4 Borrar relación}{28}{figure.13}%
+\contentsline {subsection}{\numberline {7.1}Escenario principal}{28}{figure.13}%
+\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{28}{Item.47}%
+\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{29}{Item.47}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{30}{Item.47}%
+\contentsline {section}{\numberline {8}RF8.2 Seleccionar Productos Exportación}{32}{section*.5}%
+\contentsline {subsection}{\numberline {8.1}Escenario principal}{32}{section*.5}%
+\contentsline {subsection}{\numberline {8.2}Escenarios alternativos}{33}{Item.54}%
+\contentsline {subsection}{\numberline {8.3}Casos de Prueba}{33}{Item.54}%
+\contentsline {subsection}{\numberline {8.4}Bocetos}{34}{Item.54}%
+\contentsline {section}{\numberline {9}RF8.7 Selección de una página externa a la que queremos exportar}{35}{section*.6}%
+\contentsline {subsection}{\numberline {9.1}Escenario principal}{35}{section*.6}%
+\contentsline {subsection}{\numberline {9.2}Escenarios alternativos}{35}{Item.56}%
+\contentsline {subsection}{\numberline {9.3}Casos de Prueba}{35}{Item.56}%
+\contentsline {subsection}{\numberline {9.4}Bocetos}{36}{Item.56}%
+\contentsline {section}{\numberline {10}RF8.8 Mapeo de los productos a exportar en formato CSV}{37}{section*.7}%
+\contentsline {subsection}{\numberline {10.1}Escenario principal}{37}{section*.7}%
+\contentsline {subsection}{\numberline {10.2}Escenarios alternativos}{38}{Item.64}%
+\contentsline {subsection}{\numberline {10.3}Casos de Prueba}{38}{Item.64}%
+\contentsline {subsection}{\numberline {10.4}Bocetos}{39}{Item.64}%
+\contentsline {section}{\numberline {11}RF8.10 Manejo de atributos faltantes durante exportación}{40}{section*.8}%
+\contentsline {subsection}{\numberline {11.1}Escenario principal}{40}{section*.8}%
+\contentsline {subsection}{\numberline {11.2}Escenarios alternativos}{40}{Item.70}%
+\contentsline {subsection}{\numberline {11.3}Casos de Prueba}{41}{Item.70}%
+\contentsline {subsection}{\numberline {11.4}Bocetos}{42}{Item.70}%
