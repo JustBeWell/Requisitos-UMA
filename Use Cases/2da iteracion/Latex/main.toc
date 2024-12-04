@@ -1,0 +1,18 @@
+\babel@toc {spanish}{}\relax 
+\thispagestyle {empty}
+\contentsline {section}{\numberline {1}RF5.4 Borrar relación}{4}{Doc-Start}%
+\contentsline {subsection}{\numberline {1.1}Escenario principal}{4}{Doc-Start}%
+\contentsline {subsection}{\numberline {1.2}Escenarios alternativos}{4}{Item.9}%
+\contentsline {subsection}{\numberline {1.3}Casos de Prueba}{5}{Item.9}%
+\contentsline {subsection}{\numberline {1.4}Bocetos}{6}{Item.9}%
+\contentsline {section}{\numberline {2}RF8 Gestión de Exportación}{8}{section*.1}%
+\contentsline {paragraph}{Descripción:}{8}{paragraph*.2}%
+\contentsline {paragraph}{Precondición:}{8}{paragraph*.3}%
+\contentsline {paragraph}{Postcondición:}{8}{paragraph*.4}%
+\contentsline {paragraph}{Prioridad:}{8}{paragraph*.5}%
+\contentsline {paragraph}{Autor:}{8}{paragraph*.6}%
+\contentsline {paragraph}{Escenario Principal:}{8}{paragraph*.7}%
+\contentsline {paragraph}{Escenarios Alternativos:}{9}{paragraph*.8}%
+\contentsline {paragraph}{Casos de Prueba:}{10}{paragraph*.9}%
+\contentsline {paragraph}{Boceto:}{11}{paragraph*.10}%
+\contentsline {subsection}{\numberline {2.1}Bocetos}{12}{figure.3}%

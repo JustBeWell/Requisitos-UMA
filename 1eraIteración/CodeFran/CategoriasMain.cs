@@ -138,17 +138,19 @@ namespace WindowsFormsApplication2
         {
             CrearCategoria crear = new CrearCategoria(this);
             crear.ShowDialog();
+            this.Close();
         }
 
-        private void Atributo_Click(object sender, EventArgs e) //No furula
+        private void Atributo_Click(object sender, EventArgs e) 
         {
             this.Hide();
 
             AtributoMain atrib = new AtributoMain(this);
             atrib.FormClosed += (s, args) =>
             {
-                this.Show(); // Se muestra el form de productos nuevamente
+                this.Show(); 
                 ResaltarBoton(this.Categoria);
+                this.Close();
             };
 
             atrib.Show();
