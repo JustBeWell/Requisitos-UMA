@@ -148,14 +148,7 @@ namespace WindowsFormsApplication2
         private void Producto_Click(object sender, EventArgs e)
         {
             this.Close();
-            MainForm FormProductos = new MainForm();
-            FormProductos.FormClosed += (s, args) =>
-            {
-                this.Show();
-                ResaltarBoton(this.Producto);
-            };
-            FormProductos.Show();
-            this.ActiveControl = null;
+           
         }
 
         private void Assets_Click(object sender, EventArgs e)
@@ -165,12 +158,13 @@ namespace WindowsFormsApplication2
 
         private void Categoria_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             CategoriasMain FormCategorias = new CategoriasMain(this);
             FormCategorias.FormClosed += (s, args) =>
             {
                 this.Show();
                 ResaltarBoton(this.Categoria);
+                this.Close();
             };
             FormCategorias.Show();
             this.ActiveControl = null;
@@ -188,7 +182,7 @@ namespace WindowsFormsApplication2
 
         private void Ayuda_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Ya te estas colando friki");
+           
         }
 
         /*
