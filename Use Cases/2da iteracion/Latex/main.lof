@@ -1,6 +1,8 @@
 \babel@toc {spanish}{}\relax 
 \thispagestyle {empty}
-\contentsline {figure}{\numberline {1}{\ignorespaces Mensaje esperando confirmación para eliminar categoría}}{6}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Mensaje de error porque la categoría a borrar tiene productos asociados}}{7}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Pantalla principal de exportación y formulario de configuración de mapeo.}}{11}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Menú de creación tras clicar \enquote {Añadir atributo}}}{12}{figure.4}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Informe de Cuentas generado en sección \enquote {Cuenta}}}{6}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Previsualización del JSON tras clicar \enquote {Export JSON}}}{9}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Mensaje esperando confirmación para eliminar relación}}{12}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Mensaje de error porque la relación a borrar tiene productos asociados}}{13}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Pantalla principal de exportación y formulario de configuración de mapeo.}}{17}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Menú de creación tras clicar \enquote {Añadir atributo}}}{18}{figure.6}%

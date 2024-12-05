@@ -1,0 +1,94 @@
+\phantomsection\numberedsection{RF1.9 Crear informe de cuenta}
+
+\subsection*{Descripción}
+El sistema muestra un informe detallado con la información de la cuenta, incluyendo el
+nombre de la cuenta, fecha y hora de creación, número de productos, categorías 
+de producto, atributos de usuario y relaciones creadas.
+
+% TODO: averiguar si es necesario incluir "tamaño utilizado de almacenamiento en bytes" en el informe y como podríamos gestionar el control de dichos bytes para calcular el número exacto
+% yo personalmente, obviaría completamente esa parte. Fue sacada de DGR.
+
+\vspace{0.15cm}
+
+\textbf{Pre-condición}\par
+El usuario ha iniciado sesión en Mini PIM y es la cuenta Owner.\par
+\vspace{0.15cm}
+
+\textbf{Post-condición}
+\begin{itemize}
+    \item Caso de éxito: El sistema muestra el informe detallado de la cuenta.
+    \item Caso de mínimo: El sistema notifica al usuario el resultado al crear el informe: exitosa o fallida.
+\end{itemize}
+
+\textbf{Prioridad:}
+Baja
+\vspace{0.15cm}
+
+\textbf{Autores: }
+Francisco Javier Jordá Garay y Janine Olegario.\par
+\vspace{0.15cm}
+
+\textbf{Control de cambios: } Versión 1: Definición del caso de uso
+
+\numberedsubsection{Escenario principal}
+\begin{enumerate}
+    \item El usuario ha iniciado sesión con su cuenta de usuario correspondiente.
+    \item El usuario\footnote{El usuario en este caso de uso es un Owner. Se detalló en el DGR que el Owner tiene la cuenta principal de la empresa, y el informe de cuenta es único por cuenta} accede a la sección \enquote{Cuenta}\footnote{Esta sección no es un apartado en el Dashboard, sino un botón circular con icono de usuario en la esquina superior derecha.}.
+    \item El sistema genera automáticamente el informe con los datos de la cuenta del usuario.
+    \item El sistema muestra al usuario el informe completo con los siguientes datos:
+        \begin{itemize}
+            \item Nombre de la cuenta.
+            \item Fecha y hora de creación de la cuenta.
+            \item Número de productos de la cuenta.
+            \item Número de categorías de productos creadas (máximo 3).
+            \item Número de atributos de usuario creados (máximo 5).
+            \item Número de relaciones creadas (máximo 3).
+        \end{itemize}
+\end{enumerate}
+
+\newpage % para que se pueda leer bien la footnote
+
+\numberedsubsection{Escenarios alternativos}
+\begin{description}        
+    \item[4.a] El usuario intenta generar el informe, pero se produce un error interno del sistema.
+    \begin{enumerate}
+        \item[4.a.1] El sistema muestra un mensaje de error indicando que no se pudo generar el informe y regresa al usuario a la sección de \enquote{Cuenta}.
+    \end{enumerate}
+\end{description}
+
+\numberedsubsection{Casos de Prueba}
+\underline{Escenario: Principal}\par
+\vspace{0.15cm} 
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta de usuario correspondiente,\par 
+\textbf{Y} accede a la sección \enquote{Cuenta},\par 
+\textbf{Cuando} el sistema genera automáticamente el informe de cuenta,\par 
+\textbf{Entonces} el sistema muestra al usuario el informe completo con los siguientes datos:\par 
+\begin{itemize} 
+    \item Nombre de la cuenta. 
+    \item Fecha y hora de creación de la cuenta. 
+    \item Número de productos de la cuenta. 
+    \item Número de categorías de productos creadas (máximo 3). 
+    \item Número de atributos de usuario creados (máximo 5). 
+    \item Número de relaciones creadas (máximo 3). 
+\end{itemize} 
+\vspace{0.20cm}
+
+
+\underline{Escenario: Alternativo 4.a}\par
+\vspace{0.15cm} 
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta de usuario correspondiente,\par 
+\textbf{Y} accede a la sección \enquote{Cuenta},\par 
+\textbf{Cuando} ocurre un error interno del sistema mientras se genera el informe,\par 
+\textbf{Entonces} el sistema muestra un mensaje de error indicando que no se pudo generar el informe,\par 
+\textbf{Y} redirige al usuario nuevamente a la sección \enquote{Cuenta}.\par 
+\vspace{0.20cm}
+
+
+\numberedsubsection{Bocetos}
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{mockups/RF1.9CrearInformeCuenta.png}
+    \caption{Informe de Cuentas generado en sección \enquote{Cuenta}}
+   \end{figure}
+\vspace{1.0cm}
+
+\newpage %Inicia en una nueva página otro caso de uso

@@ -1,40 +1,54 @@
 \numberedsection{RF5.2 Visualizar relación}
 
 \subsection*{Descripción}
-Permite a los usuarios visualizar una lista de categorías creadas en el sistema, incluyendo su nombre y el número de productos asociados a cada una.\par
+Permite a los usuarios visualizar las relaciones que tienen los distintos productos.\par
 \vspace{0.15cm}
 
 \textbf{Pre-condición}\par
-El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de Categorías.\par
+El usuario ha iniciado sesión en el sistema y se encuentra en el apartado de relaciones.\par
 \vspace{0.15cm}
 
 \textbf{Post-condición}
 \begin{itemize}
-    \item Caso de éxito: El sistema muestra la lista de categorías junto con el nombre y número de productos asociados.
-    \item Caso mínimo: El sistema notifica al usuario el resultado de la acción de visualización de categorías: exitosa o fallida.
+    \item Caso de éxito: El sistema muestra la lista de relaciones.
+    \item Caso mínimo: El sistema notifica al usuario el resultado de la acción de visualización de relaciones: exitosa o fallida.
 \end{itemize}
 
 \textbf{Prioridad: }
-Media
+Alta
 \vspace{0.15cm}
 
 \textbf{Autor: }
-Janine Bernadeth Olegario Laguit\par
+Pablo Ortega Serapio\par
 \vspace{0.15cm}
 
 \textbf{Control de cambios: } Versión 1: Definición del caso de uso
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
-    \item El usuario accede a la sección de gestión de categorías.
-    \item El sistema muestra la lista de categorías existentes, incluyendo su nombre y el número de productos asociados.
+    \item El usuario ha iniciado sesión con su cuenta de usuario correspondiente.
+    \item El usuario accede a la sección de productos.
+    \item El usuario selecciona un producto.
+    \item El sistema muestra los detalles del producto.
+    \item El sistema muestra en la parte inferior las relaciones en las que esta incluido el producto.
+    \item El usuario selecciona una relación.
+    \item El sistema muestra la lista de productos pertenecientes a esa relación asociados al producto previamente seleccionado.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
-    \item[2.a.] El sistema detecta que no existen categorías.
+
+    \item[3.a] No hay ningún producto creado.
     \begin{enumerate}
-        \item[2.a.1] El sistema muestra una lista vacía, con la opción de crear categorías nuevas.
+        \item[3.a.1] Al no haber ningún producto creado no se puede visualizar las relaciones, se da la opción de crear producto.
+    \end{enumerate}
+    \item[5.a.] El sistema detecta que no existen relaciones.
+    \begin{enumerate}
+        \item[5.a.1] El sistema muestra una lista vacía.
+    \end{enumerate}
+    \item[5.b.] El sistema detecta el producto no pertenece a ninguna relación.
+    \begin{enumerate}
+        \item[5.b.1] El sistema muestra una lista vacía.
     \end{enumerate}
 
 \end{description}
@@ -44,27 +58,46 @@ Janine Bernadeth Olegario Laguit\par
 \vspace{0.15cm}
 
 \textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
-\textbf{Y} estoy en el apartado de Categorías,\par
-\textbf{Entonces} el sistema muestra la lista de categorías existentes,\par
-\textbf{Y} cada categoría se visualiza junto a su nombre y el número de productos asociados.\par
-
+\textbf{Y} estoy en el apartado de productos,\par
+\textbf{Cuando} selecciono un producto,\par
+\textbf{Y} en los detalles del producto selecciono la relación deseada,\par
+\textbf{Entonces} el sistema muestra la lista de productos pertenecientes a esa relación asociados al producto previamente seleccionado,\par
 
 \vspace{0.20cm}
-
-\underline{Escenario: Alternativo 2.a}\par
+\underline{Escenario: Alternativo 3.a}
 \vspace{0.15cm}
 
 \textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
-\textbf{Y} estoy en el apartado de Categorías,\par
-\textbf{Y} no existen categorías registradas en el sistema,\par
-\textbf{Entonces} el sistema muestra una lista vacía, con la opción de crear categorías nuevas.\par
+\textbf{Y} estoy en el apartado de relaciones,\par
+\textbf{Y} no hay producto ningún producto creado,\par
+\textbf{Entonces} el sistema muestra la opción de crear producto,\par
+
+\vspace{0.20cm}
+\underline{Escenario: Alternativo 5.a}\par
+\vspace{0.15cm}
+
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de producto,\par
+\textbf{Cuando} selecciono un producto,\par
+\textbf{Y} no existen relaciones en el sistema,\par
+\textbf{Entonces} el sistema muestra una lista vacía.\par
+
+\vspace{0.20cm}
+\underline{Escenario: Alternativo 5.b}\par
+\vspace{0.15cm}
+
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de producto,\par
+\textbf{Cuando} selecciono un producto,\par
+\textbf{Y} no esta relacionado con ningún producto,\par
+\textbf{Entonces} el sistema muestra una lista vacía.\par
 
 \vspace{0.20cm}
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{mockups/RF4.2_1.png}
-    \caption{Visualización de categorías}
+    \caption{Visualización de relaciones}
    \end{figure}
 \vspace{1.0cm}
 

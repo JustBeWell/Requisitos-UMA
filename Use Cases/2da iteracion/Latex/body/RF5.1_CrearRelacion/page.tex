@@ -10,7 +10,7 @@ El usuario debe de tener la sesión iniciada en Mini PIM.\par
 
 \textbf{Post-condición}
 \begin{itemize}
-    \item Caso de éxito: La relaciones creada correctamente, se muestra en la lista de relaciones con el nombre ingresado y el contador de productos asociado inicia en cero.
+    \item Caso de éxito: La relación es creada correctamente, se muestra en la lista de relaciones con el nombre ingresado.
     \item Caso mínimo: El sistema notifica al usuario el resultado de la acción de crear relación: exitosa o fallida.
 \end{itemize}
 
@@ -26,15 +26,17 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 
 \numberedsubsection{Escenario principal}
 \begin{enumerate}
+    \item El usuario ha iniciado sesión con su cuenta de usuario correspondiente.
     \item El usuario accede a la sección de gestión de relaciones.
     \item El sistema valida que el número total de relaciones creadas por el usuario es menor que el límite establecido en el plan gratuito
     \item El sistema muestra la lista de relaciones existentes y la opción para crear una nueva.
     \item El usuario selecciona la opción para crear una nueva relación.
     \item El sistema muestra el menú de creación de relación.
-    \item El usuario ingresa el nombre deseado y confirma la creación de la relación.
-    \item El sistema verifica que el nombre de la relación no esté vacío.
+    \item El usuario ingresa el nombre deseado y selecciona los productos que quiere que se relacionen.
+    \item El sistema verifica que el nombre de la relación no sea erróneo.
+    \item El sistema verifica que si seleccionas un producto de la columna izquierda debe haber seleccionado un product oen la columna derecha.
     \item El sistema crea la nueva relación y actualiza la lista de relaciones para incluirla.
-    \item El usuario visualiza la nueva relación en la lista, con el nombre ingresado y un contador de productos asociados que empieza en cero.
+    \item El sistema muestra la lista de relaciones con la nueva relación añadida.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
@@ -47,14 +49,19 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 
     \item[5.a] El usuario cancela la acción de crear una relación nueva seleccionando la opción que cierra el menú.
     \begin{enumerate}
-        \item[5.a.1] El sistema regresa a la sección de gestión de relaciones
-    s de los datos.
+        \item[5.a.1] El sistema regresa a la sección de gestión de relaciones.
     \end{enumerate}
 
     \item[7.a] El sistema detecta que el nombre de la relación es erróneo\footnote{Se considera erróneo cualquier nombre que este vacío, no sea único o sea igual a algún GTIN o algún SKU del sistema}.
     \begin{enumerate}
         \item[7.a.1] El sistema muestra un mensaje de error solicitando un nombre válido.
         \item[7.a.2] El sistema devuelve al usuario a la pestaña para seguir creando la relación.
+    \end{enumerate}
+
+    \item[8.a] El sistema detecta que solo hay elementos seleccionados en la columna izquierda.
+    \begin{enumerate}
+        \item[8.a.1] El sistema muestra un mensaje de error solicitando que seleccione un producto de la tabla derecha o que deseleccione los productos de la columna izquierda.
+        \item[8.a.2] El sistema devuelve al usuario a la pestaña para seguir creando la relación.
     \end{enumerate}
 \end{description}
 
@@ -66,10 +73,11 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 \textbf{Y} el sistema comprueba que no tengo el número máximo de relaciones creadas,\par
 \textbf{Cuando} selecciono la opción de \enquote{Añadir relación},\par
 \textbf{E} introduzco correctamente el nombre de la relación que deseo crear,\par
+\textbf{Y} selecciono correctamente los productos en las columnas,\par
 \textbf{Y} selecciono \enquote{Confirmar} para guardar los datos,\par
 \textbf{Entonces} el sistema almacena la información de la nueva relación en la base de datos del Mini PIM,\par
 \textbf{Y} actualiza la lista de relaciones con la nueva relación creada,\par
-\textbf{Y} muestra el apartado de relaciones con todas las relaciones almacenadas, incluyendo la nueva con un contador de productos en cero.\par
+\textbf{Y} muestra el apartado de relaciones con todas las relaciones almacenadas.\par
 
 \vspace{0.20cm}
 
@@ -92,7 +100,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 \textbf{Y} estoy en el apartado de relaciones,\par
 \textbf{Y} el sistema comprueba que no tengo el número máximo de relaciones creadas,\par
 \textbf{Cuando} selecciono la opción de \enquote{Añadir relación},\par
-\textbf{Y} selecciono la opción de cancelar o cerrar el menú de creación sin ingresar ningún nombre,\par
+\textbf{Y} selecciono la opción de cancelar o cerrar el menú de creación,\par
 \textbf{Entonces} el sistema regresa a la sección de gestión de relaciones,\par
 \textbf{Y} muestra el apartado de relaciones sin ningún cambio.\par
 
@@ -107,7 +115,20 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 \textbf{Cuando} selecciono la opción de \enquote{Añadir relación},\par
 \textbf{Y} relleno el campo de nombre de la relación de forma errónea,\par
 \textbf{Entonces} el sistema me notifica que el campo de nombre es erróneo,\par
-\textbf{Y} muestra un mensaje de error y me devuelve al apartado de relaciones sin ningún cambio.\par
+\textbf{Y} muestra un mensaje de error y me devuelve para seguir creando la relación.\par
+
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo 8.a}\par
+\vspace{0.15cm}
+
+\textbf{Dado} que he iniciado sesión con mi cuenta de usuario correspondiente,\par
+\textbf{Y} estoy en el apartado de relaciones,\par
+\textbf{Y} el sistema comprueba que no tengo el número máximo de relaciones creadas,\par
+\textbf{Cuando} selecciono la opción de \enquote{Añadir relación},\par
+\textbf{Y} selecciono los productos de forma errónea,\par
+\textbf{Entonces} el sistema me notifica que he seleccionado los productos de forma errónea,\par
+\textbf{Y} muestra un mensaje de error y me devuelve para seguir creando la relación.\par
 
 \vspace{0.20cm}
 
