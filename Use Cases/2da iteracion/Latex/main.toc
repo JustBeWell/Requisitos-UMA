@@ -5,24 +5,25 @@
 \contentsline {subsection}{\numberline {1.2}Escenarios alternativos}{5}{Item.4}%
 \contentsline {subsection}{\numberline {1.3}Casos de Prueba}{5}{Item.4}%
 \contentsline {subsection}{\numberline {1.4}Bocetos}{6}{Item.4}%
-\contentsline {section}{\numberline {2}RF1.9.1 Exportar informe de cuenta}{7}{section*.2}%
-\contentsline {subsection}{\numberline {2.1}Escenario principal}{7}{section*.2}%
-\contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{7}{Item.9}%
-\contentsline {subsection}{\numberline {2.3}Casos de Prueba}{8}{Item.9}%
-\contentsline {subsection}{\numberline {2.4}Bocetos}{9}{Item.9}%
-\contentsline {section}{\numberline {3}RF5.4 Borrar relación}{10}{figure.2}%
-\contentsline {subsection}{\numberline {3.1}Escenario principal}{10}{figure.2}%
-\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{10}{Item.18}%
-\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{11}{Item.18}%
-\contentsline {subsection}{\numberline {3.4}Bocetos}{12}{Item.18}%
-\contentsline {section}{\numberline {4}RF8 Gestión de Exportación}{14}{section*.3}%
-\contentsline {paragraph}{Descripción:}{14}{paragraph*.4}%
-\contentsline {paragraph}{Precondición:}{14}{paragraph*.5}%
-\contentsline {paragraph}{Postcondición:}{14}{paragraph*.6}%
-\contentsline {paragraph}{Prioridad:}{14}{paragraph*.7}%
-\contentsline {paragraph}{Autor:}{14}{paragraph*.8}%
-\contentsline {paragraph}{Escenario Principal:}{14}{paragraph*.9}%
-\contentsline {paragraph}{Escenarios Alternativos:}{15}{paragraph*.10}%
-\contentsline {paragraph}{Casos de Prueba:}{16}{paragraph*.11}%
-\contentsline {paragraph}{Boceto:}{17}{paragraph*.12}%
-\contentsline {subsection}{\numberline {4.1}Bocetos}{18}{figure.5}%
+\contentsline {subsection}{\numberline {1.5}Diagrama de Secuencia}{7}{figure.1}%
+\contentsline {section}{\numberline {2}RF1.9.1 Exportar informe de cuenta}{8}{section*.2}%
+\contentsline {subsection}{\numberline {2.1}Escenario principal}{8}{section*.2}%
+\contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{8}{Item.10}%
+\contentsline {subsection}{\numberline {2.3}Casos de Prueba}{9}{Item.10}%
+\contentsline {subsection}{\numberline {2.4}Bocetos}{10}{Item.10}%
+\contentsline {section}{\numberline {3}RF5.4 Borrar relación}{11}{figure.3}%
+\contentsline {subsection}{\numberline {3.1}Escenario principal}{11}{figure.3}%
+\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{11}{Item.19}%
+\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{12}{Item.19}%
+\contentsline {subsection}{\numberline {3.4}Bocetos}{13}{Item.19}%
+\contentsline {section}{\numberline {4}RF8 Gestión de Exportación}{15}{section*.3}%
+\contentsline {paragraph}{Descripción:}{15}{paragraph*.4}%
+\contentsline {paragraph}{Precondición:}{15}{paragraph*.5}%
+\contentsline {paragraph}{Postcondición:}{15}{paragraph*.6}%
+\contentsline {paragraph}{Prioridad:}{15}{paragraph*.7}%
+\contentsline {paragraph}{Autor:}{15}{paragraph*.8}%
+\contentsline {paragraph}{Escenario Principal:}{15}{paragraph*.9}%
+\contentsline {paragraph}{Escenarios Alternativos:}{16}{paragraph*.10}%
+\contentsline {paragraph}{Casos de Prueba:}{17}{paragraph*.11}%
+\contentsline {paragraph}{Boceto:}{18}{paragraph*.12}%
+\contentsline {subsection}{\numberline {4.1}Bocetos}{19}{figure.6}%

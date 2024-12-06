@@ -238,6 +238,13 @@ INPUT .\mockups\RF1.9CrearInformeCuenta.png
 INPUT .\mockups\RF1.9CrearInformeCuenta.png
 INPUT .\mockups\RF1.9CrearInformeCuenta.png
 INPUT .\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 OUTPUT body\RF1.9.1_ExportarInformeCuenta\page.aux

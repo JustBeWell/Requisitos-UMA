@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  5 DEC 2024 12:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  6 DEC 2024 21:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -479,99 +479,107 @@ l.138 \end{abstract}
 
  (body/RF1.9_CrearInformeCuentaJSON/page.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
+(Font)              <7> on input line 32.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 36.
+(Font)              <5> on input line 32.
 
 
 [4
 
 ]
-<mockups/RF1.9CrearInformeCuenta.png, id=99, 1014.79124pt x 823.075pt>
+
+[5]
+<mockups/RF1.9CrearInformeCuenta.png, id=110, 1014.79124pt x 823.075pt>
 File: mockups/RF1.9CrearInformeCuenta.png Graphic file (type png)
 <use mockups/RF1.9CrearInformeCuenta.png>
-Package pdftex.def Info: mockups/RF1.9CrearInformeCuenta.png  used on input line 89.
+Package pdftex.def Info: mockups/RF1.9CrearInformeCuenta.png  used on input line 87.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[5]
+[6 <./mockups/RF1.9CrearInformeCuenta.png>]
+<sequence/RF1.9 Crear informe de cuenta.jpg, id=118, 1386.17876pt x 886.31125pt>
+File: sequence/RF1.9 Crear informe de cuenta.jpg Graphic file (type jpg)
+<use sequence/RF1.9 Crear informe de cuenta.jpg>
+Package pdftex.def Info: sequence/RF1.9 Crear informe de cuenta.jpg  used on input line 96.
+(pdftex.def)             Requested size: 455.24411pt x 291.07712pt.
 
-[6 <./mockups/RF1.9CrearInformeCuenta.png>])
+
+[7 <./sequence/RF1.9 Crear informe de cuenta.jpg>])
 \openout2 = `body/RF1.9.1_ExportarInformeCuenta/page.aux'.
 
  (body/RF1.9.1_ExportarInformeCuenta/page.tex
 
-[7
+[8
 
 
 
 ]
-<mockups/RF1.9.1ExportarInformeCuenta.png, id=119, 1014.79124pt x 823.075pt>
+
+[9]
+<mockups/RF1.9.1ExportarInformeCuenta.png, id=138, 1014.79124pt x 823.075pt>
 File: mockups/RF1.9.1ExportarInformeCuenta.png Graphic file (type png)
 <use mockups/RF1.9.1ExportarInformeCuenta.png>
-Package pdftex.def Info: mockups/RF1.9.1ExportarInformeCuenta.png  used on input line 87.
+Package pdftex.def Info: mockups/RF1.9.1ExportarInformeCuenta.png  used on input line 97.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[8]
-
-[9 <./mockups/RF1.9.1ExportarInformeCuenta.png>])
+[10 <./mockups/RF1.9.1ExportarInformeCuenta.png>])
 \openout2 = `body/RF5.4_BorrarRelacion/page.aux'.
 
  (body/RF5.4_BorrarRelacion/page.tex
 
-[10
+[11
 
 
 
 ]
-<mockups/RF4.4_1.png, id=141, 1014.79124pt x 823.075pt>
+<mockups/RF4.4_1.png, id=156, 1014.79124pt x 823.075pt>
 File: mockups/RF4.4_1.png Graphic file (type png)
 <use mockups/RF4.4_1.png>
 Package pdftex.def Info: mockups/RF4.4_1.png  used on input line 78.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[11]
-<mockups/RF4.4_2.png, id=146, 1014.79124pt x 823.075pt>
+[12]
+<mockups/RF4.4_2.png, id=162, 1014.79124pt x 823.075pt>
 File: mockups/RF4.4_2.png Graphic file (type png)
 <use mockups/RF4.4_2.png>
 Package pdftex.def Info: mockups/RF4.4_2.png  used on input line 84.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[12 <./mockups/RF4.4_1.png>]
+[13 <./mockups/RF4.4_1.png>]
 
-[13 <./mockups/RF4.4_2.png>])
+[14 <./mockups/RF4.4_2.png>])
 \openout2 = `"body/RF8 Gestión de Exportación/page.aux"'.
 
  (body/RF8 Gestión de Exportación/page.tex
 
-[14
+[15
 
 
 
 ]
 
-[15]
-<mockups/RF8 filtrado y selección de productos.png, id=185, 1014.79124pt x 823.075pt>
+[16]
+<mockups/RF8 filtrado y selección de productos.png, id=200, 1014.79124pt x 823.075pt>
 File: mockups/RF8 filtrado y selección de productos.png Graphic file (type png)
 <use mockups/RF8 filtrado y selección de productos.png>
 Package pdftex.def Info: mockups/RF8 filtrado y selección de productos.png  used on input line 129.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[16]
-<mockups/RF6.1Crear_Atributo tras Clickar.png, id=191, 1014.79124pt x 823.075pt>
+[17]
+<mockups/RF6.1Crear_Atributo tras Clickar.png, id=206, 1014.79124pt x 823.075pt>
 File: mockups/RF6.1Crear_Atributo tras Clickar.png Graphic file (type png)
 <use mockups/RF6.1Crear_Atributo tras Clickar.png>
 Package pdftex.def Info: mockups/RF6.1Crear_Atributo tras Clickar.png  used on input line 136.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[17 <./mockups/RF8 filtrado y selección de productos.png>]
+[18 <./mockups/RF8 filtrado y selección de productos.png>]
 
-[18 <./mockups/RF6.1Crear_Atributo tras Clickar.png>]) (main.aux
+[19 <./mockups/RF6.1Crear_Atributo tras Clickar.png>]) (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (body/RF1.9_CrearInformeCuentaJSON/page.aux) (body/RF1.9.1_ExportarInformeCuenta/page.aux) (body/RF5.4_BorrarRelacion/page.aux) (body/RF8 Gestión de Exportación/page.aux))
@@ -581,17 +589,17 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 14905 strings out of 473702
- 238941 string characters out of 5735993
- 762620 words of memory out of 5000000
- 37689 multiletter control sequences out of 15000+600000
+ 14918 strings out of 473702
+ 239333 string characters out of 5735993
+ 762621 words of memory out of 5000000
+ 37697 multiletter control sequences out of 15000+600000
  566660 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,8n,93p,610b,659s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (19 pages, 983724 bytes).
+Output written on main.pdf (20 pages, 1090546 bytes).
 PDF statistics:
- 318 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 172 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 336 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 185 words of extra memory for PDF output out of 10000 (max. 10000000)
 
