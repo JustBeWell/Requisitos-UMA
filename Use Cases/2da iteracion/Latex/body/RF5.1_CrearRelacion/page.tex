@@ -29,7 +29,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
     \item El usuario ha iniciado sesión con su cuenta de usuario correspondiente.
     \item El usuario accede a la sección de \enquote{Relaciones}.
     \item El sistema muestra la lista de relaciones existentes y la opción para crear una nueva.
-    \item El usuario selecciona la opción para crear una nueva relación.
+    \item El usuario selecciona la opción \enquote{Añadir relación} crear una nueva relación.
     \item El sistema muestra el menú de creación de relación.
     \item El usuario ingresa el nombre deseado y selecciona los productos que quiere que se relacionen.
     \item El sistema verifica que el nombre de la relación no sea erróneo\footnote{Se considera erróneo cualquier nombre que este vacío, no sea único o sea igual a algún GTIN o algún SKU del sistema.}.
@@ -44,6 +44,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
     \item[4.a] El sistema no permite crear relaciones.
     \begin{enumerate}
         \item[4.a.1] El sistema no permite crear relaciones adicionales inhabilitando el botón de \enquote{Añadir relación} hasta que se eliminen relaciones existentes.
+        \item[4.a.2] El sistema muestra un mensaje indicando que no se pueden crear nuevas relaciones. 
     \end{enumerate}
     
     \item[7.a] El sistema detecta que el nombre de la relación es erróneo.
@@ -87,6 +88,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 \textbf{Y} está en el apartado de \enquote{Relaciones},\par
 \textbf{Cuando} el usuario intenta crear una nueva relación,\par
 \textbf{Entonces} el sistema no le inhabilita el botón de \enquote{Añadir relación},\par
+\textbf{Y} muestra un mensaje indicando que no se pueden crear nuevas relaciones,\par
 \textbf{Y} no le permite crear más relaciones hasta que se eliminen relaciones existentes.\par
 
 \vspace{0.20cm}
@@ -130,16 +132,22 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 
 \vspace{0.20cm}
 
-\numberedsubsection{Bocetos (por subir)}
+\numberedsubsection{Bocetos}
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{assets/mockups/RF4.1_1.png}
-    \caption{Creación de relación}
+    \includegraphics[width=1\linewidth]{assets/mockups/RF5.1_1.png}
+    \caption{Sección de \enquote{Relaciones}}
    \end{figure}
 \vspace{1.0cm}
 
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{assets/mockups/RF4.1_2.png}
-    \caption{Error por llegar al máximo de relación}
+    \includegraphics[width=1\linewidth]{assets/mockups/RF5.1_2.png}
+    \caption{Menú de creación de relación tras clicar la opción \enquote{Añadir relación}}
+   \end{figure}
+\vspace{1.0cm}
+
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{assets/mockups/RF5.1_3.png}
+    \caption{Escenario con al máximo de relaciones creadas}
    \end{figure}
 \vspace{1.0cm}
 

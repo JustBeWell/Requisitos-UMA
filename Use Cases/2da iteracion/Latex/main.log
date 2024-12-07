@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  7 DEC 2024 03:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  7 DEC 2024 15:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,7 +453,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...on}{\numberline {7.4}Bocetos}{39}{Item.58}
+l.43 ...on}{\numberline {7.4}Bocetos}{41}{Item.58}
                                                   % [1])
 \tf@toc=\write3
 \openout3 = `main.toc'.
@@ -491,7 +491,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 
 [7]
-<assets/mockups/RF1.9CrearInformeCuenta.png, id=201, 1014.79124pt x 823.075pt>
+<assets/mockups/RF1.9CrearInformeCuenta.png, id=207, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF1.9CrearInformeCuenta.png Graphic file (type png)
 <use assets/mockups/RF1.9CrearInformeCuenta.png>
 Package pdftex.def Info: assets/mockups/RF1.9CrearInformeCuenta.png  used on input line 87.
@@ -499,14 +499,14 @@ Package pdftex.def Info: assets/mockups/RF1.9CrearInformeCuenta.png  used on inp
 
 
 [8 <./assets/mockups/RF1.9CrearInformeCuenta.png>]
-<assets/sequence/RF1.9_CrearInformeCuenta_v2.png, id=208, 734.745pt x 350.59554pt>
-File: assets/sequence/RF1.9_CrearInformeCuenta_v2.png Graphic file (type png)
-<use assets/sequence/RF1.9_CrearInformeCuenta_v2.png>
-Package pdftex.def Info: assets/sequence/RF1.9_CrearInformeCuenta_v2.png  used on input line 96.
-(pdftex.def)             Requested size: 455.24411pt x 217.23325pt.
+<assets/sequence/RF1.9_CrearInformeCuenta_v3.png, id=214, 609.56303pt x 324.35464pt>
+File: assets/sequence/RF1.9_CrearInformeCuenta_v3.png Graphic file (type png)
+<use assets/sequence/RF1.9_CrearInformeCuenta_v3.png>
+Package pdftex.def Info: assets/sequence/RF1.9_CrearInformeCuenta_v3.png  used on input line 96.
+(pdftex.def)             Requested size: 455.24411pt x 242.25078pt.
 
 
-[9 <./assets/sequence/RF1.9_CrearInformeCuenta_v2.png>])
+[9 <./assets/sequence/RF1.9_CrearInformeCuenta_v3.png>])
 \openout2 = `body/RF1.9.1_ExportarInformeCuenta/page.aux'.
 
  (body/RF1.9.1_ExportarInformeCuenta/page.tex
@@ -518,188 +518,203 @@ Package pdftex.def Info: assets/sequence/RF1.9_CrearInformeCuenta_v2.png  used o
 ]
 
 [11]
-<assets/mockups/RF1.9.1ExportarInformeCuenta.png, id=229, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF1.9.1ExportarInformeCuenta.png Graphic file (type png)
-<use assets/mockups/RF1.9.1ExportarInformeCuenta.png>
-Package pdftex.def Info: assets/mockups/RF1.9.1ExportarInformeCuenta.png  used on input line 100.
+<assets/mockups/RF1.9.1_1ExportarInformeCuenta.png, id=235, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF1.9.1_1ExportarInformeCuenta.png Graphic file (type png)
+<use assets/mockups/RF1.9.1_1ExportarInformeCuenta.png>
+Package pdftex.def Info: assets/mockups/RF1.9.1_1ExportarInformeCuenta.png  used on input line 101.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+<assets/mockups/RF1.9.1_2ExportarInformeCuenta.png, id=236, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF1.9.1_2ExportarInformeCuenta.png Graphic file (type png)
+<use assets/mockups/RF1.9.1_2ExportarInformeCuenta.png>
+Package pdftex.def Info: assets/mockups/RF1.9.1_2ExportarInformeCuenta.png  used on input line 107.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[12 <./assets/mockups/RF1.9.1ExportarInformeCuenta.png>]
+[12 <./assets/mockups/RF1.9.1_1ExportarInformeCuenta.png>]
+
+[13 <./assets/mockups/RF1.9.1_2ExportarInformeCuenta.png>]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
-Package pdftex.def Info: assets/umaLogo.png  used on input line 109.
+Package pdftex.def Info: assets/umaLogo.png  used on input line 116.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 
 
-[13])
+[14])
 \openout2 = `body/RF5.1_CrearRelacion/page.aux'.
 
  (body/RF5.1_CrearRelacion/page.tex
 
-[14
+[15
 
 
 
 ]
 
-[15]
-<assets/mockups/RF4.1_1.png, id=264, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.1_1.png Graphic file (type png)
-<use assets/mockups/RF4.1_1.png>
-Package pdftex.def Info: assets/mockups/RF4.1_1.png  used on input line 135.
-(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-
-
 [16]
-<assets/mockups/RF4.1_2.png, id=269, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.1_2.png Graphic file (type png)
-<use assets/mockups/RF4.1_2.png>
-Package pdftex.def Info: assets/mockups/RF4.1_2.png  used on input line 141.
+<assets/mockups/RF5.1_1.png, id=276, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.1_1.png Graphic file (type png)
+<use assets/mockups/RF5.1_1.png>
+Package pdftex.def Info: assets/mockups/RF5.1_1.png  used on input line 137.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[17 <./assets/mockups/RF4.1_1.png>]
+[17]
+<assets/mockups/RF5.1_2.png, id=281, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.1_2.png Graphic file (type png)
+<use assets/mockups/RF5.1_2.png>
+Package pdftex.def Info: assets/mockups/RF5.1_2.png  used on input line 143.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
-[18 <./assets/mockups/RF4.1_2.png>]
+
+[18 <./assets/mockups/RF5.1_1.png>]
+<assets/mockups/RF5.1_3.png, id=287, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.1_3.png Graphic file (type png)
+<use assets/mockups/RF5.1_3.png>
+Package pdftex.def Info: assets/mockups/RF5.1_3.png  used on input line 149.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+
+
+[19 <./assets/mockups/RF5.1_2.png>]
+
+[20 <./assets/mockups/RF5.1_3.png>]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
-Package pdftex.def Info: assets/umaLogo.png  used on input line 150.
+Package pdftex.def Info: assets/umaLogo.png  used on input line 158.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 
 
-[19])
+[21])
 \openout2 = `body/RF5.2_VerRelacion/page.aux'.
 
  (body/RF5.2_VerRelacion/page.tex
 
-[20
+[22
 
 
 
 ]
-<assets/mockups/RF4.2_1.png, id=295, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.2_1.png Graphic file (type png)
-<use assets/mockups/RF4.2_1.png>
-Package pdftex.def Info: assets/mockups/RF4.2_1.png  used on input line 100.
+<assets/mockups/RF5.2_1.png, id=313, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.2_1.png Graphic file (type png)
+<use assets/mockups/RF5.2_1.png>
+Package pdftex.def Info: assets/mockups/RF5.2_1.png  used on input line 100.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[21]
-<assets/mockups/RF4.2_2.png, id=300, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.2_2.png Graphic file (type png)
-<use assets/mockups/RF4.2_2.png>
-Package pdftex.def Info: assets/mockups/RF4.2_2.png  used on input line 106.
+[23]
+<assets/mockups/RF5.2_2.png, id=318, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.2_2.png Graphic file (type png)
+<use assets/mockups/RF5.2_2.png>
+Package pdftex.def Info: assets/mockups/RF5.2_2.png  used on input line 106.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[22 <./assets/mockups/RF4.2_1.png>]
+[24 <./assets/mockups/RF5.2_1.png>]
 
-[23 <./assets/mockups/RF4.2_2.png>]
+[25 <./assets/mockups/RF5.2_2.png>]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
 Package pdftex.def Info: assets/umaLogo.png  used on input line 115.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 
 
-[24])
+[26])
 \openout2 = `body/RF5.3_EditarRelacion/page.aux'.
 
  (body/RF5.3_EditarRelacion/page.tex
 
-[25
+[27
 
 
 
 ]
 
-[26]
+[28]
 
-[27]
-<assets/mockups/RF4.3_1.png, id=337, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.3_1.png Graphic file (type png)
-<use assets/mockups/RF4.3_1.png>
-Package pdftex.def Info: assets/mockups/RF4.3_1.png  used on input line 116.
+[29]
+<assets/mockups/RF5.3_1.png, id=357, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.3_1.png Graphic file (type png)
+<use assets/mockups/RF5.3_1.png>
+Package pdftex.def Info: assets/mockups/RF5.3_1.png  used on input line 116.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<assets/mockups/RF4.3_2.png, id=338, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.3_2.png Graphic file (type png)
-<use assets/mockups/RF4.3_2.png>
-Package pdftex.def Info: assets/mockups/RF4.3_2.png  used on input line 122.
+<assets/mockups/RF5.3_2.png, id=358, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.3_2.png Graphic file (type png)
+<use assets/mockups/RF5.3_2.png>
+Package pdftex.def Info: assets/mockups/RF5.3_2.png  used on input line 122.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[28 <./assets/mockups/RF4.3_1.png>]
+[30 <./assets/mockups/RF5.3_1.png>]
 
-[29 <./assets/mockups/RF4.3_2.png>]
+[31 <./assets/mockups/RF5.3_2.png>]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
 Package pdftex.def Info: assets/umaLogo.png  used on input line 131.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 
 
-[30])
+[32])
 \openout2 = `body/RF5.4_BorrarRelacion/page.aux'.
 
  (body/RF5.4_BorrarRelacion/page.tex
 
-[31
+[33
 
 
 
 ]
-<assets/mockups/RF4.4_1.png, id=366, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.4_1.png Graphic file (type png)
-<use assets/mockups/RF4.4_1.png>
-Package pdftex.def Info: assets/mockups/RF4.4_1.png  used on input line 75.
+<assets/mockups/RF5.4_1.png, id=386, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.4_1.png Graphic file (type png)
+<use assets/mockups/RF5.4_1.png>
+Package pdftex.def Info: assets/mockups/RF5.4_1.png  used on input line 75.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[32]
-<assets/mockups/RF4.4_2.png, id=371, 1014.79124pt x 823.075pt>
-File: assets/mockups/RF4.4_2.png Graphic file (type png)
-<use assets/mockups/RF4.4_2.png>
-Package pdftex.def Info: assets/mockups/RF4.4_2.png  used on input line 81.
+[34]
+<assets/mockups/RF5.4_2.png, id=391, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF5.4_2.png Graphic file (type png)
+<use assets/mockups/RF5.4_2.png>
+Package pdftex.def Info: assets/mockups/RF5.4_2.png  used on input line 81.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[33 <./assets/mockups/RF4.4_1.png>]
+[35 <./assets/mockups/RF5.4_1.png>]
 
-[34 <./assets/mockups/RF4.4_2.png>]
+[36 <./assets/mockups/RF5.4_2.png>]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
 Package pdftex.def Info: assets/umaLogo.png  used on input line 90.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 
 
-[35])
+[37])
 \openout2 = `body/RF8.X_GestionExportacion/page.aux'.
 
  (body/RF8.X_GestionExportacion/page.tex
 
-[36
+[38
 
 
 
 ]
 
-[37]
-<assets/mockups/RF8 filtrado y selección de productos.png, id=412, 1014.79124pt x 823.075pt>
+[39]
+<assets/mockups/RF8 filtrado y selección de productos.png, id=432, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 filtrado y selección de productos.png Graphic file (type png)
 <use assets/mockups/RF8 filtrado y selección de productos.png>
 Package pdftex.def Info: assets/mockups/RF8 filtrado y selección de productos.png  used on input line 147.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[38]
+[40]
 File: assets/umaLogo.png Graphic file (type png)
 <use assets/umaLogo.png>
 Package pdftex.def Info: assets/umaLogo.png  used on input line 153.
 (pdftex.def)             Requested size: 455.24411pt x 416.46896pt.
 )
 
-[39 <./assets/mockups/RF8 filtrado y selección de productos.png>]
+[41 <./assets/mockups/RF8 filtrado y selección de productos.png>]
 
-[40] (main.aux
+[42] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (body/RF1.9_CrearInformeCuentaJSON/page.aux) (body/RF1.9.1_ExportarInformeCuenta/page.aux) (body/RF5.1_CrearRelacion/page.aux) (body/RF5.2_VerRelacion/page.aux) (body/RF5.3_EditarRelacion/page.aux) (body/RF5.4_BorrarRelacion/page.aux) (body/RF8.X_GestionExportacion/page.aux))
@@ -709,17 +724,17 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15104 strings out of 473702
- 245779 string characters out of 5735993
- 768873 words of memory out of 5000000
- 37802 multiletter control sequences out of 15000+600000
+ 15123 strings out of 473702
+ 246458 string characters out of 5735993
+ 768875 words of memory out of 5000000
+ 37816 multiletter control sequences out of 15000+600000
  566838 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,8n,93p,624b,839s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (40 pages, 1426141 bytes).
+Output written on main.pdf (42 pages, 1494109 bytes).
 PDF statistics:
- 633 PDF objects out of 1000 (max. 8388607)
- 128 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 654 PDF objects out of 1000 (max. 8388607)
+ 133 named destinations out of 1000 (max. 500000)
+ 412 words of extra memory for PDF output out of 10000 (max. 10000000)
 

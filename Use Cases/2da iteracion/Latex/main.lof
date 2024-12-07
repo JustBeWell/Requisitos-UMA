@@ -2,19 +2,21 @@
 \thispagestyle {empty}
 \contentsline {figure}{\numberline {1}{\ignorespaces Informe de Cuentas generado en sección \enquote {Cuenta}}}{8}{figure.1}%
 \contentsline {figure}{\numberline {2}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{9}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Menú de previsualización del JSON tras clicar \enquote {Export JSON}}}{12}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{13}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Creación de relación}}{17}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Error por llegar al máximo de relación}}{18}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{19}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Visualización de relaciones}}{22}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Visualización de lista vacía}}{23}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{24}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Editar el nombre de relación}}{28}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Error por dejar el nombre vacío}}{29}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{30}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Mensaje esperando confirmación para eliminar relación}}{33}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Mensaje de error porque la relación a borrar tiene productos asociados}}{34}{figure.15}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{35}{figure.16}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Pantalla principal de exportación y formulario de configuración de mapeo.}}{39}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Escenario principal para la gestión de exportación.}}{40}{figure.18}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Se desea exportar el Informe de Cuentas generado}}{12}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Menú de previsualización del JSON tras clicar \enquote {Export JSON}}}{13}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{14}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Sección de \enquote {Relaciones}}}{18}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Menú de creación de relación tras clicar la opción \enquote {Añadir relación}}}{19}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Escenario con al máximo de relaciones creadas}}{20}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{21}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Ver producto con sus relaciones asociadas}}{24}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Ver los productos relacionados tras clicar en una relación del producto}}{25}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{26}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Se desea editar la relación 1}}{30}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Menú de edición para la relación seleccionada}}{31}{figure.14}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{32}{figure.15}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Se desea eliminar la relación 1}}{35}{figure.16}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Mensaje esperando confirmación para eliminar la relación}}{36}{figure.17}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{37}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Pantalla principal de exportación y formulario de configuración de mapeo}}{41}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Escenario principal para la gestión de exportación}}{42}{figure.20}%
