@@ -1,0 +1,155 @@
+\phantomsection\numberedsection{RF8 Gestión de Exportación}
+
+\subsection*{Descripción}
+El sistema permite a los usuarios exportar productos seleccionados desde Mini PIM a Amazon, configurando atributos obligatorios y opcionales de forma personalizable.
+
+\vspace{0.15cm}
+
+\textbf{Pre-condición}\par
+El usuario ha iniciado sesión en su cuenta en Mini PIM y existen productos en el sistema con los atributos obligatorios necesarios.
+
+\vspace{0.15cm}
+
+\textbf{Post-condición}
+\begin{itemize}
+    \item Caso de éxito: Los productos seleccionados son exportados exitosamente al formato CSV requerido por Amazon y están listos para su carga.
+    \item Caso mínimo: El sistema notifica al usuario cualquier error o dato faltante, permitiendo realizar las correcciones necesarias.
+\end{itemize}
+
+\textbf{Prioridad:}
+Alta
+\vspace{0.15cm}
+
+\textbf{Autores: }
+Diego Sicre.\par
+\vspace{0.15cm}
+
+\textbf{Control de cambios: } Versión 1: Definición del caso de uso.
+
+\numberedsubsection{Escenario principal}
+\begin{enumerate}
+    \item El usuario accede a la sección \enquote{Productos}.
+    \item El sistema muestra un listado de productos con los siguientes atributos:
+    \begin{itemize}
+        \item Thumbnail
+        \item SKU
+        \item Nombre
+        \item Hasta cinco atributos de usuario.
+    \end{itemize}
+    \item El usuario filtra los productos\footnote{No necesariamente se tienen que seleccionar ambas opciones de filtrado para encontrar un producto. Aquí exponemos las dos alternativas combinables que tiene el usuario para filtrar.}:
+    \begin{itemize}
+        \item Por categoría, seleccionándola del desplegable junto al calendario.
+        \item Por fecha, seleccionando un día en el calendario para mostrar productos modificados desde esa fecha hasta la actualidad.
+    \end{itemize}
+    \item El usuario selecciona uno o más productos para exportar.
+    \item El usuario hace clic en el botón \enquote{Generar CSV}.
+    \item El sistema muestra un formulario para configurar el mapeo de atributos obligatorios, incluyendo:
+    \begin{itemize}
+        \item SKU: Se utiliza el SKU del producto en el sistema.
+        \item Título: Se selecciona el \textit{Label} del producto.
+        \item Fulfilled by: Nombre de la cuenta.
+        \item Amazon\_SKU: Permite elegir entre SKU/GTIN.
+        \item Precio: Selección de un atributo de usuario como precio del producto.
+        \item Offer Price: Configuración general como \texttt{TRUE/FALSE/RANDOM}.
+    \end{itemize}
+    \item El usuario confirma la configuración de mapeo obligatorio y selecciona \enquote{Continuar}.
+    \item El sistema permite seleccionar atributos adicionales de usuario\footnote{Se tomaron en cuenta las consideraciones descritas en \href{https://buywithprime.amazon.com/knowledge-center/csv-import?utm_medium=website\&utm_source=direct\#standalone-product}{CSV Import} de Amazon para manejar la elección de atributos adicionales de usuario correctamente.} para exportar.
+    \item El usuario selecciona atributos adicionales mediante \textit{checkboxes} (opcional).
+    \item El usuario selecciona \enquote{Confirmar} para finalizar la exportación.
+    \item El sistema genera un archivo CSV listo para carga en Amazon.
+    \item El usuario descarga el archivo generado.
+\end{enumerate}
+
+\numberedsubsection{Escenarios alternativos}
+\begin{description}
+    \item[4.a] No hay productos seleccionados.
+    \begin{enumerate}
+        \item[4.a.1] El sistema notifica al usuario que debe seleccionar al menos un producto para exportar.
+    \end{enumerate}
+    \item[5.a] Falta algún atributo obligatorio.
+    \begin{enumerate}
+        \item[5.a.1] El sistema notifica qué atributo falta y permite al usuario corregirlo.
+    \end{enumerate}
+    \item[7.a] No se seleccionan atributos adicionales.
+    \begin{enumerate}
+        \item[7.a.1] El sistema genera el CSV solo con los atributos obligatorios configurados.
+    \end{enumerate}
+    \item[*.a] El usuario cancela la exportación cerrando el menú.
+    \begin{enumerate}
+        \item[*.a.1] El sistema regresa al listado de productos sin realizar cambios.
+    \end{enumerate}
+\end{description}
+
+\numberedsubsection{Casos de Prueba}
+
+\underline{Escenario: Principal}\par
+\vspace{0.15cm}
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
+\textbf{Y} está en la sección \enquote{Productos},\par
+\textbf{Y} existen productos disponibles en el sistema,\par
+\textbf{Y} ha seleccionado uno o más productos,\par
+\textbf{Y} selecciona \enquote{Generar CSV},\par
+\textbf{Y} ha configurado correctamente el mapeo obligatorio,\par
+\textbf{Cuando} confirma la configuración de mapeo obligatorio,\par
+\textbf{Y} selecciona \enquote{Continuar},\par
+\textbf{Y} ha seleccionado los atributos adicionales que desea,\par
+\textbf{Y} selecciona \enquote{Confirmar},\par
+\textbf{Entonces} el sistema produce un archivo CSV válido para ser exportado.\par
+\textbf{Y} el usuario lo descarga.\par
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo 4.a (No hay productos seleccionados)}\par
+\vspace{0.15cm}
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
+\textbf{Y} está en la sección \enquote{Productos},\par
+\textbf{Y} existen productos disponibles en el sistema,\par
+\textbf{Y} no ha seleccionado ningún producto,\par
+\textbf{Cuando} selecciona \enquote{Generar CSV},\par
+\textbf{Entonces} el sistema muestra un mensaje de error indicando que debe seleccionar al menos un producto para la exportación.\par
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo 5.a (Falta un atributo obligatorio)}\par
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
+\textbf{Y} está en la sección \enquote{Productos},\par
+\textbf{Y} ha seleccionado uno o más productos,\par
+\textbf{Y} selecciona \enquote{Generar CSV},\par
+\textbf{Y} ha configurado el mapeo obligatorio parcialmente,\par
+\textbf{Cuando} selecciona \enquote{Continuar},\par
+\textbf{Entonces} el sistema notifica el error,\par
+\textbf{Y} permite completar los datos faltantes.\par
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo 7.a (No se seleccionan atributos adicionales)}\par
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
+\textbf{Y} está en la sección \enquote{Productos},\par
+\textbf{Y} existen productos disponibles en el sistema,\par
+\textbf{Y} ha seleccionado uno o más productos,\par
+\textbf{Y} selecciona \enquote{Generar CSV},\par
+\textbf{Y} ha configurado correctamente el mapeo obligatorio,\par
+\textbf{Y} ha seleccionado \enquote{Continuar},\par
+\textbf{Y} no selecciona ningún atributo adicional,\par
+\textbf{Cuando} selecciona \enquote{Confirmar},\par
+\textbf{Entonces} el sistema genera un CSV solo con los atributos obligatorios.\par
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo *.a (cancelación de la exportación)}\par
+\vspace{0.15cm}
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
+\textbf{Y} está en la sección \enquote{Productos},\par
+\textbf{Y} existen productos disponibles en el sistema,\par
+\textbf{Y} ha seleccionado uno o más productos,\par
+\textbf{Y} selecciona \enquote{Generar CSV},\par
+\textbf{Cuando} el usuario decide cerrar el menú,\par
+\textbf{Entonces} el sistema regresa al apartado de \enquote{Productos},\par
+
+\numberedsubsection{Bocetos}
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{assets/mockups/RF8 filtrado y selección de productos.png}
+    \caption{Pantalla principal de exportación y formulario de configuración de mapeo.}
+\end{figure}
+
+\numberedsubsection{Diagrama de Secuencia (por hacer)}
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{assets/umaLogo.png}
+    \caption{Escenario principal para la gestión de exportación.}
+\end{figure}

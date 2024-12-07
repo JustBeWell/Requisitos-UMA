@@ -81,6 +81,11 @@
 %   \item
 % \end{enumerate}
 
+% Comando para cambiar el título del abstract
+\addto\captionsspanish{%
+  \renewcommand{\abstractname}{Recomendaciones}
+}
+
 
 \begin{document}
 
@@ -134,7 +139,7 @@
 \thispagestyle{empty}
 \begin{abstract}
   Para comprender mejor el rol de los actores en cada caso de uso se recomienda consultar el apartado \emph{3.3 Perfiles de los Participantes} y \emph{3.4 Perfiles de Usuario} del DGR Mini PIM donde se define cada uno y como se refiere a ellos para evitar ambigüedades. 
-  También consultar \emph{1.3 Definiciones, acrónimos y abreviaturas} en caso de no entender alguna palabra técnica usada en esta memoria.
+  También consultar \emph{1.3 Definiciones, acrónimos y abreviaturas} en caso de no entender alguna palabra técnica usada en esta memoria. De la misma manera, todos los Requisitos Funcionales y No Funcionales se detallan a fondo en el mismo documento.
 \end{abstract}
 
 \newpage
@@ -142,18 +147,15 @@
 
 
 % CUERPO DEL DOCUMENTO
-\setcounter{page}{4} % Inicia a contar las páginas a partir de {}
+\setcounter{page}{6} % Inicia a contar las páginas a partir de {}
 
 \include{body/RF1.9_CrearInformeCuentaJSON/page}
 \include{body/RF1.9.1_ExportarInformeCuenta/page}
-%\include{body/RF5.1_CrearRelacion/page}
-%\include{body/RF5.2_VerRelacion/page}
-%\include{body/RF5.3_EditarRelacion/page}
+\include{body/RF5.1_CrearRelacion/page}
+\include{body/RF5.2_VerRelacion/page}
+\include{body/RF5.3_EditarRelacion/page}
 \include{body/RF5.4_BorrarRelacion/page}
-\include{body/RF8 Gestión de Exportación/page}
-%\include{body/RF8.7_SeleccionAmazon/page}
-%\include{body/RF8.8_MapeoProductosCSV/page}
-%\include{body/RF8.10_AtributosFaltantesExportacion/page}
+\include{body/RF8.X_GestionExportacion/page}
 
 
 

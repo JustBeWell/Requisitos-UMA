@@ -1,29 +1,44 @@
 \babel@toc {spanish}{}\relax 
 \thispagestyle {empty}
-\contentsline {section}{\numberline {1}RF1.9 Crear informe de cuenta}{4}{section*.1}%
-\contentsline {subsection}{\numberline {1.1}Escenario principal}{4}{section*.1}%
-\contentsline {subsection}{\numberline {1.2}Escenarios alternativos}{5}{Item.4}%
-\contentsline {subsection}{\numberline {1.3}Casos de Prueba}{5}{Item.4}%
-\contentsline {subsection}{\numberline {1.4}Bocetos}{6}{Item.4}%
-\contentsline {subsection}{\numberline {1.5}Diagrama de Secuencia}{7}{figure.1}%
-\contentsline {section}{\numberline {2}RF1.9.1 Exportar informe de cuenta}{8}{section*.2}%
-\contentsline {subsection}{\numberline {2.1}Escenario principal}{8}{section*.2}%
-\contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{8}{Item.10}%
-\contentsline {subsection}{\numberline {2.3}Casos de Prueba}{9}{Item.10}%
-\contentsline {subsection}{\numberline {2.4}Bocetos}{10}{Item.10}%
-\contentsline {section}{\numberline {3}RF5.4 Borrar relación}{11}{figure.3}%
-\contentsline {subsection}{\numberline {3.1}Escenario principal}{11}{figure.3}%
-\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{11}{Item.19}%
-\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{12}{Item.19}%
-\contentsline {subsection}{\numberline {3.4}Bocetos}{13}{Item.19}%
-\contentsline {section}{\numberline {4}RF8 Gestión de Exportación}{15}{section*.3}%
-\contentsline {paragraph}{Descripción:}{15}{paragraph*.4}%
-\contentsline {paragraph}{Precondición:}{15}{paragraph*.5}%
-\contentsline {paragraph}{Postcondición:}{15}{paragraph*.6}%
-\contentsline {paragraph}{Prioridad:}{15}{paragraph*.7}%
-\contentsline {paragraph}{Autor:}{15}{paragraph*.8}%
-\contentsline {paragraph}{Escenario Principal:}{15}{paragraph*.9}%
-\contentsline {paragraph}{Escenarios Alternativos:}{16}{paragraph*.10}%
-\contentsline {paragraph}{Casos de Prueba:}{17}{paragraph*.11}%
-\contentsline {paragraph}{Boceto:}{18}{paragraph*.12}%
-\contentsline {subsection}{\numberline {4.1}Bocetos}{19}{figure.6}%
+\contentsline {section}{\numberline {1}RF1.9 Crear informe de cuenta}{6}{section*.1}%
+\contentsline {subsection}{\numberline {1.1}Escenario principal}{6}{section*.1}%
+\contentsline {subsection}{\numberline {1.2}Escenarios alternativos}{7}{Item.4}%
+\contentsline {subsection}{\numberline {1.3}Casos de Prueba}{7}{Item.4}%
+\contentsline {subsection}{\numberline {1.4}Bocetos}{8}{Item.4}%
+\contentsline {subsection}{\numberline {1.5}Diagrama de Secuencia}{9}{figure.1}%
+\contentsline {section}{\numberline {2}RF1.9.1 Exportar informe de cuenta}{10}{section*.2}%
+\contentsline {subsection}{\numberline {2.1}Escenario principal}{10}{section*.2}%
+\contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{10}{Item.10}%
+\contentsline {subsection}{\numberline {2.3}Casos de Prueba}{11}{Item.10}%
+\contentsline {subsection}{\numberline {2.4}Bocetos}{12}{Item.10}%
+\contentsline {subsection}{\numberline {2.5}Diagrama de Secuencia (por hacer)}{13}{figure.3}%
+\contentsline {section}{\numberline {3}RF5.1 Crear relación}{14}{section*.3}%
+\contentsline {subsection}{\numberline {3.1}Escenario principal}{14}{section*.3}%
+\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{15}{Item.20}%
+\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{15}{Item.20}%
+\contentsline {subsection}{\numberline {3.4}Bocetos (por subir)}{17}{Item.20}%
+\contentsline {subsection}{\numberline {3.5}Diagrama de Secuencia (por hacer)}{19}{figure.6}%
+\contentsline {section}{\numberline {4}RF5.2 Visualizar relación}{20}{figure.7}%
+\contentsline {subsection}{\numberline {4.1}Escenario principal}{20}{figure.7}%
+\contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{20}{Item.27}%
+\contentsline {subsection}{\numberline {4.3}Casos de Prueba}{21}{Item.27}%
+\contentsline {subsection}{\numberline {4.4}Bocetos (por hacer)}{22}{Item.27}%
+\contentsline {subsection}{\numberline {4.5}Diagrama de Secuencia (por hacer)}{24}{figure.9}%
+\contentsline {section}{\numberline {5}RF5.3 Editar relación}{25}{figure.10}%
+\contentsline {subsection}{\numberline {5.1}Escenario principal}{25}{figure.10}%
+\contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{26}{Item.37}%
+\contentsline {subsection}{\numberline {5.3}Casos de Prueba}{26}{Item.37}%
+\contentsline {subsection}{\numberline {5.4}Bocetos}{28}{Item.37}%
+\contentsline {subsection}{\numberline {5.5}Diagrama de Secuencia (por hacer)}{30}{figure.12}%
+\contentsline {section}{\numberline {6}RF5.4 Borrar relación}{31}{figure.13}%
+\contentsline {subsection}{\numberline {6.1}Escenario principal}{31}{figure.13}%
+\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{31}{Item.46}%
+\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{32}{Item.46}%
+\contentsline {subsection}{\numberline {6.4}Bocetos (por hacer)}{33}{Item.46}%
+\contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia (por hacer)}{35}{figure.15}%
+\contentsline {section}{\numberline {7}RF8 Gestión de Exportación}{36}{section*.4}%
+\contentsline {subsection}{\numberline {7.1}Escenario principal}{36}{section*.4}%
+\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{37}{Item.58}%
+\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{37}{Item.58}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{39}{Item.58}%
+\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia (por hacer)}{40}{figure.17}%

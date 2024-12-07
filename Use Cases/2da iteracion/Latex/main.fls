@@ -166,12 +166,21 @@ INPUT body\RF1.9_CrearInformeCuentaJSON\page.aux
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.aux
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.aux
 INPUT body\RF1.9.1_ExportarInformeCuenta\page.aux
+INPUT .\body\RF5.1_CrearRelacion\page.aux
+INPUT .\body\RF5.1_CrearRelacion\page.aux
+INPUT body\RF5.1_CrearRelacion\page.aux
+INPUT .\body\RF5.2_VerRelacion\page.aux
+INPUT .\body\RF5.2_VerRelacion\page.aux
+INPUT body\RF5.2_VerRelacion\page.aux
+INPUT .\body\RF5.3_EditarRelacion\page.aux
+INPUT .\body\RF5.3_EditarRelacion\page.aux
+INPUT body\RF5.3_EditarRelacion\page.aux
 INPUT .\body\RF5.4_BorrarRelacion\page.aux
 INPUT .\body\RF5.4_BorrarRelacion\page.aux
 INPUT body\RF5.4_BorrarRelacion\page.aux
-INPUT .\body\RF8 Gestión de Exportación\page.aux
-INPUT .\body\RF8 Gestión de Exportación\page.aux
-INPUT body\RF8 Gestión de Exportación\page.aux
+INPUT .\body\RF8.X_GestionExportacion\page.aux
+INPUT .\body\RF8.X_GestionExportacion\page.aux
+INPUT body\RF8.X_GestionExportacion\page.aux
 OUTPUT main.aux
 INPUT C:\MikTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\MikTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -231,74 +240,152 @@ INPUT .\body\RF1.9_CrearInformeCuentaJSON\page.tex
 INPUT body\RF1.9_CrearInformeCuentaJSON\page.tex
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\mockups\RF1.9CrearInformeCuenta.png
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
-INPUT .\sequence\RF1.9 Crear informe de cuenta.jpg
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\mockups\RF1.9CrearInformeCuenta.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
+INPUT .\assets\sequence\RF1.9_CrearInformeCuenta_v2.png
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 OUTPUT body\RF1.9.1_ExportarInformeCuenta\page.aux
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.tex
 INPUT body\RF1.9.1_ExportarInformeCuenta\page.tex
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
-INPUT .\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\mockups\RF1.9.1ExportarInformeCuenta.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\body\RF5.1_CrearRelacion\page.tex
+INPUT .\body\RF5.1_CrearRelacion\page.tex
+OUTPUT body\RF5.1_CrearRelacion\page.aux
+INPUT .\body\RF5.1_CrearRelacion\page.tex
+INPUT .\body\RF5.1_CrearRelacion\page.tex
+INPUT body\RF5.1_CrearRelacion\page.tex
+INPUT C:\MikTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_1.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\mockups\RF4.1_2.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\body\RF5.2_VerRelacion\page.tex
+INPUT .\body\RF5.2_VerRelacion\page.tex
+OUTPUT body\RF5.2_VerRelacion\page.aux
+INPUT .\body\RF5.2_VerRelacion\page.tex
+INPUT .\body\RF5.2_VerRelacion\page.tex
+INPUT body\RF5.2_VerRelacion\page.tex
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_1.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\mockups\RF4.2_2.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\body\RF5.3_EditarRelacion\page.tex
+INPUT .\body\RF5.3_EditarRelacion\page.tex
+OUTPUT body\RF5.3_EditarRelacion\page.aux
+INPUT .\body\RF5.3_EditarRelacion\page.tex
+INPUT .\body\RF5.3_EditarRelacion\page.tex
+INPUT body\RF5.3_EditarRelacion\page.tex
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_1.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\mockups\RF4.3_2.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
 INPUT .\body\RF5.4_BorrarRelacion\page.tex
 INPUT .\body\RF5.4_BorrarRelacion\page.tex
 OUTPUT body\RF5.4_BorrarRelacion\page.aux
 INPUT .\body\RF5.4_BorrarRelacion\page.tex
 INPUT .\body\RF5.4_BorrarRelacion\page.tex
 INPUT body\RF5.4_BorrarRelacion\page.tex
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_1.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\mockups\RF4.4_2.png
-INPUT .\body\RF8 Gestión de Exportación\page.tex
-INPUT .\body\RF8 Gestión de Exportación\page.tex
-OUTPUT body\RF8 Gestión de Exportación\page.aux
-INPUT .\body\RF8 Gestión de Exportación\page.tex
-INPUT .\body\RF8 Gestión de Exportación\page.tex
-INPUT body\RF8 Gestión de Exportación\page.tex
-INPUT C:\MikTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF8 filtrado y selección de productos.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
-INPUT .\mockups\RF6.1Crear_Atributo tras Clickar.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_1.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\mockups\RF4.4_2.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\body\RF8.X_GestionExportacion\page.tex
+INPUT .\body\RF8.X_GestionExportacion\page.tex
+OUTPUT body\RF8.X_GestionExportacion\page.aux
+INPUT .\body\RF8.X_GestionExportacion\page.tex
+INPUT .\body\RF8.X_GestionExportacion\page.tex
+INPUT body\RF8.X_GestionExportacion\page.tex
+INPUT C:\MikTeX\fonts\tfm\public\cm\cmtt12.tfm
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
+INPUT .\assets\umaLogo.png
 INPUT main.aux
 INPUT .\body\RF1.9_CrearInformeCuentaJSON\page.aux
 INPUT .\body\RF1.9_CrearInformeCuentaJSON\page.aux
@@ -306,14 +393,21 @@ INPUT body\RF1.9_CrearInformeCuentaJSON\page.aux
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.aux
 INPUT .\body\RF1.9.1_ExportarInformeCuenta\page.aux
 INPUT body\RF1.9.1_ExportarInformeCuenta\page.aux
+INPUT .\body\RF5.1_CrearRelacion\page.aux
+INPUT .\body\RF5.1_CrearRelacion\page.aux
+INPUT body\RF5.1_CrearRelacion\page.aux
+INPUT .\body\RF5.2_VerRelacion\page.aux
+INPUT .\body\RF5.2_VerRelacion\page.aux
+INPUT body\RF5.2_VerRelacion\page.aux
+INPUT .\body\RF5.3_EditarRelacion\page.aux
+INPUT .\body\RF5.3_EditarRelacion\page.aux
+INPUT body\RF5.3_EditarRelacion\page.aux
 INPUT .\body\RF5.4_BorrarRelacion\page.aux
 INPUT .\body\RF5.4_BorrarRelacion\page.aux
 INPUT body\RF5.4_BorrarRelacion\page.aux
-INPUT .\body\RF8 Gestión de Exportación\page.aux
-INPUT .\body\RF8 Gestión de Exportación\page.aux
-INPUT body\RF8 Gestión de Exportación\page.aux
-INPUT C:\Users\franc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
-INPUT C:\Users\franc\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1200.pk
+INPUT .\body\RF8.X_GestionExportacion\page.aux
+INPUT .\body\RF8.X_GestionExportacion\page.aux
+INPUT body\RF8.X_GestionExportacion\page.aux
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
@@ -332,5 +426,9 @@ INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
+INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmti10.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
+INPUT C:\MikTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb

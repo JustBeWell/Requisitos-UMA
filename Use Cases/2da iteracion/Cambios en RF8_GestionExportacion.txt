@@ -1,0 +1,28 @@
+Preguntas sobre este apartado:
+
+"El usuario selecciona uno o más productos para exportar"
+  
+esto es implementable? No se como sería en el Datagrid y quisiera evitar complicaciones mayores de nuevo
+
+En clase los profesores explicaron la funcionalidad es de 1..* para relaciones, es decir, un producto se puede relacionar con muchos productos mas evidentemente pero que para facilitar la implementación se haga de 1 to 1, entonces para seleccionar múltiples productos hay que hacerlo por pasos.
+
+Además, tenemos en el DGR el RF8.4 que debería permitir seleccionar todos los productos. Entonces o buscamos que se seleccionen todos los productos encontrados del filtro o no se como podríamos hacer esto.
+
+
+
+Cambios en los Casos de Uso:
+
+Principalmente cambie casi todo el formato para que fuera acorde con el resto del documento.
+
+
+Luego modifique los Casos de Prueba para que todos siguieran el proceso completo hasta llegar al punto de la alternativa. Palomo nos hizo mucho hincapié en que un caso de prueba no puede comenzar en medio sin contexto previo.
+
+***
+
+Añadí el paso de "Confirmar" después de seleccionar (o no) los atributos de usuario
+
+***
+
+En el mockup debes poner Categoría en inglés y en mi opinión añadir otro correspondiente con el formulario de configuración de mapeo donde se vea todo lo del punto 6.
+
+Tal y como esta planteado creo que deberíamos añadir otro más donde se vean las checkboxes para seleccionar los atributos de usuario adicionales y el botón de "Confirmar" para la generación final del CSV.
