@@ -23,7 +23,7 @@ Alta
 \vspace{0.15cm}
 
 \textbf{Autores:}
-Diego Sicre.
+Diego Sicre y Angel Escaño.
 
 \vspace{0.15cm}
 
@@ -55,17 +55,23 @@ Diego Sicre.
         \item Precio: Selección de un atributo de usuario como precio del producto.
         \item Offer Price: Configuración general como \texttt{TRUE/FALSE/RANDOM}.
     \end{itemize}
-    \item Si no existe ningún atributo de usuario de tipo float o entero, el sistema notifica al usuario que no se puede proceder con la exportación.
+    \item El sistema verifica la validez de los atributos obligatorios seleccionados.
     \item El usuario confirma la configuración de mapeo obligatorio y selecciona \enquote{Continue}.
     \item El sistema permite seleccionar atributos adicionales de usuario\footnote{Se tomaron en cuenta las consideraciones descritas en \href{https://buywithprime.amazon.com/knowledge-center/csv-import?utm_medium=website\&utm_source=direct\#standalone-product}{CSV Import} de Amazon para manejar la elección de atributos adicionales de usuario correctamente.} para exportar.
-    \item El usuario selecciona atributos adicionales mediante \textit{checkboxes} (opcional).
     \item El usuario selecciona \enquote{Confirmar} para finalizar la exportación.
-    \item El sistema genera un archivo CSV listo para carga en Amazon.
-    \item El usuario descarga el archivo generado.
+    \item El sistema genera un archivo CSV.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
+    \item[3.a] El usuario no encuentra el producto al filtrar por categoría.
+    \begin{enumerate}
+        \item[3.a.1] El sistema muestra un mensaje indicando que no existen productos con esa categoría.
+    \end{enumerate}
+    \item[3.b] El usuario no encuentra el producto al filtrar por fecha.
+    \begin{enumerate}
+        \item[3.b.1] El sistema muestra un mensaje indicando que no hay productos disponibles en el rango seleccionado.
+    \end{enumerate}
     \item[4.a] No hay productos seleccionados.
     \begin{enumerate}
         \item[4.a.1] El sistema notifica al usuario que debe seleccionar al menos un producto para exportar.
@@ -74,21 +80,9 @@ Diego Sicre.
     \begin{enumerate}
         \item[5.a.1] El sistema notifica al usuario de que faltan atributos obligatorios.
     \end{enumerate}
-    \item[6.a] No existe ningún atributo de usuario de tipo float o entero.
+    \item[7.a] No existe ningún atributo de usuario de tipo float o entero.
     \begin{enumerate}
-        \item[6.a.1] El sistema muestra un mensaje de error indicando que no se puede proceder con la exportación, ya que no es posible mapear un precio.
-    \end{enumerate}
-    \item[7.a] No se seleccionan atributos adicionales.
-    \begin{enumerate}
-        \item[7.a.1] El sistema genera el CSV solo con los atributos obligatorios configurados.
-    \end{enumerate}
-    \item[8.a] El usuario no encuentra el producto al filtrar por categoría.
-    \begin{enumerate}
-        \item[8.a.1] El sistema muestra un mensaje indicando que no existen productos con esa categoría.
-    \end{enumerate}
-    \item[8.b] El usuario no encuentra el producto al filtrar por fecha.
-    \begin{enumerate}
-        \item[8.b.1] El sistema muestra un mensaje indicando que no hay productos disponibles en el rango seleccionado.
+        \item[7.a.1] El sistema muestra un mensaje de error indicando que no se puede proceder con la exportación, ya que no es posible mapear un precio.
     \end{enumerate}
 \end{description}
 

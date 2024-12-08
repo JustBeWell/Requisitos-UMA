@@ -44,7 +44,6 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
     \item[4.a] El sistema no permite crear relaciones.
     \begin{enumerate}
         \item[4.a.1] El sistema no permite crear relaciones adicionales inhabilitando el botón de \enquote{Añadir relación} hasta que se eliminen relaciones existentes.
-        \item[4.a.2] El sistema muestra un mensaje indicando que no se pueden crear nuevas relaciones. 
     \end{enumerate}
     
     \item[7.a] El sistema detecta que el nombre de la relación es erróneo.
@@ -61,7 +60,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 
     \item[*.a] El usuario cancela la acción de crear una relación nueva cerrando el menú de creación de relación.
     \begin{enumerate}
-        \item[*.a.1] El sistema regresa a la sección de \enquote{Relaciones}.
+        \item[*.a.1] El sistema regresa a la sección de \enquote{Relaciones} sin generar ningún cambio.
     \end{enumerate}
 \end{description}
 
@@ -87,8 +86,7 @@ Pablo Ortega Serapio y Francisco Javier Jordá Garay\par
 \textbf{Y} ha alcanzado el número máximo de relaciones creadas,\par
 \textbf{Y} está en el apartado de \enquote{Relaciones},\par
 \textbf{Cuando} el usuario intenta crear una nueva relación,\par
-\textbf{Entonces} el sistema no le inhabilita el botón de \enquote{Añadir relación},\par
-\textbf{Y} muestra un mensaje indicando que no se pueden crear nuevas relaciones,\par
+\textbf{Entonces} el sistema le inhabilita el botón de \enquote{Añadir relación},\par
 \textbf{Y} no le permite crear más relaciones hasta que se eliminen relaciones existentes.\par
 
 \vspace{0.20cm}
