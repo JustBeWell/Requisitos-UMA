@@ -1,4 +1,5 @@
-\phantomsection\numberedsection{RF8 Gestión de Exportación}
+\phantomsection
+\numberedsection{RF8 Gestión de Exportación}
 
 \subsection*{Descripción}
 El sistema permite a los usuarios exportar productos seleccionados desde Mini PIM a Amazon, configurando atributos obligatorios y opcionales de forma personalizable.
@@ -18,10 +19,12 @@ El usuario ha iniciado sesión en su cuenta en Mini PIM y existen productos en e
 
 \textbf{Prioridad:}
 Alta
+
 \vspace{0.15cm}
 
-\textbf{Autores: }
-Diego Sicre.\par
+\textbf{Autores:}
+Diego Sicre.
+
 \vspace{0.15cm}
 
 \textbf{Control de cambios: } Versión 1: Definición del caso de uso.
@@ -39,10 +42,10 @@ Diego Sicre.\par
     \item El usuario filtra los productos\footnote{No necesariamente se tienen que seleccionar ambas opciones de filtrado para encontrar un producto. Aquí exponemos las dos alternativas combinables que tiene el usuario para filtrar.}:
     \begin{itemize}
         \item Por categoría, seleccionándola del desplegable junto al calendario.
-        \item Por fecha, seleccionando un día en el calendario para mostrar productos modificados desde esa fecha hasta la actualidad.
+        \item Y/O por fecha, seleccionando un día en el calendario para mostrar productos modificados desde esa fecha hasta la actualidad.
     \end{itemize}
     \item El usuario selecciona uno o más productos para exportar.
-    \item El usuario hace clic en el botón \enquote{Generar CSV}.
+    \item El usuario hace click en el botón \enquote{CSV}.
     \item El sistema muestra un formulario para configurar el mapeo de atributos obligatorios, incluyendo:
     \begin{itemize}
         \item SKU: Se utiliza el SKU del producto en el sistema.
@@ -52,7 +55,8 @@ Diego Sicre.\par
         \item Precio: Selección de un atributo de usuario como precio del producto.
         \item Offer Price: Configuración general como \texttt{TRUE/FALSE/RANDOM}.
     \end{itemize}
-    \item El usuario confirma la configuración de mapeo obligatorio y selecciona \enquote{Continuar}.
+    \item Si no existe ningún atributo de usuario de tipo float o entero, el sistema notifica al usuario que no se puede proceder con la exportación.
+    \item El usuario confirma la configuración de mapeo obligatorio y selecciona \enquote{Continue}.
     \item El sistema permite seleccionar atributos adicionales de usuario\footnote{Se tomaron en cuenta las consideraciones descritas en \href{https://buywithprime.amazon.com/knowledge-center/csv-import?utm_medium=website\&utm_source=direct\#standalone-product}{CSV Import} de Amazon para manejar la elección de atributos adicionales de usuario correctamente.} para exportar.
     \item El usuario selecciona atributos adicionales mediante \textit{checkboxes} (opcional).
     \item El usuario selecciona \enquote{Confirmar} para finalizar la exportación.
@@ -68,84 +72,52 @@ Diego Sicre.\par
     \end{enumerate}
     \item[5.a] Falta algún atributo obligatorio.
     \begin{enumerate}
-        \item[5.a.1] El sistema notifica qué atributo falta y permite al usuario corregirlo.
+        \item[5.a.1] El sistema notifica al usuario de que faltan atributos obligatorios.
+    \end{enumerate}
+    \item[6.a] No existe ningún atributo de usuario de tipo float o entero.
+    \begin{enumerate}
+        \item[6.a.1] El sistema muestra un mensaje de error indicando que no se puede proceder con la exportación, ya que no es posible mapear un precio.
     \end{enumerate}
     \item[7.a] No se seleccionan atributos adicionales.
     \begin{enumerate}
         \item[7.a.1] El sistema genera el CSV solo con los atributos obligatorios configurados.
     \end{enumerate}
-    \item[*.a] El usuario cancela la exportación cerrando el menú.
+    \item[8.a] El usuario no encuentra el producto al filtrar por categoría.
     \begin{enumerate}
-        \item[*.a.1] El sistema regresa al listado de productos sin realizar cambios.
+        \item[8.a.1] El sistema muestra un mensaje indicando que no existen productos con esa categoría.
+    \end{enumerate}
+    \item[8.b] El usuario no encuentra el producto al filtrar por fecha.
+    \begin{enumerate}
+        \item[8.b.1] El sistema muestra un mensaje indicando que no hay productos disponibles en el rango seleccionado.
     \end{enumerate}
 \end{description}
 
 \numberedsubsection{Casos de Prueba}
 
 \underline{Escenario: Principal}\par
-\vspace{0.15cm}
-\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
-\textbf{Y} está en la sección \enquote{Productos},\par
-\textbf{Y} existen productos disponibles en el sistema,\par
-\textbf{Y} ha seleccionado uno o más productos,\par
-\textbf{Y} selecciona \enquote{Generar CSV},\par
-\textbf{Y} ha configurado correctamente el mapeo obligatorio,\par
-\textbf{Cuando} confirma la configuración de mapeo obligatorio,\par
-\textbf{Y} selecciona \enquote{Continuar},\par
-\textbf{Y} ha seleccionado los atributos adicionales que desea,\par
-\textbf{Y} selecciona \enquote{Confirmar},\par
-\textbf{Entonces} el sistema produce un archivo CSV válido para ser exportado.\par
-\textbf{Y} el usuario lo descarga.\par
-\vspace{0.20cm}
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM, hay productos en el sistema, y el usuario selecciona filtros de categoría y/o fecha correctamente.  
+\textbf{Entonces:} El sistema genera un CSV válido y descargable.\par
 
-\underline{Escenario: Alternativo 4.a (No hay productos seleccionados)}\par
-\vspace{0.15cm}
-\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
-\textbf{Y} está en la sección \enquote{Productos},\par
-\textbf{Y} existen productos disponibles en el sistema,\par
-\textbf{Y} no ha seleccionado ningún producto,\par
-\textbf{Cuando} selecciona \enquote{Generar CSV},\par
-\textbf{Entonces} el sistema muestra un mensaje de error indicando que debe seleccionar al menos un producto para la exportación.\par
-\vspace{0.20cm}
-
-\underline{Escenario: Alternativo 5.a (Falta un atributo obligatorio)}\par
-\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
-\textbf{Y} está en la sección \enquote{Productos},\par
-\textbf{Y} ha seleccionado uno o más productos,\par
-\textbf{Y} selecciona \enquote{Generar CSV},\par
-\textbf{Y} ha configurado el mapeo obligatorio parcialmente,\par
-\textbf{Cuando} selecciona \enquote{Continuar},\par
-\textbf{Entonces} el sistema notifica el error,\par
-\textbf{Y} permite completar los datos faltantes.\par
-\vspace{0.20cm}
-
-\underline{Escenario: Alternativo 7.a (No se seleccionan atributos adicionales)}\par
-\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
-\textbf{Y} está en la sección \enquote{Productos},\par
-\textbf{Y} existen productos disponibles en el sistema,\par
-\textbf{Y} ha seleccionado uno o más productos,\par
-\textbf{Y} selecciona \enquote{Generar CSV},\par
-\textbf{Y} ha configurado correctamente el mapeo obligatorio,\par
-\textbf{Y} ha seleccionado \enquote{Continuar},\par
-\textbf{Y} no selecciona ningún atributo adicional,\par
-\textbf{Cuando} selecciona \enquote{Confirmar},\par
-\textbf{Entonces} el sistema genera un CSV solo con los atributos obligatorios.\par
-\vspace{0.20cm}
-
-\underline{Escenario: Alternativo *.a (cancelación de la exportación)}\par
-\vspace{0.15cm}
-\textbf{Dado} que el usuario ha iniciado sesión con su cuenta correspondiente,\par
-\textbf{Y} está en la sección \enquote{Productos},\par
-\textbf{Y} existen productos disponibles en el sistema,\par
-\textbf{Y} ha seleccionado uno o más productos,\par
-\textbf{Y} selecciona \enquote{Generar CSV},\par
-\textbf{Cuando} el usuario decide cerrar el menú,\par
-\textbf{Entonces} el sistema regresa al apartado de \enquote{Productos},\par
+\underline{Escenario: Alternativo 6.a (Falta un atributo de tipo float o entero)}\par
+\textbf{Dado:} Que el usuario intenta exportar productos.  
+\textbf{Cuando:} No existe ningún atributo de usuario de tipo float o entero en el sistema.  
+\textbf{Entonces:} El sistema muestra un mensaje indicando que no es posible mapear un precio y no se puede proceder con la exportación.\par
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]
     \includegraphics[width=1\linewidth]{assets/mockups/RF8 filtrado y selección de productos.png}
     \caption{Pantalla principal de exportación y formulario de configuración de mapeo}
+\end{figure}
+
+
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{assets/mockups/RF8 Seleccion de atributos obligatorios.png}
+    \caption{Selección de atributos obligatorios en la exportación}
+\end{figure}
+
+\begin{figure}[H]
+    \includegraphics[width=1\linewidth]{assets/mockups/RF8 Seleccion atributos opcionales.png}
+    \caption{Selección de atributos opcionales en la exportación}
 \end{figure}
 
 \numberedsubsection{Diagrama de Secuencia (por hacer)}
