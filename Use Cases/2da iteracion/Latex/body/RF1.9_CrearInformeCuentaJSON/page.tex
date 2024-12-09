@@ -59,7 +59,8 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta Owner,\par
 \textbf{Y} se encuentra en la sección \enquote{Cuenta},\par
 \textbf{Cuando} el usuario accede al apartado de informe de cuentas,\par
-\textbf{Entonces} el sistema muestra el informe completo con los siguientes datos:\par
+\textbf{Entonces} genera automáticamente el informe automáticamente el informe de cuenta,\par 
+\textbf{Y} el sistema muestra el informe completo con los siguientes datos:\par
 \begin{itemize}
     \item Nombre de la cuenta.
     \item Fecha y hora de creación de la cuenta.
@@ -75,7 +76,8 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta Owner,\par
 \textbf{Y} se encuentra en la sección \enquote{Cuenta},\par
-\textbf{Cuando} el usuario accede al apartado de informe de cuentas y ocurre un error interno del sistema mientras se genera el informe,\par
+\textbf{Cuando} el usuario accede al apartado de informe de cuentas,\par 
+\textbf{Y} ocurre un error interno del sistema mientras se genera el informe,\par
 \textbf{Entonces} el sistema muestra un mensaje de error indicando que no se pudo generar el informe,\par
 \textbf{Y} redirige al usuario a la sección donde estaba anteriormente.\par
 \vspace{0.20cm}
@@ -93,7 +95,7 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
 
 \numberedsubsection{Diagrama de Secuencia}
 \begin{figure}[H]
-    \includegraphics[width=1\linewidth]{assets/sequence/RF1.9_CrearInformeCuenta_v3.png}
+    \includegraphics[width=1\linewidth]{assets/sequence/RF1.9_CrearInformeCuenta_v4.png}
     \caption{Escenario principal para crear el Informe de Cuenta}
    \end{figure}
 \vspace{1.0cm}
