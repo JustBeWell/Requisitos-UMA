@@ -10,35 +10,35 @@
 \contentsline {subsection}{\numberline {2.1}Escenario principal}{10}{section*.2}%
 \contentsline {subsection}{\numberline {2.2}Escenarios alternativos}{10}{Item.10}%
 \contentsline {subsection}{\numberline {2.3}Casos de Prueba}{11}{Item.10}%
-\contentsline {subsection}{\numberline {2.4}Bocetos}{12}{Item.10}%
-\contentsline {subsection}{\numberline {2.5}Diagrama de Secuencia}{14}{figure.4}%
-\contentsline {section}{\numberline {3}RF5.1 Crear relación}{15}{section*.3}%
-\contentsline {subsection}{\numberline {3.1}Escenario principal}{15}{section*.3}%
-\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{16}{Item.20}%
-\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{16}{Item.20}%
-\contentsline {subsection}{\numberline {3.4}Bocetos}{18}{Item.20}%
-\contentsline {subsection}{\numberline {3.5}Diagrama de Secuencia}{21}{figure.8}%
-\contentsline {section}{\numberline {4}RF5.2 Visualizar relación}{22}{figure.9}%
-\contentsline {subsection}{\numberline {4.1}Escenario principal}{22}{figure.9}%
-\contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{22}{Item.27}%
-\contentsline {subsection}{\numberline {4.3}Casos de Prueba}{23}{Item.27}%
-\contentsline {subsection}{\numberline {4.4}Bocetos}{24}{Item.27}%
-\contentsline {subsection}{\numberline {4.5}Diagrama de Secuencia}{26}{figure.11}%
-\contentsline {section}{\numberline {5}RF5.3 Editar relación}{27}{figure.12}%
-\contentsline {subsection}{\numberline {5.1}Escenario principal}{27}{figure.12}%
-\contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{28}{Item.37}%
-\contentsline {subsection}{\numberline {5.3}Casos de Prueba}{28}{Item.37}%
-\contentsline {subsection}{\numberline {5.4}Bocetos}{30}{Item.37}%
-\contentsline {subsection}{\numberline {5.5}Diagrama de Secuencia}{32}{figure.14}%
-\contentsline {section}{\numberline {6}RF5.4 Borrar relación}{33}{figure.15}%
-\contentsline {subsection}{\numberline {6.1}Escenario principal}{33}{figure.15}%
-\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{33}{Item.46}%
-\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{34}{Item.46}%
-\contentsline {subsection}{\numberline {6.4}Bocetos}{35}{Item.46}%
-\contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia}{37}{figure.17}%
-\contentsline {section}{\numberline {7}RF8 Gestión de Exportación}{38}{section*.4}%
-\contentsline {subsection}{\numberline {7.1}Escenario principal}{38}{section*.4}%
-\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{39}{Item.57}%
-\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{40}{Item.57}%
-\contentsline {subsection}{\numberline {7.4}Bocetos}{41}{Item.57}%
-\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{44}{figure.21}%
+\contentsline {subsection}{\numberline {2.4}Bocetos}{13}{Item.10}%
+\contentsline {subsection}{\numberline {2.5}Diagrama de Secuencia}{15}{figure.4}%
+\contentsline {section}{\numberline {3}RF5.1 Crear relación}{16}{section*.3}%
+\contentsline {subsection}{\numberline {3.1}Escenario principal}{16}{section*.3}%
+\contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{17}{Item.21}%
+\contentsline {subsection}{\numberline {3.3}Casos de Prueba}{17}{Item.21}%
+\contentsline {subsection}{\numberline {3.4}Bocetos}{20}{Item.21}%
+\contentsline {subsection}{\numberline {3.5}Diagrama de Secuencia}{23}{figure.8}%
+\contentsline {section}{\numberline {4}RF5.2 Visualizar relación}{24}{figure.9}%
+\contentsline {subsection}{\numberline {4.1}Escenario principal}{24}{figure.9}%
+\contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{24}{Item.28}%
+\contentsline {subsection}{\numberline {4.3}Casos de Prueba}{25}{Item.28}%
+\contentsline {subsection}{\numberline {4.4}Bocetos}{26}{Item.28}%
+\contentsline {subsection}{\numberline {4.5}Diagrama de Secuencia}{28}{figure.11}%
+\contentsline {section}{\numberline {5}RF5.3 Editar relación}{29}{figure.12}%
+\contentsline {subsection}{\numberline {5.1}Escenario principal}{29}{figure.12}%
+\contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{30}{Item.39}%
+\contentsline {subsection}{\numberline {5.3}Casos de Prueba}{30}{Item.39}%
+\contentsline {subsection}{\numberline {5.4}Bocetos}{32}{Item.39}%
+\contentsline {subsection}{\numberline {5.5}Diagrama de Secuencia}{34}{figure.14}%
+\contentsline {section}{\numberline {6}RF5.4 Borrar relación}{35}{figure.15}%
+\contentsline {subsection}{\numberline {6.1}Escenario principal}{35}{figure.15}%
+\contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{35}{Item.48}%
+\contentsline {subsection}{\numberline {6.3}Casos de Prueba}{36}{Item.48}%
+\contentsline {subsection}{\numberline {6.4}Bocetos}{37}{Item.48}%
+\contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia}{39}{figure.17}%
+\contentsline {section}{\numberline {7}RF8 Gestión de Exportación}{40}{section*.4}%
+\contentsline {subsection}{\numberline {7.1}Escenario principal}{40}{section*.4}%
+\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{41}{Item.59}%
+\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{42}{Item.59}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{43}{Item.59}%
+\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{46}{figure.21}%

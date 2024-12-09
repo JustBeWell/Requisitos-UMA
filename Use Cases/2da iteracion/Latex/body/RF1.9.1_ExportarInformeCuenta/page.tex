@@ -53,7 +53,7 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
         \item[4.a.1] El sistema muestra un mensaje de error indicando que la ruta es inválida\footnote{Una ruta inválida es una que no exista en el ordenador del usuario o una que no tenga permisos de escritura.}.
         \item[4.a.2] El sistema permite al usuario cambiar la ruta en el menú de previsualización del JSON.
     \end{enumerate}
-    \item[*.a] El usuario cancela la exportación.
+    \item[*.a] El usuario cancela la exportación del informe.
     \begin{enumerate}
         \item[*.a.1] El sistema regresa al usuario a la sección de \enquote{Cuenta}.
     \end{enumerate}
@@ -71,17 +71,17 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
 \textbf{Y} lo guarda localmente en el equipo del usuario en la ruta especificada.\par
 \vspace{0.20cm}
 
-\underline{Escenario: 2.a (Error en la exportación)}\par
+\underline{Escenario: 3.a (error en la exportación)}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta Owner,\par
 \textbf{Y} se encuentra en la sección \enquote{Cuenta},\par
 \textbf{Cuando} selecciona la opción \enquote{Exportar informe},\par
 \textbf{Y} se produce un error en el sistema,\par
 \textbf{Entonces} el sistema muestra un mensaje de error indicando que no se pudo completar la exportación,\par
-\textbf{Y} redirige al usuario al apartado \textit{Cuenta}.\par
+\textbf{Y} redirige al usuario al apartado \enquote{Cuenta}.\par
 \vspace{0.20cm}
 
-\underline{Escenario: 3.a (Ruta inválida)}\par
+\underline{Escenario: 4.a (ruta inválida)}\par
 \vspace{0.15cm}
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta Owner,\par
 \textbf{Y} se encuentra en la sección \enquote{Cuenta},\par
@@ -91,6 +91,16 @@ Francisco Javier Jordá Garay y Janine Olegario.\par
 \textbf{Entonces} el sistema muestra un mensaje de error indicando que la ruta no es válida,\par
 \textbf{Y} redirige al usuario al menú de previsualización del JSON,\par
 \textbf{Y} permite al usuario cambiar la ruta.\par
+\vspace{0.20cm}
+
+\underline{Escenario: *.a (cancelación de la exportación del informe)}\par
+\vspace{0.15cm}
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta Owner,\par
+\textbf{Y} se encuentra en la sección \enquote{Cuenta},\par
+\textbf{Cuando} selecciona la opción \enquote{Exportar informe},\par
+\textbf{Y} el sistema muestra el menú de previsualización del JSON,\par
+\textbf{Entonces} el usuario cierra el menú de previsualización,\par
+\textbf{Y} redirige al usuario al apartado \enquote{Cuenta} sin generar el archivo JSON.\par
 \vspace{0.20cm}
 
 \newpage % Mostramos los bocetos en una nueva página

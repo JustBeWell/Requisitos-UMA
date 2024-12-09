@@ -35,22 +35,29 @@ Pablo Ortega Serapio\par
     \item El usuario selecciona \enquote{Confirmar} para guardar las modificaciones.
     \item El sistema verifica que el nombre de la relación no sea erróneo.
     \item El sistema verifica que si se selecciona un producto de la columna izquierda, también debe haber un producto seleccionado en la columna derecha.
+    \item El sistema verifica que cuando hay un elemento seleccionado en la columna izquierda el elemento seleccionado en la columna derecha no es el mismo.
     \item El sistema muestra la lista de relaciones con los cambios realizados.
 \end{enumerate}
 
 \numberedsubsection{Escenarios alternativos}
 \begin{description}
     
-    \item[7.a] El sistema detecta que el nombre de la relación es erróneo.
+    \item[8.a] El sistema detecta que el nombre de la relación es erróneo.
     \begin{enumerate}
-        \item[7.a.1] El sistema muestra un mensaje de error indicando que el nombre no es válido.
-        \item[7.a.2] El sistema devuelve al usuario al menú de creación de relación permitiendo modificar el nombre.
+        \item[8.a.1] El sistema muestra un mensaje de error indicando que el nombre no es válido.
+        \item[8.a.2] El sistema devuelve al usuario al menú de creación de relación permitiendo modificar el nombre.
     \end{enumerate}
     
-    \item[8.a] El sistema detecta que solo hay elementos seleccionados en la columna izquierda.
+    \item[9.a] El sistema detecta que solo hay elementos seleccionados en la columna izquierda.
     \begin{enumerate}
-        \item[8.a.1] El sistema muestra un mensaje de error solicitando que seleccione un producto de la tabla derecha o que se deseleccionen los productos de la columna izquierda.
-        \item[8.a.2] El sistema devuelve al usuario al menú de edicion de relación para continuar eligiendo productos.
+        \item[9.a.1] El sistema muestra un mensaje de error solicitando que seleccione un producto de la tabla derecha o que se deseleccionen los productos de la columna izquierda.
+        \item[9.a.2] El sistema devuelve al usuario al menú de edición de relación para continuar eligiendo productos.
+    \end{enumerate}
+
+    \item[10.a] El sistema detecta que el producto seleccionado en la columna derecha es el mismo que el de la columna izquierda.
+    \begin{enumerate}
+        \item [10.a.1] El sistema muestra un mensaje de error indicando que no puede relacionarse un producto consigo mismo.
+        \item [10.a.2] El sistema regresa a la sección de \enquote{Relaciones} sin generar ningún cambio.
     \end{enumerate}
 
     \item[*.a] El usuario cancela la acción de editar la relación seleccionada cerrando el menú de edicion de relación.
@@ -75,7 +82,7 @@ Pablo Ortega Serapio\par
 
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 7.a (nombre de relación erróneo)}\par
+\underline{Escenario: Alternativo 8.a (nombre de relación erróneo)}\par
 \vspace{0.15cm}
 
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta de usuario correspondiente,\par
@@ -87,7 +94,7 @@ Pablo Ortega Serapio\par
 
 \vspace{0.20cm}
 
-\underline{Escenario: Alternativo 8.a (productos no seleccionados correctamente)}\par
+\underline{Escenario: Alternativo 9.a (productos no seleccionados correctamente)}\par
 \vspace{0.15cm}
 
 \textbf{Dado} que el usuario ha iniciado sesión con su cuenta de usuario correspondiente,\par
@@ -96,6 +103,18 @@ Pablo Ortega Serapio\par
 \textbf{Y} selecciona los productos de forma errónea,\par
 \textbf{Entonces} el sistema notifica al usuario que ha seleccionado los productos de forma errónea,\par
 \textbf{Y} muestra un mensaje de error y lo devuelve al menú para continuar editando la relación.\par
+
+\vspace{0.20cm}
+
+\underline{Escenario: Alternativo 10.a (mismo producto seleccionado en ambas columnas)}\par
+\vspace{0.15cm}
+
+\textbf{Dado} que el usuario ha iniciado sesión con su cuenta de usuario correspondiente,\par
+\textbf{Y} se encuentra en el apartado de \enquote{Relaciones},\par
+\textbf{Cuando} selecciona la opción de \enquote{Editar relación},\par
+\textbf{Y} selecciona el mismo producto en ambas columnas,\par
+\textbf{Entonces} el sistema muestra un mensaje de error al usuario indicando que un producto no puede relacionarse consigo mismo,\par
+\textbf{Y} muestra la lista de relaciones sin realizar ningún cambio.\par
 
 \vspace{0.20cm}
 
