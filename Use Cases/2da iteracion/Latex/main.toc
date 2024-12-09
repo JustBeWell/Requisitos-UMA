@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia}{39}{figure.17}%
 \contentsline {section}{\numberline {7}RF8 Gestión de Exportación}{40}{section*.4}%
 \contentsline {subsection}{\numberline {7.1}Escenario principal}{40}{section*.4}%
-\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{41}{Item.59}%
-\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{42}{Item.59}%
-\contentsline {subsection}{\numberline {7.4}Bocetos}{43}{Item.59}%
-\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{46}{figure.21}%
+\contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{41}{Item.61}%
+\contentsline {subsection}{\numberline {7.3}Casos de Prueba}{42}{Item.61}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{44}{Item.61}%
+\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{47}{figure.21}%

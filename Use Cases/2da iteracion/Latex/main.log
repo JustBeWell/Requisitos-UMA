@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  9 DEC 2024 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  9 DEC 2024 22:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -453,7 +453,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.43 ...on}{\numberline {7.4}Bocetos}{43}{Item.59}
+l.43 ...on}{\numberline {7.4}Bocetos}{44}{Item.61}
                                                   % [1])
 \tf@toc=\write3
 \openout3 = `main.toc'.
@@ -709,37 +709,40 @@ Package pdftex.def Info: assets/sequence/Borrar.jpg  used on input line 90.
 [41]
 
 [42]
-<assets/mockups/RF8 filtrado y selección de productos.png, id=457, 1014.79124pt x 823.075pt>
+<assets/mockups/RF8 filtrado y selección de productos.png, id=459, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 filtrado y selección de productos.png Graphic file (type png)
 <use assets/mockups/RF8 filtrado y selección de productos.png>
-Package pdftex.def Info: assets/mockups/RF8 filtrado y selección de productos.png  used on input line 144.
+Package pdftex.def Info: assets/mockups/RF8 filtrado y selección de productos.png  used on input line 179.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<assets/mockups/RF8 Seleccion de atributos obligatorios.png, id=458, 1014.79124pt x 823.075pt>
+
+
+[43]
+<assets/mockups/RF8 Seleccion de atributos obligatorios.png, id=465, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 Seleccion de atributos obligatorios.png Graphic file (type png)
 <use assets/mockups/RF8 Seleccion de atributos obligatorios.png>
-Package pdftex.def Info: assets/mockups/RF8 Seleccion de atributos obligatorios.png  used on input line 150.
+Package pdftex.def Info: assets/mockups/RF8 Seleccion de atributos obligatorios.png  used on input line 184.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[43 <./assets/mockups/RF8 filtrado y selección de productos.png>]
-<assets/mockups/RF8 Seleccion atributos opcionales.png, id=465, 1014.79124pt x 823.075pt>
+[44 <./assets/mockups/RF8 filtrado y selección de productos.png>]
+<assets/mockups/RF8 Seleccion atributos opcionales.png, id=471, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 Seleccion atributos opcionales.png Graphic file (type png)
 <use assets/mockups/RF8 Seleccion atributos opcionales.png>
-Package pdftex.def Info: assets/mockups/RF8 Seleccion atributos opcionales.png  used on input line 155.
+Package pdftex.def Info: assets/mockups/RF8 Seleccion atributos opcionales.png  used on input line 189.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
 
 
-[44 <./assets/mockups/RF8 Seleccion de atributos obligatorios.png>]
-<assets/sequence/RF8.jpg, id=471, 1172.38pt x 753.81625pt>
+[45 <./assets/mockups/RF8 Seleccion de atributos obligatorios.png>]
+<assets/sequence/RF8.jpg, id=477, 1172.38pt x 753.81625pt>
 File: assets/sequence/RF8.jpg Graphic file (type jpg)
 <use assets/sequence/RF8.jpg>
-Package pdftex.def Info: assets/sequence/RF8.jpg  used on input line 161.
+Package pdftex.def Info: assets/sequence/RF8.jpg  used on input line 195.
 (pdftex.def)             Requested size: 455.24411pt x 292.7104pt.
 )
 
-[45 <./assets/mockups/RF8 Seleccion atributos opcionales.png>]
+[46 <./assets/mockups/RF8 Seleccion atributos opcionales.png>]
 
-[46 <./assets/sequence/RF8.jpg>] (main.aux
+[47 <./assets/sequence/RF8.jpg>] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (body/RF1.9_CrearInformeCuentaJSON/page.aux) (body/RF1.9.1_ExportarInformeCuenta/page.aux) (body/RF5.1_CrearRelacion/page.aux) (body/RF5.2_VerRelacion/page.aux) (body/RF5.3_EditarRelacion/page.aux) (body/RF5.4_BorrarRelacion/page.aux) (body/RF8.X_GestionExportacion/page.aux))
@@ -749,17 +752,17 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15186 strings out of 473702
- 248925 string characters out of 5735993
+ 15189 strings out of 473702
+ 248946 string characters out of 5735993
  768925 words of memory out of 5000000
  37872 multiletter control sequences out of 15000+600000
  566838 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,8n,93p,624b,839s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (46 pages, 2126879 bytes).
+Output written on main.pdf (47 pages, 2128953 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 696 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
  452 words of extra memory for PDF output out of 10000 (max. 10000000)
 
