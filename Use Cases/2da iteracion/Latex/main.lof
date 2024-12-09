@@ -1,24 +1,24 @@
 \babel@toc {spanish}{}\relax 
 \thispagestyle {empty}
 \contentsline {figure}{\numberline {1}{\ignorespaces Informe de Cuentas generado en sección \enquote {Cuenta}}}{8}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{9}{figure.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de Secuencia para crear el Informe de Cuenta}}{9}{figure.2}%
 \contentsline {figure}{\numberline {3}{\ignorespaces Se desea exportar el Informe de Cuentas generado}}{12}{figure.3}%
 \contentsline {figure}{\numberline {4}{\ignorespaces Menú de previsualización del JSON tras clicar \enquote {Export JSON}}}{13}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{14}{figure.5}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de Secuencia para exportar el Informe de Cuenta}}{14}{figure.5}%
 \contentsline {figure}{\numberline {6}{\ignorespaces Sección de \enquote {Relaciones}}}{18}{figure.6}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Menú de creación de relación tras clicar la opción \enquote {Añadir relación}}}{19}{figure.7}%
 \contentsline {figure}{\numberline {8}{\ignorespaces Escenario con al máximo de relaciones creadas}}{20}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{21}{figure.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de Secuencia para crear una Relación}}{21}{figure.9}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Ver producto con sus relaciones asociadas}}{24}{figure.10}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Ver los productos relacionados tras clicar en una relación del producto}}{25}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{26}{figure.12}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de Secuencia para ver una Relación}}{26}{figure.12}%
 \contentsline {figure}{\numberline {13}{\ignorespaces Se desea editar la relación 1}}{30}{figure.13}%
 \contentsline {figure}{\numberline {14}{\ignorespaces Menú de edición para la relación seleccionada}}{31}{figure.14}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{32}{figure.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de Secuencia para editar una Relación}}{32}{figure.15}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Se desea eliminar la relación 1}}{35}{figure.16}%
 \contentsline {figure}{\numberline {17}{\ignorespaces Mensaje esperando confirmación para eliminar la relación}}{36}{figure.17}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Escenario principal para crear el Informe de Cuenta}}{37}{figure.18}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Pantalla principal de exportación y formulario de configuración de mapeo}}{41}{figure.19}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Selección de atributos obligatorios en la exportación}}{42}{figure.20}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de Secuencia para borrar una Relación}}{37}{figure.18}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Pantalla principal de exportación en apartado \enquote {Productos}}}{41}{figure.19}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Formulario de configuración de mapeo tras clicar \enquote {CSV}}}{42}{figure.20}%
 \contentsline {figure}{\numberline {21}{\ignorespaces Selección de atributos opcionales en la exportación}}{43}{figure.21}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Escenario principal para la gestión de exportación}}{44}{figure.22}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Diagrama de Secuencia para la gestión de exportación}}{44}{figure.22}%

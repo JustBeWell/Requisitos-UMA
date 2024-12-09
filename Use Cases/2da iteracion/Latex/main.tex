@@ -83,7 +83,7 @@
 
 % Comando para cambiar el título del abstract
 \addto\captionsspanish{%
-  \renewcommand{\abstractname}{Recomendaciones}
+  \renewcommand{\abstractname}{Consideraciones antes de leer la memoria}
 }
 
 
@@ -138,8 +138,24 @@
 % RESUMEN
 \thispagestyle{empty}
 \begin{abstract}
-  Para comprender mejor el rol de los actores en cada caso de uso se recomienda consultar el apartado \emph{3.3 Perfiles de los Participantes} y \emph{3.4 Perfiles de Usuario} del DGR Mini PIM donde se define cada uno y como se refiere a ellos para evitar ambigüedades. 
-  También consultar \emph{1.3 Definiciones, acrónimos y abreviaturas} en caso de no entender alguna palabra técnica usada en esta memoria. De la misma manera, todos los Requisitos Funcionales y No Funcionales se detallan a fondo en el mismo documento.
+  Para comprender mejor el rol de los actores en cada caso de uso se recomienda consultar el apartado \emph{3.3 Perfiles de los Participantes} y 
+  \emph{3.4 Perfiles de Usuario} del \texttt{DGR Mini PIM} donde se define cada uno y como se refiere a ellos para evitar ambigüedades. 
+  También consultar \emph{1.3 Definiciones, acrónimos y abreviaturas} en caso de no entender alguna palabra técnica usada en esta memoria. 
+  De la misma manera, todos los Requisitos Funcionales y No Funcionales se detallan a fondo en el mismo documento.\par
+  \vspace{0.25cm}
+  \subsubsection*{Interpretación de los Modelos de Análisis presentados:}
+  Se implementó el patrón \texttt{MVC (Modelo-Vista-Controlador)}, que organiza el diagrama en tres componentes separado. Este patrón de diseño permite 
+  reutilización de código y flexibilidad para modificar o escalar la aplicación sin afectar sus partes independientes. Además, mejora la calidad 
+  del software al simplificar la identificación de cada miembro para agilizar el desarrollo.\par
+  \vspace{0.15cm}
+  En la aplicación \texttt{MiniPIM} que estamos desarrollando en Visual Studio, la capa de \texttt{Vista} se encuentran los Windows Forms, que 
+  permiten mostrar al usuario el estado del modelo y facilitar la interacción con el sistema. El usuario interactúa con el \texttt{Modelo} a través 
+  del \texttt{Controlador} implementado mediante \emph{eventos} asociados al Form.\par
+  \vspace{0.15cm}
+  Estos, conectan el \texttt{Controlador} con el \texttt{Modelo} representado por los \texttt{DataClasses} generados por el \texttt{framework LINQ}, 
+  los cuales realizan un mapeo ORM entre el modelo de dominio orientado a objetos y las tablas del modelo relacional en la base de datos, que 
+  constituyen la lógica subyacente del sistema; de esta manera logramos la persistencia de la información.En los diagramas de secuencia presentados 
+  a para cada requisito solicitado en esta iteración, se visualiza cómo el usuario interactúa con las tres capas del sistema.
 \end{abstract}
 
 \newpage

@@ -232,6 +232,7 @@ INPUT .\main.lof
 INPUT main.lof
 OUTPUT main.lof
 INPUT C:\MikTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\MikTeX\fonts\tfm\public\cm\cmtt12.tfm
 INPUT .\body\RF1.9_CrearInformeCuentaJSON\page.tex
 INPUT .\body\RF1.9_CrearInformeCuentaJSON\page.tex
 OUTPUT body\RF1.9_CrearInformeCuentaJSON\page.aux
@@ -274,10 +275,13 @@ INPUT .\assets\mockups\RF1.9.1_2ExportarInformeCuenta.png
 INPUT .\assets\mockups\RF1.9.1_2ExportarInformeCuenta.png
 INPUT .\assets\mockups\RF1.9.1_2ExportarInformeCuenta.png
 INPUT .\assets\mockups\RF1.9.1_2ExportarInformeCuenta.png
-INPUT .\assets\umaLogo.png
-INPUT .\assets\umaLogo.png
-INPUT .\assets\umaLogo.png
-INPUT .\assets\umaLogo.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
+INPUT .\assets\sequence\RF1.9.1_ExportarInformeCuenta.png
 INPUT .\body\RF5.1_CrearRelacion\page.tex
 INPUT .\body\RF5.1_CrearRelacion\page.tex
 OUTPUT body\RF5.1_CrearRelacion\page.aux
@@ -388,7 +392,6 @@ OUTPUT body\RF8.X_GestionExportacion\page.aux
 INPUT .\body\RF8.X_GestionExportacion\page.tex
 INPUT .\body\RF8.X_GestionExportacion\page.tex
 INPUT body\RF8.X_GestionExportacion\page.tex
-INPUT C:\MikTeX\fonts\tfm\public\cm\cmtt12.tfm
 INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
 INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
 INPUT .\assets\mockups\RF8 filtrado y selección de productos.png
