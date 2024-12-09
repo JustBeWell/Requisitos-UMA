@@ -41,4 +41,4 @@
 \contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{41}{Item.61}%
 \contentsline {subsection}{\numberline {7.3}Casos de Prueba}{42}{Item.61}%
 \contentsline {subsection}{\numberline {7.4}Bocetos}{44}{Item.61}%
-\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{47}{figure.21}%
+\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia}{48}{figure.22}%

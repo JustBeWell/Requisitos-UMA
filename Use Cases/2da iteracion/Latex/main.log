@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  9 DEC 2024 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.8)  9 DEC 2024 23:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -491,7 +491,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 ]
 
 [7]
-<assets/mockups/RF1.9CrearInformeCuenta.png, id=214, 1014.79124pt x 823.075pt>
+<assets/mockups/RF1.9CrearInformeCuenta.png, id=219, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF1.9CrearInformeCuenta.png Graphic file (type png)
 <use assets/mockups/RF1.9CrearInformeCuenta.png>
 Package pdftex.def Info: assets/mockups/RF1.9CrearInformeCuenta.png  used on input line 89.
@@ -499,7 +499,7 @@ Package pdftex.def Info: assets/mockups/RF1.9CrearInformeCuenta.png  used on inp
 
 
 [8 <./assets/mockups/RF1.9CrearInformeCuenta.png>]
-<assets/sequence/RF1.9_CrearInformeCuenta_v5.png, id=221, 654.73178pt x 255.09589pt>
+<assets/sequence/RF1.9_CrearInformeCuenta_v5.png, id=226, 654.73178pt x 255.09589pt>
 File: assets/sequence/RF1.9_CrearInformeCuenta_v5.png Graphic file (type png)
 <use assets/sequence/RF1.9_CrearInformeCuenta_v5.png>
 Package pdftex.def Info: assets/sequence/RF1.9_CrearInformeCuenta_v5.png  used on input line 98.
@@ -520,12 +520,12 @@ Package pdftex.def Info: assets/sequence/RF1.9_CrearInformeCuenta_v5.png  used o
 [11]
 
 [12]
-<assets/mockups/RF1.9.1_1ExportarInformeCuenta.png, id=246, 1014.79124pt x 823.075pt>
+<assets/mockups/RF1.9.1_1ExportarInformeCuenta.png, id=251, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF1.9.1_1ExportarInformeCuenta.png Graphic file (type png)
 <use assets/mockups/RF1.9.1_1ExportarInformeCuenta.png>
 Package pdftex.def Info: assets/mockups/RF1.9.1_1ExportarInformeCuenta.png  used on input line 111.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<assets/mockups/RF1.9.1_2ExportarInformeCuenta.png, id=247, 1014.79124pt x 823.075pt>
+<assets/mockups/RF1.9.1_2ExportarInformeCuenta.png, id=252, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF1.9.1_2ExportarInformeCuenta.png Graphic file (type png)
 <use assets/mockups/RF1.9.1_2ExportarInformeCuenta.png>
 Package pdftex.def Info: assets/mockups/RF1.9.1_2ExportarInformeCuenta.png  used on input line 117.
@@ -535,7 +535,7 @@ Package pdftex.def Info: assets/mockups/RF1.9.1_2ExportarInformeCuenta.png  used
 [13 <./assets/mockups/RF1.9.1_1ExportarInformeCuenta.png>]
 
 [14 <./assets/mockups/RF1.9.1_2ExportarInformeCuenta.png>]
-<assets/sequence/RF1.9.1_ExportarInformeCuenta.png, id=259, 614.295pt x 377.15906pt>
+<assets/sequence/RF1.9.1_ExportarInformeCuenta.png, id=264, 614.295pt x 377.15906pt>
 File: assets/sequence/RF1.9.1_ExportarInformeCuenta.png Graphic file (type png)
 <use assets/sequence/RF1.9.1_ExportarInformeCuenta.png>
 Package pdftex.def Info: assets/sequence/RF1.9.1_ExportarInformeCuenta.png  used on input line 126.
@@ -556,7 +556,7 @@ Package pdftex.def Info: assets/sequence/RF1.9.1_ExportarInformeCuenta.png  used
 [17]
 
 [18]
-<assets/mockups/RF5.1_1.png, id=294, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.1_1.png, id=299, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.1_1.png Graphic file (type png)
 <use assets/mockups/RF5.1_1.png>
 Package pdftex.def Info: assets/mockups/RF5.1_1.png  used on input line 152.
@@ -564,7 +564,7 @@ Package pdftex.def Info: assets/mockups/RF5.1_1.png  used on input line 152.
 
 
 [19]
-<assets/mockups/RF5.1_2.png, id=300, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.1_2.png, id=305, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.1_2.png Graphic file (type png)
 <use assets/mockups/RF5.1_2.png>
 Package pdftex.def Info: assets/mockups/RF5.1_2.png  used on input line 158.
@@ -572,7 +572,7 @@ Package pdftex.def Info: assets/mockups/RF5.1_2.png  used on input line 158.
 
 
 [20 <./assets/mockups/RF5.1_1.png>]
-<assets/mockups/RF5.1_3.png, id=306, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.1_3.png, id=311, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.1_3.png Graphic file (type png)
 <use assets/mockups/RF5.1_3.png>
 Package pdftex.def Info: assets/mockups/RF5.1_3.png  used on input line 164.
@@ -582,7 +582,7 @@ Package pdftex.def Info: assets/mockups/RF5.1_3.png  used on input line 164.
 [21 <./assets/mockups/RF5.1_2.png>]
 
 [22 <./assets/mockups/RF5.1_3.png>]
-<assets/sequence/Crear.jpg, id=317, 1417.295pt x 946.53625pt>
+<assets/sequence/Crear.jpg, id=322, 1417.295pt x 946.53625pt>
 File: assets/sequence/Crear.jpg Graphic file (type jpg)
 <use assets/sequence/Crear.jpg>
 Package pdftex.def Info: assets/sequence/Crear.jpg  used on input line 173.
@@ -599,7 +599,7 @@ Package pdftex.def Info: assets/sequence/Crear.jpg  used on input line 173.
 
 
 ]
-<assets/mockups/RF5.2_1.png, id=332, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.2_1.png, id=337, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.2_1.png Graphic file (type png)
 <use assets/mockups/RF5.2_1.png>
 Package pdftex.def Info: assets/mockups/RF5.2_1.png  used on input line 86.
@@ -607,7 +607,7 @@ Package pdftex.def Info: assets/mockups/RF5.2_1.png  used on input line 86.
 
 
 [25]
-<assets/mockups/RF5.2_2.png, id=338, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.2_2.png, id=343, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.2_2.png Graphic file (type png)
 <use assets/mockups/RF5.2_2.png>
 Package pdftex.def Info: assets/mockups/RF5.2_2.png  used on input line 92.
@@ -617,7 +617,7 @@ Package pdftex.def Info: assets/mockups/RF5.2_2.png  used on input line 92.
 [26 <./assets/mockups/RF5.2_1.png>]
 
 [27 <./assets/mockups/RF5.2_2.png>]
-<assets/sequence/Visualizar.jpg, id=349, 1380.15625pt x 515.9275pt>
+<assets/sequence/Visualizar.jpg, id=354, 1380.15625pt x 515.9275pt>
 File: assets/sequence/Visualizar.jpg Graphic file (type jpg)
 <use assets/sequence/Visualizar.jpg>
 Package pdftex.def Info: assets/sequence/Visualizar.jpg  used on input line 101.
@@ -638,12 +638,12 @@ Package pdftex.def Info: assets/sequence/Visualizar.jpg  used on input line 101.
 [30]
 
 [31]
-<assets/mockups/RF5.3_1.png, id=379, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.3_1.png, id=384, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.3_1.png Graphic file (type png)
 <use assets/mockups/RF5.3_1.png>
 Package pdftex.def Info: assets/mockups/RF5.3_1.png  used on input line 135.
 (pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
-<assets/mockups/RF5.3_2.png, id=380, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.3_2.png, id=385, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.3_2.png Graphic file (type png)
 <use assets/mockups/RF5.3_2.png>
 Package pdftex.def Info: assets/mockups/RF5.3_2.png  used on input line 141.
@@ -653,7 +653,7 @@ Package pdftex.def Info: assets/mockups/RF5.3_2.png  used on input line 141.
 [32 <./assets/mockups/RF5.3_1.png>]
 
 [33 <./assets/mockups/RF5.3_2.png>]
-<assets/sequence/Editar.jpg, id=391, 1381.16pt x 946.53625pt>
+<assets/sequence/Editar.jpg, id=396, 1381.16pt x 946.53625pt>
 File: assets/sequence/Editar.jpg Graphic file (type jpg)
 <use assets/sequence/Editar.jpg>
 Package pdftex.def Info: assets/sequence/Editar.jpg  used on input line 150.
@@ -670,7 +670,7 @@ Package pdftex.def Info: assets/sequence/Editar.jpg  used on input line 150.
 
 
 ]
-<assets/mockups/RF5.4_1.png, id=408, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.4_1.png, id=413, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.4_1.png Graphic file (type png)
 <use assets/mockups/RF5.4_1.png>
 Package pdftex.def Info: assets/mockups/RF5.4_1.png  used on input line 75.
@@ -678,7 +678,7 @@ Package pdftex.def Info: assets/mockups/RF5.4_1.png  used on input line 75.
 
 
 [36]
-<assets/mockups/RF5.4_2.png, id=413, 1014.79124pt x 823.075pt>
+<assets/mockups/RF5.4_2.png, id=418, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF5.4_2.png Graphic file (type png)
 <use assets/mockups/RF5.4_2.png>
 Package pdftex.def Info: assets/mockups/RF5.4_2.png  used on input line 81.
@@ -688,7 +688,7 @@ Package pdftex.def Info: assets/mockups/RF5.4_2.png  used on input line 81.
 [37 <./assets/mockups/RF5.4_1.png>]
 
 [38 <./assets/mockups/RF5.4_2.png>]
-<assets/sequence/Borrar.jpg, id=425, 1166.3575pt x 683.55376pt>
+<assets/sequence/Borrar.jpg, id=430, 1166.3575pt x 683.55376pt>
 File: assets/sequence/Borrar.jpg Graphic file (type jpg)
 <use assets/sequence/Borrar.jpg>
 Package pdftex.def Info: assets/sequence/Borrar.jpg  used on input line 90.
@@ -709,7 +709,7 @@ Package pdftex.def Info: assets/sequence/Borrar.jpg  used on input line 90.
 [41]
 
 [42]
-<assets/mockups/RF8 filtrado y selección de productos.png, id=459, 1014.79124pt x 823.075pt>
+<assets/mockups/RF8 filtrado y selección de productos.png, id=464, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 filtrado y selección de productos.png Graphic file (type png)
 <use assets/mockups/RF8 filtrado y selección de productos.png>
 Package pdftex.def Info: assets/mockups/RF8 filtrado y selección de productos.png  used on input line 179.
@@ -717,7 +717,7 @@ Package pdftex.def Info: assets/mockups/RF8 filtrado y selección de productos.p
 
 
 [43]
-<assets/mockups/RF8 Seleccion de atributos obligatorios.png, id=465, 1014.79124pt x 823.075pt>
+<assets/mockups/RF8 Seleccion de atributos obligatorios.png, id=470, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 Seleccion de atributos obligatorios.png Graphic file (type png)
 <use assets/mockups/RF8 Seleccion de atributos obligatorios.png>
 Package pdftex.def Info: assets/mockups/RF8 Seleccion de atributos obligatorios.png  used on input line 184.
@@ -725,7 +725,7 @@ Package pdftex.def Info: assets/mockups/RF8 Seleccion de atributos obligatorios.
 
 
 [44 <./assets/mockups/RF8 filtrado y selección de productos.png>]
-<assets/mockups/RF8 Seleccion atributos opcionales.png, id=471, 1014.79124pt x 823.075pt>
+<assets/mockups/RF8 Seleccion atributos opcionales.png, id=476, 1014.79124pt x 823.075pt>
 File: assets/mockups/RF8 Seleccion atributos opcionales.png Graphic file (type png)
 <use assets/mockups/RF8 Seleccion atributos opcionales.png>
 Package pdftex.def Info: assets/mockups/RF8 Seleccion atributos opcionales.png  used on input line 189.
@@ -733,16 +733,24 @@ Package pdftex.def Info: assets/mockups/RF8 Seleccion atributos opcionales.png  
 
 
 [45 <./assets/mockups/RF8 Seleccion de atributos obligatorios.png>]
-<assets/sequence/RF8.jpg, id=477, 1172.38pt x 753.81625pt>
+<assets/mockups/RF8 selección de productos (sin filtros).png, id=482, 1014.79124pt x 823.075pt>
+File: assets/mockups/RF8 selección de productos (sin filtros).png Graphic file (type png)
+<use assets/mockups/RF8 selección de productos (sin filtros).png>
+Package pdftex.def Info: assets/mockups/RF8 selección de productos (sin filtros).png  used on input line 194.
+(pdftex.def)             Requested size: 455.24411pt x 369.23744pt.
+
+
+[46 <./assets/mockups/RF8 Seleccion atributos opcionales.png>]
+<assets/sequence/RF8.jpg, id=488, 1172.38pt x 753.81625pt>
 File: assets/sequence/RF8.jpg Graphic file (type jpg)
 <use assets/sequence/RF8.jpg>
-Package pdftex.def Info: assets/sequence/RF8.jpg  used on input line 195.
+Package pdftex.def Info: assets/sequence/RF8.jpg  used on input line 200.
 (pdftex.def)             Requested size: 455.24411pt x 292.7104pt.
 )
 
-[46 <./assets/mockups/RF8 Seleccion atributos opcionales.png>]
+[47 <./assets/mockups/RF8 selección de productos (sin filtros).png>]
 
-[47 <./assets/sequence/RF8.jpg>] (main.aux
+[48 <./assets/sequence/RF8.jpg>] (main.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
  (body/RF1.9_CrearInformeCuentaJSON/page.aux) (body/RF1.9.1_ExportarInformeCuenta/page.aux) (body/RF5.1_CrearRelacion/page.aux) (body/RF5.2_VerRelacion/page.aux) (body/RF5.3_EditarRelacion/page.aux) (body/RF5.4_BorrarRelacion/page.aux) (body/RF8.X_GestionExportacion/page.aux))
@@ -752,17 +760,17 @@ L3 programming layer <2024-10-09>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 15189 strings out of 473702
- 248946 string characters out of 5735993
+ 15198 strings out of 473702
+ 249430 string characters out of 5735993
  768925 words of memory out of 5000000
- 37872 multiletter control sequences out of 15000+600000
+ 37879 multiletter control sequences out of 15000+600000
  566838 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,8n,93p,624b,839s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/MikTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/MikTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (47 pages, 2128953 bytes).
+Output written on main.pdf (48 pages, 2208865 bytes).
 PDF statistics:
- 696 PDF objects out of 1000 (max. 8388607)
- 143 named destinations out of 1000 (max. 500000)
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 709 PDF objects out of 1000 (max. 8388607)
+ 145 named destinations out of 1000 (max. 500000)
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 
