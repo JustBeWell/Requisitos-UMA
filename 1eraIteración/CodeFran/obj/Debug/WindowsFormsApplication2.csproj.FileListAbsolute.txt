@@ -196,3 +196,6 @@ C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\
 C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
 C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
