@@ -17,25 +17,25 @@
 \contentsline {subsection}{\numberline {3.2}Escenarios alternativos}{16}{Item.20}%
 \contentsline {subsection}{\numberline {3.3}Casos de Prueba}{16}{Item.20}%
 \contentsline {subsection}{\numberline {3.4}Bocetos}{18}{Item.20}%
-\contentsline {subsection}{\numberline {3.5}Diagrama de Secuencia (por hacer)}{21}{figure.8}%
+\contentsline {subsection}{\numberline {3.5}Diagrama de Secuencia}{21}{figure.8}%
 \contentsline {section}{\numberline {4}RF5.2 Visualizar relación}{22}{figure.9}%
 \contentsline {subsection}{\numberline {4.1}Escenario principal}{22}{figure.9}%
 \contentsline {subsection}{\numberline {4.2}Escenarios alternativos}{22}{Item.27}%
 \contentsline {subsection}{\numberline {4.3}Casos de Prueba}{23}{Item.27}%
 \contentsline {subsection}{\numberline {4.4}Bocetos}{24}{Item.27}%
-\contentsline {subsection}{\numberline {4.5}Diagrama de Secuencia (por hacer)}{26}{figure.11}%
+\contentsline {subsection}{\numberline {4.5}Diagrama de Secuencia}{26}{figure.11}%
 \contentsline {section}{\numberline {5}RF5.3 Editar relación}{27}{figure.12}%
 \contentsline {subsection}{\numberline {5.1}Escenario principal}{27}{figure.12}%
 \contentsline {subsection}{\numberline {5.2}Escenarios alternativos}{28}{Item.37}%
 \contentsline {subsection}{\numberline {5.3}Casos de Prueba}{28}{Item.37}%
 \contentsline {subsection}{\numberline {5.4}Bocetos}{30}{Item.37}%
-\contentsline {subsection}{\numberline {5.5}Diagrama de Secuencia (por hacer)}{32}{figure.14}%
+\contentsline {subsection}{\numberline {5.5}Diagrama de Secuencia}{32}{figure.14}%
 \contentsline {section}{\numberline {6}RF5.4 Borrar relación}{33}{figure.15}%
 \contentsline {subsection}{\numberline {6.1}Escenario principal}{33}{figure.15}%
 \contentsline {subsection}{\numberline {6.2}Escenarios alternativos}{33}{Item.46}%
 \contentsline {subsection}{\numberline {6.3}Casos de Prueba}{34}{Item.46}%
 \contentsline {subsection}{\numberline {6.4}Bocetos}{35}{Item.46}%
-\contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia (por hacer)}{37}{figure.17}%
+\contentsline {subsection}{\numberline {6.5}Diagrama de Secuencia}{37}{figure.17}%
 \contentsline {section}{\numberline {7}RF8 Gestión de Exportación}{38}{section*.4}%
 \contentsline {subsection}{\numberline {7.1}Escenario principal}{38}{section*.4}%
 \contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{39}{Item.57}%
