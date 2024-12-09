@@ -86,16 +86,44 @@ Diego Sicre y Angel Escaño.
     \end{enumerate}
 \end{description}
 
+
 \numberedsubsection{Casos de Prueba}
 
 \underline{Escenario: Principal}\par
-\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM, hay productos en el sistema, y el usuario selecciona filtros de categoría y/o fecha correctamente.  
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM, \par
+\textbf{Cuando:} Hay productos en el sistema, y el usuario selecciona filtros de categoría y/o fecha correctamente.
 \textbf{Entonces:} El sistema genera un CSV válido y descargable.\par
-
-\underline{Escenario: Alternativo 6.a (Falta un atributo de tipo float o entero)}\par
-\textbf{Dado:} Que el usuario intenta exportar productos.  
-\textbf{Cuando:} No existe ningún atributo de usuario de tipo float o entero en el sistema.  
-\textbf{Entonces:} El sistema muestra un mensaje indicando que no es posible mapear un precio y no se puede proceder con la exportación.\par
+\vspace{0.15cm}
+\underline{Escenario: Alternativo 3.a (No se encuentran productos al filtrar por categoría)}\par
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM.  \par
+\textbf{Y:} Filtra productos por una categoría específica. \par 
+\textbf{Cuando:} No hay productos asociados a esa categoría. \par 
+\textbf{Entonces:} El sistema muestra un mensaje indicando que no existen productos con esa categoría.\par
+\vspace{0.15cm}
+\underline{Escenario: Alternativo 3.b (No se encuentran productos al filtrar por fecha)}\par
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM.  \par
+\textbf{Y:} Filtra productos por fecha seleccionando un rango en el calendario.\par  
+\textbf{Cuando:} No hay productos con modificaciones en el rango especificado.  \par
+\textbf{Entonces:} El sistema muestra un mensaje indicando que no hay productos disponibles en ese rango de fechas.\par
+\vspace{0.15cm}
+\underline{Escenario: Alternativo 4.a (No hay productos seleccionados)}\par
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM.  \par
+\textbf{Y:} Está visualizando el listado de productos.  \par
+\textbf{Y:} No ha seleccionado ningún producto.  \par
+\textbf{Cuando:} Hace clic en el botón \enquote{CSV}.  \par
+\textbf{Entonces:} El sistema muestra un mensaje indicando que debe seleccionar al menos un producto para la exportación.\par
+\vspace{0.15cm}
+\underline{Escenario: Alternativo 5.a (Falta algún atributo obligatorio)}\par
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM.  \par
+\textbf{Y:} Está configurando el mapeo de atributos obligatorios.  \par
+\textbf{Cuando:} Intenta continuar con uno o más atributos obligatorios faltantes.  \par
+\textbf{Entonces:} El sistema notifica al usuario que faltan atributos obligatorios y permite corregirlos.\par
+\vspace{0.15cm}
+\underline{Escenario: Alternativo 7.a (No existe ningún atributo de tipo float o entero)}\par
+\textbf{Dado:} Que el usuario ha iniciado sesión en Mini PIM.  \par
+\textbf{Y:} Está configurando el mapeo de atributos obligatorios.  \par
+\textbf{Cuando:} No existe ningún atributo de usuario de tipo float o entero en el sistema.  \par
+\textbf{Entonces:} El sistema muestra un mensaje de error indicando que no se puede proceder con la exportación, ya que no es posible mapear un precio.\par
 
 \numberedsubsection{Bocetos}
 \begin{figure}[H]

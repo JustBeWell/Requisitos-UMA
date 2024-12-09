@@ -40,5 +40,5 @@
 \contentsline {subsection}{\numberline {7.1}Escenario principal}{38}{section*.4}%
 \contentsline {subsection}{\numberline {7.2}Escenarios alternativos}{39}{Item.57}%
 \contentsline {subsection}{\numberline {7.3}Casos de Prueba}{40}{Item.57}%
-\contentsline {subsection}{\numberline {7.4}Bocetos}{40}{Item.57}%
-\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia (por hacer)}{43}{figure.21}%
+\contentsline {subsection}{\numberline {7.4}Bocetos}{41}{Item.57}%
+\contentsline {subsection}{\numberline {7.5}Diagrama de Secuencia (por hacer)}{44}{figure.21}%
