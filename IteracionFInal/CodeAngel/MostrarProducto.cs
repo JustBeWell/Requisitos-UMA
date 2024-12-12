@@ -83,8 +83,6 @@ namespace WindowsFormsApplication2
                 textBoxU5.Enabled = false;
                 textBoxU5.Text = "No User Atribute 5";
             }
-
-
         }
 
         private void Salir_Click(object sender, EventArgs e)
@@ -127,7 +125,65 @@ namespace WindowsFormsApplication2
 
         private void MostrarProducto_Load_1(object sender, EventArgs e)
         {
+            CargarRelacionesEnListBox();
+            //CargarProductosRelacionados();
+        }
 
+        private void CargarRelacionesEnListBox()
+        {
+            using (var dbContext = new DataClasses1DataContext()) // Reemplaza con tu contexto real
+            {
+                // Obtener todas las relaciones desde la base de datos
+                var relaciones = dbContext.Relacion
+                    .Select(r => new { r.nombre })
+                    .ToList();
+
+                if (relaciones.Any())
+                {
+                    // Configurar la primera ListBox para mostrar las relaciones
+                    listBoxRelaciones.DataSource = relaciones;
+                    listBoxRelaciones.DisplayMember = "nombre"; // Mostrar el nombre de la relación
+                    listBoxRelaciones.ValueMember = "nombre"; // Usar el nombre como valor de la relación
+                }
+                else
+                {
+                    // Si no hay relaciones disponibles, vaciar el ListBox y mostrar un mensaje opcional
+                    listBoxRelaciones.DataSource = null;
+                    MessageBox.Show("No hay relaciones disponibles.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+        }
+
+
+        private void CargarProductosRelacionados()
+        {
+            using (var dbContext = new DataClasses1DataContext()) // Reemplaza con tu contexto real
+            {
+                // Obtener todos los productos relacionados de la base de datos
+                var productosRelacionados = dbContext.Relacion
+                    .SelectMany(r => new[] { r.producto_SKU1, r.producto_SKU2 }) // Expandir todos los productos relacionados
+                    .Where(sku => sku != null) // Filtrar valores nulos
+                    .Join(dbContext.Producto, sku => sku, p => p.SKU, (sku, p) => new
+                    {
+                        p.SKU,
+                        p.GTIN
+                    })
+                    .ToList();
+
+                if (productosRelacionados.Any())
+                {
+                    // Configurar la última ListBox con los productos relacionados
+                    listBoxProductos.DataSource = productosRelacionados;
+                    listBoxProductos.DisplayMember = "SKU"; // Mostrar el SKU
+                    listBoxProductos.ValueMember = "SKU";  // Usar el SKU como valor del producto
+                }
+                else
+                {
+                    // Si no hay productos relacionados, vaciar el ListBox y mostrar un mensaje opcional
+                    listBoxProductos.DataSource = null;
+                    MessageBox.Show("No hay productos relacionados disponibles.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -138,6 +194,55 @@ namespace WindowsFormsApplication2
         private void Categorias_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+
+        private void listBoxRelaciones_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            /*try
+            {
+                // Verificar que hay una relación seleccionada
+                if (listBoxRelaciones.SelectedValue != null && !string.IsNullOrEmpty(listBoxRelaciones.SelectedValue.ToString()))
+                {
+                    // Obtener el ID de la relación seleccionada
+                    string nombreRel = listBoxRelaciones.SelectedValue as string;
+
+                    using (var dbContext = new DataClasses1DataContext()) // Reemplaza con tu contexto real
+                    {
+                        // Obtener los SKUs relacionados a la relación seleccionada
+                        var skusRelacionados = dbContext.Relacion
+                            .Where(r => r.nombre == nombreRel)
+                            .SelectMany(r => new[] { r.producto_SKU1, r.producto_SKU2 }) // Expandir los SKUs
+                            .Where(sku => sku != null) // Filtrar valores nulos
+                            .ToList();
+
+                        // Obtener los detalles de los productos relacionados
+                        var productosRelacionados = dbContext.Producto
+                            .Where(p => skusRelacionados.Contains(p.SKU))
+                            .Select(p => new
+                            {
+                                p.SKU,
+                                p.GTIN
+                            })
+                            .ToList();
+
+                        // Configurar el ListBox con los productos relacionados
+                        listBoxProductos.DataSource = productosRelacionados;
+                        listBoxProductos.DisplayMember = "SKU"; // Mostrar el SKU
+                        listBoxProductos.ValueMember = "SKU";  // Usar el SKU como valor del producto
+                    }
+                }
+                else
+                {
+                    // Si no hay selección, vaciar el ListBox de productos
+                    listBoxProductos.DataSource = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+             */
         }
 
 

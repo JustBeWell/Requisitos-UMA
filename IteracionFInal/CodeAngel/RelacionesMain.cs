@@ -22,8 +22,51 @@ namespace WindowsFormsApplication2
         private void RelacionesMain_Load(object sender, EventArgs e)
         {
             ResaltarBoton(this.Relacion);
+            CargarRelaciones();
         }
+        public void CargarRelaciones()
+        {
+            using (var dbContext = new DataClasses1DataContext()) // Reemplaza TuDbContext con el nombre de tu contexto
+            {
+                // Obtener las relaciones de la tabla 'Relaciones'
+                var relaciones = dbContext.Relacion
+                    .Select(r => new {r.nombre}) // Selecciona solo los campos que necesitas
+                    .ToList();
 
+                // Asignar la lista de relaciones como fuente de datos del DataGridView
+                dataGridView1.DataSource = relaciones;
+            }
+
+            // Añadir columnas de botones de editar y borrar si no existen
+            if (!dataGridView1.Columns.Contains("Edit"))
+            {
+                var editarButtonColumn = new DataGridViewButtonColumn
+                {
+                    Name = "Edit",
+                    Text = "Edit",
+                    UseColumnTextForButtonValue = true
+                };
+                dataGridView1.Columns.Add(editarButtonColumn);
+            }
+
+            if (!dataGridView1.Columns.Contains("Delete"))
+            {
+                var borrarButtonColumn = new DataGridViewButtonColumn
+                {
+                    Name = "Delete",
+                    Text = "Delete",
+                    UseColumnTextForButtonValue = true
+                };
+                dataGridView1.Columns.Add(borrarButtonColumn);
+            }
+
+            // Configurar el ancho de las columnas
+            int totalWidth = dataGridView1.ClientSize.Width; // Ancho total del DataGridView
+            dataGridView1.Columns["Nombre"].Width = totalWidth / 2; // La columna "Nombre" ocupa la mitad del espacio
+            dataGridView1.Columns["Edit"].Width = totalWidth / 4; // La columna "Editar" ocupa un cuarto del espacio
+            dataGridView1.Columns["Delete"].Width = totalWidth / 4; // La columna "Borrar" ocupa un cuarto del espacio
+
+        }
         private void Producto_Click(object sender, EventArgs e)
         {
             this.Close();

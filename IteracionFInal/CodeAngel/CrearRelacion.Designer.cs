@@ -103,6 +103,7 @@
             this.buttonConfirmar.TabIndex = 6;
             this.buttonConfirmar.Text = "Confirm";
             this.buttonConfirmar.UseVisualStyleBackColor = true;
+            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
             // 
             // buttonCancelar
             // 
@@ -139,6 +140,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CrearRelacion";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.CrearRelacion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
