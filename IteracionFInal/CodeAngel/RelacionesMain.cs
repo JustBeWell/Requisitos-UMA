@@ -144,5 +144,29 @@ namespace WindowsFormsApplication2
             CrearRelacion cr = new CrearRelacion(this);
             cr.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                string RelacionNombre = dataGridView1.Rows[e.RowIndex].Cells["nombre"].Value.ToString();
+
+                Relacion relacionSeleccionada = new Relacion
+                {
+                    nombre = RelacionNombre,
+                };
+
+                if (dataGridView1.Columns[e.ColumnIndex].Name == "Editar")
+                {
+                    EditarRelacion editarForm = new EditarRelacion(this, relacionSeleccionada);
+                    editarForm.ShowDialog();
+                }
+                else if (dataGridView1.Columns[e.ColumnIndex].Name == "Eliminar")
+                {
+                    BorrarRelacion borrarForm = new BorrarRelacion(this, relacionSeleccionada);
+                    borrarForm.ShowDialog();
+                }
+            }
+        }
     }
 }
