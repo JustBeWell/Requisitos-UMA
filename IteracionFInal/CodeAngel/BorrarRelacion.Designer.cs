@@ -30,6 +30,7 @@
         {
             this.Yes = new System.Windows.Forms.Button();
             this.No = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Yes
@@ -52,17 +53,29 @@
             this.No.UseVisualStyleBackColor = true;
             this.No.Click += new System.EventHandler(this.No_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.25F);
+            this.label2.Location = new System.Drawing.Point(58, 46);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(403, 22);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Are you sure you want to delete this relationship?";
+            // 
             // BorrarRelacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 236);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.No);
             this.Controls.Add(this.Yes);
             this.Name = "BorrarRelacion";
             this.Text = "BorrarRelacion";
             this.Load += new System.EventHandler(this.BorrarRelacion_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +83,6 @@
 
         private System.Windows.Forms.Button Yes;
         private System.Windows.Forms.Button No;
+        private System.Windows.Forms.Label label2;
     }
 }
