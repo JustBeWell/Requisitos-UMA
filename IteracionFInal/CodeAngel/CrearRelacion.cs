@@ -26,14 +26,14 @@ namespace WindowsFormsApplication2
 
         private void buttonConfirmar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBox1.Text) || textBox1.Text == "New name")
+            if (string.IsNullOrWhiteSpace(textBox1.Text) || textBox1.Text == "New name") // Falta validar por SKU y GTIN que no se como se hace listBox1.SelectedValue.ToString() != textBox1.text  listBox2.SelectedValue.ToString() != textBox1.text
             {
                 MessageBox.Show("Choose a valid name", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             // Validar que ambos productos estén seleccionados
-            if (listBox1.SelectedItem == null || listBox2.SelectedItem == null)
+            if (listBox1.SelectedItem == null || listBox2.SelectedItem == null) // Esto creo que tendría que ser &&
             {
                 MessageBox.Show("Select one product for each List", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
