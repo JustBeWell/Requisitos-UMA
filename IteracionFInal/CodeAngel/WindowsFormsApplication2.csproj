@@ -52,6 +52,12 @@
     <Compile Include="BorrarCategoria.Designer.cs">
       <DependentUpon>BorrarCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="BorrarRelacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BorrarRelacion.Designer.cs">
+      <DependentUpon>BorrarRelacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="CrearAtributo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="BorrarRelacion.resx">
+      <DependentUpon>BorrarRelacion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearRelacion.resx">
       <DependentUpon>CrearRelacion.cs</DependentUpon>
     </EmbeddedResource>
