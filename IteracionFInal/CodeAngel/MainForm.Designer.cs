@@ -44,6 +44,9 @@
             this.Borrar = new System.Windows.Forms.Button();
             this.Editar = new System.Windows.Forms.Button();
             this.Añadir = new System.Windows.Forms.Button();
+            this.comboBoxCategoryFilter = new System.Windows.Forms.ComboBox();
+            this.checkBoxClearFilter = new System.Windows.Forms.CheckBox();
+            this.btnClearFilter = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -211,11 +214,45 @@
             this.Añadir.UseVisualStyleBackColor = true;
             this.Añadir.Click += new System.EventHandler(this.Añadir_Click);
             // 
+            // comboBoxCategoryFilter
+            // 
+            this.comboBoxCategoryFilter.FormattingEnabled = true;
+            this.comboBoxCategoryFilter.Location = new System.Drawing.Point(533, 457);
+            this.comboBoxCategoryFilter.Name = "comboBoxCategoryFilter";
+            this.comboBoxCategoryFilter.Size = new System.Drawing.Size(167, 21);
+            this.comboBoxCategoryFilter.TabIndex = 8;
+            this.comboBoxCategoryFilter.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoryFilter_SelectedIndexChanged);
+            // 
+            // checkBoxClearFilter
+            // 
+            this.checkBoxClearFilter.AutoSize = true;
+            this.checkBoxClearFilter.Location = new System.Drawing.Point(533, 434);
+            this.checkBoxClearFilter.Name = "checkBoxClearFilter";
+            this.checkBoxClearFilter.Size = new System.Drawing.Size(107, 17);
+            this.checkBoxClearFilter.TabIndex = 9;
+            this.checkBoxClearFilter.Text = "FILTER ON/OFF";
+            this.checkBoxClearFilter.UseVisualStyleBackColor = true;
+            this.checkBoxClearFilter.CheckedChanged += new System.EventHandler(this.checkBoxClearFilter_CheckedChanged);
+            // 
+            // btnClearFilter
+            // 
+            this.btnClearFilter.Location = new System.Drawing.Point(539, 501);
+            this.btnClearFilter.Name = "btnClearFilter";
+            this.btnClearFilter.Size = new System.Drawing.Size(160, 39);
+            this.btnClearFilter.TabIndex = 10;
+            this.btnClearFilter.TabStop = false;
+            this.btnClearFilter.Text = "CLEAR";
+            this.btnClearFilter.UseVisualStyleBackColor = true;
+            this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1049, 539);
+            this.ClientSize = new System.Drawing.Size(1115, 616);
+            this.Controls.Add(this.btnClearFilter);
+            this.Controls.Add(this.checkBoxClearFilter);
+            this.Controls.Add(this.comboBoxCategoryFilter);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.labelProductoCount);
             this.Controls.Add(this.panel1);
@@ -226,7 +263,7 @@
             this.Controls.Add(this.dataGridViewProductos);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Mini PIM";
+            this.Text = "X";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -252,6 +289,9 @@
         private System.Windows.Forms.Button Producto;
         private System.Windows.Forms.Label labelProductoCount;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxCategoryFilter;
+        private System.Windows.Forms.CheckBox checkBoxClearFilter;
+        private System.Windows.Forms.Button btnClearFilter;
     }
 }
 

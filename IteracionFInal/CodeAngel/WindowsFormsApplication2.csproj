@@ -64,11 +64,6 @@
     <Compile Include="CrearAtributo.Designer.cs">
       <DependentUpon>CrearAtributo.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataClasses1.designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
-    </Compile>
     <Compile Include="BorrarProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +75,11 @@
     </Compile>
     <Compile Include="CategoriasMain.Designer.cs">
       <DependentUpon>CategoriasMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataClasses1.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
     <Compile Include="EditarCategoria.cs">
       <SubType>Form</SubType>
@@ -158,12 +158,12 @@
     <EmbeddedResource Include="CrearRelacion.resx">
       <DependentUpon>CrearRelacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RelacionesMain.resx">
-      <DependentUpon>RelacionesMain.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="DataClasses1.dbml.layout">
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="RelacionesMain.resx">
+      <DependentUpon>RelacionesMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AtributoMain.resx">
       <DependentUpon>AtributoMain.cs</DependentUpon>
     </EmbeddedResource>

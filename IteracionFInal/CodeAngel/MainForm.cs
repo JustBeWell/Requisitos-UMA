@@ -12,6 +12,7 @@ namespace WindowsFormsApplication2
 {
     public partial class MainForm : Form
     {
+        private bool isFormLoading = true;
         public MainForm()
         {
             InitializeComponent();
@@ -19,10 +20,12 @@ namespace WindowsFormsApplication2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
             LoadAllProducts();
             this.Size = new Size(1200, 700);
             ResaltarBoton(this.Producto);
-            
+            loadCategories();
+            isFormLoading = false;
 
         }
 
@@ -144,6 +147,7 @@ namespace WindowsFormsApplication2
                 {
                     labelProductoCount.Text = query.Count().ToString() + " Products";
                     MessageBox.Show("There are no products matching the search criteria");
+                    
                     
                 }
                 dataGridViewProductos.DataSource = query.ToList();
@@ -358,6 +362,91 @@ namespace WindowsFormsApplication2
             this.ActiveControl = null;
         }
 
+        private void comboBoxCategoryFilter_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBoxCategoryFilter.SelectedIndex != -1 && !isFormLoading)
+            {
+
+                int selectedCategoryId = (int)comboBoxCategoryFilter.SelectedValue;
+
+                // Llama al método para filtrar productos por categoría
+                FilterProductsByCategory(selectedCategoryId);
+            }
+        }
+
+        private void loadCategories()
+        {
+           
+                DataClasses1DataContext db = new DataClasses1DataContext();
+                var categories = db.Categoria.Select(c => new { c.id, c.nombre }).ToList();
+                comboBoxCategoryFilter.DataSource = categories;
+                comboBoxCategoryFilter.DisplayMember = "nombre";
+                comboBoxCategoryFilter.ValueMember = "id";
+            
+            
+        }
+        //Vamos a crear un método privado para cargar todas las categorías
+        private void FilterProductsByCategory(int categoryId)
+        {
+            DataClasses1DataContext db = new DataClasses1DataContext();
+
+            var query = from p in db.Producto
+                        join pc in db.ProductoCategoria on p.SKU equals pc.producto_SKU
+                        where pc.categoria_id == categoryId
+                        join va in db.ValorAtributo on p.SKU equals va.producto_SKU into vaGroup
+                        from va in vaGroup.DefaultIfEmpty()
+                        join a in db.Atributo on va.atributo_id equals a.id into aGroup
+                        from a in aGroup.DefaultIfEmpty()
+                        group new { va, a } by new
+                        {
+                            p.SKU,
+                            p.GTIN,
+                            p.Thumbnail,
+                            p.Label
+                        } into grouped
+                        select new
+                        {
+                            SKU = grouped.Key.SKU,
+                            GTIN = grouped.Key.GTIN,
+                            Thumbnail = grouped.Key.Thumbnail,
+                            Label = grouped.Key.Label,
+                            UserAttribute1 = grouped.Where(g => g.a != null).OrderBy(g => g.a.id).Select(g => g.va.valor).FirstOrDefault(),
+                            UserAttribute2 = grouped.Where(g => g.a != null).OrderBy(g => g.a.id).Select(g => g.va.valor).Skip(1).FirstOrDefault()
+                        };
+
+            if (query.Count() == 0)
+            {
+                MessageBox.Show("No products found for the selected category.");
+                labelProductoCount.Text = "0 Products";
+                loadCategories(); // Recarga las categorías
+                LoadAllProducts();
+            }
+            else
+            {
+                labelProductoCount.Text = query.Count().ToString() + " Products";
+                dataGridViewProductos.DataSource = query.ToList();
+            }
+        }
+
+        private void btnClearFilter_Click(object sender, EventArgs e)
+        {
+            LoadAllProducts(); // Carga todos los productos nuevamente
+            comboBoxCategoryFilter.SelectedIndex = -1; // Reinicia la selección de la categoría
+        }
+
+        private void checkBoxClearFilter_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxClearFilter.Checked)
+            {
+                LoadAllProducts(); // Carga todos los productos
+                comboBoxCategoryFilter.SelectedIndex = -1; // Limpia la selección de la categoría
+                comboBoxCategoryFilter.Enabled = false;
+            }
+            else
+            {
+                comboBoxCategoryFilter.Enabled = true;
+            }
+        }
 }
 
 

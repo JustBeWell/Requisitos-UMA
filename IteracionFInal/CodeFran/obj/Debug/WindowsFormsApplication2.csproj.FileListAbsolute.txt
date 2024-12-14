@@ -252,3 +252,6 @@ C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\Newtonsoft.Json.xml
 F:\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
 F:\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.exe
 F:\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.pdb

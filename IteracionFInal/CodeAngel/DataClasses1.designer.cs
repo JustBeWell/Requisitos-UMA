@@ -33,6 +33,9 @@ namespace WindowsFormsApplication2
     partial void InsertAtributo(Atributo instance);
     partial void UpdateAtributo(Atributo instance);
     partial void DeleteAtributo(Atributo instance);
+    partial void InsertValorAtributo(ValorAtributo instance);
+    partial void UpdateValorAtributo(ValorAtributo instance);
+    partial void DeleteValorAtributo(ValorAtributo instance);
     partial void InsertCategoria(Categoria instance);
     partial void UpdateCategoria(Categoria instance);
     partial void DeleteCategoria(Categoria instance);
@@ -51,9 +54,6 @@ namespace WindowsFormsApplication2
     partial void InsertTipoAtributo(TipoAtributo instance);
     partial void UpdateTipoAtributo(TipoAtributo instance);
     partial void DeleteTipoAtributo(TipoAtributo instance);
-    partial void InsertValorAtributo(ValorAtributo instance);
-    partial void UpdateValorAtributo(ValorAtributo instance);
-    partial void DeleteValorAtributo(ValorAtributo instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -91,6 +91,14 @@ namespace WindowsFormsApplication2
 			get
 			{
 				return this.GetTable<Atributo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<ValorAtributo> ValorAtributo
+		{
+			get
+			{
+				return this.GetTable<ValorAtributo>();
 			}
 		}
 		
@@ -139,14 +147,6 @@ namespace WindowsFormsApplication2
 			get
 			{
 				return this.GetTable<TipoAtributo>();
-			}
-		}
-		
-		public System.Data.Linq.Table<ValorAtributo> ValorAtributo
-		{
-			get
-			{
-				return this.GetTable<ValorAtributo>();
 			}
 		}
 	}
@@ -392,6 +392,198 @@ namespace WindowsFormsApplication2
 		{
 			this.SendPropertyChanging();
 			entity.Atributo = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ValorAtributo")]
+	public partial class ValorAtributo : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private string _valor;
+		
+		private int _atributo_id;
+		
+		private string _producto_SKU;
+		
+		private EntityRef<Atributo> _Atributo;
+		
+		private EntityRef<Producto> _Producto;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnvalorChanging(string value);
+    partial void OnvalorChanged();
+    partial void Onatributo_idChanging(int value);
+    partial void Onatributo_idChanged();
+    partial void Onproducto_SKUChanging(string value);
+    partial void Onproducto_SKUChanged();
+    #endregion
+		
+		public ValorAtributo()
+		{
+			this._Atributo = default(EntityRef<Atributo>);
+			this._Producto = default(EntityRef<Producto>);
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_valor", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
+		public string valor
+		{
+			get
+			{
+				return this._valor;
+			}
+			set
+			{
+				if ((this._valor != value))
+				{
+					this.OnvalorChanging(value);
+					this.SendPropertyChanging();
+					this._valor = value;
+					this.SendPropertyChanged("valor");
+					this.OnvalorChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_atributo_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int atributo_id
+		{
+			get
+			{
+				return this._atributo_id;
+			}
+			set
+			{
+				if ((this._atributo_id != value))
+				{
+					if (this._Atributo.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onatributo_idChanging(value);
+					this.SendPropertyChanging();
+					this._atributo_id = value;
+					this.SendPropertyChanged("atributo_id");
+					this.Onatributo_idChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_producto_SKU", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
+		public string producto_SKU
+		{
+			get
+			{
+				return this._producto_SKU;
+			}
+			set
+			{
+				if ((this._producto_SKU != value))
+				{
+					if (this._Producto.HasLoadedOrAssignedValue)
+					{
+						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
+					}
+					this.Onproducto_SKUChanging(value);
+					this.SendPropertyChanging();
+					this._producto_SKU = value;
+					this.SendPropertyChanged("producto_SKU");
+					this.Onproducto_SKUChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Atributo_ValorAtributo", Storage="_Atributo", ThisKey="atributo_id", OtherKey="id", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		public Atributo Atributo
+		{
+			get
+			{
+				return this._Atributo.Entity;
+			}
+			set
+			{
+				Atributo previousValue = this._Atributo.Entity;
+				if (((previousValue != value) 
+							|| (this._Atributo.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Atributo.Entity = null;
+						previousValue.ValorAtributo.Remove(this);
+					}
+					this._Atributo.Entity = value;
+					if ((value != null))
+					{
+						value.ValorAtributo.Add(this);
+						this._atributo_id = value.id;
+					}
+					else
+					{
+						this._atributo_id = default(int);
+					}
+					this.SendPropertyChanged("Atributo");
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Producto_ValorAtributo", Storage="_Producto", ThisKey="producto_SKU", OtherKey="SKU", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
+		public Producto Producto
+		{
+			get
+			{
+				return this._Producto.Entity;
+			}
+			set
+			{
+				Producto previousValue = this._Producto.Entity;
+				if (((previousValue != value) 
+							|| (this._Producto.HasLoadedOrAssignedValue == false)))
+				{
+					this.SendPropertyChanging();
+					if ((previousValue != null))
+					{
+						this._Producto.Entity = null;
+						previousValue.ValorAtributo.Remove(this);
+					}
+					this._Producto.Entity = value;
+					if ((value != null))
+					{
+						value.ValorAtributo.Add(this);
+						this._producto_SKU = value.SKU;
+					}
+					else
+					{
+						this._producto_SKU = default(string);
+					}
+					this.SendPropertyChanged("Producto");
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 	
@@ -760,13 +952,13 @@ namespace WindowsFormsApplication2
 		
 		private string _nombre_cuenta;
 		
+		private EntitySet<ValorAtributo> _ValorAtributo;
+		
 		private EntitySet<ProductoCategoria> _ProductoCategoria;
 		
 		private EntitySet<Relacion> _Relacion;
 		
 		private EntitySet<Relacion> _Relacion1;
-		
-		private EntitySet<ValorAtributo> _ValorAtributo;
 		
 		private EntityRef<Cuenta> _Cuenta;
 		
@@ -788,10 +980,10 @@ namespace WindowsFormsApplication2
 		
 		public Producto()
 		{
+			this._ValorAtributo = new EntitySet<ValorAtributo>(new Action<ValorAtributo>(this.attach_ValorAtributo), new Action<ValorAtributo>(this.detach_ValorAtributo));
 			this._ProductoCategoria = new EntitySet<ProductoCategoria>(new Action<ProductoCategoria>(this.attach_ProductoCategoria), new Action<ProductoCategoria>(this.detach_ProductoCategoria));
 			this._Relacion = new EntitySet<Relacion>(new Action<Relacion>(this.attach_Relacion), new Action<Relacion>(this.detach_Relacion));
 			this._Relacion1 = new EntitySet<Relacion>(new Action<Relacion>(this.attach_Relacion1), new Action<Relacion>(this.detach_Relacion1));
-			this._ValorAtributo = new EntitySet<ValorAtributo>(new Action<ValorAtributo>(this.attach_ValorAtributo), new Action<ValorAtributo>(this.detach_ValorAtributo));
 			this._Cuenta = default(EntityRef<Cuenta>);
 			OnCreated();
 		}
@@ -900,6 +1092,19 @@ namespace WindowsFormsApplication2
 			}
 		}
 		
+		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Producto_ValorAtributo", Storage="_ValorAtributo", ThisKey="SKU", OtherKey="producto_SKU")]
+		public EntitySet<ValorAtributo> ValorAtributo
+		{
+			get
+			{
+				return this._ValorAtributo;
+			}
+			set
+			{
+				this._ValorAtributo.Assign(value);
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Producto_ProductoCategoria", Storage="_ProductoCategoria", ThisKey="SKU", OtherKey="producto_SKU")]
 		public EntitySet<ProductoCategoria> ProductoCategoria
 		{
@@ -936,19 +1141,6 @@ namespace WindowsFormsApplication2
 			set
 			{
 				this._Relacion1.Assign(value);
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Producto_ValorAtributo", Storage="_ValorAtributo", ThisKey="SKU", OtherKey="producto_SKU")]
-		public EntitySet<ValorAtributo> ValorAtributo
-		{
-			get
-			{
-				return this._ValorAtributo;
-			}
-			set
-			{
-				this._ValorAtributo.Assign(value);
 			}
 		}
 		
@@ -1006,6 +1198,18 @@ namespace WindowsFormsApplication2
 			}
 		}
 		
+		private void attach_ValorAtributo(ValorAtributo entity)
+		{
+			this.SendPropertyChanging();
+			entity.Producto = this;
+		}
+		
+		private void detach_ValorAtributo(ValorAtributo entity)
+		{
+			this.SendPropertyChanging();
+			entity.Producto = null;
+		}
+		
 		private void attach_ProductoCategoria(ProductoCategoria entity)
 		{
 			this.SendPropertyChanging();
@@ -1040,18 +1244,6 @@ namespace WindowsFormsApplication2
 		{
 			this.SendPropertyChanging();
 			entity.Producto1 = null;
-		}
-		
-		private void attach_ValorAtributo(ValorAtributo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Producto = this;
-		}
-		
-		private void detach_ValorAtributo(ValorAtributo entity)
-		{
-			this.SendPropertyChanging();
-			entity.Producto = null;
 		}
 	}
 	
@@ -1526,198 +1718,6 @@ namespace WindowsFormsApplication2
 		{
 			this.SendPropertyChanging();
 			entity.TipoAtributo = null;
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.ValorAtributo")]
-	public partial class ValorAtributo : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private string _valor;
-		
-		private int _atributo_id;
-		
-		private string _producto_SKU;
-		
-		private EntityRef<Atributo> _Atributo;
-		
-		private EntityRef<Producto> _Producto;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnvalorChanging(string value);
-    partial void OnvalorChanged();
-    partial void Onatributo_idChanging(int value);
-    partial void Onatributo_idChanged();
-    partial void Onproducto_SKUChanging(string value);
-    partial void Onproducto_SKUChanged();
-    #endregion
-		
-		public ValorAtributo()
-		{
-			this._Atributo = default(EntityRef<Atributo>);
-			this._Producto = default(EntityRef<Producto>);
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_valor", DbType="NVarChar(255) NOT NULL", CanBeNull=false)]
-		public string valor
-		{
-			get
-			{
-				return this._valor;
-			}
-			set
-			{
-				if ((this._valor != value))
-				{
-					this.OnvalorChanging(value);
-					this.SendPropertyChanging();
-					this._valor = value;
-					this.SendPropertyChanged("valor");
-					this.OnvalorChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_atributo_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int atributo_id
-		{
-			get
-			{
-				return this._atributo_id;
-			}
-			set
-			{
-				if ((this._atributo_id != value))
-				{
-					if (this._Atributo.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onatributo_idChanging(value);
-					this.SendPropertyChanging();
-					this._atributo_id = value;
-					this.SendPropertyChanged("atributo_id");
-					this.Onatributo_idChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_producto_SKU", DbType="NVarChar(50) NOT NULL", CanBeNull=false, IsPrimaryKey=true)]
-		public string producto_SKU
-		{
-			get
-			{
-				return this._producto_SKU;
-			}
-			set
-			{
-				if ((this._producto_SKU != value))
-				{
-					if (this._Producto.HasLoadedOrAssignedValue)
-					{
-						throw new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException();
-					}
-					this.Onproducto_SKUChanging(value);
-					this.SendPropertyChanging();
-					this._producto_SKU = value;
-					this.SendPropertyChanged("producto_SKU");
-					this.Onproducto_SKUChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Atributo_ValorAtributo", Storage="_Atributo", ThisKey="atributo_id", OtherKey="id", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public Atributo Atributo
-		{
-			get
-			{
-				return this._Atributo.Entity;
-			}
-			set
-			{
-				Atributo previousValue = this._Atributo.Entity;
-				if (((previousValue != value) 
-							|| (this._Atributo.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Atributo.Entity = null;
-						previousValue.ValorAtributo.Remove(this);
-					}
-					this._Atributo.Entity = value;
-					if ((value != null))
-					{
-						value.ValorAtributo.Add(this);
-						this._atributo_id = value.id;
-					}
-					else
-					{
-						this._atributo_id = default(int);
-					}
-					this.SendPropertyChanged("Atributo");
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.AssociationAttribute(Name="Producto_ValorAtributo", Storage="_Producto", ThisKey="producto_SKU", OtherKey="SKU", IsForeignKey=true, DeleteOnNull=true, DeleteRule="CASCADE")]
-		public Producto Producto
-		{
-			get
-			{
-				return this._Producto.Entity;
-			}
-			set
-			{
-				Producto previousValue = this._Producto.Entity;
-				if (((previousValue != value) 
-							|| (this._Producto.HasLoadedOrAssignedValue == false)))
-				{
-					this.SendPropertyChanging();
-					if ((previousValue != null))
-					{
-						this._Producto.Entity = null;
-						previousValue.ValorAtributo.Remove(this);
-					}
-					this._Producto.Entity = value;
-					if ((value != null))
-					{
-						value.ValorAtributo.Add(this);
-						this._producto_SKU = value.SKU;
-					}
-					else
-					{
-						this._producto_SKU = default(string);
-					}
-					this.SendPropertyChanged("Producto");
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-			}
 		}
 	}
 }

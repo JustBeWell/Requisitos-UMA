@@ -11,6 +11,15 @@
       <Association Name="TipoAtributo_Atributo" Member="TipoAtributo" ThisKey="tipo" OtherKey="id" Type="TipoAtributo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.ValorAtributo" Member="ValorAtributo">
+    <Type Name="ValorAtributo">
+      <Column Name="valor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="atributo_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="producto_SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Atributo_ValorAtributo" Member="Atributo" ThisKey="atributo_id" OtherKey="id" Type="Atributo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Producto_ValorAtributo" Member="Producto" ThisKey="producto_SKU" OtherKey="SKU" Type="Producto" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.Categoria" Member="Categoria">
     <Type Name="Categoria">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -36,10 +45,10 @@
       <Column Name="Label" Type="System.String" DbType="NVarChar(250) NOT NULL" CanBeNull="false" />
       <Column Name="GTIN" Type="System.String" DbType="Char(14) NOT NULL" CanBeNull="false" />
       <Column Name="nombre_cuenta" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Producto_ValorAtributo" Member="ValorAtributo" ThisKey="SKU" OtherKey="producto_SKU" Type="ValorAtributo" />
       <Association Name="Producto_ProductoCategoria" Member="ProductoCategoria" ThisKey="SKU" OtherKey="producto_SKU" Type="ProductoCategoria" />
       <Association Name="Producto_Relacion" Member="Relacion" ThisKey="SKU" OtherKey="producto_SKU1" Type="Relacion" />
       <Association Name="Producto_Relacion1" Member="Relacion1" ThisKey="SKU" OtherKey="producto_SKU2" Type="Relacion" />
-      <Association Name="Producto_ValorAtributo" Member="ValorAtributo" ThisKey="SKU" OtherKey="producto_SKU" Type="ValorAtributo" />
       <Association Name="Cuenta_Producto" Member="Cuenta" ThisKey="nombre_cuenta" OtherKey="nombre" Type="Cuenta" IsForeignKey="true" />
     </Type>
   </Table>
@@ -65,15 +74,6 @@
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
       <Column Name="nombre" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="TipoAtributo_Atributo" Member="Atributo" ThisKey="id" OtherKey="tipo" Type="Atributo" />
-    </Type>
-  </Table>
-  <Table Name="dbo.ValorAtributo" Member="ValorAtributo">
-    <Type Name="ValorAtributo">
-      <Column Name="valor" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
-      <Column Name="atributo_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="producto_SKU" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Atributo_ValorAtributo" Member="Atributo" ThisKey="atributo_id" OtherKey="id" Type="Atributo" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
-      <Association Name="Producto_ValorAtributo" Member="Producto" ThisKey="producto_SKU" OtherKey="SKU" Type="Producto" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
     </Type>
   </Table>
 </Database>

@@ -34,7 +34,7 @@ namespace WindowsFormsApplication2
             var relacionAEliminar = db.Relacion.FirstOrDefault(p => p.nombre == rel.nombre);
             db.Relacion.DeleteOnSubmit(relacionAEliminar);
             db.SubmitChanges();
-            _form1.load(); //no se porque no funca el load
+            //_form1.load(); //no se porque no funca el load
 
             this.Close();
         }
