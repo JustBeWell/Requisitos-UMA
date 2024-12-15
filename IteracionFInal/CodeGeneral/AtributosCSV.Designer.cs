@@ -199,6 +199,7 @@
             this.Controls.Add(this.labelSKU);
             this.Name = "AtributosCSV";
             this.Text = "D";
+            this.Load += new System.EventHandler(this.AtributosCSV_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

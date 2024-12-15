@@ -20,7 +20,7 @@ namespace WindowsFormsApplication2
             InitializeComponent();
             
             this.selectedProducts = selectedProducts;
-            encontrarAtributoPrice();
+
 
         }
 
@@ -169,6 +169,11 @@ namespace WindowsFormsApplication2
         {
             ExportarCSV();
             this.Close();
+        }
+
+        private void AtributosCSV_Load(object sender, EventArgs e)
+        {
+            encontrarAtributoPrice();
         }
     }
 }

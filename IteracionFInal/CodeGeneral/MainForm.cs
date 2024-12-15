@@ -496,7 +496,8 @@ namespace WindowsFormsApplication2
             atributosForm.FormClosed += (s, args) =>
             {
                 // Mostrar el MainForm nuevamente cuando se cierre el formulario de atributos
-                this.Show();
+                    this.Show();
+
             };
             atributosForm.ShowDialog();
         }

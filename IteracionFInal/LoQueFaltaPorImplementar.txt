@@ -1,0 +1,12 @@
+-Falta que cuando visualizas un producto y seleccionas una de sus relaciones en la combobox
+se muestre en la listbox el producto con el que está relacionado.
+
+-Falta limitar la creación de relaciones a 3 relaciones.
+
+-Falta comprobar que el nombre de la relación es distinto al GTIN y SKU de cada producto
+	> Todos los casos de uso est´an pensados para seguir el plan gratuito. El total de 	relaciones permitidas en este plan son 3.
+
+
+ 	>6 Se considera err´oneo cualquier nombre que este vac´ ıo, no sea ´unico o sea igual a 	alg´ un GTIN o alg´ un SKU del sistema.
+
+ 	> 7Nopermitimos en nuestro sistema relacionar un producto a null. O la relaci´on est´a vac		´ ıa (sin productos seleccionas) o si se selecciona un producto, debe tener como m		´ınimo alguno relacionado.
