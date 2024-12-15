@@ -1,0 +1,286 @@
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+c:\users\diego\onedrive\documents\visual studio 2013\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\Código\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\Código\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\alumno\Desktop\Código\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+\\VBOXSVR\1eraIteración\CodeJanine\bin\Debug\WindowsFormsApplication2.exe.config
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.exe
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.pdb
+\\VBOXSVR\1eraIteración\CodeJanine\bin\Debug\WindowsFormsApplication2.exe
+\\VBOXSVR\1eraIteración\CodeJanine\bin\Debug\WindowsFormsApplication2.pdb
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.MainAtributos.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.MainForm.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+\\VBOXSVR\1eraIteración\CodeJanine\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.MainAtributos.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\Akadia.DataGridBoundCombo.DataGridComboBoxColumn.resources
+C:\Users\franc\Desktop\CodeJanine\CodeJanine\obj\Debug\Akadia.DataGridBoundCombo.myComboBox.resources
+C:\Users\alumno\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\Akadia.DataGridBoundCombo.DataGridComboBoxColumn.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeAngel\obj\Debug\Akadia.DataGridBoundCombo.myComboBox.resources
+C:\Users\franc\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+E:\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+E:\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+E:\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+E:\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Downloads\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Downloads\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Downloads\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\franc\Downloads\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\1eraIteración\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\alumno\Desktop\CodeFran\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\alumno\Desktop\CodeAngel\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\CodeAngel\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\alumno\Desktop\CodeAngel\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.CrearJSON.resources
+C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\Newtonsoft.Json.dll
+C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\Newtonsoft.Json.xml
+F:\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+F:\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+F:\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\Newtonsoft.Json.dll
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\bin\Debug\Newtonsoft.Json.xml
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CrearJSON.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeFran\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.pdb
