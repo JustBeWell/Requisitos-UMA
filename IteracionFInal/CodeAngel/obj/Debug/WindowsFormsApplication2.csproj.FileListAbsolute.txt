@@ -1,0 +1,2 @@
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.pdb

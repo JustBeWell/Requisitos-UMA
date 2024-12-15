@@ -46,7 +46,11 @@
             this.comboBoxCategoryFilter = new System.Windows.Forms.ComboBox();
             this.checkBoxClearFilter = new System.Windows.Forms.CheckBox();
             this.btnClearFilter = new System.Windows.Forms.Button();
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/MainForm.Designer.cs
             this.Cuenta = new WindowsFormsApplication2.RoundButton();
+=======
+            this.btnCSV = new System.Windows.Forms.Button();
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/MainForm.Designer.cs
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -251,6 +255,7 @@
             this.btnClearFilter.UseVisualStyleBackColor = true;
             this.btnClearFilter.Click += new System.EventHandler(this.btnClearFilter_Click);
             // 
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/MainForm.Designer.cs
             // Cuenta
             // 
             this.Cuenta.Image = ((System.Drawing.Image)(resources.GetObject("Cuenta.Image")));
@@ -261,13 +266,29 @@
             this.Cuenta.TabIndex = 29;
             this.Cuenta.UseVisualStyleBackColor = true;
             this.Cuenta.Click += new System.EventHandler(this.Cuenta_Click);
+=======
+            // btnCSV
+            // 
+            this.btnCSV.Location = new System.Drawing.Point(868, 424);
+            this.btnCSV.Name = "btnCSV";
+            this.btnCSV.Size = new System.Drawing.Size(116, 35);
+            this.btnCSV.TabIndex = 11;
+            this.btnCSV.Text = "CSV";
+            this.btnCSV.UseVisualStyleBackColor = true;
+            this.btnCSV.Click += new System.EventHandler(this.btnCSV_Click);
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/MainForm.Designer.cs
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/MainForm.Designer.cs
             this.ClientSize = new System.Drawing.Size(2044, 1137);
             this.Controls.Add(this.Cuenta);
+=======
+            this.ClientSize = new System.Drawing.Size(1115, 616);
+            this.Controls.Add(this.btnCSV);
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/MainForm.Designer.cs
             this.Controls.Add(this.btnClearFilter);
             this.Controls.Add(this.checkBoxClearFilter);
             this.Controls.Add(this.comboBoxCategoryFilter);
@@ -309,7 +330,11 @@
         private System.Windows.Forms.ComboBox comboBoxCategoryFilter;
         private System.Windows.Forms.CheckBox checkBoxClearFilter;
         private System.Windows.Forms.Button btnClearFilter;
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/MainForm.Designer.cs
         private RoundButton Cuenta;
+=======
+        private System.Windows.Forms.Button btnCSV;
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/MainForm.Designer.cs
     }
 }
 

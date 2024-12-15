@@ -1,0 +1,9 @@
+Abrir la consola de administrador de paquetes:
+
+Ve a Herramientas > Administrador de paquetes NuGet > Consola del Administrador de paquetes.
+Instalar el paquete:
+
+Ejecuta el siguiente comando:
+bash
+Copy code
+Install-Package Microsoft.Office.Interop.Excel

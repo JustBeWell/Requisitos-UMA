@@ -223,6 +223,7 @@ C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarProdu
 C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
 C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\alumno\Desktop\CodeAngel\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/obj/Debug/WindowsFormsApplication2.csproj.FileListAbsolute.txt
 C:\Users\franc\Desktop\CodeAngel_ItFinal\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\franc\Desktop\CodeAngel_ItFinal\obj\Debug\WindowsFormsApplication2.pdb
@@ -284,3 +285,51 @@ C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.pdb
+=======
+F:\IteracionFInal\CodeAngel\bin\Debug\WindowsFormsApplication2.exe.config
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.exe
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.pdb
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.MainForm.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+F:\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarRelacion.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeAngel\obj\Debug\WindowsFormsApplication2.AtributosCSV.resources
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/obj/Debug/WindowsFormsApplication2.csproj.FileListAbsolute.txt

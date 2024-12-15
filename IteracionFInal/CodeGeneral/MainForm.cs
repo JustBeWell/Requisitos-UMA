@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace WindowsFormsApplication2
 {
     public partial class MainForm : Form
@@ -30,6 +31,9 @@ namespace WindowsFormsApplication2
             isFormLoading = false;
 
         }
+        
+
+
 
         private void textBoxSearchby_TextChanged(object sender, EventArgs e)
         {
@@ -375,6 +379,7 @@ namespace WindowsFormsApplication2
             }
         }
 
+<<<<<<< Updated upstream:IteracionFInal/CodeGeneral/MainForm.cs
 
         /*
  * Eventos de Navegación entre menús
@@ -464,6 +469,45 @@ namespace WindowsFormsApplication2
         }
 
 
+=======
+        private void btnCSV_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewProductos.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select at least one product to export.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            DataClasses1DataContext db = new DataClasses1DataContext();
+
+            // Obtener los SKU de las filas seleccionadas
+            List<string> selectedSKUs = new List<string>();
+            foreach (DataGridViewRow fila in dataGridViewProductos.SelectedRows)
+            {
+                if (fila.Cells["SKU"].Value != null)
+                {
+                    selectedSKUs.Add(fila.Cells["SKU"].Value.ToString());
+                }
+            }
+
+            // Filtrar los productos directamente con LINQ
+            var selectedProducts = db.Producto
+                .Where(p => selectedSKUs.Contains(p.SKU))
+                .ToList();
+            // Crear una instancia del formulario AtributosCSV
+            AtributosCSV atributosForm = new AtributosCSV(selectedProducts);
+
+            // Ocultar el MainForm
+            this.Hide();
+
+            // Mostrar el formulario de atributos como ventana modal
+            atributosForm.FormClosed += (s, args) =>
+            {
+                // Mostrar el MainForm nuevamente cuando se cierre el formulario de atributos
+                this.Show();
+            };
+            atributosForm.ShowDialog();
+        }
+>>>>>>> Stashed changes:IteracionFInal/CodeAngel/MainForm.cs
 }
 
 
