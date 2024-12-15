@@ -284,3 +284,30 @@ C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.exe.config
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.exe
 C:\Users\franc\Documents\Escuela\UMA\5toSemestre\Ingenieria de Requisitos\Github\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.csprojResolveAssemblyReference.cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.AtributosCSV.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CrearJSON.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CrearRelacion.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.RelacionesMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.AtributoMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.BorrarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.BorrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CategoriasMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CrearAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CuentaMain.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.EditarCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CrearCategoria.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.BorrarAtributo.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.MainForm.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.CrearProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.EditarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.MostrarProducto.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\Newtonsoft.Json.dll
+C:\Users\diego\OneDrive\Documents\GitHub\Requisitos-UMA\IteracionFInal\CodeGeneral\bin\Debug\Newtonsoft.Json.xml

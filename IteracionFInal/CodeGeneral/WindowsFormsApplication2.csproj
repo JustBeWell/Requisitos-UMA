@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AtributosCSV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtributosCSV.Designer.cs">
+      <DependentUpon>AtributosCSV.cs</DependentUpon>
+    </Compile>
     <Compile Include="BorrarCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +162,9 @@
     <Compile Include="RoundButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="AtributosCSV.resx">
+      <DependentUpon>AtributosCSV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CrearJSON.resx">
       <DependentUpon>CrearJSON.cs</DependentUpon>
     </EmbeddedResource>
