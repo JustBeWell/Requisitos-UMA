@@ -51,7 +51,7 @@ namespace WindowsFormsApplication2
             labelUA.Text = Math.Min(database.Atributo.Count(), 5).ToString();
 
             // Número de relaciones creadas (máximo 3)
-            // labelRelationships.Text = Math.Min(database.Relacion.Count(), 3).ToString();
+             labelRelationships.Text = Math.Min(database.Relacion.Count(), 3).ToString();
         }
 
 
@@ -161,7 +161,7 @@ namespace WindowsFormsApplication2
                     ProductCount = labelProducts.Text,
                     CategoryCount = labelCategories.Text,
                     AttributeCount = labelUA.Text,
-                    //RelationshipCount = labelRelationships.Text
+                    RelationshipCount = labelRelationships.Text
                 };
 
                 // Convertir a JSON el informe de la cuenta

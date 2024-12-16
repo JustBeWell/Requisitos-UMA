@@ -126,6 +126,7 @@ namespace WindowsFormsApplication2
         private void MostrarProducto_Load_1(object sender, EventArgs e)
         {
             CargarRelacionesEnListBox();
+            this.Size = new Size(1200, 1000);
             //CargarProductosRelacionados();
         }
 
@@ -199,7 +200,7 @@ namespace WindowsFormsApplication2
 
         private void listBoxRelaciones_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*try
+            try
             {
                 // Verificar que hay una relación seleccionada
                 if (listBoxRelaciones.SelectedValue != null && !string.IsNullOrEmpty(listBoxRelaciones.SelectedValue.ToString()))
@@ -212,8 +213,10 @@ namespace WindowsFormsApplication2
                         // Obtener los SKUs relacionados a la relación seleccionada
                         var skusRelacionados = dbContext.Relacion
                             .Where(r => r.nombre == nombreRel)
-                            .SelectMany(r => new[] { r.producto_SKU1, r.producto_SKU2 }) // Expandir los SKUs
-                            .Where(sku => sku != null) // Filtrar valores nulos
+                            .Select(r => new { r.producto_SKU1, r.producto_SKU2 })
+                            .ToList()
+                            .SelectMany(r => new[] { r.producto_SKU1, r.producto_SKU2 })
+                            .Where(sku => sku != null)
                             .ToList();
 
                         // Obtener los detalles de los productos relacionados
@@ -242,7 +245,13 @@ namespace WindowsFormsApplication2
             {
                 MessageBox.Show(ex.Message);
             }
-             */
+
+             
+        }
+
+        private void listBoxProductos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
 
